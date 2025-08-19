@@ -1,0 +1,348 @@
+---
+title: "TV animal deaths"
+---
+
+## Query the Does the Dog Die database
+
+This script queries the Does the Dog Die? database for movies in the IMDB top 1000 list that are (probably) American and released on or after 2000.
+
+It then repeats this analysis for the top 2000 TV series.
+
+```{r}
+
+# Load libraries
+
+library(httr)
+library(jsonlite)
+library(tidyverse)
+library(janitor)
+
+```
+
+## Helper functions
+
+```{r}
+
+# Function to query the Does The Dog Die database
+query_dtdd_database <- function(movie_title) {
+  resp <- GET(
+    url = "https://www.doesthedogdie.com/dddsearch",
+    query = list(q = movie_title),
+    add_headers(`Accept` = "application/json", `X-API-KEY` = Sys.getenv("DDD_API_KEY"))
+  )
+  
+  if (status_code(resp) == 200) {
+    data <- fromJSON(content(resp, "text", encoding = "UTF-8"), flatten = TRUE)
+    if (length(data$items) > 0) {
+      return(as_tibble(data$items))
+    } else {
+      return(tibble(title = movie_title, message = "No results found"))
+    }
+  } else {
+    return(tibble(title = movie_title, message = "Error querying API"))
+  }
+}
+
+# Function to query Does the Dog Die database by IMDB ID
+query_dtdd_by_imdb_id <- function(imdb_id) {
+  resp <- GET(
+    url = "https://www.doesthedogdie.com/dddsearch",
+    query = list(imdb = imdb_id),
+    add_headers(`Accept` = "application/json", `X-API-KEY` = Sys.getenv("DDD_API_KEY"))
+  )
+  
+  if (status_code(resp) == 200) {
+    data <- fromJSON(content(resp, "text", encoding = "UTF-8"), flatten = TRUE)
+    if (length(data$items) > 0) {
+      return(as_tibble(data$items))
+    } else {
+      return(tibble(imdb_id = imdb_id, message = "No results found"))
+    }
+  } else {
+    return(tibble(imdb_id = imdb_id, message = "Error querying API"))
+  }
+}
+
+# Function to fetch details for a specific movie
+fetch_dtdd_movie_details <- function(item_id) {
+  resp <- GET(
+    url = paste0("https://www.doesthedogdie.com/media/", item_id),
+    add_headers(`Accept` = "application/json", `X-API-KEY` = Sys.getenv("DDD_API_KEY"))
+  )
+  
+  if (status_code(resp) == 200) {
+    data <- fromJSON(content(resp, "text", encoding = "UTF-8"), flatten = TRUE)
+    # extract the relevant data
+    # 1. a dog dies yes votes and no votes
+    # To do this, I first identify the topic ID associated with "a dog dies"
+    dogVotes <- data$topicItemStats |> filter(tolower(topic.name) == "a dog dies") |> 
+      select(topic.name, yesSum, noSum)
+    # rename the yes and no columns to denote that they apply only to dogs
+    dogVotes <- dogVotes |> 
+      rename(dog_yes_votes = yesSum, dog_no_votes = noSum)
+    
+    # 2. a cat dies yes votes and no votes
+    catVotes <- data$topicItemStats |> filter(tolower(topic.name) == "a cat dies") |> 
+      select(topic.name, yesSum, noSum)
+    # rename the yes and no columns to denote that they apply only to cats
+    catVotes <- catVotes |> 
+      rename(cat_yes_votes = yesSum, cat_no_votes = noSum)
+    
+    # 3. an animal dies yes votes and no votes
+    animalVotes <- data$topicItemStats |> filter(tolower(topic.name) == "an animal dies") |> 
+      select(topic.name, yesSum, noSum)
+    # rename the yes and no columns to denote that they apply to all animals
+    animalVotes <- animalVotes |> 
+      rename(animal_yes_votes = yesSum, animal_no_votes = noSum)
+    
+    # Join the votes data together with a column for the name of the movie
+    data <- tibble(
+      #id = data$item$id,
+      #name = data$item$name,
+      #clean_name = data$item$cleanName,
+      dog_yes_votes = dogVotes$dog_yes_votes,
+      dog_no_votes = dogVotes$dog_no_votes,
+      cat_yes_votes = catVotes$cat_yes_votes,
+      cat_no_votes = catVotes$cat_no_votes,
+      animal_yes_votes = animalVotes$animal_yes_votes,
+      animal_no_votes = animalVotes$animal_no_votes
+    )
+    
+    return(data)
+  } else {
+    return(tibble(message = "Error fetching details"))
+  }
+}
+```
+
+## Top 5000 movies
+
+```{r}
+# # Read in IMDB 1000 data set
+# # Filter out movies that didn't air in the last 20 years (only movies released on or after 2000)
+# imdb_1000_data <- read_csv("data/imdb_top_1000.csv") |> 
+#   # Filter out movies for which Released Year isn't a valid 4 digit year
+#   filter(Released_Year %in% as.character(1900:2025)) |>
+#   #mutate(Released_Year = parse_number(Released_Year)) |> 
+#   mutate(Released_Year = as.numeric(Released_Year)) |>
+#   filter(Released_Year >= 2000)
+
+# Read in the IMDB 1000 recent datasets
+# imdb_1000_us_recent <- read_csv("data/imdb_1000_us_recent.csv")
+# imdb_1000_recent <- read_csv("data/imdb_1000_recent.csv")
+
+# Read in the IMDB 5000 movies data set
+# Source: https://www.kaggle.com/datasets/tiagoadrianunes/imdb-top-5000-movies
+imdb_movies_5000 <- read_csv("data/imdb_movies_5000.csv")
+
+```
+
+
+
+### Query the database and pull the data
+
+```{r}
+# For each movie in the set of recent movies, query the Does The Dog Die database
+# and pull out info from the movie. 
+# 
+# If the movie doesn't exist in the database (or there are no results), skip it.
+# Put the data from all movies into one tibble.
+
+results_all_movies <- imdb_movies_5000 |>
+  #slice_head(n = 50) |> # NOTE: This line is for debugging purposes only
+  mutate(dtdd_data = map(tconst, query_dtdd_by_imdb_id)) |>
+  unnest(dtdd_data) |> 
+  filter(!is.na(id)) |> # Filter out movies that don't have an ID in the database
+  filter(startYear == releaseYear) # Filter out movies that don't have a matching year
+                                      # This eliminates movies that have been remade
+                                      # and movies that have matching names
+
+
+```
+
+```{r}
+# Save the results
+write_csv(results_all_movies, "data/imdb_5000_dtdd_results.csv")
+```
+
+```{r}
+# Fetch the movie details for each movie in the results using the id
+# and save all the results into a new tibble
+
+results_movie_details <- results_all_movies |>
+  #slice_head(n = 10) |> # NOTE: This line is for debugging purposes only
+  mutate(dtdd_details = map(id, fetch_dtdd_movie_details)) |>
+  unnest(dtdd_details) |>
+  select(id, name, cleanName, 
+         dog_yes_votes, dog_no_votes,
+         cat_yes_votes, cat_no_votes,
+         animal_yes_votes, animal_no_votes)
+```
+
+```{r}
+# Save the movie details
+write_csv(results_movie_details, "data/imdb_5000_dtdd_movie_details.csv")
+```
+
+### Analyze the data
+
+
+```{r}
+# Create new columns in results_movie_details that calculate 
+# the majority vote for each animal type and set to 1 if
+# the majority vote is "yes" and 0 if the majority vote is "no".
+# Set the value to 0 if there is no majority vote (i.e. if the yes and no votes are equal).
+results_movie_details <- results_movie_details |>
+  mutate(dog_death = case_when(
+    dog_yes_votes > dog_no_votes ~ TRUE,
+    TRUE ~ FALSE),
+    cat_death = case_when(
+      cat_yes_votes > cat_no_votes ~ TRUE,
+      TRUE ~ FALSE),
+    animal_death = case_when(
+      animal_yes_votes > animal_no_votes ~ TRUE,
+      TRUE ~ FALSE)
+  )
+```
+
+```{r}
+# Compute the percentage of movies that have:
+# 1. dog deaths
+dog_death_percentage <- results_movie_details |> 
+  summarise(dog_death_pct = mean(dog_death, na.rm = TRUE) * 100)
+print(dog_death_percentage)
+# 2. cat deaths
+cat_death_percentage <- results_movie_details |> 
+  summarise(cat_death_pct = mean(cat_death, na.rm = TRUE) * 100)
+print(cat_death_percentage)
+# 3. animal deaths
+animal_death_percentage <- results_movie_details |> 
+  summarise(animal_death_pct = mean(animal_death, na.rm = TRUE) * 100)
+print(animal_death_percentage)
+```
+```{r}
+# Compute the correlation between a movie having a dog death and 
+# having an animal death
+correlation_dog_animal <- cor(results_movie_details$dog_death, 
+                              results_movie_details$animal_death, use = "complete.obs")
+print(correlation_dog_animal)
+
+# Repeat for the correlation between a movie having a cat death and
+# having an animal death
+correlation_cat_animal <- cor(results_movie_details$cat_death, 
+                              results_movie_details$animal_death, use = "complete.obs")
+print(correlation_cat_animal)
+```
+
+## Top 5000 TV series
+
+```{r}
+# Read in the IMDB 2000 TV series data set
+imdb_tvseries_2000 <- read_csv("data/imdb_tvseries_2000.csv")
+
+# Read in the IMDB 5000 TV series data set
+# Source: https://www.kaggle.com/datasets/tiagoadrianunes/imdb-top-5000-tv-shows
+imdb_tvseries_5000 <- read_csv("data/imdb_tvseries_5000.csv")
+```
+
+### Query the database
+
+```{r}
+# For each series in the set of 5000 top TV series, query the Does The Dog Die database
+# and pull out info from the series. 
+# 
+# If the series doesn't exist in the database (or there are no results), skip it.
+# Put the data from all series into one tibble.
+
+results_all_tvseries <- imdb_tvseries_5000 |>
+  #slice_head(n = 50) |> # NOTE: This line is for debugging purposes only
+  mutate(dtdd_data = map(primaryTitle, query_dtdd_database)) |>
+  unnest(dtdd_data) |>
+  # Filter out shows that don't have at least 100 ratings (arbitrary cutoff)
+  # The idea here is that shows with few ratings either have unreliable stats
+  # or are obsure or not valid matches
+  filter(numRatings > 100) |> 
+  # filter out shows that don't match years to eliminate partial matches
+  # or books and movies with the same or similar titles
+  filter(startYear == releaseYear) |> 
+  # As an additional check, I will filter out entries that aren't classified
+  # as TV shows
+  filter(itemType.name == "TV Show")
+           
+```
+
+```{r}
+# Save the results
+write_csv(results_all_tvseries, "data/imdb_tvseries_5000_dtdd_results.csv")
+```
+
+```{r}
+# Fetch the series details for each series in the results using the id
+# and save all the results into a new tibble
+
+results_tvseries_details <- results_all_tvseries |>
+  #slice_head(n = 10) |> # NOTE: This line is for debugging purposes only
+  mutate(dtdd_details = map(id, fetch_dtdd_movie_details)) |>
+  unnest(dtdd_details) |>
+  select(id, name, cleanName, 
+         dog_yes_votes, dog_no_votes,
+         cat_yes_votes, cat_no_votes,
+         animal_yes_votes, animal_no_votes)
+```
+
+
+```{r}
+# Save the series details
+write_csv(results_tvseries_details, "data/imdb_tvseries_5000_dtdd_series_details.csv")
+```
+
+### Analyze the data
+
+```{r}
+# Create new columns in results_tvseries_details that calculate 
+# the majority vote for each animal type and set to 1 if
+# the majority vote is "yes" and 0 if the majority vote is "no".
+# Set the value to 0 if there is no majority vote (i.e. if the yes and no votes are equal).
+results_tvseries_details <- results_tvseries_details |>
+  mutate(dog_death = case_when(
+    dog_yes_votes > dog_no_votes ~ TRUE,
+    TRUE ~ FALSE),
+    cat_death = case_when(
+      cat_yes_votes > cat_no_votes ~ TRUE,
+      TRUE ~ FALSE),
+    animal_death = case_when(
+      animal_yes_votes > animal_no_votes ~ TRUE,
+      TRUE ~ FALSE)
+  )
+```
+
+```{r}
+# Compute the percentage of TV series that have:
+# 1. dog deaths
+dog_death_percentage <- results_tvseries_details |> 
+  summarise(dog_death_pct = mean(dog_death, na.rm = TRUE) * 100)
+print(dog_death_percentage)
+# 2. cat deaths
+cat_death_percentage <- results_tvseries_details |> 
+  summarise(cat_death_pct = mean(cat_death, na.rm = TRUE) * 100)
+print(cat_death_percentage)
+# 3. animal deaths
+animal_death_percentage <- results_tvseries_details |> 
+  summarise(animal_death_pct = mean(animal_death, na.rm = TRUE) * 100)
+print(animal_death_percentage)
+```
+```{r}
+# Compute the correlation between a TV series having a dog death and 
+# having an animal death
+correlation_dog_animal <- cor(results_tvseries_details$dog_death, 
+                              results_tvseries_details$animal_death, use = "complete.obs")
+print(correlation_dog_animal)
+
+# Repeat for the correlation between a TV series having a cat death and
+# having an animal death
+correlation_cat_animal <- cor(results_tvseries_details$cat_death, 
+                              results_tvseries_details$animal_death, use = "complete.obs")
+print(correlation_cat_animal)
+```
+
+

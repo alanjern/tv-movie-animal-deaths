@@ -1,0 +1,83 @@
+---
+title: "Merge imdb datasets"
+format: html
+---
+
+## Load in the datasets
+
+```{r}
+# Load packages
+library(tidyverse)
+```
+
+```{r}
+# Read in the IMDB 1000 data set
+imdb_1000_data <- read_csv("data/imdb_top_1000.csv")
+# Read in the IMDB titles data set
+imdb_titles_data <- read_tsv("~/Desktop/title.akas.tsv")
+# Read in the IMDB top 2000 TV series data set
+imdb_tvseries_data <- read_csv("data/imdb_tvseries_data.csv")
+```
+
+```{r}
+# Create a new tibble that adds the region and language columns (as well as a few others)
+# from the titles dataset to the 1000 dataset
+imdb_1000_with_region <- imdb_1000_data |> 
+  left_join(imdb_titles_data |>
+              #filter(isOriginalTitle == 1) |> 
+              select(title, titleId, isOriginalTitle, region, language), by = c("Series_Title" = "title"))
+```
+
+```{r}
+# Create a new tibble that adds the titleID and isOriginalTitle columns
+# from the titles dataset to the TV series dataset
+imdb_tvseries_with_ids <- imdb_tvseries_data |> 
+  left_join(imdb_titles_data |>
+              select(title, titleId, isOriginalTitle, region, language), by = c("Series_Title" = "title"))
+```
+
+
+```{r}
+# Filter out movies that aren't from the US
+imdb_1000_us_recent <- imdb_1000_with_region |> 
+  filter(region == "US") |>
+  #filter(region == "US" & language == "en") |> 
+  # Remove duplicate titles
+  distinct(Series_Title, .keep_all = TRUE) |> 
+  # Remove movies that don't have a valid year
+  filter(Released_Year %in% as.character(1900:2025)) |>
+  mutate(Released_Year = as.numeric(Released_Year)) |>
+  # Filter out movies released on or after 2000
+  filter(Released_Year >= 2000)
+
+# Collect only the original entries
+imdb_1000_recent <- imdb_1000_with_region |> 
+  filter(isOriginalTitle == 1) |>
+  # Remove duplicate titles
+  distinct(titleId, .keep_all = TRUE) |> 
+  # Remove movies that don't have a valid year
+  filter(Released_Year %in% as.character(1900:2025)) |>
+  mutate(Released_Year = as.numeric(Released_Year)) |>
+  # Filter out movies released on or after 2000
+  filter(Released_Year >= 2000)
+```
+
+```{r}
+# Collect only the original TV series entries
+imdb_tvseries_2000 <- imdb_tvseries_with_ids |> 
+  filter(isOriginalTitle == 1) |>
+  # Remove duplicate titles
+  distinct(titleId, .keep_all = TRUE)
+  # Filter out series released on or after 2000
+  # TODO: This is tricker because the Runtime_of_Series is written like "(2011-2019)"
+```
+
+
+```{r}
+# Save the datasets as a CSV files
+# in the data folder
+write_csv(imdb_1000_us_recent, "data/imdb_1000_us_recent.csv")
+write_csv(imdb_1000_recent, "data/imdb_1000_recent.csv")
+write_csv(imdb_tvseries_2000, "data/imdb_tvseries_2000.csv")
+```
+
