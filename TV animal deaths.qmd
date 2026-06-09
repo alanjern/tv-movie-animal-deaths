@@ -4,9 +4,9 @@ title: "TV animal deaths"
 
 ## Query the Does the Dog Die database
 
-This script queries the Does the Dog Die? database for movies in the IMDB top 1000 list that are (probably) American and released on or after 2000.
+This script queries the Does the Dog Die? database for movies in the IMDB top 5000 list that are (probably) American and released on or after 2000.
 
-It then repeats this analysis for the top 2000 TV series.
+It then repeats this analysis for the top 5000 TV series.
 
 ```{r}
 
@@ -63,8 +63,8 @@ query_dtdd_by_imdb_id <- function(imdb_id) {
   }
 }
 
-# Function to fetch details for a specific movie
-fetch_dtdd_movie_details <- function(item_id) {
+# Function to fetch details for a specific title
+fetch_dtdd_title_details <- function(item_id) {
   resp <- GET(
     url = paste0("https://www.doesthedogdie.com/media/", item_id),
     add_headers(`Accept` = "application/json", `X-API-KEY` = Sys.getenv("DDD_API_KEY"))
@@ -137,8 +137,6 @@ imdb_movies_5000 <- read_csv("data/imdb_movies_5000.csv")
 
 ```
 
-
-
 ### Query the database and pull the data
 
 ```{r}
@@ -148,14 +146,21 @@ imdb_movies_5000 <- read_csv("data/imdb_movies_5000.csv")
 # If the movie doesn't exist in the database (or there are no results), skip it.
 # Put the data from all movies into one tibble.
 
+
 results_all_movies <- imdb_movies_5000 |>
   #slice_head(n = 50) |> # NOTE: This line is for debugging purposes only
   mutate(dtdd_data = map(tconst, query_dtdd_by_imdb_id)) |>
   unnest(dtdd_data) |> 
-  filter(!is.na(id)) |> # Filter out movies that don't have an ID in the database
-  filter(startYear == releaseYear) # Filter out movies that don't have a matching year
-                                      # This eliminates movies that have been remade
-                                      # and movies that have matching names
+  # Filter out movies that don't have an ID in the database
+  filter(!is.na(id)) |>
+  # Filter out movies that don't have at least 100 ratings (arbitrary cutoff)
+  # The idea here is that shows with few ratings either have unreliable stats
+  # or are obsure or not valid matches
+  filter(numRatings > 100) |>
+  # Filter out movies that don't match years to eliminate movies that have been
+  # remade and/or duplicates
+  filter(startYear == releaseYear)
+
 
 
 ```
@@ -171,7 +176,7 @@ write_csv(results_all_movies, "data/imdb_5000_dtdd_results.csv")
 
 results_movie_details <- results_all_movies |>
   #slice_head(n = 10) |> # NOTE: This line is for debugging purposes only
-  mutate(dtdd_details = map(id, fetch_dtdd_movie_details)) |>
+  mutate(dtdd_details = map(id, fetch_dtdd_title_details)) |>
   unnest(dtdd_details) |>
   select(id, name, cleanName, 
          dog_yes_votes, dog_no_votes,
@@ -185,7 +190,6 @@ write_csv(results_movie_details, "data/imdb_5000_dtdd_movie_details.csv")
 ```
 
 ### Analyze the data
-
 
 ```{r}
 # Create new columns in results_movie_details that calculate 
@@ -220,6 +224,7 @@ animal_death_percentage <- results_movie_details |>
   summarise(animal_death_pct = mean(animal_death, na.rm = TRUE) * 100)
 print(animal_death_percentage)
 ```
+
 ```{r}
 # Compute the correlation between a movie having a dog death and 
 # having an animal death
@@ -234,11 +239,176 @@ correlation_cat_animal <- cor(results_movie_details$cat_death,
 print(correlation_cat_animal)
 ```
 
+```{r}
+# Generate a plot of animal deaths over time
+
+library(ggrepel)
+library(patchwork)
+
+p1 <- results_movie_details |>
+  left_join(results_all_movies |> select(id, startYear), by = "id") |>
+  filter(startYear >= 2000) |>
+  pivot_longer(cols = c(dog_death, cat_death, animal_death),
+               names_to = "death_type", values_to = "died") |>
+  group_by(startYear, death_type) |>
+  summarise(proportion = mean(died, na.rm = TRUE), .groups = "drop") |>
+  mutate(death_type = recode(death_type,
+    dog_death = "Dog",
+    cat_death = "Cat",
+    animal_death = "Other"
+  )) |>
+  group_by(death_type) |>
+  mutate(is_last = startYear == max(startYear)) |>
+  ungroup() |>
+  ggplot(aes(x = startYear, y = proportion, 
+             color = death_type, shape = death_type)) +
+  geom_point() +
+  geom_smooth(alpha = 0.3) +
+  annotate("text", 
+           x = 2025.5, 
+           y = c(0.015, -0.009, 0.26), 
+           label = c("Cat", "Dog", "Other"),
+           color = "black",
+           hjust = 0) +
+  scale_color_brewer(palette = "Dark2") +
+  scale_shape_manual(values = c(
+    "Dog" = 16,
+    "Cat" = 17,
+    "Other" = 15
+  )) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_x_continuous(limits = c(1999.5, 2027)) +
+  labs(x = "", y = "Proportion of\nmovie deaths") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    axis.title.y = element_text(angle = 0, vjust = 0.5),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+p2 <- results_movie_details |>
+  left_join(results_all_movies |> select(id, startYear), by = "id") |>
+  filter(startYear >= 2000) |>
+  distinct(id, startYear) |>
+  count(startYear) |>
+  ggplot(aes(x = startYear, y = n)) +
+  geom_col() +
+  scale_x_continuous(limits = c(1999.5, 2027)) +
+  labs(x = "Release year", y = "Number of\nmovies") +
+  theme_minimal() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title.y = element_text(angle = 0, vjust = 0.5),
+  )
+
+p1 / p2 + plot_layout(heights = c(4, 1), axes = "collect")
+```
+
+```{r}
+# Plot the frequency of movies over time
+results_all_movies |>
+  filter(startYear >= 2000) |>
+  count(startYear) |>
+  ggplot(aes(x = startYear, y = n)) +
+  geom_col() +
+  labs(x = "Year", y = "Count", title = "Movies")
+```
+
+```{r}
+# Analyze movies by genre
+# NOTE: I'm using the genres assigned by IMDB here and there are multiple
+# genres for each movie, so this will produce more data points than movies
+
+movies_with_genre <- left_join(results_movie_details, results_all_movies |> select(id, genres), by = "id") |>
+  separate_rows(genres, sep = ", ") 
+
+# Pull only the top 15 most common genres
+valid_genres <- movies_with_genre |> 
+  count(genres) |> 
+  slice_max(order_by = n, n = 15) |> 
+  # filter(n >= 100) |> 
+  pull(genres)
+
+movies_with_genre <- movies_with_genre |> 
+  filter(genres %in% valid_genres)
+
+# Calculate death rates by genre and CIs
+genre_death_rates <- movies_with_genre |>
+  group_by(genres) |>
+  summarise(
+    n = n(),
+    dog_death_rate = mean(dog_death, na.rm = TRUE),
+    cat_death_rate = mean(cat_death, na.rm = TRUE),
+    animal_death_rate = mean(animal_death, na.rm = TRUE),
+    dog_se = sqrt(dog_death_rate * (1 - dog_death_rate) / n),
+    cat_se = sqrt(cat_death_rate * (1 - cat_death_rate) / n),
+    animal_se = sqrt(animal_death_rate * (1 - animal_death_rate) / n)
+  )
+
+# Get genre order based on animal death rate
+genre_order <- genre_death_rates |>
+  arrange(animal_death_rate) |>
+  pull(genres)
+
+label_order <- genre_death_rates |>
+  arrange(animal_death_rate) |>
+  mutate(genre_label = paste0(genres, " (", n, ")")) |>
+  pull(genre_label)
+
+# Pivot to long format
+genre_death_rates_long <- genre_death_rates |>
+  pivot_longer(
+    cols = c(dog_death_rate, cat_death_rate, animal_death_rate),
+    names_to = "death_type",
+    values_to = "proportion"
+  ) |>
+  mutate(
+    genre_label = factor(paste0(genres, " (", n, ")"), levels = label_order),
+    se = case_when(
+      death_type == "dog_death_rate" ~ dog_se,
+      death_type == "cat_death_rate" ~ cat_se,
+      death_type == "animal_death_rate" ~ animal_se
+    ),
+    death_type = factor(death_type, 
+                        levels = c("animal_death_rate", "dog_death_rate", "cat_death_rate"),
+                        labels = c("Other", "Dog", "Cat"))
+  )
+
+ggplot(genre_death_rates_long, aes(x = proportion, y = genre_label, color = death_type,
+                                  shape = death_type)) +
+  geom_point(size = 3) +
+  geom_errorbarh(aes(xmin = proportion - 1.96 * se, xmax = proportion + 1.96 * se),
+               height = 0.2,
+               alpha = 0.5) +
+  scale_color_manual(values = c(
+    "Cat" = "#1B9E77",
+    "Dog" = "#D95F02",
+    "Other" = "#7570B3"
+  )) +
+  scale_shape_manual(values = c(
+      "Dog" = 16,
+      "Cat" = 17,
+      "Other" = 15
+    )) +
+  scale_x_continuous(labels = scales::percent) +
+  labs(x = "Proportion of movies with a death", y = NULL, color = NULL, shape = NULL) +
+  theme_minimal() +
+  theme(legend.position = c(0.84, 0.27),
+        legend.background = element_rect(fill = "white", linewidth = 0.5),
+        axis.title.y = element_text(angle = 0, vjust = 0.5),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank())
+```
+
 ## Top 5000 TV series
 
 ```{r}
 # Read in the IMDB 2000 TV series data set
-imdb_tvseries_2000 <- read_csv("data/imdb_tvseries_2000.csv")
+#imdb_tvseries_2000 <- read_csv("data/imdb_tvseries_2000.csv")
 
 # Read in the IMDB 5000 TV series data set
 # Source: https://www.kaggle.com/datasets/tiagoadrianunes/imdb-top-5000-tv-shows
@@ -267,7 +437,15 @@ results_all_tvseries <- imdb_tvseries_5000 |>
   filter(startYear == releaseYear) |> 
   # As an additional check, I will filter out entries that aren't classified
   # as TV shows
-  filter(itemType.name == "TV Show")
+  filter(itemType.name == "TV Show") |>
+  # Remove false matches where the same ID was returned for two different
+  # IMDB titles (artifact of title-based search). For each duplicate ID,
+  # keep the row whose IMDB primaryTitle is closest to the DTDD name.
+  group_by(id) |>
+  mutate(dist = mapply(function(a, b) adist(a, b, ignore.case = TRUE)[1, 1], primaryTitle, name)) |>
+  slice_min(dist, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  select(-dist)
            
 ```
 
@@ -282,14 +460,13 @@ write_csv(results_all_tvseries, "data/imdb_tvseries_5000_dtdd_results.csv")
 
 results_tvseries_details <- results_all_tvseries |>
   #slice_head(n = 10) |> # NOTE: This line is for debugging purposes only
-  mutate(dtdd_details = map(id, fetch_dtdd_movie_details)) |>
+  mutate(dtdd_details = map(id, fetch_dtdd_title_details)) |>
   unnest(dtdd_details) |>
   select(id, name, cleanName, 
          dog_yes_votes, dog_no_votes,
          cat_yes_votes, cat_no_votes,
          animal_yes_votes, animal_no_votes)
 ```
-
 
 ```{r}
 # Save the series details
@@ -331,6 +508,7 @@ animal_death_percentage <- results_tvseries_details |>
   summarise(animal_death_pct = mean(animal_death, na.rm = TRUE) * 100)
 print(animal_death_percentage)
 ```
+
 ```{r}
 # Compute the correlation between a TV series having a dog death and 
 # having an animal death
@@ -345,4 +523,166 @@ correlation_cat_animal <- cor(results_tvseries_details$cat_death,
 print(correlation_cat_animal)
 ```
 
+```{r}
+# Plot deaths as a function of series start date
 
+library(ggrepel)
+library(patchwork)
+
+p1 <- results_tvseries_details |>
+  left_join(results_all_tvseries |> select(id, startYear), by = "id") |>
+  filter(startYear >= 2000) |>
+  pivot_longer(cols = c(dog_death, cat_death, animal_death),
+               names_to = "death_type", values_to = "died") |>
+  group_by(startYear, death_type) |>
+  summarise(proportion = mean(died, na.rm = TRUE), .groups = "drop") |>
+  mutate(death_type = recode(death_type,
+    dog_death = "Dog",
+    cat_death = "Cat",
+    animal_death = "Other"
+  )) |>
+  group_by(death_type) |>
+  mutate(is_last = startYear == max(startYear)) |>
+  ungroup() |>
+  ggplot(aes(x = startYear, y = proportion, 
+             color = death_type, shape = death_type)) +
+  geom_point() +
+  geom_smooth(alpha = 0.3) +
+  annotate("text", 
+           x = 2025.5, 
+           y = c(0.030, 0.12, 0.40), 
+           label = c("Cat", "Dog", "Other"),
+           color = "black",
+           hjust = 0) +
+  scale_color_brewer(palette = "Dark2") +
+  scale_shape_manual(values = c(
+    "Dog" = 16,
+    "Cat" = 17,
+    "Other" = 15
+  )) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_x_continuous(limits = c(1999.5, 2027)) +
+  labs(x = "", y = "Proportion of\TV series deaths") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    axis.title.y = element_text(angle = 0, vjust = 0.5),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+p2 <- results_tvseries_details |>
+  left_join(results_all_tvseries |> select(id, startYear), by = "id") |>
+  filter(startYear >= 2000) |>
+  distinct(id, startYear) |>
+  count(startYear) |>
+  ggplot(aes(x = startYear, y = n)) +
+  geom_col() +
+  scale_x_continuous(limits = c(1999.5, 2027)) +
+  labs(x = "Release year", y = "Number of\TV series") +
+  theme_minimal() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title.y = element_text(angle = 0, vjust = 0.5),
+  )
+
+p1 / p2 + plot_layout(heights = c(4, 1), axes = "collect")
+```
+
+```{r}
+# Plot the frequency of series over time
+results_all_tvseries |>
+  filter(startYear >= 2000) |>
+  count(startYear) |>
+  ggplot(aes(x = startYear, y = n)) +
+  geom_col() +
+  labs(x = "Year", y = "Count", title = "TV Series")
+```
+
+```{r}
+# Analyze series by genre
+# NOTE: I'm using the genres assigned by IMDB here and there are multiple
+# genres for each series, so this will produce more data points than series
+
+series_with_genre <- left_join(results_tvseries_details, results_all_tvseries |> select(id, genres), by = "id") |>
+  separate_rows(genres, sep = ", ") 
+
+# Pull only the top 15 most common genres
+valid_genres_tv <- series_with_genre |> 
+  count(genres) |> 
+  slice_max(order_by = n, n = 15) |>
+  pull(genres)
+
+series_with_genre <- series_with_genre |> 
+  filter(genres %in% valid_genres_tv)
+
+# Calculate death rates by genre and CIs
+genre_death_rates_tv <- series_with_genre |>
+  group_by(genres) |>
+  summarise(
+    n = n(),
+    dog_death_rate = mean(dog_death, na.rm = TRUE),
+    cat_death_rate = mean(cat_death, na.rm = TRUE),
+    animal_death_rate = mean(animal_death, na.rm = TRUE),
+    dog_se = sqrt(dog_death_rate * (1 - dog_death_rate) / n),
+    cat_se = sqrt(cat_death_rate * (1 - cat_death_rate) / n),
+    animal_se = sqrt(animal_death_rate * (1 - animal_death_rate) / n)
+  )
+
+# Get genre order based on animal death rate
+genre_order <- genre_death_rates_tv |>
+  arrange(animal_death_rate) |>
+  pull(genres)
+
+label_order <- genre_death_rates_tv |>
+  arrange(animal_death_rate) |>
+  mutate(genre_label = paste0(genres, " (", n, ")")) |>
+  pull(genre_label)
+
+# Pivot to long format
+genre_death_rates_long <- genre_death_rates_tv |>
+  pivot_longer(
+    cols = c(dog_death_rate, cat_death_rate, animal_death_rate),
+    names_to = "death_type",
+    values_to = "proportion"
+  ) |>
+  mutate(
+    genre_label = factor(paste0(genres, " (", n, ")"), levels = label_order),
+    se = case_when(
+      death_type == "dog_death_rate" ~ dog_se,
+      death_type == "cat_death_rate" ~ cat_se,
+      death_type == "animal_death_rate" ~ animal_se
+    ),
+    death_type = factor(death_type, 
+                        levels = c("animal_death_rate", "dog_death_rate", "cat_death_rate"),
+                        labels = c("Other", "Dog", "Cat"))
+  )
+
+ggplot(genre_death_rates_long, aes(x = proportion, y = genre_label, color = death_type,
+                                  shape = death_type)) +
+  geom_point(size = 3) +
+  geom_errorbarh(aes(xmin = proportion - 1.96 * se, xmax = proportion + 1.96 * se),
+               height = 0.2,
+               alpha = 0.5) +
+  scale_color_manual(values = c(
+    "Cat" = "#1B9E77",
+    "Dog" = "#D95F02",
+    "Other" = "#7570B3"
+  )) +
+  scale_shape_manual(values = c(
+      "Dog" = 16,
+      "Cat" = 17,
+      "Other" = 15
+    )) +
+  scale_x_continuous(labels = scales::percent) +
+  labs(x = "Proportion of TV series with a death", y = NULL, color = NULL, shape = NULL) +
+  theme_minimal() +
+  theme(legend.position = c(0.84, 0.27),
+        legend.background = element_rect(fill = "white", linewidth = 0.5),
+        axis.title.y = element_text(angle = 0, vjust = 0.5),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank())
+```
