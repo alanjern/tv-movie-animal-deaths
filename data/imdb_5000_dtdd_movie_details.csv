@@ -21,7 +21,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 41616,Se7en,se7en,47,10,0,27,6,16
 12192,The Silence of the Lambs,silence lambs,19,179,4,137,158,12
 13741,Saving Private Ryan,saving private ryan,6,27,0,15,22,2
-27949,Star Wars,star wars,2,20,0,18,3,9
+27949,Star Wars,star wars,3,20,0,18,3,9
 11819,The Green Mile,green mile,28,18,0,25,49,0
 14716,Terminator 2: Judgment Day,terminator ii judgment day,46,2,2,27,20,10
 11349,Spirited Away,spirited away,1,80,0,76,3,62
@@ -37,8 +37,8 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11967,The Lion King,lion king,14,75,113,10,98,1
 12273,The Usual Suspects,usual suspects,21,6,0,13,12,5
 12593,Whiplash,whiplash,0,43,0,37,0,36
-19408,Parasite,parasite,16,244,2,169,13,161
-500003,Alien,alien,7,191,5,194,4,154
+19408,Parasite,parasite,15,244,2,169,13,161
+500003,Alien,alien,7,191,5,195,4,154
 11902,The Intouchables,intouchables,0,7,0,9,0,8
 12095,The Pianist,pianist,0,12,0,8,0,8
 10955,Psycho,psycho,0,45,0,48,5,44
@@ -105,8 +105,8 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11492,Taxi Driver,taxi driver,1,31,0,25,1,26
 780911,Spider-Man: No Way Home,spider man no way home,0,62,0,54,2,61
 25052,Snatch,snatch,36,3,0,13,14,3
-8511,A Clockwork Orange,clockwork orange,5,57,1,52,65,3
-10949,Prisoners,prisoners,68,15,0,41,69,0
+8511,A Clockwork Orange,clockwork orange,5,57,2,52,66,3
+10949,Prisoners,prisoners,69,15,0,41,69,0
 10077,Indiana Jones and the Last Crusade,indiana jones last crusade,3,14,0,11,17,1
 9701,Full Metal Jacket,full metal jacket,1,24,0,14,1,12
 27762,Top Gun: Maverick,top gun maverick,0,49,2,42,46,7
@@ -116,8 +116,8 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 16902,Green Book,green book,0,20,0,17,0,16
 20077,L.A. Confidential,la confidential,0,8,0,6,0,6
 34304,Casino,casino,0,9,0,7,0,8
-10587,Monty Python And the Holy Grail,monty python holy grail,1,49,45,8,53,5
-12243,The Thing,thing,354,9,4,160,123,80
+10587,Monty Python And the Holy Grail,monty python holy grail,1,49,45,8,54,2
+12243,The Thing,thing,355,9,4,160,123,80
 10016,Howl's Moving Castle,howls moving castle,0,61,0,48,2,43
 9171,Citizen Kane,citizen kane,0,8,0,9,0,8
 10948,Princess Mononoke,princess mononoke,66,1,0,43,73,0
@@ -138,14 +138,14 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 14290,Witness for the Prosecution,witness prosecution,0,4,0,2,0,2
 21103,Capernaum,capernaum,0,5,0,4,0,3
 13651,Senna,senna,0,2,0,4,0,2
-10882,Pirates of the Caribbean: The Curse of the Black Pearl,pirates caribbean curse black pearl,1,53,0,42,1,38
+10882,Pirates of the Caribbean: The Curse of the Black Pearl,pirates caribbean curse black pearl,1,53,0,42,0,39
 9106,Catch Me If You Can,catch me if you can,0,16,0,13,0,13
 10441,Mad Max: Fury Road,mad max fury road,1,64,0,54,69,0
 9780,Gone Girl,gone girl,0,65,0,69,1,58
 10584,"Monsters, Inc.",monsters inc,0,32,0,29,0,27
 9882,Harry Potter And the Deathly Hallows: Part 2,harry potter deathly hallows ii,3,29,1,29,35,0
 12238,The Terminator,terminator,69,0,0,34,22,17
-20686,The Grand Budapest Hotel,grand budapest hotel,1,53,108,0,38,33
+20686,The Grand Budapest Hotel,grand budapest hotel,1,54,108,0,38,33
 10993,Ratatouille,ratatouille,2,39,0,38,37,7
 686767,Logan,logan,0,19,0,12,0,12
 11583,The Big Lebowski,big lebowski,0,46,0,33,0,30
@@ -220,12 +220,12 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 811680,Zootopia,zootopia,3,51,1,38,2,34
 19381,Rain Man,rain man,0,14,0,9,0,8
 12957,Beauty And the Beast,beauty beast,3,30,0,30,45,0
-8618,Aladdin,aladdin,0,16,0,14,0,13
+8618,Aladdin,aladdin,0,17,0,14,0,14
 12114,The Princess Bride,princess bride,0,73,0,65,71,2
 13546,Big Fish,big fish,0,7,0,7,5,2
-10369,Life of Brian,life brian,0,9,0,10,11,1
+10369,Life of Brian,life brian,0,9,0,10,12,1
 10640,My Neighbor Totoro,my neighbor totoro,0,47,0,43,0,45
-37888,Soul,soul,2,46,17,32,9,27
+37888,Soul,soul,2,46,17,33,9,28
 13978,Raging Bull,raging bull,0,9,0,5,0,6
 20026,Hotel Rwanda,hotel rwanda,0,4,0,3,0,3
 11706,The Deer Hunter,deer hunter,11,5,0,6,13,0
@@ -251,7 +251,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 94978,In the Mood for Love,mood love,0,9,0,9,0,9
 17063,On the Waterfront,on waterfront,0,4,0,5,7,0
 11001,Rebecca,rebecca,0,8,0,8,0,8
-12677,Yojimbo,yojimbo,0,9,0,6,0,6
+12677,Yojimbo,yojimbo,0,10,0,6,0,6
 19499,Treasure of the Sierra Madre,treasure sierra madre,0,3,0,3,5,1
 236791,"Paris, Texas",paris texas,0,12,0,10,0,10
 68471,Mr. Smith Goes to Washington,mr smith goes washington,0,1,0,1,0,1
@@ -271,7 +271,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 10114,Iron Man,iron man,0,50,0,38,0,36
 13565,Thor: Ragnarok,thor ragnarok,80,34,0,58,45,3
 1211438,Arrival,arrival,0,12,0,8,0,9
-21125,Knives Out,knives out,2,249,3,207,2,198
+21125,Knives Out,knives out,2,250,3,208,2,199
 11239,Shrek,shrek,27,77,4,68,106,7
 9471,Edge of Tomorrow,edge tomorrow,0,9,0,8,0,10
 12668,X-Men: Days of Future Past,x men days future past,0,12,0,9,0,9
@@ -282,7 +282,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11374,Star Trek,star trek,2,20,0,20,4,16
 16558,Bohemian Rhapsody,bohemian rhapsody,0,87,1,84,0,69
 11225,Shaun of the Dead,shaun dead,2,45,0,37,23,17
-12091,The Perks of Being a Wallflower,perks being wallflower,2,85,0,69,1,71
+12091,The Perks of Being a Wallflower,perks being wallflower,2,86,0,70,1,72
 9148,Children of Men,children men,34,1,0,12,20,3
 9273,Dallas Buyers Club,dallas buyers club,0,3,0,3,0,3
 152505,Mystic River,mystic river,0,8,0,7,0,7
@@ -310,7 +310,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 8617,Akira,akira,65,0,0,30,40,1
 33017,Planet of the Apes,planet apes,1,10,0,8,6,2
 32334,Cinderella Man,cinderella man,0,4,0,2,0,2
-9223,Cool Hand Luke,cool hand luke,9,0,0,3,8,0
+9223,Cool Hand Luke,cool hand luke,10,0,0,3,8,0
 30139,Castle in the Sky,castle sky,0,17,0,16,0,18
 10667,Nausicaä of the Valley of the Wind,nausicaä valley wind,1,21,0,21,21,0
 735832,CODA,coda,0,19,0,19,23,0
@@ -355,15 +355,15 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 869212,The Batman,batman,3,136,0,130,3,106
 12205,The Social Network,social network,0,18,0,16,0,19
 13199,Dunkirk,dunkirk,0,33,0,22,1,21
-12803,Get Out,get out,31,225,5,156,220,3
-11281,Skyfall,skyfall,0,17,0,13,0,11
+12803,Get Out,get out,32,225,5,156,220,3
+11281,Skyfall,skyfall,0,17,0,14,0,12
 9439,Drive,drive,0,26,0,21,0,20
 15061,The Hobbit: The Desolation of Smaug,hobbit desolation smaug,0,15,0,18,14,3
 899465,Rogue One: A Star Wars Story,rogue i star wars story,0,21,0,15,1,12
 11678,The Curious Case of Benjamin Button,curious case benjamin button,5,8,0,4,0,6
 11828,The Hateful Eight,hateful viii,0,25,0,18,8,12
 9097,Cast Away,cast away,2,18,0,15,16,2
-14780,The Notebook,notebook,8,26,1,14,2,14
+14780,The Notebook,notebook,8,27,1,15,2,15
 10705,Nightcrawler,nightcrawler,0,26,0,21,0,21
 8795,Back to the Future Part II,back future ii,0,20,0,12,0,15
 826818,The Bourne Identity,bourne identity,33,4,0,11,22,2
@@ -379,7 +379,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 21554,The Last Samurai,last samurai,0,2,0,1,4,0
 30933,Predator,predator,0,22,0,16,26,1
 8664,American Gangster,american gangster,24,3,0,5,17,1
-9739,Ghostbusters,ghostbusters,0,33,0,27,2,22
+9739,Ghostbusters,ghostbusters,0,32,0,27,3,20
 11623,The Breakfast Club,breakfast club,0,52,0,47,0,50
 21411,The Irishman,irishman,0,15,0,11,17,0
 16201,About Time,about time,0,31,0,24,0,24
@@ -400,7 +400,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 15295,Boogie Nights,boogie nights,0,13,0,10,0,9
 9564,Fantastic Mr. Fox,fantastic mr fox,26,29,1,26,40,0
 21054,"Crouching Tiger, Hidden Dragon",crouching tiger hidden dragon,0,5,0,3,0,1
-9228,Coraline,coraline,56,105,1,156,171,2
+9228,Coraline,coraline,57,105,1,156,171,2
 8721,Annie Hall,annie hall,0,4,0,3,4,0
 14187,Hidden Figures,hidden figures,0,13,0,10,0,9
 17513,Walk the Line,walk line,0,4,1,3,0,3
@@ -456,7 +456,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 166571,Le Samouraï,le samouraï,0,7,0,7,0,8
 41144,"Sherlock, Jr.",sherlock jr,0,6,0,4,0,4
 65633,Underground,underground,0,1,0,1,1,0
-8699,Andrei Rublev,andrei rublev,5,0,1,2,3,1
+8699,Andrei Rublev,andrei rublev,7,0,1,3,5,1
 12232,The Tale of The Princess Kaguya,tale princess kaguya,0,12,0,11,14,0
 17468,Throne of Blood,throne blood,0,9,0,5,0,6
 27439,Winter Sleep,winter sleep,2,0,0,1,2,0
@@ -481,7 +481,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 13733,Temple,temple,0,9,0,6,14,1
 11383,Star Wars: Episode VII - The Force Awakens,star wars vii force awakens,1,29,0,22,0,16
 9074,Captain America: the Winter Soldier,captain america winter soldier,1,46,0,44,0,44
-14133,Harry Potter and the Sorcerer's Stone,harry potter sorcerers stone,25,254,5,215,237,21
+14133,Harry Potter and the Sorcerer's Stone,harry potter sorcerers stone,25,256,5,217,239,21
 11825,The Hangover,hangover,5,18,0,12,1,14
 9806,Gravity,gravity,2,12,0,10,0,10
 11264,Silver Linings Playbook,silver linings playbook,0,11,0,11,0,11
@@ -494,7 +494,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 14466,Ocean's Eleven,oceans eleven,0,11,0,9,0,8
 14117,Zodiac,zodiac,1,26,0,19,27,1
 9881,Harry Potter And the Deathly Hallows: Part 1,harry potter deathly hallows i,5,29,0,29,45,1
-11486,Tangled,tangled,0,89,0,78,0,80
+11486,Tangled,tangled,0,90,0,79,0,81
 15666,Lost in Translation,lost translation,0,12,0,11,0,12
 11249,Sicario,sicario,0,22,0,14,0,13
 17957,Star Trek: Into Darkness,star trek into darkness,0,5,0,4,0,3
@@ -505,7 +505,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 8928,Black Hawk Down,black hawk down,1,5,0,6,7,1
 15706,Mission: Impossible - Fallout,mission impossible fallout,0,23,0,17,9,13
 13435,Man on Fire,man on fire,10,53,0,7,0,12
-24238,Brokeback Mountain,brokeback mountain,16,63,0,54,79,1
+24238,Brokeback Mountain,brokeback mountain,16,64,0,55,80,1
 11963,The Lego Movie,lego movie,1,33,1,24,26,2
 8870,Being John Malkovich,being john malkovich,0,18,0,17,0,17
 9410,Donnie Brasco,donnie brasco,0,5,0,2,2,3
@@ -547,7 +547,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 31751,The Man from Earth,man from earth,0,3,0,4,0,5
 361082,Puss in Boots 2: Nine Lives & 40 Thieves,puss boots ii ix lives 40 thieves,0,3,6,0,2,1
 14129,Isle of Dogs,isle dogs,140,33,12,77,27,42
-10495,Mary Poppins,mary poppins,0,20,0,19,0,18
+10495,Mary Poppins,mary poppins,0,21,0,19,0,18
 14589,Ed Wood,ed wood,0,5,0,5,0,5
 24825,The Insider,insider,0,3,0,2,0,4
 12947,Tombstone,tombstone,0,16,0,10,0,11
@@ -561,11 +561,11 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 1025804,Past Lives,past lives,0,10,0,10,0,10
 94789,Manhattan,manhattan,0,3,0,3,0,4
 15489,Glory,glory,0,5,0,5,0,6
-12769,Hunt for the Wilderpeople,hunt wilderpeople,135,2,0,47,76,0
+12769,Hunt for the Wilderpeople,hunt wilderpeople,136,2,0,48,76,0
 10699,Night of the Living Dead,night living dead,1,30,0,21,2,18
 29207,The Best Offer,best offer,0,3,0,2,0,2
 32436,Dawn of the Dead,dawn dead,0,18,0,11,0,12
-14820,Midnight Cowboy,midnight cowboy,0,17,0,13,1,12
+14820,Midnight Cowboy,midnight cowboy,0,17,0,13,0,12
 22779,The King of Comedy,king comedy,0,7,0,7,0,7
 22750,The Fall,fall,0,13,0,11,15,0
 13250,Mississippi Burning,mississippi burning,2,6,0,3,13,0
@@ -578,7 +578,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 10743,October Sky,october sky,0,6,0,5,0,3
 12168,The Searchers,searchers,0,6,0,3,3,1
 237528,Charade,charade,0,6,0,5,0,5
-1312794,Flow,flow,21,144,3,94,168,8
+1312794,Flow,flow,21,144,3,94,169,7
 63165,In the Heat of the Night,heat night,0,6,0,6,2,3
 9390,Doctor Zhivago,doctor zhivago,0,4,0,4,4,0
 9876,Harold And Maude,harold maude,0,16,0,16,0,16
@@ -647,7 +647,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 20150,Once Upon a Time in Hollywood,once upon time hollywood,7,127,1,81,84,11
 17881,Star Wars: Episode III - Revenge of the Sith,star wars iii revenge sith,1,51,3,42,50,3
 13486,Guardians of the Galaxy Vol. 2,guardians galaxy vol ii,4,28,0,22,22,3
-21259,American Psycho,american psycho,449,20,27,215,173,80
+21259,American Psycho,american psycho,447,20,27,214,173,80
 14089,Deadpool 2,deadpool ii,2,91,2,77,1,77
 11455,Superbad,superbad,0,26,2,17,0,19
 9884,Harry Potter And the Half-Blood Prince,harry potter half blood prince,10,30,0,25,34,1
@@ -673,7 +673,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 19358,The Fault in Our Stars,fault our stars,0,33,0,27,0,26
 30563,Inside Man,inside man,0,8,0,7,0,7
 18600,The Others,others,0,23,0,20,0,20
-22955,John Wick: Chapter 4,john wick iv,10,130,2,71,17,69
+22955,John Wick: Chapter 4,john wick iv,11,129,2,71,17,69
 16856,The Blind Side,blind side,3,6,0,7,0,6
 12439,True Grit,true grit,12,4,0,10,14,5
 10413,Lord of War,lord war,0,1,0,2,0,1
@@ -700,7 +700,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11608,The Boondock Saints,boondock saints,3,36,67,1,37,13
 743125,The Whale,whale,49,11,1,38,1,36
 28744,21 Grams,21 grams,0,2,0,1,0,2
-1495841,Sinners,sinners,3,164,0,118,199,6
+1495841,Sinners,sinners,3,165,0,119,200,6
 10500,Match Point,match point,0,1,0,2,0,2
 11310,Snow White And the Seven Dwarfs,snow white vii dwarfs,0,27,0,20,0,20
 9184,Close Encounters of the Third Kind,close encounters third kind,1,10,0,8,2,6
@@ -722,7 +722,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11099,Rushmore,rushmore,0,11,0,11,0,10
 11947,The Last King of Scotland,last king scotland,5,5,0,3,10,0
 71264,The Trial of the Chicago 7,trial chicago vii,0,11,0,11,0,9
-11949,The Last of the Mohicans,last mohicans,12,2,0,4,5,0
+11949,The Last of the Mohicans,last mohicans,13,2,0,4,5,0
 9524,Evil Dead II,evil dead ii,0,29,0,25,0,24
 8475,25Th Hour,25th hour,17,4,0,3,0,3
 16137,Searching,searching,0,18,0,16,0,17
@@ -755,7 +755,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 51306,Glengarry Glen Ross,glengarry glen ross,0,6,0,3,0,4
 11939,The Last Emperor,last emperor,0,2,0,4,9,0
 45852,Porco Rosso,porco rosso,0,15,0,16,0,16
-15408,Fantasia,fantasia,0,5,0,5,9,1
+15408,Fantasia,fantasia,0,5,0,6,8,1
 236817,The Magnificent Seven,magnificent vii,0,3,0,4,1,2
 10457,Malcolm X,malcolm x,0,3,0,3,0,3
 12029,The Motorcycle Diaries,motorcycle diaries,3,5,0,2,3,5
@@ -795,13 +795,13 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 45402,Crimes and Misdemeanors,crimes misdemeanors,0,1,0,1,0,1
 24054,The Killing Fields,killing fields,3,0,0,3,5,0
 21182,Veer-Zaara,veer zaara,0,2,0,2,0,2
-52690,The Longest Day,longest day,0,1,0,1,0,1
+52690,The Longest Day,longest day,0,2,0,2,0,2
 21567,Batman: Mask of the Phantasm,batman mask phantasm,0,4,0,4,0,4
 26829,Man on Wire,man on wire,0,1,0,1,0,1
 28177,The Lady Vanishes,lady vanishes,0,5,0,5,0,5
 16624,Ordinary People,ordinary people,1,8,0,7,0,7
 19861,Head-On,head on,0,1,0,1,0,1
-12260,The Triplets of Belleville,triplets belleville,0,7,0,2,3,0
+12260,The Triplets of Belleville,triplets belleville,0,7,0,2,4,0
 10113,Invasion of the Body Snatchers,invasion body snatchers,2,8,0,5,0,5
 8585,Adam's Apples,adams apples,0,4,5,0,5,0
 662124,Amy,amy,0,2,0,2,0,2
@@ -842,7 +842,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12242,The Thin Man,thin man,0,7,0,4,0,4
 44468,The Sacrifice,sacrifice,0,3,0,2,0,2
 44742,The Rules of the Game,rules game,0,4,6,0,9,0
-974503,Weapons,weapons,13,235,2,138,9,155
+974503,Weapons,weapons,13,237,2,139,9,156
 103970,Nostalgia,nostalgia,0,3,0,3,0,3
 97431,In Cold Blood,cold blood,0,2,0,2,0,2
 49446,Le Cercle Rouge,le cercle rouge,0,3,0,4,0,4
@@ -868,16 +868,16 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 18676,Manon of the Spring,manon spring,0,3,0,3,2,0
 75863,Tampopo,tampopo,0,8,0,7,21,0
 9388,Doctor Strange,doctor strange,0,26,0,26,0,25
-15713,John Wick,john wick,1351,123,26,211,188,118
+15713,John Wick,john wick,1353,123,26,211,188,118
 17302,Spider-Man 2,spider man ii,1,14,0,12,0,12
-11872,The Hunger Games: Catching Fire,hunger games catching fire,6,62,0,52,70,0
+11872,The Hunger Games: Catching Fire,hunger games catching fire,6,63,0,53,71,0
 9880,Harry Potter And the Chamber of Secrets,harry potter chamber secrets,15,56,7,54,73,0
 11229,Sherlock Holmes,sherlock holmes,3,17,0,12,18,2
 9885,Harry Potter And the Order of the Phoenix,harry potter order phoenix,14,32,0,18,1,18
 13177,Baby Driver,baby driver,0,46,0,40,0,37
 12698,Zombieland,zombieland,31,38,1,33,23,19
 14919,A Quiet Place,quiet place,8,217,1,174,259,5
-9212,The Conjuring,conjuring,525,15,2,171,264,8
+9212,The Conjuring,conjuring,524,15,2,171,264,8
 12737,Source Code,source code,0,9,0,5,0,6
 10422,Love Actually,love actually,0,48,0,37,0,37
 10078,Indiana Jones and the Temple of Doom,indiana jones temple doom,2,12,0,8,16,3
@@ -891,7 +891,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11166,Scott Pilgrim vs. the World,scott pilgrim vs world,0,74,0,59,0,60
 9199,Collateral,collateral,0,7,0,6,0,6
 16488,The Town,town,0,3,0,3,0,3
-20992,Devils Advocate,devils advocate,11,13,0,7,18,0
+20992,The Devil's Advocate,devils advocate,10,13,0,7,17,0
 13705,Batman,batman,0,13,0,11,0,9
 17520,127 Hours,127 hours,0,13,0,10,0,10
 8866,Beetlejuice,beetlejuice,6,95,0,69,37,44
@@ -934,7 +934,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11533,The Abyss,abyss,0,26,0,18,0,21
 12445,Tucker And Dale Vs Evil,tucker dale vs evil,0,55,0,34,0,36
 22317,Battle Royale,battle royale,0,20,0,15,0,17
-1223215,Superman,superman,5,168,0,82,28,58
+1223215,Superman,superman,5,169,0,83,28,59
 9004,Breakfast At Tiffanys,breakfast at tiffanys,0,23,0,21,2,18
 36531,The Assassination of Jesse James by the Coward Robert Ford,assassination jesse james by coward robert ford,0,3,0,4,8,0
 865053,A Man Called Otto,man called otto,0,34,0,33,1,30
@@ -949,7 +949,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 15410,Lost Highway,lost highway,0,12,0,7,0,9
 8524,A Fish Called Wanda,fish called wanda,36,1,0,12,31,0
 9512,Escape From Alcatraz,escape from alcatraz,1,4,0,3,3,0
-19939,I Am Sam,i am sam,0,3,0,3,0,3
+19939,I Am Sam,i am sam,0,4,0,4,0,4
 18033,Brooklyn,brooklyn,0,8,0,9,0,8
 11682,Wallace & Gromit: The Curse of the Were-Rabbit,wallace gromit curse were rabbit,0,13,0,9,2,7
 13004,Gifted,gifted,5,15,0,13,0,10
@@ -1021,7 +1021,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 19837,The Vanishing,vanishing,2,12,0,5,9,4
 890167,The Discreet Charm of the Bourgeoisie,discreet charm bourgeoisie,0,5,0,4,0,4
 20275,The Boy Who Harnessed the Wind,boy who harnessed wind,35,1,0,15,11,5
-1520470,KPop Demon Hunters,kpop demon hunters,0,52,0,42,0,39
+1520470,KPop Demon Hunters,kpop demon hunters,0,52,0,43,0,39
 11235,Short Cuts,short cuts,0,5,0,2,0,3
 20038,Naked,naked,0,6,0,5,0,5
 55644,The Dinner Game,dinner game,0,2,0,3,0,3
@@ -1081,10 +1081,10 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 97995,Hud,hud,0,1,0,1,2,0
 28572,The Killers,killers,0,1,0,1,0,1
 26822,Spider-Man,spider man,0,24,0,20,0,20
-10881,Pirates of the Caribbean: Dead Man's Chest,pirates caribbean dead mans chest,11,41,3,36,34,3
+10881,Pirates of the Caribbean: Dead Man's Chest,pirates caribbean dead mans chest,9,42,3,36,34,3
 17303,Spider-Man: Homecoming,spider man homecoming,2,40,1,40,1,30
 21591,Frozen,frozen,6,51,3,44,9,43
-10377,Limitless,limitless,10,5,1,4,1,5
+10377,Limitless,limitless,10,6,1,5,1,6
 10411,Looper,looper,0,17,0,16,0,14
 752147,Spider-Man: Far From Home,spider man far from home,0,57,0,51,1,49
 11849,The Hobbit: the Battle of the Five Armies,hobbit battle v armies,4,15,0,17,21,1
@@ -1107,10 +1107,10 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 34316,The Rock,rock,0,2,0,3,5,1
 91439,Nobody,nobody,0,41,0,38,0,27
 41315,Up in the Air,up air,0,4,0,4,0,4
-13672,Lady Bird,lady bird,0,61,0,49,0,48
+13672,Lady Bird,lady bird,0,62,0,49,0,48
 13058,Moonlight,moonlight,0,41,0,25,0,31
 22093,Uncut Gems,uncut gems,1,35,0,27,27,1
-10327,Law Abiding Citizen,law abiding citizen,0,7,0,6,0,7
+10327,Law Abiding Citizen,law abiding citizen,0,8,0,6,0,7
 12691,Zero Dark Thirty,zero dark thirty,0,7,0,3,4,2
 12775,Nocturnal Animals,nocturnal animals,2,33,0,23,20,5
 10936,Predestination,predestination,0,9,0,10,0,10
@@ -1118,9 +1118,9 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 13680,Me Before You,me before you,0,21,0,18,0,20
 9230,Corpse Bride,corpse bride,35,5,0,26,1,21
 19328,Sully,sully,0,9,0,7,10,2
-20542,The Lighthouse,lighthouse,0,127,0,112,175,0
+20542,The Lighthouse,lighthouse,0,128,0,112,175,0
 8547,A Nightmare On Elm Street,nightmare on elm street,10,77,0,41,1,51
-16874,A History of Violence,history violence,0,15,0,9,0,10
+16874,A History of Violence,history violence,0,16,0,9,0,10
 12233,The Talented Mr. Ripley,talented mr ripley,0,17,0,16,1,18
 9424,Bram Stoker's Dracula,bram stokers dracula,37,16,1,22,21,8
 22009,The Evil Dead,evil dead,0,48,1,39,1,41
@@ -1133,7 +1133,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 1072986,Anora,anora,0,39,0,24,0,30
 11914,The Judge,judge,0,6,0,8,11,0
 1210327,Conclave,conclave,0,40,0,28,3,26
-698947,Luca,luca,0,60,0,55,56,11
+698947,Luca,luca,0,61,0,56,57,11
 41795,[REC],[rec],13,3,0,14,8,4
 14542,Army of Darkness,army darkness,0,15,0,15,0,14
 108686,Palm Springs,palm springs,0,24,0,21,27,6
@@ -1145,7 +1145,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 9715,Galaxy Quest,galaxy quest,0,14,0,14,12,2
 40977,Onward,onward,0,28,0,24,19,7
 13688,The Rocky Horror Picture Show,rocky horror picture show,1,141,0,118,0,116
-12555,We Need to Talk About Kevin,we need talk about kevin,51,69,0,43,87,2
+12555,We Need to Talk About Kevin,we need talk about kevin,51,70,0,43,87,2
 50548,Begin Again,begin again,0,4,0,4,0,4
 17531,How to Train Your Dragon: The Hidden World,how train your dragon hidden world,0,28,0,27,12,16
 10090,Inside Llewyn Davis,inside llewyn davis,4,17,21,7,0,10
@@ -1164,7 +1164,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12388,Tootsie,tootsie,0,9,0,8,0,8
 38618,The Man Who Wasn't There,man who wasnt there,0,1,0,1,0,1
 21621,House of Flying Daggers,house flying daggers,0,3,0,2,0,1
-16594,Beautiful Boy,beautiful boy,0,46,0,34,0,32
+16594,Beautiful Boy,beautiful boy,0,47,0,35,0,33
 521135,Mission: Impossible - The Final Reckoning,mission impossible final reckoning,0,3,0,4,0,4
 52405,The Warriors,warriors,0,12,0,9,0,12
 14021,Lolita,lolita,0,8,0,8,0,7
@@ -1208,7 +1208,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 10732,Notes On a Scandal,notes on scandal,0,3,6,0,0,3
 22332,Miss Sloane,miss sloane,0,6,0,4,0,5
 217179,Felon,felon,0,3,0,3,0,3
-103844,mid90s,mid90s,0,18,0,18,0,17
+103844,mid90s,mid90s,0,19,0,19,0,18
 12376,To Catch a Thief,catch thief,0,2,0,4,0,2
 9376,Dirty Rotten Scoundrels,dirty rotten scoundrels,0,4,0,4,0,4
 18866,Burning,burning,0,12,0,11,1,9
@@ -1283,7 +1283,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 56528,Little Big Man,little big man,5,0,0,1,1,0
 62573,The Taking of Pelham One Two Three,taking pelham i ii iii,0,5,0,3,0,4
 12061,The Odd Couple,odd couple,0,2,0,2,0,2
-13984,God's Own Country,gods own country,0,26,0,20,44,0
+13984,God's Own Country,gods own country,0,27,0,21,45,0
 32649,After the Wedding,after wedding,0,2,0,1,1,0
 19818,A Little Princess,little princess,0,7,0,6,6,0
 28637,I Lost My Body,i lost my body,0,10,0,9,21,0
@@ -1350,7 +1350,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12650,Wonder Woman,wonder woman,7,15,0,12,0,9
 14432,X-Men,x men,1,19,0,16,17,2
 16361,It,skit,123,446,17,324,391,8
-739249,Men in Black,men black,0,24,1,22,20,4
+739249,Men in Black,men black,0,24,1,22,19,4
 751922,Tenet,tenet,5,39,3,32,0,31
 12436,Troy,troy,0,6,0,4,1,2
 8671,American Sniper,american sniper,2,12,0,7,13,2
@@ -1362,7 +1362,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11741,The Equalizer,equalizer,0,17,0,11,0,12
 9349,Despicable Me 2,despicable me ii,0,6,0,5,5,3
 9451,Dumb and Dumber,dumb dumber,0,17,0,11,22,0
-13954,Hereditary,hereditary,745,70,16,384,517,11
+13954,Hereditary,hereditary,747,70,16,385,518,11
 97538,Fast Five,fast iv,0,3,0,3,0,3
 13908,Face Off,face off,0,12,0,10,0,11
 17765,Speed,speed,0,14,0,13,0,12
@@ -1379,7 +1379,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11665,The Conjuring 2,conjuring ii,9,97,0,44,1,43
 20991,El Camino,el camino,0,18,0,15,0,12
 17635,Alita: Battle Angel,alita battle angel,177,17,0,72,34,33
-18304,Megamind,megamind,2,49,0,44,0,39
+18304,Megamind,megamind,2,50,0,45,0,40
 19591,Rango,rango,0,18,0,15,22,0
 12098,The Place Beyond the Pines,place beyond pines,0,9,0,6,0,6
 16284,Jerry Maguire,jerry maguire,2,4,0,4,0,4
@@ -1404,13 +1404,13 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 18945,Rocky II,rocky ii,0,5,0,5,0,7
 9396,Dogma,dogma,2,12,1,8,1,7
 21295,Doctor Sleep,doctor sleep,0,63,0,70,2,51
-9070,Cape Fear,cape fear,30,0,0,12,7,9
+9070,Cape Fear,cape fear,31,0,0,12,7,9
 15360,Revolutionary Road,revolutionary road,0,8,0,7,0,7
 12865,A Walk to Remember,walk remember,0,7,0,5,0,4
-20387,"Girl, Interrupted",girl interrupted,0,132,5,136,8,102
+20387,"Girl, Interrupted",girl interrupted,1,132,5,136,8,102
 8972,Blue Valentine,blue valentine,24,0,0,8,11,3
 8970,Blue Jasmine,blue jasmine,0,2,0,3,0,3
-10896,Point Break,point break,0,10,0,9,0,7
+10896,Point Break,point break,0,11,0,9,0,7
 12050,The Next Three Days,next iii days,0,4,0,3,0,3
 16470,First Man,first man,0,16,0,13,0,12
 473855,Triangle of Sadness,triangle sadness,0,39,0,32,66,1
@@ -1434,7 +1434,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 478331,The King,king,0,6,0,5,15,1
 11082,Rounders,rounders,2,5,0,4,0,4
 12045,The NeverEnding Story,neverending story,29,8,0,22,34,1
-15504,Lars and the Real Girl,lars real girl,0,12,0,10,6,9
+15504,Lars and the Real Girl,lars real girl,0,13,0,11,6,9
 8621,Alice In Wonderland,alice wonderland,0,14,0,15,16,4
 9787,"Good Morning, Vietnam",good morning vietnam,0,4,0,1,0,1
 8815,Bambi,bambi,10,16,0,14,33,0
@@ -1460,10 +1460,10 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 205312,The Zone of Interest,zone interest,9,53,0,20,0,17
 14029,I Origins,i origins,0,5,0,4,0,4
 16845,Instant Family,instant family,0,29,0,25,0,26
-14848,Ghost World,ghost world,0,15,0,10,0,10
+14848,Ghost World,ghost world,0,14,0,10,0,10
 19559,The Basketball Diaries,basketball diaries,0,10,0,9,0,10
 237002,Death at a Funeral,death at funeral,0,6,0,5,0,5
-27299,The Way Back,way back,0,3,1,2,7,0
+27299,The Way Back,way back,0,3,1,2,8,0
 10664,National Lampoon's Vacation,national lampoons vacation,37,2,3,12,12,2
 14247,The Death of Stalin,death stalin,0,12,0,8,1,7
 33649,Driving Miss Daisy,driving miss daisy,0,3,0,3,0,3
@@ -1478,7 +1478,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11462,Suspiria,suspiria,7,59,1,39,66,2
 13555,Shot Caller,shot caller,0,3,0,3,0,3
 153809,The Fantastic Four: First Steps,fantastic iv first steps,0,30,0,20,0,23
-43410,Grosse Pointe Blank,grosse pointe blank,5,3,0,7,3,4
+43410,Grosse Pointe Blank,grosse pointe blank,6,2,0,7,3,4
 10641,My Sisters Keeper,my sisters keeper,0,18,0,17,0,17
 236957,Say Anything...,say anything,0,7,0,5,0,5
 18451,Frida,frida,0,5,0,5,0,7
@@ -1569,6 +1569,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 37235,Suspicion,suspicion,0,4,0,4,0,4
 10510,"McFarland, USA",mcfarland usa,0,5,0,5,0,5
 34083,Thesis,thesis,0,8,0,8,0,8
+237433,Les Misérables,les misérables,0,3,0,3,0,3
 59730,To Live and Die in L.A.,live die la,0,4,0,4,0,3
 64475,Thief,thief,0,7,0,6,0,6
 27314,The Haunting,haunting,0,8,0,5,0,4
@@ -1657,8 +1658,8 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 77914,Foreign Correspondent,foreign correspondent,0,2,0,1,0,1
 39495,The Day of the Beast,day beast,0,5,0,6,5,1
 46728,Citizen X,citizen x,0,2,0,2,0,2
-11871,The Hunger Games,hunger games,27,123,4,122,178,0
-24939,I Am Legend,i am legend,476,16,1,74,126,2
+11871,The Hunger Games,hunger games,27,123,4,122,179,0
+24939,I Am Legend,i am legend,476,17,1,74,126,2
 8725,Ant-Man,ant man,6,25,0,21,54,1
 10734,Now You See Me,now you see me,0,21,0,18,0,22
 12007,The Matrix Reloaded,matrix reloaded,2,8,0,9,0,8
@@ -1676,7 +1677,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 10733,Notting Hill,notting hill,0,20,0,17,0,17
 9690,From Dusk Till Dawn,from dusk till dawn,0,12,0,7,1,6
 14333,The Man From Uncle,man from uncle,1,11,0,12,0,11
-17971,School of Rock,school rock,0,19,0,15,0,18
+17971,School of Rock,school rock,0,20,0,16,0,19
 16270,8 Mile,8 mile,0,14,0,12,0,13
 8570,A.I. Artificial Intelligence,ai artificial intelligence,0,6,0,5,0,5
 10097,Insomnia,insomnia,16,1,0,7,1,6
@@ -1716,14 +1717,14 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11498,Team America: World Police,team america world police,0,3,0,4,0,4
 13576,The Virgin Suicides,virgin suicides,0,28,0,24,0,26
 52291,Michael Clayton,michael clayton,0,3,0,3,0,3
-12112,The Princess And the Frog,princess frog,2,28,0,22,36,0
+12112,The Princess And the Frog,princess frog,2,29,0,22,37,0
 16761,The Ballad of Buster Scruggs,ballad buster scruggs,0,30,0,17,7,12
 563555,Thunderbolts*,thunderbolts*,2,50,0,38,0,40
 11985,The Lost Boys,lost boys,3,91,0,50,1,45
 17126,Vice,vice,2,6,0,6,7,3
 12539,War Horse,war horse,39,9,1,11,17,1
 13982,The Post,post,0,6,0,5,0,4
-11286,Sleeping Beauty,sleeping beauty,0,11,0,10,7,6
+11286,Sleeping Beauty,sleeping beauty,0,12,0,11,8,6
 14301,Coherence,coherence,0,20,0,17,0,18
 950045,Big Trouble in Little China,big trouble little china,0,7,0,5,0,4
 35871,Mr. Brooks,mr brooks,0,3,0,3,0,3
@@ -1734,7 +1735,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 181345,Where the Crawdads Sing,where crawdads sing,0,50,4,42,2,40
 29444,Dumbo,dumbo,0,13,0,13,3,15
 9129,Chasing Amy,chasing amy,0,6,0,7,0,7
-8692,Anastasia,anastasia,0,16,0,16,0,14
+8692,Anastasia,anastasia,0,17,0,17,0,15
 12423,Treasure Planet,treasure planet,0,16,0,14,1,11
 21167,An Education,an education,0,3,0,2,0,2
 237133,About Schmidt,about schmidt,0,1,0,2,1,1
@@ -1775,7 +1776,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 57861,Papillon,papillon,0,2,0,2,0,2
 17894,Enter the Void,enter void,0,16,0,15,0,13
 21748,A Beautiful Day in the Neighborhood,beautiful day neighborhood,0,10,0,10,0,10
-11348,Spirit: Stallion of the Cimarron,spirit stallion cimarron,0,33,0,29,19,5
+11348,Spirit: Stallion of the Cimarron,spirit stallion cimarron,0,34,0,30,19,5
 80260,Swingers,swingers,0,3,0,3,0,3
 89132,Dope,dope,1,3,0,3,0,3
 15574,Christopher Robin,christopher robin,0,15,0,14,0,13
@@ -1803,11 +1804,11 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 1151406,Warfare,warfare,0,17,0,11,0,11
 30906,Force Majeure,force majeure,0,4,0,4,0,4
 34704,Magnum Force,magnum force,0,2,0,2,0,1
-9905,Heavenly Creatures,heavenly creatures,0,7,0,7,1,7
+9905,Heavenly Creatures,heavenly creatures,0,7,0,7,0,7
 47265,Friday Night Lights,friday night lights,0,2,0,2,0,2
 50965,Shallow Grave,shallow grave,0,6,0,6,0,6
 12322,The Young Victoria,young victoria,1,2,0,2,0,1
-12649,Wonder Boys,wonder boys,15,0,0,4,2,3
+12649,Wonder Boys,wonder boys,16,0,0,4,3,3
 493793,Dolemite Is My Name,dolemite my name,0,4,0,4,0,4
 12913,71,71,1,3,0,3,0,2
 236843,"sex, lies, and videotape",sex lies videotape,0,3,0,3,0,3
@@ -1900,11 +1901,11 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 17755,The 40-Year-Old Virgin,40 year old virgin,0,8,0,5,0,6
 22993,The Mummy,mummy,0,34,0,35,8,23
 24396,Glass Onion: A Knives Out Mystery,glass onion knives out mystery,0,97,0,92,0,91
-12435,Tropic Thunder,tropic thunder,0,11,2,9,14,0
+12435,Tropic Thunder,tropic thunder,0,11,2,9,15,0
 64461,Free Guy,free guy,1,55,0,48,0,48
 10514,Mean Girls,mean girls,0,194,0,146,0,148
 9001,Brave,brave,0,12,0,14,22,0
-20449,Midsommar,midsommar,79,636,13,536,817,19
+20449,Midsommar,midsommar,79,637,13,537,818,19
 27536,Live Free or Die Hard,live free or die hard,0,3,0,2,0,2
 9707,Furious 7,furious vii,0,3,0,2,0,2
 18859,Snowpiercer,snowpiercer,0,36,0,27,37,1
@@ -1989,7 +1990,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 18751,T2 Trainspotting ,t2 trainspotting ,0,6,0,6,0,6
 18711,Booksmart,booksmart,0,39,0,34,0,32
 13811,Carnage,carnage,1,2,0,2,0,3
-8983,Bone Tomahawk,bone tomahawk,47,5,1,16,36,2
+8983,Bone Tomahawk,bone tomahawk,46,4,1,16,34,2
 14376,Let Me In,let me,0,6,0,6,0,1
 898801,Gran Turismo,gran turismo,0,9,0,9,0,9
 9903,Heathers,heathers,0,169,0,142,1,144
@@ -2083,7 +2084,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 21713,Black Christmas,black christmas,2,43,1,57,0,43
 238170,No Way Out,no way out,0,4,0,4,0,4
 18275,Gomorrah,gomorrah,3,3,0,2,0,2
-12805,Look Whos Back,look whos back,15,0,0,4,0,4
+12805,Look Whos Back,look whos back,16,0,0,4,0,4
 24163,The Poseidon Adventure,poseidon adventure,0,5,0,5,0,5
 15514,Better Off Dead,better off dead,0,9,0,8,1,9
 10844,The Peanuts Movie,peanuts movie,2,8,0,3,0,3
@@ -2093,7 +2094,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12254,The Towering Inferno,towering inferno,0,5,1,8,0,5
 16021,Waitress,waitress,0,11,0,11,0,11
 18976,Holy Motors,holy motors,0,4,0,3,0,2
-14156,American Honey,american honey,0,14,0,10,2,10
+14156,American Honey,american honey,0,15,0,10,2,10
 13087,The Zookeeper's Wife,zookeepers wife,28,4,0,8,29,3
 13318,Brimstone,brimstone,1,1,0,2,6,0
 8869,Behind the Candelabra,behind candelabra,0,3,0,2,0,1
@@ -2117,7 +2118,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 80650,Happy-Go-Lucky,happy go lucky,0,4,0,5,0,4
 20010,On the Basis of Sex,on basis sex,0,4,0,4,0,4
 101948,Tangerine,tangerine,13,8,2,16,8,10
-724411,Red Rocket,red rocket,0,9,1,5,0,7
+724411,Red Rocket,red rocket,0,10,1,5,0,8
 30110,99 Homes,99 homes,0,7,0,6,0,6
 93529,Nowhere Boy,nowhere boy,0,4,0,2,0,3
 22585,Rumble Fish,rumble fish,0,4,0,4,1,3
@@ -2209,7 +2210,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 15477,Ant-Man and the Wasp,ant man wasp,0,22,0,21,34,3
 14839,American Pie,american pie,0,11,0,10,0,10
 19213,The Mask,mask,0,15,0,9,0,7
-9189,Cloverfield,cloverfield,0,24,0,25,6,19
+9189,Cloverfield,cloverfield,0,24,0,25,6,18
 9464,Easy A,easy,0,20,0,18,0,19
 75010,Fast & Furious 6,fast furious vi,0,4,0,4,0,4
 8473,22 Jump Street,22 jump street,0,6,0,5,4,0
@@ -2219,10 +2220,10 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12558,Wedding Crashers,wedding crashers,0,5,0,5,0,5
 10143,Jack Reacher,jack reacher,4,11,0,6,1,6
 11451,Super 8,super viii,1,20,0,11,0,9
-10519,Meet the Parents,meet parents,0,5,1,7,0,4
+10519,Meet the Parents,meet parents,0,5,0,8,0,4
 19516,Burn After Reading,burn after reading,0,7,0,6,0,6
 16753,The Holiday,holiday,0,19,0,15,0,16
-13353,The Witch,witch,326,8,2,117,176,3
+13353,The Witch,witch,327,8,2,117,176,3
 26540,RED,red,0,6,0,3,1,3
 9329,Death Proof,death proof,0,10,0,8,0,8
 45205,Rush Hour,rush hour,1,7,0,5,0,5
@@ -2231,7 +2232,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 20957,Underworld,underworld,0,10,0,9,0,6
 9914,Hellboy II: the Golden Army,hellboy ii golden army,7,1,0,7,4,2
 9867,Happy Gilmore,happy gilmore,2,7,0,7,14,0
-559747,The Northman,northman,97,4,0,46,62,2
+559747,The Northman,northman,98,4,0,47,63,2
 11536,The Adjustment Bureau,adjustment bureau,0,3,0,2,0,2
 34345,The Super Mario Bros. Movie,super mario bros movie,0,64,1,48,0,52
 13454,Chronicle,chronicle,1,11,0,9,14,0
@@ -2267,7 +2268,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 13766,One Day,one day,0,7,0,6,0,5
 13414,Buried,buried,0,13,0,9,0,13
 14181,Logan Lucky,logan lucky,0,7,0,5,0,7
-17899,Marley & Me,marley me,921,43,8,135,183,52
+17899,Marley & Me,marley me,924,43,8,135,183,53
 9869,Hard Candy,hard candy,0,28,0,25,0,24
 11731,The Drop,drop,12,46,1,8,2,9
 16719,The Spectacular Now,spectacular now,0,5,0,5,0,5
@@ -2323,7 +2324,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 25981,Another Earth,another earth,0,6,0,6,0,6
 559514,Pig,pig,5,31,0,26,126,4
 789730,Sisu,sisu,7,59,0,21,54,8
-88882,Fallen,fallen,0,6,0,5,0,5
+88882,Fallen,fallen,0,6,0,6,0,5
 28478,Monster's Ball,monsters ball,0,2,0,2,0,2
 35847,Get Shorty,get shorty,0,2,0,2,0,2
 12734,My Girl,my girl,3,10,0,8,8,2
@@ -2389,9 +2390,9 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 19168,Adventures in Babysitting,adventures babysitting,0,7,0,7,0,7
 14711,Rabbit Hole,rabbit hole,0,2,0,1,0,1
 9906,Hector And the Search for Happiness,hector search happiness,5,0,0,4,3,0
-27551,Clash of the Titans,clash titans,3,0,0,2,2,0
+27551,Clash of the Titans,clash titans,4,0,0,2,3,0
 15652,Slow West,slow west,0,3,0,4,5,0
-11059,Rob Roy,rob roy,12,2,0,2,5,0
+11059,Rob Roy,rob roy,13,2,0,2,5,0
 10668,Near Dark,near dark,0,12,0,10,0,10
 21064,Shadow of the Vampire,shadow vampire,0,4,0,3,7,0
 28326,Death Wish,death wish,0,2,0,2,0,2
@@ -2402,7 +2403,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 62084,Radio,radio,0,3,0,2,0,2
 19046,Trust,trust,0,8,0,7,0,7
 20443,Boy Erased,boy erased,0,17,0,16,0,18
-10995,Ravenous,ravenous,4,17,2,17,8,10
+10995,Ravenous,ravenous,4,18,2,17,8,10
 873744,My Old Ass,my old ass,0,13,0,12,0,12
 16969,At Eternity's Gate,at eternitys gate,0,6,0,5,0,4
 20099,Up In Smoke,up smoke,6,0,0,4,4,1
@@ -2418,8 +2419,8 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 919371,Vengeance,vengeance,0,5,0,4,0,4
 8525,A Girl Walks Home Alone At Night,girl walks home alone at night,0,29,0,35,0,24
 20083,Real Genius,real genius,0,5,0,6,0,6
-20765,"To Wong Foo, Thanks for Everything! Julie Newmar",wong foo thanks everything julie newmar,0,15,0,13,0,13
-14789,Velvet Goldmine,velvet goldmine,0,13,0,10,0,12
+20765,"To Wong Foo, Thanks for Everything! Julie Newmar",wong foo thanks everything julie newmar,0,16,0,14,0,14
+14789,Velvet Goldmine,velvet goldmine,0,14,0,11,0,13
 20216,22 July,22 july,0,2,0,3,0,3
 13464,Victoria and Abdul,victoria abdul,0,3,0,2,0,3
 116837,Love Story,love story,0,2,0,3,0,3
@@ -2485,14 +2486,14 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 9073,Captain America: the First Avenger,captain america first avenger,0,31,0,28,0,29
 10115,Iron Man 2,iron man ii,0,22,0,19,0,21
 15769,The Amazing Spider-Man,amazing spider man,0,16,0,8,17,0
-10214,Jurassic World,jurassic world,27,51,1,34,48,0
+10214,Jurassic World,jurassic world,24,53,1,34,47,0
 13720,Star Wars: Episode VIII – The Last Jedi,star wars viii – last jedi,4,52,0,34,31,1
 11500,Ted,ted,0,13,0,11,2,9
-10806,Pacific Rim,pacific rim,0,36,0,29,20,13
+10806,Pacific Rim,pacific rim,0,37,0,29,21,13
 39362,Doctor Strange in the Multiverse of Madness,doctor strange multiverse madness,9,115,33,96,5,91
 9977,Horrible Bosses,horrible bosses,0,8,0,5,0,4
 10442,Madagascar,madagascar,1,9,0,9,10,2
-11653,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",chronicles narnia lion witch wardrobe,20,2,18,5,28,0
+11653,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",chronicles narnia lion witch wardrobe,20,3,18,6,29,0
 13755,Home Alone 2: Lost in New York,home alone iilost new york,0,16,0,14,0,14
 10458,Maleficent,maleficent,1,12,1,8,8,4
 10567,Mission: Impossible III,mission impossible iii,0,10,0,5,1,6
@@ -2532,7 +2533,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 8590,Adventureland,adventureland,0,4,0,4,0,4
 12299,The Wedding Singer,wedding singer,0,6,0,6,0,6
 61991,Conan the Barbarian,conan barbarian,10,1,0,5,7,0
-741165,Turning Red,turning red,0,81,0,75,5,55
+741165,Turning Red,turning red,0,80,0,75,5,55
 9948,Hocus Pocus,hocus pocus,2,69,88,0,49,21
 9645,Four Brothers,four brothers,0,7,0,3,0,3
 45995,Jay and Silent Bob Strike Back,jay silent bob strike back,0,5,0,3,0,5
@@ -2551,7 +2552,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 13569,What Happened to Monday,what happened monday,1,17,0,15,1,14
 37215,The Score,score,0,1,0,1,0,2
 8788,Babe,babe,4,12,0,8,23,0
-13965,Swiss Army Man,swiss army man,4,40,1,36,44,0
+13965,Swiss Army Man,swiss army man,4,41,1,36,45,0
 10773,One Hour Photo,one hour photo,0,18,0,11,0,15
 22022,A Christmas Carol,christmas carol,0,6,0,6,0,5
 16382,Nymphomaniac: Vol. I,nymphomaniac vol i,0,11,0,7,2,8
@@ -2559,7 +2560,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 22056,Bombshell,bombshell,0,14,0,12,0,13
 84622,Thunderball,thunderball,0,5,0,5,8,0
 36974,The Naked Gun 2½: The Smell of Fear,naked gun 2½ smell fear,0,5,0,5,0,5
-1221211,Companion,companion,1,63,0,34,0,39
+1221211,Companion,companion,1,63,0,35,0,39
 13153,Brother Bear,brother bear,1,21,0,14,26,0
 8901,Bicentennial Man,bicentennial man,0,6,0,4,0,4
 20820,Patch Adams,patch adams,0,5,0,5,2,4
@@ -2610,7 +2611,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11450,Sunshine Cleaning,sunshine cleaning,0,3,0,5,0,4
 11765,The First Time,first time,0,1,0,2,0,2
 220822,El Mariachi,el mariachi,0,3,0,2,0,2
-22223,I See You,i see you,4,44,2,30,3,40
+22223,I See You,i see you,4,45,2,31,3,41
 45431,Lolita,lolita,0,24,0,18,0,18
 12685,Young Guns,young guns,8,0,0,3,5,1
 212401,Draft Day,draft day,0,1,0,1,0,1
@@ -2719,7 +2720,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 23490,Back to School,back school,0,2,0,2,0,2
 19053,A Walk in the Clouds,walk clouds,0,4,0,4,0,4
 31694,Where the Heart Is,where heart,0,3,0,3,0,2
-68315,Let Him Go,let him go,0,1,0,3,11,1
+68315,Let Him Go,let him go,0,1,0,3,12,1
 22304,Dark Water,dark water,0,7,0,7,0,6
 981165,Sharper,sharper,0,5,0,4,0,4
 694462,The Tender Bar,tender bar,0,4,0,3,0,3
@@ -2739,7 +2740,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 14854,The Lady in the Van,lady van,0,4,0,2,0,2
 54171,Psycho II,psycho ii,0,4,0,3,0,4
 9689,From Beyond,from beyond,1,27,0,17,0,17
-18580,Spring,spring,0,7,14,2,10,0
+18580,Spring,spring,0,8,14,2,10,0
 68681,Son of Batman,son batman,0,2,0,2,0,2
 50712,House on Haunted Hill,house on haunted hill,0,17,0,17,1,16
 15678,Silent Running,silent running,0,5,0,4,5,1
@@ -2781,7 +2782,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 20361,The Miseducation of Cameron Post,miseducation cameron post,0,12,0,11,0,12
 54140,The Beyond,beyond,0,16,0,11,0,10
 23720,Obvious Child,obvious child,0,3,0,3,0,3
-13505,Super Dark Times,super dark times,1,21,0,18,27,0
+13505,Super Dark Times,super dark times,1,22,0,19,28,0
 12404,Toy Soldiers,toy soldiers,0,2,0,2,0,2
 18104,Behind the Mask: The Rise of Leslie Vernon,behind mask rise leslie vernon,0,10,0,9,0,10
 1175042,Bridget Jones: Mad About the Boy,bridget jones mad about boy,0,11,0,11,0,10
@@ -2802,7 +2803,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12667,X-Men: Apocalypse,x men apocalypse,0,9,0,10,1,10
 9021,Bruce Almighty,bruce almighty,0,9,0,5,0,6
 53095,The Fast and the Furious,fast furious,0,12,0,11,0,10
-17223,Signs,signs,127,1,0,36,47,16
+17223,Signs,signs,128,1,0,36,47,16
 19071,Men in Black 3,men black iii,1,5,0,5,0,4
 13788,50 First Dates,50 first dates,0,11,0,11,6,6
 16230,Yes Man,yes man,0,12,0,9,0,10
@@ -2840,7 +2841,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 10438,Mad Max,mad max,54,0,0,21,14,10
 1071296,The Fall Guy,fall guy,0,44,0,28,0,33
 10351,Lemony Snicket's A Series of Unfortunate Events,lemony snickets series unfortunate events,0,19,0,14,0,13
-20340,Ready or Not,ready or not,1,94,1,77,59,27
+20340,Ready or Not,ready or not,1,95,1,79,60,27
 15593,The Equalizer 2,equalizer ii,0,13,0,9,0,10
 21114,Zombieland: Double Tap,zombieland double tap,0,20,0,17,0,16
 13238,Atomic Blonde,atomic blonde,0,19,0,12,0,12
@@ -2849,7 +2850,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 19302,Unstoppable,unstoppable,0,7,0,7,0,8
 1049975,The Killer,killer,0,15,0,10,0,10
 13635,The Hitchhiker's Guide to the Galaxy,hitchhikers guide galaxy,0,5,0,3,13,0
-10895,Pocahontas,pocahontas,0,14,0,10,2,8
+10895,Pocahontas,pocahontas,0,15,0,11,3,8
 14375,Hanna,hanna,0,13,0,6,19,1
 36034,The Vow,vow,0,2,0,3,0,3
 10443,Madagascar 3: Europes Most Wanted,madagascar iii europes most wanted,7,1,0,4,8,1
@@ -2868,7 +2869,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 16744,The Tree of Life,tree life,9,1,0,4,7,1
 22303,A Simple Favor,simple favor,0,20,0,16,0,18
 10362,Lethal Weapon 3,lethal weapon iii,0,7,0,7,0,4
-595682,Mickey 17,mickey 17,14,75,0,55,99,0
+595682,Mickey 17,mickey 17,14,76,0,56,100,0
 21276,Commando,commando,0,4,0,5,0,5
 14538,From Hell,from hell,0,6,0,6,0,6
 12086,The Parent Trap,parent trap,0,21,0,18,0,15
@@ -2925,7 +2926,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 13076,Hardcore Henry,hardcore henry,0,11,0,10,0,11
 9062,Candyman,candyman,108,1,0,44,18,36
 10762,On Her Majesty's Secret Service,on her majestys secret service,0,4,0,3,7,0
-9470,Eden Lake,eden lake,73,2,0,25,39,6
+9470,Eden Lake,eden lake,74,2,0,25,39,6
 14263,Anna,anna,0,6,0,5,0,6
 478953,I Am Mother,i am mother,4,45,1,46,57,2
 582720,Creed III,creed iii,0,4,0,3,0,4
@@ -2949,7 +2950,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 530298,Fear Street: 1978,fear street 1978,5,95,0,58,54,11
 1210824,Super,super,0,1,0,2,0,2
 10606,Mr Peabody & Sherman,mr peabody sherman,1,8,0,5,0,5
-9944,High Tension,high tension,36,1,0,16,9,7
+9944,High Tension,high tension,37,1,0,17,10,7
 22760,Ghost Town,ghost town,0,3,0,3,0,3
 28871,The Best of Me,best me,0,3,0,2,0,2
 508933,The Lost Daughter,lost daughter,0,14,0,10,1,11
@@ -2965,7 +2966,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 50085,The Finest Hours,finest hours,0,1,0,2,0,1
 35632,The Replacements,replacements,0,3,0,3,0,3
 13219,Popstar: Never Stop Never Stopping,popstar never stop never stopping,0,14,0,8,15,0
-530299,Fear Street: 1666,fear street 1666,120,3,1,58,91,1
+530299,Fear Street: 1666,fear street 1666,121,3,1,58,91,1
 81996,Cocoon,cocoon,0,3,0,3,0,3
 920992,The Bikeriders,bikeriders,0,12,0,9,0,9
 789051,May December,may december,1,25,1,14,4,12
@@ -2984,7 +2985,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 724124,Purple Hearts,purple hearts,0,13,0,7,0,7
 17309,Titan A.E.,titan ae,0,5,0,5,8,0
 15407,Scanners,scanners,0,12,0,13,0,13
-11622,The Brave One,brave i,0,11,0,1,0,2
+11622,The Brave One,brave i,0,12,0,1,0,2
 19119,Always Be My Maybe,always be my maybe,0,11,0,11,0,10
 35603,Pride and Glory,pride glory,1,1,0,1,0,1
 808381,Emily the Criminal,emily criminal,0,28,0,12,0,14
@@ -3038,7 +3039,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 65698,Twilight Zone: The Movie,twilight zone movie,0,6,0,4,0,4
 35654,Emma,emma,0,2,0,2,0,1
 20331,Coco Before Chanel,coco before chanel,0,2,0,2,0,2
-10507,May,may,38,5,61,1,25,21
+10507,May,may,38,5,61,1,26,21
 22173,Midnight in the Garden of Good and Evil,midnight garden good evil,0,3,0,1,0,1
 20535,Late Night,late night,0,4,0,4,0,3
 690569,Malcolm & Marie,malcolm marie,0,7,0,6,0,6
@@ -3083,7 +3084,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 21840,Just Cause,just cause,0,2,0,2,0,2
 17746,Stick It,stick it,0,4,0,4,0,4
 11047,Riding In Cars With Boys,riding cars with boys,0,2,0,2,0,2
-11793,The Girl Next Door,girl next door,0,12,0,9,12,7
+11793,The Girl Next Door,girl next door,0,12,0,9,11,7
 114403,Rollerball,rollerball,0,3,0,3,0,3
 11252,Sightseers,sightseers,22,0,0,5,10,1
 8566,A Walk In the Woods,walk woods,0,2,0,1,1,1
@@ -3126,7 +3127,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12342,Thor: The Dark World,thor dark world,0,14,1,14,2,10
 17879,Captain Marvel,captain marvel,0,98,3,120,0,80
 12008,The Matrix Revolutions,matrix revolutions,0,8,0,6,0,6
-9120,Charlie And the Chocolate Factory,charlie chocolate factory,0,30,0,21,5,19
+9120,Charlie And the Chocolate Factory,charlie chocolate factory,0,30,0,21,6,19
 872414,The Wolverine,wolverine,2,10,0,6,13,0
 20236,In Time,time,0,7,0,6,0,6
 8744,Armageddon,armageddon,3,17,0,14,0,13
@@ -3161,7 +3162,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12456,Twister,twister,2,68,0,33,41,11
 253159,Safe House,safe house,0,2,0,2,0,2
 151024,The Tomorrow War,tomorrow war,0,15,0,14,17,0
-13348,King Arthur: Legend of the Sword,king arthur legend sword,7,4,0,4,5,0
+13348,King Arthur: Legend of the Sword,king arthur legend sword,8,4,0,4,5,0
 10421,Love & Other Drugs,love other drugs,0,4,0,4,0,4
 12680,Youve Got Mail,youve got mail,0,10,0,7,1,7
 25948,The Flash,flash,0,17,0,13,2,11
@@ -3186,7 +3187,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 20581,Lethal Weapon 4,lethal weapon iv,0,7,0,6,0,5
 12158,The Running Man,running man,0,5,0,4,0,4
 562532,Gucci,gucci,0,1,0,2,0,1
-222021,The Hunger Games: The Ballad of Songbirds & Snakes,hunger games ballad songbirds snakes,0,82,0,53,86,2
+222021,The Hunger Games: The Ballad of Songbirds & Snakes,hunger games ballad songbirds snakes,0,83,0,54,87,2
 12829,Hush,hush,7,112,1,111,0,87
 705955,Borat Subsequent Moviefilm,borat subsequent moviefilm,0,13,0,10,17,0
 10466,Man On a Ledge,man on ledge,0,3,0,3,0,3
@@ -3196,7 +3197,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 18132,Joy,joy,0,3,0,1,0,2
 22569,My Big Fat Greek Wedding,my big fat greek wedding,0,5,0,6,3,5
 33611,8MM,8mm,0,5,0,4,0,4
-23138,The Hunt,hunt,0,32,0,22,64,0
+23138,The Hunt,hunt,0,32,0,22,65,0
 71855,Flushed Away,flushed away,0,12,0,9,13,0
 35731,Beverly Hills Cop II,beverly hills cop ii,0,2,0,2,0,2
 10794,Outbreak,outbreak,1,15,0,9,17,4
@@ -3225,7 +3226,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 8716,Anna Karenina,anna karenina,0,7,0,5,13,2
 10147,Jackass: the Movie,jackass movie,0,9,2,7,0,6
 15199,The Lost City of Z,lost city z,0,6,0,4,13,0
-238439,Weird Science,weird science,0,7,0,6,5,2
+238439,Weird Science,weird science,0,7,0,7,5,2
 15864,I Love You Phillip Morris,i love you phillip morris,0,11,0,10,0,8
 22038,Edge of Darkness,edge darkness,0,2,0,2,0,2
 55455,Nymphomaniac: Vol. II,nymphomaniac vol ii,0,4,0,4,3,2
@@ -3321,7 +3322,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 16417,The Good Girl,good girl,2,3,0,2,1,3
 1061591,Priscilla,priscilla,0,21,0,16,0,17
 14037,The Choice,choice,0,9,0,7,8,2
-11886,The Inbetweeners 2,inbetweeners ii,0,3,0,3,2,1
+11886,The Inbetweeners 2,inbetweeners ii,0,3,0,3,3,1
 10253,Kill List,kill list,28,2,28,1,23,0
 11805,The Good Son,good son,28,0,0,11,8,4
 133428,Byzantium,byzantium,0,1,0,1,0,1
@@ -3344,7 +3345,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12088,The People Under the Stairs,people under stairs,33,0,0,17,6,15
 9407,Dont Tell Mom the Babysitters Dead,dont tell mom babysitters dead,0,4,0,3,0,3
 25274,My Spy,my spy,2,14,0,6,12,0
-18551,Compliance,compliance,0,9,0,6,0,6
+18551,Compliance,compliance,0,10,0,7,0,7
 21549,The Angry Birds Movie 2,angry birds movie ii,0,2,0,2,0,1
 13770,Cake,cake,0,3,0,3,0,3
 14841,Ghost Stories,ghost stories,0,13,0,13,16,0
@@ -3353,8 +3354,8 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 14881,Muppets Most Wanted,muppets most wanted,0,5,0,4,0,4
 537614,The Silencing,silencing,1,28,0,7,3,10
 24177,"To All the Boys: Always and Forever, Lara Jean",all boys always forever lara jean,0,11,0,11,0,11
-13834,Creep 2,creep ii,0,38,0,31,0,33
-121697,Nurse Betty,nurse betty,0,1,0,2,0,1
+13834,Creep 2,creep ii,0,39,0,31,0,33
+121697,Nurse Betty,nurse betty,0,2,0,3,0,2
 141532,Den of Thieves 2,den thieves ii,0,4,0,3,0,3
 18900,Shortbus,shortbus,0,6,0,4,0,4
 15743,Cop Car,cop car,0,3,0,2,6,0
@@ -3459,7 +3460,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 9781,Gone In Sixty Seconds,gone sixty seconds,0,4,0,2,4,0
 10010,How to Lose a Guy In 10 Days,how lose guy xdays,0,5,0,5,0,5
 11028,Resident Evil,resident evil,48,3,1,23,11,13
-10759,Olympus Has Fallen,olympus has fallen,35,1,1,11,10,10
+10759,Olympus Has Fallen,olympus has fallen,35,1,1,11,11,9
 10246,Kick-Ass 2,kick ass ii,0,20,0,10,0,8
 17247,Glass,glass,0,22,0,15,0,16
 10461,Mamma Mia,mamma mia,0,44,0,36,3,37
@@ -3485,7 +3486,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 12172,The Secret Life of Pets,secret life pets,4,13,1,10,17,0
 11336,Space Jam,space jam,1,7,0,3,0,3
 27026,Indiana Jones and the Dial of Destiny,indiana jones dial destiny,0,5,0,4,0,2
-1217089,Smile,smile,15,52,82,4,85,9
+1217089,Smile,smile,15,53,82,4,85,9
 16196,Air Force One,air force i,0,5,0,5,0,5
 11177,Secret Window,secret window,69,0,6,11,20,5
 875238,X,x,29,144,14,121,170,2
@@ -3535,7 +3536,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 39395,Naked Gun 33⅓: The Final Insult,naked gun 33⅓ final insult,0,3,0,3,2,0
 10857,Pet Sematary,pet sematary,64,7,75,2,49,3
 9362,Diamonds Are Forever,diamonds are forever,0,6,0,8,0,6
-24435,Home,home,0,5,0,6,0,6
+24435,Home,home,0,6,0,6,0,6
 17769,Octopussy,octopussy,0,3,0,4,5,0
 11669,The Craft,craft,0,81,0,69,93,0
 16039,Sister Act,sister act,0,8,0,6,0,5
@@ -3557,7 +3558,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 17497,The Grinch,grinch,0,16,0,11,0,13
 9431,DragonHeart,dragonheart,0,9,0,9,13,0
 17865,The Game Plan,game plan,0,4,0,2,0,1
-1071827,Abigail,abigail,0,57,0,39,47,5
+1071827,Abigail,abigail,0,58,0,40,48,5
 9418,Double Jeopardy,double jeopardy,0,7,0,8,0,8
 28380,Under Siege,under siege,0,4,0,4,0,4
 18408,Along Came a Spider,along came spider,0,6,0,5,0,5
@@ -3676,6 +3677,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 53441,We Are Your Friends,we are your friends,0,3,0,3,0,3
 14212,Astro Boy,astro boy,0,4,0,5,0,4
 11284,Sleepaway Camp,sleepaway camp,1,36,0,33,0,34
+66959,Message in a Bottle,message bottle,0,1,0,1,0,1
 10455,Major Payne,major payne,0,4,0,5,5,2
 13508,The Shack,shack,0,5,0,2,0,2
 11838,The Hills Have Eyes,hills have eyes,49,0,0,20,35,0
@@ -3686,7 +3688,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 124779,The Arrival,arrival,0,2,0,2,3,0
 1211289,Unlocked,unlocked,0,2,0,1,1,0
 960325,The Instigators,instigators,0,9,0,4,0,4
-15065,Damien: Omen II,damien omen ii,0,4,0,4,0,4
+15065,Damien - Omen II,damien omen ii,0,4,0,4,0,4
 15007,The Discovery,discovery,0,4,0,4,0,4
 39026,The Libertine,libertine,0,2,0,2,0,2
 799739,I Came By,i came by,0,9,0,9,0,9
@@ -3714,7 +3716,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 224474,The Tailor of Panama,tailor panama,0,1,0,1,0,1
 115713,Wonder Wheel,wonder wheel,0,1,0,1,0,1
 9975,Hope Floats,hope floats,0,1,1,2,1,2
-16500,House,house,0,8,6,6,11,1
+16500,House,house,0,9,6,6,11,1
 60095,The Adventures of Buckaroo Banzai Across the 8th Dimension,adventures buckaroo banzai across 8th dimension,0,5,0,5,6,0
 61271,A Lonely Place to Die,lonely place die,0,3,0,3,0,4
 35959,Trolls World Tour,trolls world tour,0,9,0,8,0,8
@@ -3727,14 +3729,14 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 23449,The Lovebirds,lovebirds,0,10,0,9,0,10
 25392,The Shadow,shadow,0,1,0,1,0,1
 40286,Memoirs of an Invisible Man,memoirs an invisible man,0,1,0,1,0,1
-690416,Becky,becky,27,1,0,4,18,1
+690416,Becky,becky,27,1,0,4,19,1
 45059,Desperately Seeking Susan,desperately seeking susan,0,6,0,6,0,6
 756300,Werewolves Within,werewolves within,44,0,0,10,7,9
 68194,The Birth of a Nation,birth nation,0,2,0,3,0,2
 12871,Out for Justice,out justice,0,3,0,2,0,2
 1077387,Heart Eyes,heart eyes,0,36,0,24,2,27
 65243,It Takes Two,skit takes ii,0,2,0,2,0,2
-872105,Fast Charlie,fast charlie,0,1,0,1,1,0
+872105,Fast Charlie,fast charlie,0,1,0,1,3,0
 200635,The Dark and the Wicked,dark wicked,0,27,0,20,58,3
 10711,Nights In Rodanthe,nights rodanthe,0,2,0,2,0,2
 12315,The Woman,woman,21,1,0,10,9,2
@@ -3793,7 +3795,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 20262,The Longest Yard,longest yard,0,3,0,3,0,3
 12316,The Woman in Black,woman black,2,39,1,16,2,17
 12386,Tomorrowland,tomorrowland,0,4,0,4,2,2
-9986,Hot Tub Time Machine,hot tub time machine,0,9,0,6,1,6
+9986,Hot Tub Time Machine,hot tub time machine,0,10,0,7,1,7
 11839,The Hills Have Eyes,hills have eyes,145,4,1,49,69,1
 22490,He's Just Not That Into You,hes just not that into you,0,5,0,5,0,5
 16061,She's the Man,shes man,0,12,0,13,5,7
@@ -3828,7 +3830,7 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 11797,The Giver,giver,6,13,2,12,19,0
 1072560,Fall,fall,10,13,0,17,30,0
 30961,Funny People,funny people,0,3,0,3,0,3
-31738,"As Above, So Below",as above so below,1,86,0,66,0,70
+31738,"As Above, So Below",as above so below,1,87,0,67,0,71
 12690,Zathura: a Space Adventure,zathura space adventure,0,4,0,6,4,1
 97491,Cloudy with a Chance of Meatballs 2,cloudy with chance meatballs ii,0,2,0,3,3,0
 102043,Turbo,turbo,0,6,0,5,8,0
@@ -3867,5 +3869,5 @@ id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_y
 1073356,It Ends With Us,skit ends with us,4,13,0,9,0,10
 12682,Young Adult,young adult,0,5,0,4,0,4
 74468,Centurion,centurion,0,4,0,2,2,0
-44678,The Uninvited,uninvited,0,8,0,6,0,6
+44678,The Uninvited,uninvited,0,9,0,7,0,7
 19115,Before I Go to Sleep,before i go sleep,0,8,0,8,0,8

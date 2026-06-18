@@ -118,19 +118,6 @@ fetch_dtdd_title_details <- function(item_id) {
 ## Top 5000 movies
 
 ```{r}
-# # Read in IMDB 1000 data set
-# # Filter out movies that didn't air in the last 20 years (only movies released on or after 2000)
-# imdb_1000_data <- read_csv("data/imdb_top_1000.csv") |> 
-#   # Filter out movies for which Released Year isn't a valid 4 digit year
-#   filter(Released_Year %in% as.character(1900:2025)) |>
-#   #mutate(Released_Year = parse_number(Released_Year)) |> 
-#   mutate(Released_Year = as.numeric(Released_Year)) |>
-#   filter(Released_Year >= 2000)
-
-# Read in the IMDB 1000 recent datasets
-# imdb_1000_us_recent <- read_csv("data/imdb_1000_us_recent.csv")
-# imdb_1000_recent <- read_csv("data/imdb_1000_recent.csv")
-
 # Read in the IMDB 5000 movies data set
 # Source: https://www.kaggle.com/datasets/tiagoadrianunes/imdb-top-5000-movies
 imdb_movies_5000 <- read_csv("data/imdb_movies_5000.csv")
@@ -167,7 +154,8 @@ results_all_movies <- imdb_movies_5000 |>
 
 ```{r}
 # Save the results
-write_csv(results_all_movies, "data/imdb_5000_dtdd_results.csv")
+write_csv(results_all_movies, "data/imdb_5000_dtdd_results.csv") # human readable
+saveRDS(results_all_movies, "data/imdb_5000_dtdd_results.rds") # for data processing
 ```
 
 ```{r}
@@ -207,6 +195,9 @@ results_movie_details <- results_movie_details |>
       animal_yes_votes > animal_no_votes ~ TRUE,
       TRUE ~ FALSE)
   )
+
+# Save the results for later reference
+saveRDS(results_movie_details, "data/imdb_5000_dtdd_movie_details.rds")
 ```
 
 ```{r}
@@ -381,9 +372,10 @@ genre_death_rates_long <- genre_death_rates |>
 ggplot(genre_death_rates_long, aes(x = proportion, y = genre_label, color = death_type,
                                   shape = death_type)) +
   geom_point(size = 3) +
-  geom_errorbarh(aes(xmin = proportion - 1.96 * se, xmax = proportion + 1.96 * se),
-               height = 0.2,
-               alpha = 0.5) +
+  geom_errorbar(aes(xmin = proportion - 1.96 * se, xmax = proportion + 1.96 * se),
+               width = 0.2,
+               alpha = 0.5,
+               orientation = "y") +
   scale_color_manual(values = c(
     "Cat" = "#1B9E77",
     "Dog" = "#D95F02",
@@ -407,9 +399,6 @@ ggplot(genre_death_rates_long, aes(x = proportion, y = genre_label, color = deat
 ## Top 5000 TV series
 
 ```{r}
-# Read in the IMDB 2000 TV series data set
-#imdb_tvseries_2000 <- read_csv("data/imdb_tvseries_2000.csv")
-
 # Read in the IMDB 5000 TV series data set
 # Source: https://www.kaggle.com/datasets/tiagoadrianunes/imdb-top-5000-tv-shows
 imdb_tvseries_5000 <- read_csv("data/imdb_tvseries_5000.csv")
@@ -451,7 +440,8 @@ results_all_tvseries <- imdb_tvseries_5000 |>
 
 ```{r}
 # Save the results
-write_csv(results_all_tvseries, "data/imdb_tvseries_5000_dtdd_results.csv")
+write_csv(results_all_tvseries, "data/imdb_tvseries_5000_dtdd_results.csv") # human readable
+saveRDS(results_all_tvseries, "data/imdb_tvseries_5000_dtdd_results.rds") # for data processing
 ```
 
 ```{r}
@@ -491,6 +481,8 @@ results_tvseries_details <- results_tvseries_details |>
       animal_yes_votes > animal_no_votes ~ TRUE,
       TRUE ~ FALSE)
   )
+
+saveRDS(results_tvseries_details, "data/imdb_tvseries_5000_dtdd_series_details.rds")
 ```
 
 ```{r}
@@ -664,9 +656,10 @@ genre_death_rates_long <- genre_death_rates_tv |>
 ggplot(genre_death_rates_long, aes(x = proportion, y = genre_label, color = death_type,
                                   shape = death_type)) +
   geom_point(size = 3) +
-  geom_errorbarh(aes(xmin = proportion - 1.96 * se, xmax = proportion + 1.96 * se),
-               height = 0.2,
-               alpha = 0.5) +
+  geom_errorbar(aes(xmin = proportion - 1.96 * se, xmax = proportion + 1.96 * se),
+               width = 0.2,
+               alpha = 0.5,
+               orientation = "y") +
   scale_color_manual(values = c(
     "Cat" = "#1B9E77",
     "Dog" = "#D95F02",
