@@ -2,6 +2,7 @@
 library(tidyverse)
 library(tidytext)
 library(textdata)
+library(rstatix)
 
 # Read in DDTD meta-data
 dtdd_items <- read_csv("data/dtdd_dog_cat_animal_items.csv")
