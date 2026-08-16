@@ -1,8 +1,33 @@
+# analyze_comments_llm.R
+#
+# Uses an LLM (Claude Sonnet) to score DDTD (Does the Dog Die?) user comments
+# for movies and TV series. Each comment is classified on the following dimensions:
+#   - death_confirmed: whether a death is described (yes / no / ambiguous)
+#   - emotionality:    1–5 scale of emotional weight of the death
+#   - intentionality:  whether the death was deliberate or accidental
+#   - species:         species of animal(s) that died
+#
+# Workflow:
+#   1. Load and pre-process DDTD comment and metadata CSVs
+#   2. Develop and validate the LLM prompt on a dev set (movies)
+#   3. Evaluate LLM-vs-human agreement on a test set (movies)
+#   4. Run the final prompt on the full movie comment dataset
+#   5. Repeat test-set validation and full scoring for TV series
+#
+# Key output files (written to data/):
+#   movie_comments_devset.csv          — dev-set LLM scores
+#   movie_comments_testset.csv         — test-set LLM scores (movies)
+#   movie_comments_testset_humanscored.csv — blank template for human scoring
+#   movie_comments_llmscored.csv       — full movie dataset LLM scores
+#   tv_comments_testset.csv            — test-set LLM scores (TV)
+#   tv_comments_testset_humanscored.csv — blank template for human scoring (TV)
+
 # load libraries
 library(tidyverse)
 library(httr)
 library(jsonlite)
 library(irr)
+library(psych)
 
 # Read in DDTD meta-data
 dtdd_items <- read_csv("data/dtdd_dog_cat_animal_items.csv")
@@ -177,7 +202,12 @@ score_comment <- function(comment, topic, prompt_template, max_retries = 3) {
 
 
 ############################################################
-# Set up a movie testing regime for the LLM labeling agent
+# Sample dev and test sets (movies)
+#
+# Dev set (n=50):  used to iteratively refine the LLM prompt.
+# Test set (n=75): held out for a single final evaluation of
+#                  LLM-vs-human agreement. Items in the dev set
+#                  are excluded from the test set.
 ############################################################
 set.seed(2026)
 movie_comments_devset <- movie_comments |>
@@ -279,20 +309,37 @@ testset_comparison <- movie_comments_testset_humanscored |>
     suffix = c("_human", "_llm")
   )
 
-# Compute kappa for categorical variables
+# Compute kappa for categorical variables with CIs
 categorical_vars <- c("death_confirmed", "on_screen", "intentionality", 
                       "named_animal", "plot_point")
+
+# kappa_results <- map(categorical_vars, ~ {
+#   ratings <- testset_comparison |>
+#     select(human = paste0(.x, "_human"), llm = paste0(.x, "_llm")) |>
+#     drop_na() # ignore cases where either coder marked null b/c it answered "no" for death_confirmed
+#   kappa2(ratings)
+# }) |>
+#   set_names(categorical_vars)
+
+# # Print kappa results
+# map(kappa_results, ~ tibble(kappa = .x$value, p = .x$p.value)) |>
+#   bind_rows(.id = "variable")
 
 kappa_results <- map(categorical_vars, ~ {
   ratings <- testset_comparison |>
     select(human = paste0(.x, "_human"), llm = paste0(.x, "_llm")) |>
-    drop_na() # ignore cases where either coder marked null b/c it answered "no" for death_confirmed
-  kappa2(ratings)
+    drop_na() |>
+    as.data.frame()
+  cohen.kappa(ratings)
 }) |>
   set_names(categorical_vars)
 
-# Print kappa results
-map(kappa_results, ~ tibble(kappa = .x$value, p = .x$p.value)) |>
+# Print kappa results with CIs
+map(kappa_results, ~ tibble(
+  kappa = .x$kappa,
+  ci_low = .x$confid["unweighted kappa", "lower"],
+  ci_high = .x$confid["unweighted kappa", "upper"]
+)) |>
   bind_rows(.id = "variable")
 
 # ICC for emotionality
@@ -303,13 +350,13 @@ emotionality_ratings <- testset_comparison |>
 icc(emotionality_ratings, model = "twoway", type = "agreement")
 
 # Notes based on the initial test results
-#   variable        kappa        p
-#   <chr>           <dbl>    <dbl>
-# 1 death_confirmed 0.767 0       
-# 2 on_screen       0.430 3.67e- 5
-# 3 intentionality  0.769 4.91e-11
-# 4 named_animal    0.308 1.06e- 3
-# 5 plot_point      0.407 8.29e- 5
+#   variable        kappa ci_low ci_high
+#   <chr>           <dbl>  <dbl>   <dbl>
+# 1 death_confirmed 0.786  0.666   0.906
+# 2 on_screen       0.481  0.285   0.677
+# 3 intentionality  0.690  0.499   0.881
+# 4 named_animal    0.409  0.206   0.612
+# 5 plot_point      0.516  0.301   0.732
 # 
 # Emotionality ICC: 
 # 
@@ -386,7 +433,9 @@ Topic: [TOPIC]
 Comment: [COMMENT])"
 
 
-# Function to safely parse a single response
+# Function: Parse a raw LLM response string into a named list of scores.
+# Extracts the first JSON object found in the text, returning NAs for all
+# fields if the text contains no valid JSON or if parsing fails.
 safe_parse_response <- function(text) {
   json_str <- str_extract(text, "\\{[^{}]*(?:\\{[^{}]*\\}[^{}]*)*\\}")
   
@@ -404,6 +453,15 @@ safe_parse_response <- function(text) {
   })
 }
 
+############################################################
+# Score the full movie dataset
+#
+# To avoid re-calling the API on reruns, results are written
+# to data/movie_comments_llmscored.csv after processing.
+# Intermediate progress is saved in per-batch checkpoint files
+# (data/checkpoint_batch_N.csv) so a failed run can resume
+# from the last completed batch.
+############################################################
 if (!file.exists("data/movie_comments_llmscored.csv")) {
 
   # Process in batches with checkpointing
@@ -450,8 +508,14 @@ if (!file.exists("data/movie_comments_llmscored.csv")) {
   movie_comments_full_llmscored <- read_csv("data/movie_comments_llmscored.csv")
 }
 
-# Check how well the comment data matches the vote data in terms
-# of death totals
+############################################################
+# Convergent validity check (movies)
+#
+# Compare LLM death_confirmed labels against the vote-based
+# binary death classifications already present in the IMDB
+# results data. High agreement provides evidence that the LLM
+# is correctly identifying deaths from the comment text.
+############################################################
 
 # Reshape the vote-based classifications into long format, matching itemid + topic
 vote_based_long <- results_movie_details |>
@@ -489,8 +553,14 @@ convergent_validity |>
 #
 # Overall agreement rate (excluding amiguous): (966+703) / (966+69+64+703) ~= 92.6%
 
-# Run the tests to see if emotionality scores differ between companion 
-# and non-companion animals
+############################################################
+# Emotionality analysis: companion vs. non-companion animals
+#
+# Tests whether dog and cat deaths are portrayed as more
+# emotionally significant than deaths of other animals.
+# Wilcoxon rank-sum (Mann-Whitney U) is used because
+# emotionality is ordinal (1–5), not continuous.
+############################################################
 
 library(rstatix)
 
@@ -538,7 +608,13 @@ emotionality_data |>
     sd = sd(emotionality, na.rm = TRUE)
   )
 
-# Do the same for intentionality
+############################################################
+# Intentionality analysis: companion vs. non-companion animals
+#
+# Tests whether dog/cat deaths are more likely to be
+# deliberate (vs. accidental) compared to other animal deaths.
+# Chi-squared test with Cramér's V effect size.
+############################################################
 
 # Dog vs. Other - intentionality
 dog_vs_other_intent <- dog_vs_other |>
@@ -578,7 +654,11 @@ cat_vs_other_intent |>
 
 
 ############################################################
-# Set up a TV test set for the LLM labeling agent
+# Sample TV series test set and run LLM scoring
+#
+# Mirrors the movie workflow but skips the dev-set phase
+# since the prompt was already refined on movies.
+# The same llm_prompt_revised is used.
 ############################################################
 
 tv_comments_testset <- tvseries_comments |>
@@ -665,20 +745,42 @@ testset_comparison <- tv_comments_testset_humanscored_deduped |>
   )
 
 
-# Compute kappa for categorical variables
+# Compute kappa for categorical variables with CIs
 categorical_vars <- c("death_confirmed", "intentionality")
+
+# kappa_results <- map(categorical_vars, ~ {
+#   ratings <- testset_comparison |>
+#     select(human = paste0(.x, "_human"), llm = paste0(.x, "_llm")) |>
+#     drop_na() # ignore cases where either coder marked null b/c it answered "no" for death_confirmed
+#   kappa2(ratings)
+# }) |>
+#   set_names(categorical_vars)
+
+# # Print kappa results
+# map(kappa_results, ~ tibble(kappa = .x$value, p = .x$p.value)) |>
+#   bind_rows(.id = "variable")
 
 kappa_results <- map(categorical_vars, ~ {
   ratings <- testset_comparison |>
     select(human = paste0(.x, "_human"), llm = paste0(.x, "_llm")) |>
-    drop_na() # ignore cases where either coder marked null b/c it answered "no" for death_confirmed
-  kappa2(ratings)
+    drop_na() |>
+    as.data.frame()
+  cohen.kappa(ratings)
 }) |>
   set_names(categorical_vars)
 
-# Print kappa results
-map(kappa_results, ~ tibble(kappa = .x$value, p = .x$p.value)) |>
+# Print kappa results with CIs
+map(kappa_results, ~ tibble(
+  kappa = .x$kappa,
+  ci_low = .x$confid["unweighted kappa", "lower"],
+  ci_high = .x$confid["unweighted kappa", "upper"]
+)) |>
   bind_rows(.id = "variable")
+
+#   variable        kappa ci_low ci_high
+#   <chr>           <dbl>  <dbl>   <dbl>
+# 1 death_confirmed 0.571  0.406   0.735
+# 2 intentionality  0.522  0.332   0.713
 
 # ICC for emotionality
 emotionality_ratings <- testset_comparison |>
@@ -686,3 +788,16 @@ emotionality_ratings <- testset_comparison |>
   drop_na()
 
 icc(emotionality_ratings, model = "twoway", type = "agreement")
+
+#    Model: twoway 
+#    Type : agreement 
+
+#    Subjects = 53 
+#      Raters = 2 
+#    ICC(A,1) = 0.46
+
+#  F-Test, H0: r0 = 0 ; H1: r0 > 0 
+#    F(52,52) = 2.71 , p = 0.000231 
+
+#  95%-Confidence Interval for ICC Population Values:
+#   0.221 < ICC < 0.648
