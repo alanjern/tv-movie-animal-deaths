@@ -1,3 +1,19 @@
+# analyze_comments_nrc.R
+#
+# Uses the NRC word-emotion lexicon (via tidytext) as a lexicon-based
+# alternative to LLM scoring (see analyze_comments_llm.R) for measuring
+# the emotional tone of DDTD comments describing animal deaths.
+#
+# For each comment, counts words associated with anger, sadness, and
+# disgust (the emotions most relevant to my research question), normalizes
+# by comment word count, and compares average scores between companion
+# animals (dog, cat) and other animals using Wilcoxon rank-sum tests with
+# effect sizes. The analysis is run separately for movies and TV series.
+#
+# Unlike the LLM analysis, only comments for titles with a vote-confirmed
+# death are included, and up to the top 3 comments per title/topic are kept
+# (rather than just the single top comment).
+
 # load libraries
 library(tidyverse)
 library(tidytext)
@@ -26,17 +42,6 @@ results_all_tvseries <- readRDS("data/imdb_tvseries_5000_dtdd_results.rds")
 results_tvseries_details <- readRDS("data/imdb_tvseries_5000_dtdd_series_details.rds")
 
 # Comments for movies
-# We take the comment with the highest vote sum for each movie and topic, and only keep comments 
-# with a positive vote sum. When there are ties, we take the comment with the highest number of yes votes. 
-# If comments are still tied, we take the first one (arbitrary).
-# movie_comments <- dtdd_comments |>
-#   inner_join(results_all_movies |> select(id, name), by = c("itemid" = "id")) |>
-#   left_join(topic_lookup, by = c("topicid" = "TopicId")) |>
-#   select(itemid, name, topicid, TopicName, comment, yes, no, voteSum) |>
-#   filter(voteSum > 0) |>
-#   group_by(itemid, topicid) |>
-#   slice_max(order_by = tibble(voteSum, yes), n = 1, with_ties = FALSE) |>
-#   ungroup()
 
 # We take the top 3 comments (somewhat arbitrary) for each movie and topic (with 
 # positive vote sum). When there are ties, we take the comment with the highest 
@@ -63,11 +68,6 @@ movie_comments_nrc <- dtdd_comments |>
   ungroup()
 
 # Comments for TV series
-# tvseries_comments <- dtdd_comments |>
-#   inner_join(results_all_tvseries |> select(id, name), by = c("itemid" = "id")) |>
-#   left_join(topic_lookup, by = c("topicid" = "TopicId")) |>
-#   select(itemid, name, topicid, TopicName, comment, yes, no, voteSum) |> 
-#   filter(voteSum > 0)
 
 tvseries_comments_nrc <- dtdd_comments |>
   inner_join(results_all_tvseries |> select(id, name), by = c("itemid" = "id")) |>
@@ -87,9 +87,12 @@ tvseries_comments_nrc <- dtdd_comments |>
   ungroup()
 
 
-# Load NRC lexicon
+# Load NRC lexicon (word -> emotion/sentiment associations)
 nrc <- get_sentiments("nrc")
 
+# CHECK: How much of the comment vocabulary is
+# actually covered by the NRC lexicon (unmatched words contribute
+# nothing to the emotion scores below).
 # Tokenize comments
 comment_words <- movie_comments_nrc |>
   filter(voteSum > 0) |>
@@ -116,15 +119,38 @@ cat("Unique words:", total_unique, "\n")
 cat("Matched unique words:", matched_unique, "\n")
 cat("Unique word coverage:", round(matched_unique / total_unique * 100, 1), "%\n")
 
+# Same coverage check, for TV series comments
+tv_comment_words <- tvseries_comments_nrc |>
+  filter(voteSum > 0) |>
+  unnest_tokens(word, comment)
 
-# For each comment in the movie comments dataset: 
-# - Count the number of words associated with: (1) anger, (2) sadness, (3) disgust
-#   - These emotions are most relevant to the research question
-# - Normalize each count by total word length of the comment
-# Then compute the average normalized counts for each emotion for:
-# - Dog comments, Cat comments, and Animal comments
-# Compare these averages
-# - Dog vs. Animal; Cat vs. Animal
+total_words_tv <- nrow(tv_comment_words)
+matched_words_tv <- tv_comment_words |>
+  inner_join(nrc, by = "word", relationship = "many-to-many") |>
+  nrow()
+
+cat("Total words (TV):", total_words_tv, "\n")
+cat("Matched words (TV):", matched_words_tv, "\n")
+cat("Coverage (TV):", round(matched_words_tv / total_words_tv * 100, 1), "%\n")
+
+total_unique_tv <- tv_comment_words |> distinct(word) |> nrow()
+matched_unique_tv <- tv_comment_words |>
+  distinct(word) |>
+  inner_join(nrc, by = "word") |>
+  nrow()
+
+cat("Unique words (TV):", total_unique_tv, "\n")
+cat("Matched unique words (TV):", matched_unique_tv, "\n")
+cat("Unique word coverage (TV):", round(matched_unique_tv / total_unique_tv * 100, 1), "%\n")
+
+
+############################################################
+# Emotion scoring: movies
+#
+# For each comment: count words matching anger/sadness/disgust
+# in the NRC lexicon, normalized by the comment's total word
+# count, then average within each animal group (dog/cat/other).
+############################################################
 
 # Get NRC lexicon filtered to the three emotions of interest
 nrc_filtered <- get_sentiments("nrc") |>
@@ -161,6 +187,15 @@ movie_comments_nrc_scored |>
     mean_sadness = mean(sadness),
     mean_disgust = mean(disgust)
   )
+
+############################################################
+# Statistical comparison: movies
+#
+# Wilcoxon rank-sum test per emotion, comparing dog-vs-other and
+# cat-vs-other groups, with rank-biserial effect size (wilcox_effsize).
+# Wilcoxon is used because the normalized emotion scores are skewed
+# counts, not normally distributed.
+############################################################
 
  # Prepare comparison datasets
 dog_vs_other_nrc <- movie_comments_nrc_scored |>
@@ -200,7 +235,12 @@ bind_rows(dog_results, cat_results) |>
 
 
 
+############################################################
 # Re-run the analysis for TV comments
+#
+# Same emotion-scoring and Wilcoxon comparison approach as the
+# movie analysis above, applied to tvseries_comments_nrc.
+############################################################
 
 # Tokenize comments and compute normalized emotion scores
 tvseries_comments_nrc_scored <- tvseries_comments_nrc |>
