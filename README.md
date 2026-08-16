@@ -34,3 +34,15 @@ The analysis of comments is performed by two scripts:
 All scripts generate intermediate data files along the way in the [`data/`](./data) folder. See [`data/README.md`](./data/README.md) for a description of each data file.
 
 This analysis was originally run on R version 4.5.2.
+
+## Web app
+
+[`docs/`](./docs) contains a small static web app for exploring the data interactively: filter by type (movie/TV), year, genre, and minimum IMDB votes; view death rates with confidence intervals overall, by genre, and over time; build side-by-side comparisons of different filter combinations; and browse the underlying titles.
+
+It's plain HTML/CSS/JS (using [Chart.js](https://www.chartjs.org/) from a CDN) with no build step, so it can be hosted for free on GitHub Pages by pointing Pages at the `docs/` folder on the `main` branch (Settings → Pages → Source → Deploy from a branch → `main` / `docs`).
+
+The app reads from `docs/data/dataset.json`, a joined/flattened copy of the files in `data/`. After re-running `analyze_animal_deaths.qmd` to refresh the underlying data, regenerate it with:
+
+```
+python3 scripts/build_dataset.py
+```

@@ -41,9 +41,6 @@ vignettes/*.pdf
 .Renviron
 _environment.local
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
