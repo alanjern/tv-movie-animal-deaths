@@ -20,10 +20,6 @@ Raw and processed data are saved at each major step (as both `.csv` for human re
 
 ## Query the Does the Dog Die database
 
-This script queries the Does the Dog Die? database for movies in the IMDB top 5000 list that are (probably) American and released on or after 2000.
-
-It then repeats this analysis for the top 5000 TV series.
-
 ```{r}
 
 # Load libraries
@@ -103,8 +99,15 @@ fetch_dtdd_title_details <- function(item_id) {
     # rename the yes and no columns to denote that they apply only to cats
     catVotes <- catVotes |> 
       rename(cat_yes_votes = yesSum, cat_no_votes = noSum)
+
+    # 3. a horse dies yes votes and no votes
+    horseVotes <- data$topicItemStats |> filter(tolower(topic.name) == "a horse dies") |> 
+      select(topic.name, yesSum, noSum)
+    # rename the yes and no columns to denote that they apply only to cats
+    horseVotes <- horseVotes |> 
+      rename(horse_yes_votes = yesSum, horse_no_votes = noSum)
     
-    # 3. an animal dies yes votes and no votes
+    # 4. an animal dies yes votes and no votes
     animalVotes <- data$topicItemStats |> filter(tolower(topic.name) == "an animal dies") |> 
       select(topic.name, yesSum, noSum)
     # rename the yes and no columns to denote that they apply to all animals
@@ -117,6 +120,8 @@ fetch_dtdd_title_details <- function(item_id) {
       dog_no_votes = dogVotes$dog_no_votes,
       cat_yes_votes = catVotes$cat_yes_votes,
       cat_no_votes = catVotes$cat_no_votes,
+      horse_yes_votes = horseVotes$horse_yes_votes,
+      horse_no_votes = horseVotes$horse_no_votes,
       animal_yes_votes = animalVotes$animal_yes_votes,
       animal_no_votes = animalVotes$animal_no_votes
     )
@@ -176,12 +181,15 @@ saveRDS(results_all_movies, "data/imdb_5000_dtdd_results.rds") # for data proces
 # and save all the results into a new tibble
 
 results_movie_details <- results_all_movies |>
+  # Remove the "error" column
+  select(-message) |>
   #slice_head(n = 10) |> # NOTE: This line is for debugging purposes only
   mutate(dtdd_details = map(id, fetch_dtdd_title_details)) |>
   unnest(dtdd_details) |>
   select(id, name, cleanName, 
          dog_yes_votes, dog_no_votes,
          cat_yes_votes, cat_no_votes,
+         horse_yes_votes, horse_no_votes,
          animal_yes_votes, animal_no_votes)
 ```
 
@@ -203,6 +211,9 @@ results_movie_details <- results_movie_details |>
     TRUE ~ FALSE),
     cat_death = case_when(
       cat_yes_votes > cat_no_votes ~ TRUE,
+      TRUE ~ FALSE),
+    horse_death = case_when(
+      horse_yes_votes > horse_no_votes ~ TRUE,
       TRUE ~ FALSE),
     animal_death = case_when(
       animal_yes_votes > animal_no_votes ~ TRUE,
@@ -231,49 +242,97 @@ compute_proportion_ci <- function(data, var) {
 
 # Compute percentages and CIs for movie deaths
 movies_proportions <- map_df(
-  c("dog_death", "cat_death", "animal_death"),
+  c("dog_death", "cat_death", "horse_death", "animal_death"),
   ~ compute_proportion_ci(results_movie_details, .x)
 )
 print(movies_proportions)
 
-# Test whether these proportion differences are statistically significant
+# Test whether these differences in proportions are statistically significant
+#
+# We use McNemar's test because the categories were compared on the same samples (movies)
 
-# Helper function to run prop.test comparing two proportions
-compare_proportions <- function(data, var1, var2) {
-  n <- nrow(data)
-  x1 <- sum(data[[var1]], na.rm = TRUE)
-  x2 <- sum(data[[var2]], na.rm = TRUE)
-  prop.test(c(x1, x2), c(n, n))
+mcnemar_compare <- function(data, var1, var2) {
+  tab <- table(data[[var1]], data[[var2]])
+  test <- mcnemar.test(tab, correct = FALSE)
+  
+  n10 <- tab["TRUE", "FALSE"]   # var1 only
+  n01 <- tab["FALSE", "TRUE"]   # var2 only
+  #or  <- n10 / n01              # marginal (McNemar) odds ratio
+  
+  tibble(
+    comparison = paste(var1, "vs", var2),
+    n10 = n10,
+    n01 = n01,
+    n_discordant = n10 + n01,
+    chi_sq = as.numeric(test$statistic),
+    p = test$p.value,
+    #or_marginal = or
+  )
 }
 
-# Compare animal vs dog and animal vs cat
-test_animal_vs_dog <- compare_proportions(results_movie_details, "animal_death", "dog_death")
-test_animal_vs_cat <- compare_proportions(results_movie_details, "animal_death", "cat_death")
+pairs_list <- list(
+  c("dog_death", "animal_death"),
+  c("cat_death", "animal_death"),
+  c("horse_death", "animal_death")
+)
 
-print(test_animal_vs_dog)
-print(test_animal_vs_cat)
+map_df(pairs_list, ~ mcnemar_compare(results_movie_details, .x[1], .x[2]))
 ```
 
 #### Compute correlations between animal categories
 
 ```{r}
-# Compute the correlation between a movie having a dog death and
-# having an animal death
-cor.test(as.numeric(results_movie_details$dog_death),
-         as.numeric(results_movie_details$animal_death),
-         method = "pearson")
 
-# Compute the correlation between a movie having a cat death and
-# having an animal death
-cor.test(as.numeric(results_movie_details$cat_death),
-         as.numeric(results_movie_details$animal_death),
-         method = "pearson")
+# Association between animal death categories.
+#
+# For each pair of death categories, computes:
+#   - the four cell counts of the 2x2 contingency table
+#   - phi (the correlation between the two binary indicators)
+#   - the conditional probability of the second death type given that the
+#     first did and did not occur
+#
+# Phi is bounded below 1 whenever the two categories have very different
+# base rates (as they do here), so its raw magnitude understates how strongly
+# the categories are associated.
+assoc_stats <- function(data, var1, var2) {
+  x <- data[[var1]]
+  y <- data[[var2]]
 
-# Compute the correlation between a movie having a dog death and
-# having a cat death
-cor.test(as.numeric(results_movie_details$dog_death),
-         as.numeric(results_movie_details$cat_death),
-         method = "pearson")
+  # 2x2 cell counts: n[x][y], where 1 = death occurred, 0 = it did not
+  n11 <- sum(x & y)
+  n10 <- sum(x & !y)
+  n01 <- sum(!x & y)
+  n00 <- sum(!x & !y)
+
+  p <- mean(x); q <- mean(y)
+  phi <- cor(as.numeric(x), as.numeric(y))
+  phi_max <- if (p <= q) sqrt((p * (1 - q)) / (q * (1 - p)))
+             else         sqrt((q * (1 - p)) / (p * (1 - q)))
+
+  tibble(
+    comparison = paste(var1, "-", var2),
+    # Cell counts, retained so the conditional probabilities can be checked
+    # by hand and to confirm no cell is sparse enough to be unstable
+    n11 = n11, n10 = n10, n01 = n01, n00 = n00,
+    # Phi. For two binary variables this is just the Pearson correlation of
+    # the 0/1 indicators, so this reproduces the existing cor.test estimates.
+    phi = cor(as.numeric(x), as.numeric(y)),
+    #phi_max = phi_max, phi_scaled = phi / phi_max
+    # P(y | x) and P(y | not x). The contrast between these two is the
+    # clearest expression of the association.
+    p_y_given_x    = n11 / (n11 + n10),
+    p_y_given_notx = n01 / (n01 + n00)
+  )
+}
+
+pairs_list <- list(
+  c("dog_death", "animal_death"),
+  c("cat_death", "animal_death"),
+  c("dog_death", "cat_death")
+)
+
+map_df(pairs_list, ~ assoc_stats(results_movie_details, .x[1], .x[2]))
+
 ```
 
 #### Analyze time trends
@@ -371,47 +430,49 @@ valid_genres <- movies_with_genre |>
 movies_with_genre <- movies_with_genre |> 
   filter(genres %in% valid_genres)
 
-# Calculate death rates by genre and CIs
-genre_death_rates <- movies_with_genre |>
+# Wilson interval for a proportion
+wilson_ci <- function(x, n) {
+  ci <- prop.test(x, n)$conf.int
+  tibble(ci_low = ci[1], ci_high = ci[2])
+}
+
+# Count deaths (not rates) by genre so the interval function gets x and n
+genre_counts <- movies_with_genre |>
   group_by(genres) |>
   summarise(
     n = n(),
-    dog_death_rate = mean(dog_death, na.rm = TRUE),
-    cat_death_rate = mean(cat_death, na.rm = TRUE),
-    animal_death_rate = mean(animal_death, na.rm = TRUE),
-    dog_se = sqrt(dog_death_rate * (1 - dog_death_rate) / n),
-    cat_se = sqrt(cat_death_rate * (1 - cat_death_rate) / n),
-    animal_se = sqrt(animal_death_rate * (1 - animal_death_rate) / n)
+    dog_deaths    = sum(dog_death,    na.rm = TRUE),
+    cat_deaths    = sum(cat_death,    na.rm = TRUE),
+    animal_deaths = sum(animal_death, na.rm = TRUE),
+    .groups = "drop"
   )
 
-# Get genre order based on animal death rate
-genre_order <- genre_death_rates |>
-  arrange(animal_death_rate) |>
-  pull(genres)
-
-label_order <- genre_death_rates |>
-  arrange(animal_death_rate) |>
+# Genre ordering, based on the "other animal" death rate
+label_order <- genre_counts |>
+  arrange(animal_deaths / n) |>
   mutate(genre_label = paste0(genres, " (", n, ")")) |>
   pull(genre_label)
 
-# Pivot to long format
-genre_death_rates_long_movies <- genre_death_rates |>
+# Long format, with Wilson CIs computed per genre x death type
+genre_death_rates_long_movies <- genre_counts |>
   pivot_longer(
-    cols = c(dog_death_rate, cat_death_rate, animal_death_rate),
+    cols = c(dog_deaths, cat_deaths, animal_deaths),
     names_to = "death_type",
-    values_to = "proportion"
+    values_to = "deaths"
   ) |>
+  rowwise() |>
+  mutate(wilson_ci(deaths, n)) |>
+  ungroup() |>
   mutate(
+    proportion = deaths / n,
     genre_label = factor(paste0(genres, " (", n, ")"), levels = label_order),
-    se = case_when(
-      death_type == "dog_death_rate" ~ dog_se,
-      death_type == "cat_death_rate" ~ cat_se,
-      death_type == "animal_death_rate" ~ animal_se
-    ),
-    death_type = factor(death_type, 
-                        levels = c("animal_death_rate", "dog_death_rate", "cat_death_rate"),
-                        labels = c("Other", "Dog", "Cat"))
+    death_type = factor(
+      death_type,
+      levels = c("animal_deaths", "dog_deaths", "cat_deaths"),
+      labels = c("Other", "Dog", "Cat")
+    )
   )
+
 ```
 
 ## Top 5000 TV series
@@ -432,13 +493,15 @@ imdb_tvseries_5000 <- read_csv("data/imdb_tvseries_5000.csv")
 # Put the data from all series into one tibble.
 #
 # Note: I used a title search for TV series rather than an ID search because the ID
-# search resulted in too many false and failed matches
+# search resulted in too many failed matches (I couldn't figure out why).
+# For example, in a test of 200 series, the ID search returned 24 matches and the
+# title search (below) returned 151 matches.
 
 results_all_tvseries <- imdb_tvseries_5000 |>
   #slice_head(n = 50) |> # NOTE: This line is for debugging purposes only
   # We discard the genre information from DTDD because the column conflicts with
   # the column from IMDB and we will use that genre info anyway
-  mutate(dtdd_data = map(primaryTitle, ~ query_dtdd_database(.x) |> select(-genres))) |>
+  mutate(dtdd_data = map(primaryTitle, ~ query_dtdd_database(.x) |> select(-any_of("genres")))) |>
   #mutate(dtdd_data = map(primaryTitle, query_dtdd_database)) |>
   unnest(dtdd_data) |>
   # Filter out shows that don't have at least 100 ratings (arbitrary cutoff)
@@ -478,12 +541,15 @@ saveRDS(results_all_tvseries, "data/imdb_tvseries_5000_dtdd_results.rds") # for 
 # and save all the results into a new tibble
 
 results_tvseries_details <- results_all_tvseries |>
+  # Remove the "error" column
+  select(-message) |>
   #slice_head(n = 10) |> # NOTE: This line is for debugging purposes only
   mutate(dtdd_details = map(id, fetch_dtdd_title_details)) |>
   unnest(dtdd_details) |>
   select(id, name, cleanName, 
          dog_yes_votes, dog_no_votes,
          cat_yes_votes, cat_no_votes,
+         horse_yes_votes, horse_no_votes,
          animal_yes_votes, animal_no_votes)
 ```
 
@@ -505,6 +571,9 @@ results_tvseries_details <- results_tvseries_details |>
     TRUE ~ FALSE),
     cat_death = case_when(
       cat_yes_votes > cat_no_votes ~ TRUE,
+      TRUE ~ FALSE),
+    horse_death = case_when(
+      horse_yes_votes > horse_no_votes ~ TRUE,
       TRUE ~ FALSE),
     animal_death = case_when(
       animal_yes_votes > animal_no_votes ~ TRUE,
@@ -532,50 +601,97 @@ compute_proportion_ci <- function(data, var) {
 
 # Compute percentages and CIs for TV series deaths
 tvseries_proportions <- map_df(
-  c("dog_death", "cat_death", "animal_death"),
+  c("dog_death", "cat_death", "horse_death", "animal_death"),
   ~ compute_proportion_ci(results_tvseries_details, .x)
 )
 print(tvseries_proportions)
 
 # Test whether these differences in proportions are statistically significant
+#
+# We use McNemar's test because the categories were compared on the same samples (movies)
 
-# Helper function to run prop.test comparing two proportions
-compare_proportions <- function(data, var1, var2) {
-  n <- nrow(data)
-  x1 <- sum(data[[var1]], na.rm = TRUE)
-  x2 <- sum(data[[var2]], na.rm = TRUE)
-  prop.test(c(x1, x2), c(n, n))
+mcnemar_compare <- function(data, var1, var2) {
+  tab <- table(data[[var1]], data[[var2]])
+  test <- mcnemar.test(tab, correct = FALSE)
+  
+  n10 <- tab["TRUE", "FALSE"]   # var1 only
+  n01 <- tab["FALSE", "TRUE"]   # var2 only
+  #or  <- n10 / n01              # marginal (McNemar) odds ratio
+  
+  tibble(
+    comparison = paste(var1, "vs", var2),
+    n10 = n10,
+    n01 = n01,
+    n_discordant = n10 + n01,
+    chi_sq = as.numeric(test$statistic),
+    p = test$p.value,
+    #or_marginal = or
+  )
 }
 
-# Compare animal vs dog and animal vs cat
-test_animal_vs_dog <- compare_proportions(results_tvseries_details, "animal_death", "dog_death")
-test_animal_vs_cat <- compare_proportions(results_tvseries_details, "animal_death", "cat_death")
+pairs_list <- list(
+  c("dog_death", "animal_death"),
+  c("cat_death", "animal_death"),
+  c("horse_death", "animal_death")
+)
 
-print(test_animal_vs_dog)
-print(test_animal_vs_cat)
+map_df(pairs_list, ~ mcnemar_compare(results_tvseries_details, .x[1], .x[2]))
+
 
 ```
 
 #### Compute correlations between animal categories
 
 ```{r}
-# Compute the correlation between a series having a dog death and
-# having an animal death
-cor.test(as.numeric(results_tvseries_details$dog_death),
-         as.numeric(results_tvseries_details$animal_death),
-         method = "pearson")
+# Association between animal death categories.
+#
+# For each pair of death categories, computes:
+#   - the four cell counts of the 2x2 contingency table
+#   - phi (the correlation between the two binary indicators)
+#   - the conditional probability of the second death type given that the
+#     first did and did not occur
+#
+# Phi is bounded below 1 whenever the two categories have very different
+# base rates (as they do here), so its raw magnitude understates how strongly
+# the categories are associated.
+assoc_stats <- function(data, var1, var2) {
+  x <- data[[var1]]
+  y <- data[[var2]]
 
-# Compute the correlation between a series having a cat death and
-# having an animal death
-cor.test(as.numeric(results_tvseries_details$cat_death),
-         as.numeric(results_tvseries_details$animal_death),
-         method = "pearson")
+  # 2x2 cell counts: n[x][y], where 1 = death occurred, 0 = it did not
+  n11 <- sum(x & y)
+  n10 <- sum(x & !y)
+  n01 <- sum(!x & y)
+  n00 <- sum(!x & !y)
 
-# Compute the correlation between a series having a dog death and
-# having a cat death
-cor.test(as.numeric(results_tvseries_details$dog_death),
-         as.numeric(results_tvseries_details$cat_death),
-         method = "pearson")
+  p <- mean(x); q <- mean(y)
+  phi <- cor(as.numeric(x), as.numeric(y))
+  phi_max <- if (p <= q) sqrt((p * (1 - q)) / (q * (1 - p)))
+             else         sqrt((q * (1 - p)) / (p * (1 - q)))
+
+  tibble(
+    comparison = paste(var1, "-", var2),
+    # Cell counts, retained so the conditional probabilities can be checked
+    # by hand and to confirm no cell is sparse enough to be unstable
+    n11 = n11, n10 = n10, n01 = n01, n00 = n00,
+    # Phi. For two binary variables this is just the Pearson correlation of
+    # the 0/1 indicators, so this reproduces the existing cor.test estimates.
+    phi = cor(as.numeric(x), as.numeric(y)),
+    #phi_max = phi_max, phi_scaled = phi / phi_max
+    # P(y | x) and P(y | not x). The contrast between these two is the
+    # clearest expression of the association.
+    p_y_given_x    = n11 / (n11 + n10),
+    p_y_given_notx = n01 / (n01 + n00)
+  )
+}
+
+pairs_list <- list(
+  c("dog_death", "animal_death"),
+  c("cat_death", "animal_death"),
+  c("dog_death", "cat_death")
+)
+
+map_df(pairs_list, ~ assoc_stats(results_tvseries_details, .x[1], .x[2]))
 ```
 
 #### Analyze time trends
@@ -672,46 +788,47 @@ valid_genres_tv <- series_with_genre |>
 series_with_genre <- series_with_genre |> 
   filter(genres %in% valid_genres_tv)
 
-# Calculate death rates by genre and CIs
-genre_death_rates_tv <- series_with_genre |>
+# Wilson interval for a proportion
+wilson_ci <- function(x, n) {
+  ci <- prop.test(x, n)$conf.int
+  tibble(ci_low = ci[1], ci_high = ci[2])
+}
+
+# Count deaths (not rates) by genre so the interval function gets x and n
+genre_counts_tv <- series_with_genre |>
   group_by(genres) |>
   summarise(
     n = n(),
-    dog_death_rate = mean(dog_death, na.rm = TRUE),
-    cat_death_rate = mean(cat_death, na.rm = TRUE),
-    animal_death_rate = mean(animal_death, na.rm = TRUE),
-    dog_se = sqrt(dog_death_rate * (1 - dog_death_rate) / n),
-    cat_se = sqrt(cat_death_rate * (1 - cat_death_rate) / n),
-    animal_se = sqrt(animal_death_rate * (1 - animal_death_rate) / n)
+    dog_deaths    = sum(dog_death,    na.rm = TRUE),
+    cat_deaths    = sum(cat_death,    na.rm = TRUE),
+    animal_deaths = sum(animal_death, na.rm = TRUE),
+    .groups = "drop"
   )
 
-# Get genre order based on animal death rate
-genre_order <- genre_death_rates_tv |>
-  arrange(animal_death_rate) |>
-  pull(genres)
-
-label_order <- genre_death_rates_tv |>
-  arrange(animal_death_rate) |>
+# Genre ordering, based on the "other animal" death rate
+label_order_tv <- genre_counts_tv |>
+  arrange(animal_deaths / n) |>
   mutate(genre_label = paste0(genres, " (", n, ")")) |>
   pull(genre_label)
 
-# Pivot to long format
-genre_death_rates_long_tv <- genre_death_rates_tv |>
+# Long format, with Wilson CIs computed per genre x death type
+genre_death_rates_long_tv <- genre_counts_tv |>
   pivot_longer(
-    cols = c(dog_death_rate, cat_death_rate, animal_death_rate),
+    cols = c(dog_deaths, cat_deaths, animal_deaths),
     names_to = "death_type",
-    values_to = "proportion"
+    values_to = "deaths"
   ) |>
+  rowwise() |>
+  mutate(wilson_ci(deaths, n)) |>
+  ungroup() |>
   mutate(
-    genre_label = factor(paste0(genres, " (", n, ")"), levels = label_order),
-    se = case_when(
-      death_type == "dog_death_rate" ~ dog_se,
-      death_type == "cat_death_rate" ~ cat_se,
-      death_type == "animal_death_rate" ~ animal_se
-    ),
-    death_type = factor(death_type, 
-                        levels = c("animal_death_rate", "dog_death_rate", "cat_death_rate"),
-                        labels = c("Other", "Dog", "Cat"))
+    proportion = deaths / n,
+    genre_label = factor(paste0(genres, " (", n, ")"), levels = label_order_tv),
+    death_type = factor(
+      death_type,
+      levels = c("animal_deaths", "dog_deaths", "cat_deaths"),
+      labels = c("Other", "Dog", "Cat")
+    )
   )
 
 
@@ -719,10 +836,8 @@ genre_death_rates_long_tv <- genre_death_rates_tv |>
 p_movies_genre <- ggplot(genre_death_rates_long_movies, aes(x = proportion, y = genre_label, 
                                                              color = death_type, shape = death_type)) +
   geom_point(size = 3) +
-  # Clip the error bars at 0 to prevent them from going below b/c this doesn't make conceptual sense
-  geom_errorbar(aes(xmin = pmax(proportion - 1.96 * se, 0), 
-                  xmax = proportion + 1.96 * se),
-              width = 0.2, alpha = 0.5, orientation = "y") +
+  geom_errorbar(aes(xmin = ci_low, xmax = ci_high),
+                width = 0.2, alpha = 0.5, orientation = "y") +
   scale_color_manual(values = c("Cat" = "#1B9E77", "Dog" = "#D95F02", "Other" = "#7570B3")) +
   scale_shape_manual(values = c("Dog" = 16, "Cat" = 17, "Other" = 15)) +
   scale_x_continuous(labels = scales::percent) +
@@ -740,17 +855,15 @@ p_movies_genre <- ggplot(genre_death_rates_long_movies, aes(x = proportion, y = 
 p_tvseries_genre <- ggplot(genre_death_rates_long_tv, aes(x = proportion, y = genre_label,
                                                            color = death_type, shape = death_type)) +
   geom_point(size = 3) +
-  # Clip the error bars at 0 to prevent them from going below b/c this doesn't make conceptual sense
-  geom_errorbar(aes(xmin = pmax(proportion - 1.96 * se, 0), 
-                  xmax = proportion + 1.96 * se),
-              width = 0.2, alpha = 0.5, orientation = "y") +
+  geom_errorbar(aes(xmin = ci_low, xmax = ci_high),
+                width = 0.2, alpha = 0.5, orientation = "y") +
   scale_color_manual(values = c("Cat" = "#1B9E77", "Dog" = "#D95F02", "Other" = "#7570B3")) +
   scale_shape_manual(values = c("Dog" = 16, "Cat" = 17, "Other" = 15)) +
   scale_x_continuous(labels = scales::percent) +
   labs(x = "Proportion of TV series with a death", y = NULL,
        color = NULL, shape = NULL, title = "TV Series") +
   theme_minimal() +
-  theme(legend.position = c(0.84, 0.27),
+  theme(legend.position = c(0.87, 0.27),
         plot.title = element_text(hjust = 0.5),
         plot.title.position = "panel",
         legend.background = element_rect(fill = "white", linewidth = 0.5),

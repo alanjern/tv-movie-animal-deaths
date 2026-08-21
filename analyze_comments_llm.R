@@ -362,16 +362,16 @@ icc(emotionality_ratings, model = "twoway", type = "agreement")
 # 
 #    Model: twoway 
 #    Type : agreement 
-#
+
 #    Subjects = 43 
 #      Raters = 2 
-#    ICC(A,1) = 0.7
-#
+#    ICC(A,1) = 0.702
+
 #  F-Test, H0: r0 = 0 ; H1: r0 > 0 
-#    F(42,42) = 5.68 , p = 5.91e-08 
-#
+#    F(42,42) = 5.76 , p = 4.77e-08 
+
 #  95%-Confidence Interval for ICC Population Values:
-#   0.511 < ICC < 0.825
+#   0.514 < ICC < 0.826
 #
 # Based on these results and looking at the disagreements,
 # - named_animal and plot_point are too inherently ambiguous
@@ -548,10 +548,10 @@ convergent_validity |>
 #
 #   vote_classification ambiguous    no   yes
 #   <lgl>                   <int> <int> <int>
-# 1 FALSE                     207   966    69
-# 2 TRUE                      322    64   703
+# 1 FALSE                     210   963    68
+# 2 TRUE                      318    64   704
 #
-# Overall agreement rate (excluding amiguous): (966+703) / (966+69+64+703) ~= 92.6%
+# Overall agreement rate (excluding amiguous): (963+704) / (963+68+64+704) ~= 92.7%
 
 ############################################################
 # Emotionality analysis: companion vs. non-companion animals
@@ -587,6 +587,13 @@ print(wilcox_dog)
 dog_vs_other |>
   wilcox_effsize(emotionality ~ animal_group)
 
+# data:  emotionality by animal_group
+# W = 68118, p-value < 2.2e-16
+
+#   .y.          group1 group2 effsize    n1    n2 magnitude
+# * <chr>        <chr>  <chr>    <dbl> <int> <int> <ord>    
+# 1 emotionality dog    other    0.319   182   536 moderate 
+
 # Cat vs. Other
 cat_vs_other <- emotionality_data |>
   filter(animal_group %in% c("cat", "other"))
@@ -598,6 +605,13 @@ print(wilcox_cat)
 cat_vs_other |>
   wilcox_effsize(emotionality ~ animal_group)
 
+# W = 16709, p-value = 0.04037
+# alternative hypothesis: true location shift is not equal to 0
+
+#   .y.          group1 group2 effsize    n1    n2 magnitude
+# * <chr>        <chr>  <chr>    <dbl> <int> <int> <ord>    
+# 1 emotionality cat    other   0.0844    54   536 small    
+
 # Descriptive summary for context
 emotionality_data |>
   group_by(animal_group) |>
@@ -607,6 +621,12 @@ emotionality_data |>
     mean = mean(emotionality, na.rm = TRUE),
     sd = sd(emotionality, na.rm = TRUE)
   )
+
+#   animal_group     n median  mean    sd
+#   <chr>        <int>  <dbl> <dbl> <dbl>
+# 1 cat             54      2  2.72 0.878
+# 2 dog            182      3  3.13 0.882
+# 3 other          536      2  2.46 0.910
 
 ############################################################
 # Intentionality analysis: companion vs. non-companion animals
@@ -632,6 +652,13 @@ dog_vs_other_intent |>
   table() |>
   cramer_v()
 
+  #       accidental ambiguous deliberate
+  # dog           37        54         91
+  # other         66       207        263
+
+# X-squared = 9.1034, df = 2, p-value = 0.01055
+# effect size: [1] 0.1126003
+
 # Cat vs. Other - intentionality
 cat_vs_other_intent <- cat_vs_other |>
   filter(!is.na(intentionality))
@@ -643,13 +670,17 @@ chisq_cat <- chisq.test(intent_table_cat)
 print(chisq_cat)
 
 # Effect size (Cramer's V)
-cat_vs_other_intent |>
-  select(animal_group, intentionality) |>
-  table() |>
-  cramer_v()
+# cat_vs_other_intent |>
+#   select(animal_group, intentionality) |>
+#   table() |>
+#   cramer_v()
 
+#         accidental ambiguous deliberate
+#   cat           11        22         21
+#   other         66       207        263
 
-
+# X-squared = 3.5528, df = 2, p-value = 0.1692
+# Effect size: [1] 0.07759953
 
 
 

@@ -1,1636 +1,1741 @@
-id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,animal_yes_votes,animal_no_votes
-8589,Adventure Time,adventure time,56,10,4,32,50,0
-10798,Over the Garden Wall,over garden wall,7,46,0,51,36,18
-10855,Person of Interest,person interest,0,26,0,16,0,15
-10909,Poldark,poldark,25,12,0,3,16,1
-11398,Steven Universe,steven universe,1,174,62,99,109,59
-12451,Twin Peaks,twin peaks,4,40,0,34,59,2
-12768,Narcos,narcos,60,2,46,2,33,1
-12800,Downton Abbey,downton abbey,72,1,0,38,34,13
-12801,Pushing Daisies,pushing daisies,13,0,0,2,13,0
-12839,The Walking Dead,walking dead,372,42,187,19,283,10
-12847,Supernatural,supernatural,290,26,199,22,226,10
-12869,Goliath,goliath,0,11,0,3,13,1
-12918,Friends,friends,137,19,16,72,152,2
-12922,Preacher,preacher,27,1,9,1,17,1
-12941,Westworld,westworld,43,0,9,9,34,0
-12956,The Leftovers,leftovers,53,1,0,7,26,0
-12992,Broadchurch,broadchurch,4,47,0,17,27,3
-13002,The Get Down,get down,1,4,4,0,1,2
-13067,Prison Break,prison break,18,24,31,1,26,3
-13074,The Strain,strain,36,1,12,2,12,0
-13182,The Night Of,night,0,8,0,8,2,3
-13208,One-Punch Man,one punch man,2,12,1,11,18,1
-13406,Modern Family,modern family,51,22,2,47,59,3
-13410,Rick and Morty,rick morty,20,69,25,41,94,5
-13411,Orange Is the New Black,orange new black,9,115,16,95,144,8
-13412,The Crown,crown,11,31,0,31,64,9
-13419,Designated Survivor,designated survivor,0,7,0,6,5,3
-13453,My Hero Academia,my hero academia,174,43,2,122,139,29
-13483,The 100,100,6,98,6,83,107,2
-13541,Outlander,outlander,25,41,1,43,56,2
-13557,The Wire,wire,33,1,2,8,25,0
-13590,Dexter,dexter,59,69,3,43,102,8
-13595,Crazy Ex-Girlfriend,crazy ex girlfriend,4,25,0,32,27,4
-13600,SEAL Team,seal team,21,25,0,1,6,2
-13601,Breaking Bad,breaking bad,46,228,25,188,241,12
-13602,Fargo,fargo,68,8,33,12,36,1
-13617,Future Man,future man,14,1,17,1,13,0
-13620,Arrow,arrow,2,7,0,7,11,1
-13640,Lost,lost,9,110,0,53,91,0
-13669,The Originals,originals,9,5,0,8,10,0
-13674,Blindspot,blindspot,0,27,0,28,3,25
-13676,The Simpsons,simpsons,64,4,71,2,69,4
-13677,The Inbetweeners,inbetweeners,22,2,0,13,15,1
-13704,Regular Show,regular show,0,12,0,11,14,2
-13710,The Flash,flash,3,21,1,23,18,2
-13716,F is for Family,f family,0,2,1,3,5,0
-13731,Mad Men,mad men,25,46,9,4,13,1
-13736,Ozark,ozark,86,13,7,15,55,2
-13747,The Pacific,pacific,30,3,0,5,13,1
-13748,Generation Kill,generation kill,0,3,0,4,6,0
-13754,Vikings,vikings,35,21,2,17,38,0
-13779,The Mentalist,mentalist,21,3,9,5,11,4
-13786,The Sopranos,sopranos,87,12,6,32,50,6
-13789,It's Always Sunny in Philadelphia,skits always sunny philadelphia,78,9,11,54,58,13
-13806,Buffy the Vampire Slayer,buffy vampire slayer,55,11,53,5,77,1
-13814,Bungo Stray Dogs,bungo stray dogs,0,25,0,26,27,0
-13823,BoJack Horseman,bojack horseman,52,150,31,130,196,6
-13824,Total Drama Island,total drama island,1,48,1,37,57,3
-13825,Phineas and Ferb,phineas ferb,12,14,0,19,6,14
-13836,Digimon Adventure,digimon adventure,7,0,7,2,8,1
-13846,Malcolm in the Middle,malcolm middle,21,2,9,4,15,1
-13871,Peep Show,peep show,28,4,1,9,15,1
-13912,Psycho-Pass,psycho pass,10,6,0,10,1,8
-13925,Penny Dreadful,penny dreadful,18,1,29,0,30,0
-13952,Bob's Burgers,bobs burgers,17,49,46,13,68,4
-13967,Reign,reign,1,9,11,2,14,0
-13970,Broad City,broad city,0,9,17,1,6,3
-13992,Shetland,shetland,1,4,0,2,7,0
-14013,Sense8,sense8,1,45,0,37,0,36
-14050,The League of Gentlemen,league gentlemen,11,2,8,0,13,0
-14075,Altered Carbon,altered carbon,1,9,8,4,6,1
-14076,Wild Kratts,wild kratts,0,4,0,2,6,0
-14083,Inside No. 9,inside no ix,25,3,6,7,10,3
-14098,Boardwalk Empire,boardwalk empire,14,3,0,3,3,2
-14099,Babylon Berlin,babylon berlin,13,1,0,0,8,0
-14106,Dead Like Me,dead like me,8,0,2,1,7,0
-14139,Scrubs,scrubs,14,4,0,9,8,2
-14153,Psych,psych,1,31,1,35,29,14
-14159,Rescue Me,rescue me,6,0,6,0,3,0
-14168,True Blood,true blood,37,4,39,2,32,0
-14176,Invader Zim,invader zim,0,26,2,17,18,3
-14219,Dragon Ball Z,dragon ball z,26,2,7,4,18,1
-14221,The Bold Type,bold type,0,9,0,8,0,7
-14222,Once Upon a Time,once upon time,17,30,0,37,42,3
-14245,Homeland,homeland,10,1,0,2,13,1
-14246,Oz,oz,0,10,4,0,10,0
-14275,Sherlock,sherlock,75,16,1,61,28,32
-14280,The Alienist,alienist,26,3,35,0,24,0
-14285,The Americans,americans,0,8,0,6,7,3
-14315,The Handmaid's Tale,handmaids tale,10,68,84,9,59,18
-14316,Trust,trust,1,6,0,3,7,0
-14334,The Terror,terror,70,7,31,10,47,3
-14336,Berserk,berserk,20,0,16,3,22,0
-14348,Wynonna Earp,wynonna earp,1,17,5,9,13,4
-14357,Marvel's Agents of S.H.I.E.L.D.,marvels agents shield,36,0,0,16,18,5
-14393,Criminal Minds,criminal minds,193,43,107,44,138,33
-14406,Archer,archer,21,4,2,10,13,2
-14409,Big Mouth,big mouth,2,72,1,63,31,35
-14413,Happy Valley,happy valley,18,5,0,10,17,3
-14421,ER,er,3,4,4,2,3,2
-14430,The Punisher,punisher,2,10,0,7,0,5
-14445,Please Like Me,please like me,8,0,0,10,14,1
-14457,Good Girls,good girls,1,20,2,14,14,5
-14468,Versailles,versailles,0,7,0,8,10,0
-14475,Will & Grace,will grace,2,3,0,2,0,2
-14504,Soul Eater,soul eater,1,18,11,12,5,12
-14509,The Exorcist,exorcist,0,5,2,5,15,0
-14512,Horrible Histories,horrible histories,7,0,6,0,7,0
-14514,Mystery Science Theater 3000,mystery science theater 3000,3,0,1,0,1,0
-14525,Travelers,travelers,4,7,0,6,15,1
-14527,Angel Beats!,angel beats,0,5,0,5,1,3
-14540,Parasyte -the maxim-,parasyte maxim ,23,0,0,11,17,0
-14543,Hannibal,hannibal,23,218,132,22,237,6
-14551,Critical Role,critical role,0,37,49,1,49,1
-14569,The West Wing,west wing,1,4,0,5,0,5
-14578,Better Call Saul,better call saul,4,62,1,41,1,33
-14579,On My Block,on my block,0,12,0,9,1,8
-14580,Lost Girl,lost girl,0,2,0,2,4,0
-14585,In the Flesh,flesh,0,9,0,5,3,7
-14628,Haven,haven,5,2,0,2,8,0
-14646,Battle For Dream Island,battle dream island,0,45,1,28,23,16
-14654,Master of None,master none,0,4,0,4,2,2
-14684,Another,another,0,10,0,9,14,0
-14702,South Park,south park,162,16,113,25,139,8
-14710,Camp Camp,camp camp,11,17,2,20,29,0
-14752,Drake & Josh,drake josh,0,3,0,3,3,2
-14775,The Musketeers,musketeers,0,4,0,5,5,0
-14784,Firefly,firefly,3,15,0,14,15,2
-14785,Neon Genesis Evangelion,neon genesis evangelion,2,74,73,14,36,41
-14790,Arrested Development,arrested development,1,35,22,12,44,0
-14796,Bones,bones,65,9,36,15,57,7
-14797,Queer Eye,queer eye,8,12,0,13,2,12
-14814,The Expanse,expanse,0,17,1,12,11,10
-14858,Puella Magi Madoka Magica,puella magi madoka magica,0,83,7,57,70,8
-14880,Final Space,final space,0,6,14,0,9,1
-14951,A Series of Unfortunate Events,series unfortunate events,0,64,8,48,68,2
-15010,The Fosters,fosters,0,15,0,13,0,16
-15069,Colony,colony,41,4,4,1,0,0
-15079,Ever After High,ever after high,0,4,0,4,0,3
-15085,The Disastrous Life of Saiki K.,disastrous life saiki k,0,42,0,35,33,3
-15086,Little Witch Academia,little witch academia,0,5,0,4,0,4
-15097,Fringe,fringe,2,9,0,9,17,0
-15108,Ripper Street,ripper street,4,0,0,0,5,0
-15159,Pose,pose,0,24,0,23,0,25
-15192,The L Word,l word,13,0,13,1,11,2
-15198,White Collar,white collar,2,16,0,6,0,6
-15234,Humans,humans,0,3,0,3,0,3
-15265,Father Ted,father ted,0,7,0,5,6,4
-15276,Episodes,episodes,0,3,0,4,5,0
-15292,The Future Diary,future diary,19,0,0,9,11,3
-15321,Star Trek: Voyager,star trek voyager,0,9,0,9,2,5
-15333,Hey Arnold!,hey arnold,3,2,0,1,1,0
-15366,Harlots,harlots,0,12,0,2,8,1
-15379,Utopia,utopia,15,6,0,10,14,3
-15398,Yellowstone,yellowstone,117,10,26,11,104,2
-15473,Young Sheldon,young sheldon,3,63,1,30,62,6
-15505,Sharp Objects,sharp objects,0,36,2,27,32,1
-15534,The White Princess,white princess,0,2,0,2,0,2
-15555,Impractical Jokers,impractical jokers,9,3,0,6,0,4
-15562,One Foot in the Grave,one foot grave,0,2,3,0,3,0
-15604,Dark Tourist,dark tourist,6,3,0,2,14,0
-15607,The Sinner,sinner,0,18,0,16,25,10
-15610,Angel,angel,7,0,0,5,5,0
-15763,Queer As Folk,queer as folk,0,9,0,6,0,7
-15824,Legend of the Galactic Heroes,legend galactic heroes,0,3,0,2,0,1
-15903,Patrick Melrose,patrick melrose,2,8,0,7,2,7
-15908,Marvel's Agent Carter,marvels agent carter,0,7,0,8,10,4
-15916,The Prisoner,prisoner,0,2,0,1,0,2
-15962,Twin Peaks: The Return,twin peaks return,4,4,1,6,17,0
-15973,Deadwood,deadwood,31,6,0,4,3,1
-16063,Darker than Black,darker than black,0,2,2,0,2,0
-16069,The Golden Girls,golden girls,0,10,0,10,12,1
-16159,Queen of the South,queen south,11,0,0,3,10,0
-16172,RuPaul's Drag Race,rupauls drag race,1,44,0,35,14,27
-16226,Transformers: Prime,transformers prime,0,14,0,11,0,12
-16286,Kidding,kidding,0,2,0,1,5,0
-16315,Maniac,maniac,0,15,0,8,23,3
-16327,The Dragon Prince,dragon prince,0,58,0,52,70,1
-16399,From the New World,from new world,1,2,4,0,3,0
-16400,Eureka Seven,eureka vii,0,2,0,2,0,2
-16442,The Librarians,librarians,4,5,0,3,4,1
-16471,Veep,veep,11,0,0,4,8,0
-16515,Death in Paradise,death paradise,0,6,12,1,4,1
-16576,Star Wars Rebels,star wars rebels,0,14,0,11,7,0
-16577,Star Wars: The Clone Wars,star wars clone wars,8,22,2,23,46,0
-16630,X-Men: Evolution,x men evolution,0,4,0,3,0,4
-16633,The Haunting of Hill House,haunting hill house,60,173,351,9,161,52
-16645,13 Reasons Why,13 reasons why,7,197,0,152,167,11
-16655,Fawlty Towers,fawlty towers,0,4,0,4,0,3
-16756,She-Ra and the Princesses of Power,she ra princesses power,0,122,5,107,35,61
-16853,Quantum Leap,quantum leap,3,2,0,3,0,2
-17046,Mickey Mouse,mickey mouse,2,3,2,2,2,2
-17113,Last Man Standing,last man standing,0,2,1,2,1,1
-17147,You,you,13,145,4,90,116,37
-17162,Star Trek: Enterprise,star trek enterprise,0,15,0,5,6,1
-17377,Conversations with a Killer: The Ted Bundy Tapes,conversations with killer ted bundy tapes,0,2,0,1,0,1
-17471,The Mindy Project,mindy project,0,3,1,3,1,2
-17594,Summer Heights High,summer heights high,1,3,0,2,1,3
-17602,Metalocalypse,metalocalypse,25,1,28,0,29,0
-17616,Barry,barry,0,20,8,12,19,8
-17625,Spartacus,spartacus,0,4,0,4,4,1
-17631,A Million Little Things,million little things,2,10,3,5,0,5
-17633,Mindhunter,mindhunter,53,1,5,16,48,0
-17648,Legion,legion,8,15,1,9,13,3
-17650,The Animals of Farthing Wood,animals farthing wood,0,0,1,1,1,0
-17652,Frasier,frasier,0,14,0,12,19,0
-17667,Sailor Moon,sailor moon,0,24,2,15,3,15
-17670,Girl from Nowhere,girl from nowhere,42,11,1,33,20,38
-17676,Burn Notice,burn notice,0,3,0,2,0,1
-17690,PEN15,pen15,2,14,0,12,21,4
-17704,The Rookie,rookie,9,30,1,19,20,13
-17747,Dirty John,dirty john,0,26,0,6,4,9
-17797,Doom Patrol,doom patrol,3,17,0,20,31,0
-17801,11.22.63,112263,0,10,1,5,23,0
-17811,Parks and Recreation,parks recreation,1,48,0,43,58,2
-17816,Only Fools and Horses,only fools horses,0,3,0,3,5,0
-17834,Courage the Cowardly Dog,courage cowardly dog,7,0,2,0,6,0
-17835,Salad Fingers,salad fingers,11,3,0,7,10,0
-17875,What We Do in the Shadows,what we do shadows,10,64,1,65,82,15
-17882,Futurama,futurama,55,0,20,3,31,0
-17904,Fleabag,fleabag,1,54,1,51,2,40
-17908,Wellington Paranormal,wellington paranormal,5,1,1,2,3,0
-17915,DuckTales,ducktales,3,10,0,11,14,1
-17929,The Last Kingdom,last kingdom,0,6,0,5,14,0
-17940,Girls,girls,0,7,0,6,10,0
-17941,Seinfeld,seinfeld,2,10,1,6,14,1
-17949,Norsemen,norsemen,0,3,0,2,6,1
-17985,Mom,mom,7,0,3,0,6,0
-18002,Shiki,shiki,1,5,0,4,1,5
-18019,Shrill,shrill,0,5,3,2,3,2
-18039,Tribe,tribe,3,0,0,1,5,0
-18076,The Act,act,10,51,1,30,40,29
-18098,30 Rock,30 rock,7,3,5,8,10,0
-18115,Monk,monk,14,10,15,9,19,10
-18155,Moribito: Guardian of the Spirit,moribito guardian spirit,0,1,0,1,3,0
-18156,A Touch of Frost,touch frost,5,1,4,0,3,0
-18190,"Love, Death & Robots",love death robots,6,37,20,16,57,3
-18205,After Life,after life,17,47,0,18,8,17
-18211,Code Geass: Lelouch of the Rebellion,code geass lelouch rebellion,0,17,0,16,0,14
-18213,House of Cards,house cards,29,1,0,7,14,1
-18216,The Man in the High Castle,man high castle,0,9,0,5,13,2
-18246,Roswell,roswell,0,4,0,4,0,4
-18254,Foster's Home for Imaginary Friends,fosters home imaginary friends,0,2,0,2,0,2
-18262,American Horror Story,american horror story,207,33,96,34,165,6
-18295,Life in Pieces,life pieces,2,0,0,0,3,0
-18306,One Piece,one piece,2,30,0,22,29,4
-18413,Mr. Mercedes (Season 1),mr mercedes (season 1),2,19,0,4,1,4
-18443,Generator Rex,generator rex,0,2,0,2,2,0
-18445,Ben 10,ben x,0,4,0,3,0,3
-18484,The Halcyon,halcyon,0,2,0,2,0,2
-18515,The Good Fight,good fight,2,2,0,2,7,0
-18520,Rapunzel's Tangled Adventure,rapunzels tangled adventure,0,10,0,12,6,7
-18588,All American,all american,0,4,0,4,0,5
-18626,Meteor Garden,meteor garden,0,2,0,3,0,3
-18678,The Secret Circle,secret circle,0,1,0,1,1,0
-18700,While You Were Sleeping (Kdrama),while you were sleeping (kdrama),0,3,10,0,2,2
-18708,Fosse/Verdon,fosse verdon,0,2,0,1,2,1
-18720,Plebs,plebs,0,3,6,0,6,1
-18724,Animal Kingdom,animal kingdom,1,6,0,5,8,1
-18731,Gentleman Jack,gentleman jack,0,20,0,15,20,1
-18771,Chilling Adventures of Sabrina,chilling adventures sabrina,14,54,29,32,110,0
-18901,Tuca & Bertie,tuca bertie,0,20,0,17,13,1
-18909,Druck,druck,0,8,0,8,0,8
-19068,Wire in the Blood,wire blood,8,1,0,1,2,1
-19075,StartUp,startup,0,0,0,0,1,2
-19076,The Hot Zone,hot zone,0,2,0,2,4,0
-19095,Good Omens,good omens,3,193,43,90,157,9
-19127,Swamp Thing,swamp thing,1,7,0,3,9,1
-19128,Wentworth,wentworth,0,17,0,13,22,1
-19146,Speechless,speechless,0,3,0,2,0,2
-19159,Battlestar Galactica,battlestar galactica,1,8,11,0,7,1
-19162,Years and Years,years years,0,8,0,9,0,10
-19224,Harrow,harrow,5,0,3,0,7,0
-19225,Tales of the City,tales city,0,7,0,7,0,7
-19260,Chernobyl,chernobyl,275,2,117,5,164,0
-19294,Vida,vida,0,1,0,1,0,1
-19336,Letterkenny,letterkenny,0,8,0,5,0,6
-19341,Euphoria,euphoria,57,365,21,255,291,48
-19349,Charité at War,charité at war,0,1,0,2,5,0
-19360,SpongeBob SquarePants,spongebob squarepants,3,54,7,29,45,3
-19365,3%,3%,0,7,0,6,0,4
-19369,Video Game High School,video game high school,0,2,0,4,0,3
-19382,Gavin & Stacey,gavin stacey,0,7,0,6,0,7
-19415,The Chi,chi,0,0,0,0,2,0
-19424,The Young Offenders,young offenders,2,2,0,3,3,2
-19453,The Royle Family,royle family,1,3,0,3,0,3
-19474,The Forsyte Saga,forsyte saga,0,1,0,2,1,2
-19493,Spaced,spaced,1,4,0,4,0,4
-19498,Warehouse 13,warehouse 13,1,7,0,3,1,3
-19521,CSI: Crime Scene Investigation,csi crime scene investigation,15,2,10,3,7,2
-19531,Masters of Sex,masters sex,0,4,0,4,0,5
-19544,Hell on Wheels,hell on wheels,1,1,0,1,7,0
-19570,Entourage,entourage,0,2,0,2,0,2
-19580,Veronica Mars,veronica mars,13,4,0,12,13,1
-19584,Smash,smash,0,3,0,3,0,3
-19593,Flesh and Bone,flesh bone,0,3,0,2,4,0
-19605,Das Boot,das boot,0,1,0,0,0,0
-19659,Re:ZERO -Starting Life in Another World-,re zero starting life another world,14,3,9,1,12,0
-19668,The Mick,mick,2,6,0,4,13,0
-19681,One Day at a Time,one day at time,0,41,0,36,0,33
-19685,In the Dark,dark,15,71,9,22,44,10
-19712,Weightlifting Fairy Kim Bok-Joo,weightlifting fairy kim bok joo,0,3,0,2,0,2
-19749,Heroes,heroes,0,4,0,2,4,0
-19775,Undone,undone,0,8,0,9,0,8
-19801,12 Monkeys,12 monkeys,0,4,0,1,2,2
-19841,The 4400,4400,0,0,0,1,3,0
-19847,Limitless,limitless,0,2,0,2,0,2
-19860,The Tudors,tudors,0,7,0,2,11,1
-19863,Pride and Prejudice,pride prejudice,0,10,0,7,0,8
-19874,Black Mirror,black mirror,82,170,3,145,115,75
-19876,Mr. Bean,mr bean,0,2,0,1,0,2
-19921,Constantine,constantine,0,8,0,7,1,6
-19944,Justified,justified,12,0,0,3,7,1
-20047,The Orville,orville,0,6,0,7,0,4
-20074,Banshee,banshee,0,2,0,1,7,1
-20085,Rugrats,rugrats,0,10,0,8,8,0
-20098,New Amsterdam,new amsterdam,0,14,0,14,0,15
-20104,Pennyworth,pennyworth,0,0,1,0,6,0
-20152,Amphibia,amphibia,0,40,0,38,45,0
-20157,Cable Girls,cable girls,0,3,0,3,0,3
-20198,Arthur,arthur,0,10,1,6,8,0
-20263,24,24,8,0,0,3,2,1
-20296,All Creatures Great and Small,all creatures great small,5,0,1,0,3,0
-20300,Baby Daddy,baby daddy,0,2,0,1,1,1
-20307,The Fall,fall,0,10,2,3,0,6
-20378,The Righteous Gemstones,righteous gemstones,0,27,0,12,20,10
-20428,Better Than Us,better than us,0,3,0,3,0,3
-20451,Carnival Row,carnival row,4,16,10,5,25,1
-20487,Xavier: Renegade Angel,xavier renegade angel,5,0,1,4,6,0
-20491,The Young Pope,young pope,0,3,0,3,5,0
-20533,Bee and PuppyCat,bee puppycat,0,8,0,8,8,0
-20599,American Gods,american gods,21,5,16,1,20,1
-20632,Marianne,marianne,0,25,0,14,34,0
-20642,Unbelievable,unbelievable,0,15,0,14,14,6
-20780,Prodigal Son,prodigal son,0,8,0,6,7,1
-20798,The Politician,politician,0,9,0,9,9,1
-20813,Evil,evil,0,12,11,6,21,9
-20839,House,house,124,43,88,26,95,19
-20840,Nip/Tuck,nip tuck,3,0,0,1,5,0
-20844,Due South,due south,1,2,0,0,0,0
-20889,The Capture,capture,14,0,0,4,5,0
-20915,The Untamed,untamed,2,39,27,5,22,2
-20924,American Crime Story: The People vs. O.J. Simpson,american crime story people vs oj simpson,0,4,0,4,0,4
-20944,Imposters,imposters,0,4,0,2,0,2
-20954,North & South,north south,0,3,0,3,0,2
-20960,Chicago P.D.,chicago pd,0,6,1,0,0,2
-21013,Taboo,taboo,0,5,0,2,17,2
-21047,The Vampire Diaries,vampire diaries,2,79,1,58,65,4
-21076,Chicago Fire,chicago fire,20,3,9,6,8,4
-21080,Looking for Alaska,looking alaska,0,4,0,3,0,5
-21084,Come Fly with Me,come fly with me,2,0,0,2,2,1
-21105,The New Batman Adventures,new batman adventures,0,0,0,1,0,1
-21111,Watchmen: It’s Summer and We’re Running Out of Ice,watchmen it’s summer we’re running out ice,0,2,0,2,5,0
-21117,Benidorm,benidorm,9,1,0,4,0,5
-21156,Hanna,hanna,8,3,9,0,19,0
-21205,Hunter x Hunter,hunter x hunter,6,65,42,19,83,0
-21210,Watchmen,watchmen,13,1,5,3,23,0
-21247,Road to Avonlea,road avonlea,0,2,0,2,1,1
-21302,The Resident,resident,8,8,3,21,9,19
-21306,See,see,0,18,0,7,17,0
-21323,The Addams Family,addams family,1,1,0,3,0,3
-21333,Dickinson,dickinson,0,10,1,10,17,0
-21339,black-ish,black ish,0,4,0,4,0,4
-21342,Tom Clancy's  Jack Ryan,tom clancys jack ryan,53,1,0,4,11,3
-21362,The Morning Show,morning show,2,18,1,12,2,13
-21396,The Thick of It,thick it,0,10,0,7,0,10
-21419,Wisting,wisting,4,1,0,1,1,1
-21428,The Fresh Prince of Bel-Air,fresh prince bel air,0,2,0,3,4,1
-21459,This Country,this country,0,5,4,0,5,0
-21479,The Gifted,gifted,0,3,0,3,0,4
-21482,A Place to Call Home,place call home,1,5,0,1,8,1
-21499,I'm Alan Partridge,im alan partridge,0,3,0,3,1,1
-21500,Green Eggs and Ham,green eggs ham,0,3,0,3,0,3
-21605,"Bring It On, Ghost",bring it on ghost,0,0,3,0,0,0
-21658,The Muppets,muppets,0,4,0,4,0,3
-21670,Dolly Parton's Heartstrings,dolly partons heartstrings,6,0,0,1,1,1
-21680,Big City Greens,big city greens,0,3,0,2,0,2
-21693,Doc Martin,doc martin,7,1,1,2,8,0
-21707,Man Down,man down,0,2,2,2,4,0
-21740,Mr Inbetween,mr inbetween,16,0,0,4,5,0
-21741,The Last Man on Earth,last man on earth,1,1,0,2,6,0
-21742,Servant,servant,18,4,0,9,28,0
-21780,Beetlejuice,beetlejuice,0,2,0,1,0,0
-21827,Little House on the Prairie,little house on prairie,24,2,2,1,8,0
-21850,Crashing,crashing,0,3,0,4,0,4
-21892,Harley Quinn,harley quinn,10,3,5,1,11,0
-21894,Rizzoli & Isles,rizzoli isles,9,3,0,2,11,0
-21907,Evil Lives Here,evil lives here,8,2,4,1,7,0
-21913,Seven Seconds,seven seconds,3,8,0,3,4,2
-21969,Jack Whitehall: Travels with My Father,jack whitehall travels with my father,0,3,0,4,4,0
-21983,The Witcher,witcher,95,15,7,45,146,2
-21998,Tipping the Velvet,tipping velvet,0,3,0,3,4,0
-22019,For All Mankind,all mankind,3,7,1,5,4,0
-22023,Touch Your Heart,touch your heart,0,1,0,1,0,1
-22034,My Brilliant Friend,my brilliant friend,1,2,0,2,0,2
-22039,Gilmore Girls: A Year in the Life,gilmore girls year life,0,5,0,4,2,4
-22044,Teenage Mutant Ninja Turtles,teenage mutant ninja turtles,6,2,0,9,3,1
-22054,Star Trek: The Next Generation,star trek next generation,19,5,1,23,4,7
-22057,Star Trek: Deep Space Nine,star trek deep space ix,0,23,0,17,20,2
-22080,Nobody's Looking,nobodys looking,0,3,0,2,3,1
-22095,Carmilla,carmilla,0,3,0,2,0,2
-22096,H2O: Just Add Water,h2o just add water,0,9,0,9,14,0
-22124,Taskmaster,taskmaster,1,14,2,14,0,16
-22182,Spinning Out,spinning out,0,14,0,14,0,13
-22183,Raising Hope,raising hope,1,2,0,4,6,1
-22187,The L Word: Generation Q,l word generation q,0,4,0,3,0,4
-22198,Studio C,studio c,0,1,0,2,1,0
-22242,Home Movies,home movies,0,5,5,0,8,0
-22291,Six Feet Under,six feet under,11,3,0,4,13,1
-22295,The Bonfire of Destiny,bonfire destiny,1,2,0,0,1,1
-22297,Miranda,miranda,1,7,0,7,0,7
-22353,Eyewitness,eyewitness,2,0,0,3,1,2
-22377,Stumptown,stumptown,0,1,0,1,0,1
-22384,The Eric Andre Show,eric andre show,1,2,0,1,1,0
-22390,AJ and the Queen,aj queen,0,2,0,1,8,1
-22398,Kipo and the Age of Wonderbeasts,kipo age wonderbeasts,0,28,6,19,33,1
-22447,The Outsider,outsider,1,9,0,7,24,0
-22459,Forensic Files,forensic files,5,0,1,0,1,0
-22473,Chowder,chowder,0,1,0,0,0,0
-22498,RuPaul's Drag Race UK,rupauls drag race uk,0,4,0,3,0,4
-22502,Good Trouble,good trouble,0,4,0,4,0,3
-22518,Star Trek: Picard,star trek picard,0,28,0,21,18,9
-22582,Everything's Gonna Be Okay,everythings gonna be okay,0,4,0,3,0,3
-22625,Dollface,dollface,0,1,0,1,0,1
-22706,Locke & Key,locke key,0,27,0,27,22,10
-22749,Dan Vs.,dan vs,0,3,0,4,1,2
-22793,"I, Claudius",i claudius,0,3,1,2,0,0
-22809,Upright,upright,0,0,0,0,6,0
-22829,Mythic Quest: Raven's Banquet,mythic quest ravens banquet,0,4,0,3,6,1
-22849,Skam France,skam france,0,5,0,5,8,0
-22940,Call the Midwife,call midwife,3,9,10,8,13,3
-22947,When Calls the Heart,when calls heart,0,5,0,2,1,0
-23065,The Big C,big c,15,4,0,3,2,1
-23105,Ash vs Evil Dead,ash vs evil dead,16,2,0,6,14,0
-23114,Ashes to Ashes,ashes ashes,7,0,1,3,5,0
-23117,Ashes of Love,ashes love,0,1,0,1,2,0
-23182,American Housewife,american housewife,0,3,0,3,0,3
-23204,Grey's Anatomy,greys anatomy,353,17,9,174,247,11
-23227,Pretty Little Liars,pretty little liars,5,75,1,62,74,10
-23229,My Little Pony: Friendship Is Magic,my little pony friendship magic,28,35,7,45,52,2
-23230,Big Little Lies,big little lies,0,21,0,19,2,19
-23265,The A-Team,a team,0,3,0,3,0,3
-23294,Tales from the Crypt,tales from crypt,5,2,6,1,6,1
-23330,The X-Files,x files,73,30,18,29,60,10
-23340,Blue Bloods,blue bloods,0,1,1,0,0,1
-23346,Bloodline,bloodline,0,4,0,2,8,1
-23551,Money Heist,money heist,5,20,0,13,5,8
-23552,Suburra: Blood on Rome,suburra blood on rome,5,0,0,3,3,0
-23590,The Last Ship,last ship,0,5,0,1,5,0
-23761,Mr. Mercedes,mr mercedes,29,6,0,1,23,2
-23798,"Magnum, P.I.",magnum pi,1,7,0,8,1,6
-23836,Anne with an E,anne with an e,0,53,2,43,65,1
-23904,New Girl,new girl,0,25,33,6,24,3
-24000,St. Elsewhere,st elsewhere,1,0,2,1,1,0
-24019,Heartland,heartland,6,6,0,6,7,1
-24031,Get Smart,get smart,0,1,0,1,0,1
-24034,How to Get Away with Murder,how get away with murder,0,6,0,7,9,2
-24057,The Killing,killing,0,3,1,1,8,0
-24428,Fullmetal Alchemist: Brotherhood,fullmetal alchemist brotherhood,216,3,0,91,115,2
-24456,"Ed, Edd n Eddy",ed edd n eddy,0,10,0,8,1,8
-24544,SIX,six,0,4,0,1,1,0
-24632,Law & Order: Criminal Intent,law order criminal intent,2,0,1,0,2,0
-24780,Storm of the Century,storm century,0,2,0,2,0,2
-24902,Scandal,scandal,8,1,0,1,4,2
-24924,Witches of East End,witches east end,2,3,1,1,1,0
-24925,A Discovery of Witches,discovery witches,1,8,0,8,25,1
-24932,Perry Mason,perry mason,3,0,0,0,2,0
-25080,Being Human,being human,0,1,4,0,5,0
-25153,Into the Badlands,into badlands,0,0,0,0,4,0
-25269,The Thin Blue Line,thin blue line,0,1,0,1,0,1
-25275,Murdoch Mysteries,murdoch mysteries,11,4,8,0,11,0
-25455,Tru Calling,tru calling,0,4,0,1,0,4
-25627,Banana,banana,0,1,0,1,0,1
-25834,Knowing Me Knowing You with Alan Partridge,knowing me knowing you with alan partridge,0,2,0,2,0,2
-25852,Kings,kings,0,2,0,3,3,0
-25926,The Good Doctor,good doctor,5,16,0,37,38,26
-26010,Santa Clarita Diet,santa clarita diet,0,10,0,9,10,0
-26072,Law & Order: Special Victims Unit,law order special victims unit,23,7,13,3,16,3
-26092,Virgin River,virgin river,0,8,0,5,1,7
-26182,High Fidelity,high fidelity,0,3,0,2,0,3
-26240,Fallout,fallout,376,56,4,52,202,11
-26297,The Good Place,good place,249,19,9,93,107,23
-26510,Lupin the Third: The Woman Called Fujiko Mine,lupin third woman called fujiko mine,0,3,0,2,0,2
-26647,Kill la Kill,kill la kill,1,14,0,9,8,4
-26713,All in the Family,all family,0,1,0,2,0,0
-26806,The Ren & Stimpy Show,ren stimpy show,1,2,3,0,1,0
-26874,The Night Shift,night shift,0,4,0,3,4,0
-26876,The Night Manager,night manager,26,10,0,6,9,6
-26975,Line of Duty,line duty,32,0,0,9,17,2
-27063,Atlanta,atlanta,12,5,0,9,9,6
-27108,Farscape,farscape,0,8,0,7,7,0
-27278,Naruto Shippūden,naruto shippūden,23,3,0,9,6,5
-27279,Naruto,naruto,14,3,1,8,11,0
-27446,El Chavo del Ocho,el chavo del ocho,0,2,3,0,3,0
-27506,Sleepy Hollow,sleepy hollow,0,4,0,5,0,4
-27543,Kamisama Kiss,kamisama kiss,0,5,0,3,2,2
-27760,Top Gear,top gear,0,4,0,2,1,1
-27782,The Grand Tour,grand tour,0,2,0,3,0,3
-27892,Avatar: The Last Airbender,avatar last airbender,1,137,0,118,121,11
-28059,The Legend of Korra,legend korra,0,35,0,35,2,27
-28556,Samurai Jack,samurai jack,3,0,0,1,5,0
-29048,Young & Hungry,young hungry,2,0,0,1,1,0
-29091,The King of Queens,king queens,0,0,0,1,3,1
-29175,Marcella,marcella,32,0,0,7,13,0
-29213,Orphan Black,orphan black,4,13,0,14,15,3
-29216,The Blacklist,blacklist,13,3,3,0,14,2
-29261,Rookie Blue,rookie blue,0,1,0,1,0,1
-29354,Silicon Valley,silicon valley,0,5,0,4,2,2
-29508,Bosch,bosch,0,4,0,1,0,0
-29599,Dr. Stone,dr stone,5,1,0,9,8,0
-29642,Last Tango in Halifax,last tango halifax,0,2,0,2,0,2
-29683,Hwarang: The Poet Warrior Youth,hwarang poet warrior youth,0,2,0,3,3,2
-29689,Alexa & Katie,alexa katie,0,10,0,7,0,7
-29761,The Incredible Dr. Pol,incredible dr pol,5,0,4,0,5,0
-29900,Miraculous: Tales of Ladybug & Cat Noir,miraculous tales ladybug cat noir,0,15,0,13,4,15
-29904,The Amazing Race,amazing race,0,5,0,4,1,3
-29905,The Amazing World of Gumball,amazing world gumball,0,27,1,23,28,2
-29914,Lodge 49,lodge 49,0,1,0,1,3,1
-30021,Californication,californication,0,1,0,1,1,0
-30034,Dark Angel,dark angel,0,1,0,1,3,0
-30137,Reno 911!,reno 911,5,1,2,0,2,1
-30209,When They Cry,when they cry,0,3,0,2,1,1
-30233,Jewel in the Palace,jewel palace,0,0,0,0,1,0
-30290,Doctor Who,doctor who,44,65,46,30,80,20
-30489,Fresh Off the Boat,fresh off boat,0,2,2,1,1,1
-30548,Romance is a Bonus Book,romance bonus book,0,3,0,2,0,2
-30829,Hudson & Rex,hudson rex,0,7,0,2,3,1
-30979,Castle Rock,castle rock,22,0,0,4,15,0
-31032,Halt and Catch Fire,halt catch fire,0,1,0,1,9,0
-31190,King of the Hill,king hill,2,27,24,1,26,3
-31234,Teen Wolf,teen wolf,19,11,22,10,34,0
-31402,Power,power,14,0,0,3,7,0
-31403,Pokémon,pokémon,7,0,0,3,5,0
-31418,TURN: Washington's Spies,turn washingtons spies,0,6,0,7,12,0
-31684,ID: INVADED,id invaded,0,2,0,3,0,3
-32159,The Transformers,transformers,0,4,0,3,0,3
-32423,Narcos: Mexico,narcos mexico,0,1,0,0,4,1
-32489,That '70s Show,that 70s show,2,0,3,0,2,0
-32505,Godless,godless,0,2,0,3,15,2
-32696,The Unit,unit,0,0,0,0,4,0
-32996,Switched at Birth,switched at birth,0,4,0,4,0,4
-33009,Madam Secretary,madam secretary,4,0,0,0,4,0
-33183,Bodyguard,bodyguard,0,4,0,5,0,4
-33277,Mushi-Shi,mushi shi,0,2,0,3,3,0
-33327,Fortysomething,fortysomething,0,1,0,1,0,1
-33420,Animaniacs,animaniacs,0,7,0,6,0,6
-33449,Band of Brothers,band brothers,0,18,0,13,24,1
-33452,Red Band Society,red band society,0,4,0,1,0,1
-33563,Gilmore Girls,gilmore girls,29,9,30,1,29,2
-33593,Miss Fisher's Murder Mysteries,miss fishers murder mysteries,0,4,0,3,6,0
-33624,Secret Diary of a Call Girl,secret diary call girl,0,3,0,3,0,3
-33958,Wallander,wallander,6,0,0,1,6,0
-34240,Gotham,gotham,17,0,1,12,13,1
-34359,Sense and Sensibility,sense sensibility,0,3,0,3,0,2
-34369,Project Runway,project runway,0,1,0,1,1,1
-34531,Flight of the Conchords,flight conchords,3,0,0,2,3,0
-34549,Snowfall,snowfall,2,0,0,0,4,2
-34610,The Royals,royals,1,1,0,1,3,1
-34626,Suits,suits,0,8,16,3,15,3
-34683,Sugar Rush,sugar rush,5,0,0,3,3,1
-34732,Everything Sucks!,everything sucks,0,8,0,6,0,7
-34902,Atypical,atypical,0,59,2,55,12,42
-35065,Chewing Gum,chewing gum,0,1,0,2,0,1
-35095,Chuck,chuck,0,1,0,2,0,0
-35104,"No Game, No Life",no game no life,0,3,0,2,1,3
-35221,His Dark Materials,his dark materials,1,21,0,18,47,2
-35286,A Little Princess Sara,little princess sara,0,1,0,1,0,1
-35307,Good Morning Call,good morning call,0,1,0,2,0,3
-35395,Freaks and Geeks,freaks geeks,14,0,0,5,8,3
-35802,Yo soy Betty la fea,yo soy betty la fea,0,3,0,3,0,3
-35816,Greek,greek,0,2,0,2,2,0
-35846,Life's Too Short,lifes too short,0,2,0,2,0,2
-35862,The Missing,missing,2,2,0,1,3,0
-35883,Death Note,death note,0,51,0,43,0,33
-36000,Shooter,shooter,0,9,0,8,6,4
-36346,Cheer,cheer,0,4,0,4,0,5
-36361,Victoria,victoria,16,0,0,5,7,4
-36474,The Glades,glades,0,2,0,2,3,1
-36633,Clannad,clannad,0,4,8,0,2,0
-36660,Black Sails,black sails,0,31,0,33,28,1
-36715,MacGyver,macgyver,4,2,0,2,4,1
-36757,Motherland: Fort Salem,motherland fort salem,0,9,0,8,2,4
-36833,Condor,condor,4,0,1,2,2,0
-36978,The Smile Has Left Your Eyes,smile has left your eyes,0,1,0,2,0,1
-37149,Nurse Jackie,nurse jackie,1,4,0,2,3,1
-37355,Dororo,dororo,0,5,0,2,6,0
-37363,Crash Landing on You,crash landing on you,1,11,0,10,1,9
-37841,Grimm,grimm,6,3,2,3,10,3
-38123,Killing Eve,killing eve,65,51,63,57,42,57
-38196,Black Spot,black spot,0,1,0,1,13,0
-38396,Astra Lost in Space,astra lost space,0,1,0,1,2,0
-38686,Thriller,thriller,0,1,0,2,0,1
-38718,Dexter's Laboratory,dexters laboratory,0,1,0,1,1,0
-38731,Pinky and the Brain,pinky brain,0,1,0,1,1,1
-38757,Longmire,longmire,0,2,0,2,8,0
-38871,One Tree Hill,one tree hill,0,5,0,4,1,3
-39595,The Knick,knick,0,1,0,0,14,1
-39737,Overlord,overlord,0,1,0,1,1,0
-39894,Merlin,merlin,0,28,0,25,31,2
-40003,Recess,recess,0,1,0,2,2,2
-40032,Tokyo Ghoul,tokyo ghoul,1,1,0,3,3,0
-40068,Batman,batman,0,1,0,1,0,1
-40097,The Wrong Mans,wrong mans,0,1,1,1,0,1
-40225,Masters of Horror,masters horror,3,2,4,1,3,1
-40278,Friday Night Lights,friday night lights,0,2,0,3,0,2
-40397,Defending Jacob,defending jacob,1,7,0,5,6,0
-40426,Beavis and Butt-head,beavis butt head,0,2,3,1,3,1
-40500,Teenage Mutant Ninja Turtles,teenage mutant ninja turtles,0,2,0,2,0,2
-40891,My Mister,my mister,0,1,0,1,1,0
-40907,Revenge,revenge,11,3,1,3,7,2
-41021,Clerks: The Animated Series,clerks animated series,0,2,0,3,0,3
-41267,Seraph of the End,seraph end,0,8,0,7,0,7
-41285,And Then There Were None,then there were none,0,5,0,5,0,4
-41330,La que se avecina,la que se avecina,4,1,3,0,2,0
-41405,Hart of Dixie,hart dixie,0,0,0,1,0,0
-41457,Dirk Gently's Holistic Detective Agency,dirk gentlys holistic detective agency,27,4,17,9,23,6
-41465,World on Fire,world on fire,1,3,0,1,0,1
-41548,Dr. Horrible's Sing-Along Blog,dr horribles sing along blog,0,10,0,9,0,8
-41647,The Keepers,keepers,0,3,0,3,0,3
-41998,Billions,billions,2,1,0,1,12,0
-42149,Childrens Hospital,childrens hospital,0,2,1,1,2,0
-42295,The Avengers: Earth's Mightiest Heroes,avengers earths mightiest heroes,0,0,0,1,0,0
-42723,Laid-Back Camp,laid back camp,1,2,0,3,0,2
-42861,Monster,monster,3,2,2,1,3,1
-42874,The Returned,returned,3,0,0,1,3,0
-42977,The Twilight Zone,twilight zone,4,6,1,5,2,5
-43166,Jessica Jones,jessica jones,0,7,0,5,0,4
-43244,Love O2O,love o2o,0,1,0,1,0,1
-43285,SOTUS The Series,sotus series,0,3,0,3,0,3
-43429,Cinderella and Four Knights,cinderella iv knights,0,2,0,2,0,1
-43439,Search Party,search party,1,5,5,3,11,0
-43668,Ajin,ajin,0,2,0,2,1,1
-44444,Glitch Techs,glitch techs,0,7,4,1,4,1
-44551,Steven Universe Future,steven universe future,1,27,0,25,27,2
-44555,Shameless,shameless,157,21,106,12,140,10
-45241,The Marvelous Mrs. Maisel,marvelous mrs maisel,0,2,2,0,0,1
-45248,The Marvelous Misadventures of Flapjack,marvelous misadventures flapjack,0,5,0,2,2,0
-45370,Grace and Frankie,grace frankie,0,19,0,15,7,10
-45591,Itaewon Class,skitaewon class,0,3,0,5,18,0
-45684,Mobile Suit Gundam: Iron-Blooded Orphans,mobile suit gundam iron blooded orphans,0,3,0,5,1,3
-45964,Don't F**k with Cats: Hunting an Internet Killer,dont f**k with cats hunting an internet killer,95,2,137,3,73,10
-46085,The Bridge,bridge,4,0,0,0,3,0
-46117,Hollywood,hollywood,0,10,0,8,0,9
-46472,Nashville,nashville,0,0,0,0,0,1
-46644,Devilman: Crybaby,devilman crybaby,88,0,78,2,71,1
-46650,John Adams,john adams,1,1,0,1,5,1
-46714,BrainDead,braindead,0,4,4,1,4,0
-46743,Milo Murphy's Law,milo murphys law,0,10,0,6,0,6
-46889,Bleak House,bleak house,0,2,0,2,0,2
-46899,Trollhunters: Tales of Arcadia,trollhunters tales arcadia,1,7,14,0,10,0
-47266,Friday Night Dinner,friday night dinner,13,0,0,7,12,0
-47283,Derry Girls,derry girls,13,57,0,55,60,14
-47751,Sons of Anarchy,sons anarchy,13,1,0,3,9,0
-47789,The Magicians,magicians,95,3,101,5,87,4
-48093,Nirvana in Fire,nirvana fire,0,2,0,2,2,0
-48623,Inspector George Gently,inspector george gently,1,0,0,0,1,0
-48712,Make It or Break It,make it or break it,0,2,0,1,0,2
-48852,The Dead Zone,dead zone,2,27,0,8,1,4
-48977,Wild Wild Country,wild wild country,0,1,0,0,3,0
-49088,The New Pope,new pope,7,3,1,2,0,2
-49090,The Newsroom,newsroom,0,3,0,2,0,2
-49546,Call My Agent,call my agent,10,0,0,2,4,0
-49877,Grantchester,grantchester,0,3,0,1,4,0
-49898,Empire,empire,0,2,2,0,0,1
-50113,Counterpart,counterpart,0,1,0,1,4,0
-50136,Gargoyles,gargoyles,0,1,0,2,0,1
-50307,She Was Pretty,she was pretty,1,0,0,1,0,1
-50413,Fruits Basket,fruits basket,3,23,15,7,20,1
-50424,Timeless,timeless,0,1,0,2,0,0
-50664,iZombie,izombie,0,16,0,12,19,0
-51155,Russian Doll,russian doll,2,44,1,53,8,32
-51532,Outnumbered,outnumbered,0,6,0,5,7,0
-51563,The Spy,spy,0,1,0,1,1,0
-51706,Lost in Austen,lost austen,0,1,0,1,0,1
-52204,Just Add Magic,just add magic,0,2,0,2,0,2
-52317,The White Queen,white queen,9,0,0,3,6,0
-52406,Warrior,warrior,0,2,0,0,2,0
-52451,The King: Eternal Monarch,king eternal monarch,0,2,0,3,0,2
-52974,Haikyu!!,haikyu,0,6,0,5,0,5
-53127,Great Expectations,great expectations,0,1,0,1,0,1
-53186,Prison School,prison school,0,1,0,1,1,1
-53199,The Ranch,ranch,1,1,0,0,6,0
-53685,Mayans M.C.,mayans mc,13,0,1,2,7,0
-53916,Criminal: UK,criminal uk,0,1,0,1,0,1
-54490,Clone High,clone high,7,0,0,5,9,1
-54618,Yu-Gi-Oh! Duel Monsters,yu gi oh duel monsters,2,2,0,3,3,0
-54820,Quicksand,quicksand,0,7,0,6,13,0
-54842,Unforgotten,unforgotten,1,12,1,1,1,1
-55735,Green Wing,green wing,0,4,2,0,4,0
-56009,Kimi ni Todoke: From Me to You,kimi ni todoke from me you,0,4,0,3,0,3
-56242,Ray Donovan,ray donovan,4,7,0,1,2,0
-56352,Keep Your Hands Off Eizouken!,keep your hands off eizouken,0,4,0,3,0,3
-56789,Steins;Gate,steins;gate,0,1,0,1,0,1
-56969,Survivor,survivor,0,13,1,11,15,3
-57036,Hunter x Hunter,hunter x hunter,0,4,0,3,2,1
-57108,Chicago Med,chicago med,0,13,0,11,8,4
-57581,My Mad Fat Diary,my mad fat diary,1,2,0,3,2,1
-57752,Absolutely Fabulous,absolutely fabulous,0,2,0,1,0,2
-58313,Love By Chance,love by chance,0,3,0,3,0,3
-58484,Welcome to the N.H.K.,welcome nhk,0,4,3,0,1,2
-58571,The Pillars of the Earth,pillars earth,0,2,0,2,3,0
-58835,Moomin,moomin,0,1,0,1,2,0
-58916,Wayward Pines,wayward pines,0,2,0,3,5,1
-59014,Good Doctor,good doctor,0,3,0,3,4,0
-59024,Goosebumps,goosebumps,3,1,0,3,2,1
-59067,Fearless,fearless,0,1,0,1,0,1
-59084,Her Private Life,her private life,0,2,0,2,0,2
-59301,Life on Mars,life on mars,0,1,0,1,0,0
-59367,Leverage,leverage,0,15,0,13,4,7
-59410,Agatha Christie's Marple,agatha christies marple,1,2,0,2,0,3
-59463,Blue Spring Ride,blue spring ride,0,3,0,3,0,3
-59654,Bates Motel,bates motel,15,2,0,6,9,1
-59681,Mobile Suit Gundam 00,mobile suit gundam 00,0,2,0,2,0,1
-60049,Shameless,shameless,8,1,0,0,7,0
-60131,Wayne,wayne,13,1,0,12,11,1
-60152,Voltron: Legendary Defender,voltron legendary defender,0,49,25,25,6,31
-60441,The Goes Wrong Show,goes wrong show,6,3,6,3,0,6
-60799,Disney's House of Mouse,disneys house mouse,0,1,0,1,1,0
-60927,Harper's Island,harpers island,4,0,1,2,4,0
-60993,Mobile Suit Gundam SEED,mobile suit gundam seed,0,0,0,0,0,1
-61237,Cobra Kai,cobra kai,1,24,0,24,32,3
-61397,The Durrells,durrells,0,6,0,1,6,0
-61414,Patriot,patriot,2,1,0,2,5,0
-61597,The Adventures of Tintin,adventures tintin,0,1,0,1,1,0
-62026,60 Days In,60 days,0,3,0,3,0,3
-62075,"Hi Bye, Mama!",hi bye mama,0,2,0,2,0,2
-62076,Titans,titans,2,12,0,6,19,0
-62290,Because This Is My First Life,because this my first life,0,6,0,8,0,7
-62719,GLOW,glow,0,5,0,8,10,1
-62908,Blue Exorcist,blue exorcist,0,0,0,1,2,0
-63231,Star Trek Continues,star trek continues,0,1,0,1,0,1
-63513,Toilet-Bound Hanako-kun,toilet bound hanako kun,0,30,1,26,15,12
-63545,Oh My Ghost,oh my ghost,1,1,0,2,0,2
-63637,Twelve Forever,twelve forever,0,2,0,2,0,2
-63904,Roots,roots,0,9,0,9,4,6
-63907,Roots,roots,0,7,0,7,4,3
-64109,The Crimson Petal and the White,crimson petal white,0,1,0,2,1,1
-64454,Sailor Moon Crystal,sailor moon crystal,0,2,0,3,0,2
-64715,Sekai Ichi Hatsukoi: The World's Greatest First Love,sekai ichi hatsukoi worlds greatest first love,0,2,0,2,0,2
-64761,Mob Psycho 100,mob psycho 100,1,45,39,11,23,19
-64879,Three Girls,three girls,0,2,0,2,0,2
-64939,Baptiste,baptiste,0,5,0,3,0,3
-65023,Fresh Meat,fresh meat,0,2,0,3,2,0
-65182,Serial Experiments Lain,serial experiments lain,0,25,0,21,0,21
-65309,Superstore,superstore,8,22,25,21,46,1
-65482,Durarara!!,durarara,0,1,0,0,0,0
-65794,Vinland Saga,vinland saga,12,0,0,5,11,0
-65856,Fruits Basket,fruits basket,0,8,0,8,0,6
-66170,Impulse,impulse,0,2,0,2,1,1
-66199,X-Men,x men,0,5,0,4,0,3
-66812,Rurouni Kenshin,rurouni kenshin,0,1,0,1,0,1
-67039,Workin' Moms,workin moms,4,23,2,10,11,3
-67466,Suspicious Partner,suspicious partner,0,3,0,3,0,3
-68093,Daily Lives of High School Boys,daily lives high school boys,0,2,0,2,0,1
-68312,Him & Her,him her,0,1,0,1,0,1
-69115,Maid Sama!,maid sama,0,2,0,1,0,1
-69294,Beastars,beastars,17,29,23,27,83,1
-69352,Luther,luther,25,1,1,1,6,1
-69461,InuYasha,inuyasha,10,1,1,5,12,0
-69481,Aggretsuko,aggretsuko,1,13,0,13,0,13
-69526,Jackass,jackass,0,3,1,2,0,3
-70040,Wolf Hall,wolf hall,8,0,0,0,4,0
-70105,Dark Matter,dark matter,0,3,0,3,4,1
-70266,Kitchen Nightmares,kitchen nightmares,0,5,0,4,7,0
-70319,How to Sell Drugs Online (Fast),how sell drugs online (fast),1,17,0,8,20,0
-70367,War and Peace,war peace,3,6,0,7,7,2
-70685,Takin' Over the Asylum,takin over asylum,0,5,10,0,4,4
-71115,Batman: The Brave and the Bold,batman brave bold,0,2,0,2,0,2
-71141,The Fades,fades,0,2,0,2,3,0
-71720,Epic Rap Battles of History,epic rap battles history,0,3,0,1,0,3
-72115,The Last Czars,last czars,1,2,2,1,0,1
-72497,Wotakoi: Love is Hard for Otaku,wotakoi love hard otaku,0,2,0,2,0,2
-72538,Daisy Jones & The Six,daisy jones vi,0,14,0,13,0,13
-72694,Sanditon,sanditon,0,4,0,4,1,2
-73475,Kingdom,kingdom,13,9,0,9,10,0
-74026,Stargate Atlantis,stargate atlantis,0,7,0,5,5,2
-74236,The Devil Next Door,devil next door,0,2,0,2,0,2
-74602,Succession,succession,43,9,2,30,36,4
-74895,Unbreakable Kimmy Schmidt,unbreakable kimmy schmidt,0,2,0,1,1,2
-74946,D.Gray-man,dgray man,1,3,5,1,3,1
-75298,Superjail!,superjail,5,0,1,1,9,0
-75339,Inuyashiki: Last Hero,inuyashiki last hero,1,4,2,0,6,0
-75342,Dorohedoro,dorohedoro,0,7,0,6,5,0
-75438,I Am Not Okay with This,i am not okay with this,1,74,0,76,107,2
-75835,Trailer Park Boys,trailer park boys,0,2,0,2,4,1
-76042,Mr. Sunshine,mr sunshine,0,4,0,4,1,2
-76079,Another Miss Oh,another miss oh,0,1,0,1,0,1
-76701,Pit Bulls and Parolees,pit bulls parolees,1,0,0,1,0,1
-76871,Phantom: Requiem for the Phantom,phantom requiem phantom,0,1,0,1,1,0
-77557,American Dad!,american dad,24,2,12,3,19,1
-77961,Sonic Mania Adventures,sonic mania adventures,0,2,0,3,0,2
-78298,Cardcaptor Sakura,cardcaptor sakura,0,6,0,5,0,5
-78698,Terrace House: Opening New Doors,terrace house opening new doors,0,2,0,2,2,0
-79293,The Owl House,owl house,3,170,1,130,152,1
-79422,Bleach,bleach,1,4,0,4,2,1
-79486,Broken Trail,broken trail,0,1,0,1,1,0
-79530,Father Brown,father brown,9,7,6,2,6,2
-79716,2gether: The Series,2gether series,0,5,0,5,0,5
-79792,The Looney Tunes Show,looney tunes show,0,5,0,5,4,0
-80556,SKAM,skam,0,15,0,10,0,10
-80636,The Lost Room,lost room,0,1,0,1,0,1
-80746,"That Winter, The Wind Blows",that winter wind blows,0,2,0,2,0,2
-81328,The Affair,affair,1,7,0,0,0,1
-81437,Devs,devs,0,4,0,4,2,3
-81625,Bad Girls,bad girls,0,1,0,1,2,0
-81749,FLCL,flcl,1,3,0,3,0,3
-81763,Happy Endings,happy endings,0,3,1,3,3,1
-81820,Mortal Kombat: Legacy,mortal kombat legacy,0,4,0,4,0,4
-82641,Trial & Error,trial error,0,1,0,1,1,0
-83549,Mary Kills People,mary kills people,0,1,0,2,2,1
-83988,Bondi Rescue,bondi rescue,0,1,0,1,0,1
-84641,Still 17,still 17,0,2,0,2,0,2
-85291,The Escape Artist,escape artist,0,5,0,2,0,2
-85438,The Pharmacist,pharmacist,0,1,0,1,0,1
-85724,Man Like Mobeen,man like mobeen,0,0,2,0,3,0
-85936,Catch-22,catch 22,9,0,0,2,0,1
-86761,Escape at Dannemora,escape at dannemora,0,9,0,5,0,3
-86917,Flowers,flowers,0,3,0,1,0,1
-87352,When the Camellia Blooms,when camellia blooms,0,2,2,1,1,2
-87506,The Plot Against America,plot against america,0,2,0,2,0,2
-87936,My Holo Love,my holo love,0,1,0,1,0,1
-88776,Gogglebox,gogglebox,0,3,1,0,2,0
-90014,Toradora!,toradora,0,12,0,10,0,11
-90791,Dead Set,dead set,0,1,0,1,0,1
-91291,Jul i Blodfjell,jul i blodfjell,0,1,0,1,0,1
-92001,Vagabond,vagabond,0,1,0,2,0,0
-92634,Slam Dunk,slam dunk,0,1,0,1,0,1
-92707,Your Lie in April,your lie april,0,14,18,0,5,11
-92779,Samurai Champloo,samurai champloo,0,2,0,2,0,2
-92864,Huff,huff,0,1,1,0,1,0
-93265,Sorry For Your Loss,sorry your loss,2,0,0,2,0,2
-93328,I Know This Much Is True,i know this much true,0,1,0,1,6,0
-93447,Planetes,planetes,0,1,0,1,0,1
-93501,The Shield,shield,4,0,6,1,4,0
-93560,A Very English Scandal,very english scandal,20,1,0,6,2,5
-94381,Mrs. America,mrs america,0,3,0,3,5,1
-94748,School Babysitters,school babysitters,0,2,0,2,0,2
-96726,Younger,younger,0,1,0,0,0,0
-97008,Stateless,stateless,0,3,0,3,0,3
-97144,Mother,mother,0,2,0,2,2,0
-97557,Green Lantern: The Animated Series,green lantern animated series,0,2,0,2,0,2
-97860,Exit,exit,0,2,0,2,2,0
-97967,"Love, Chunibyo & Other Delusions",love chunibyo other delusions,0,2,0,2,0,2
-98531,"Harvey Birdman, Attorney at Law",harvey birdman attorney at law,2,0,0,2,1,0
-98685,Hot Ones,hot ones,0,1,0,1,0,1
-99053,The Spectacular Spider-Man,spectacular spider man,0,2,0,3,0,3
-99091,Making a Murderer,making murderer,0,1,5,0,0,1
-99403,Offspring,offspring,7,0,1,1,1,1
-99619,Mike Tyson Mysteries,mike tyson mysteries,2,1,0,2,2,0
-99764,Paranoia Agent,paranoia agent,9,0,0,2,4,1
-99939,Pippi Longstocking,pippi longstocking,0,1,0,1,0,1
-99987,Mrs Wilson,mrs wilson,0,3,0,3,0,3
-100755,Rookie Historian Goo Hae-Ryung,rookie historian goo hae ryung,0,1,0,1,0,0
-101087,Psychopath Diary,psychopath diary,0,2,0,3,3,1
-102212,Boys Over Flowers,boys over flowers,0,3,0,2,0,2
-103601,The Little Drummer Girl,little drummer girl,0,1,0,1,0,1
-104500,Alias Grace,alias grace,0,6,0,5,8,0
-104855,Carmen Sandiego,carmen sandiego,0,8,0,6,0,8
-105786,This Is England '88,this england 88,0,1,0,1,0,1
-106197,Enlightened,enlightened,4,0,0,1,0,1
-106767,Zorro,zorro,0,1,0,1,0,1
-107158,Beast Wars: Transformers,beast wars transformers,0,4,2,0,5,0
-109596,Zach Stone Is Gonna Be Famous,zach stone gonna be famous,0,5,0,4,0,1
-109646,Kim's Convenience,kims convenience,0,3,0,3,5,0
-110377,Solar Opposites,solar opposites,6,4,5,4,17,1
-111378,A Teacher,teacher,0,4,0,4,0,4
-111432,Rascal Does Not Dream of Bunny Girl Senpai,rascal does not dream bunny girl senpai,0,6,0,6,0,6
-111905,The Alfred Hitchcock Hour,alfred hitchcock hour,4,1,1,2,3,1
-111981,Political Animals,political animals,0,3,0,1,0,2
-115102,The Goodies,goodies,1,1,1,1,1,0
-115178,Below Deck Mediterranean,below deck mediterranean,0,2,0,2,0,1
-115878,RuPaul's Drag Race All Stars,rupauls drag race all stars,0,4,0,4,3,1
-117118,Brickleberry,brickleberry,6,0,4,0,4,0
-117261,Gåsmamman,gåsmamman,6,0,0,3,4,0
-117457,Bad Education,bad education,11,1,0,9,11,0
-117795,Better Things,better things,6,0,0,1,4,0
-118190,Mobile Suit Gundam,mobile suit gundam,0,5,0,4,0,4
-118287,Barakamon,barakamon,0,2,0,2,0,2
-118507,Ranma ½,ranma ½,0,3,0,2,0,2
-118509,Maison Ikkoku,maison ikkoku,0,1,0,1,0,1
-119692,The Legend of the Blue Sea,legend blue sea,0,3,0,3,0,3
-120355,Addicted Heroin,addicted heroin,0,2,0,2,0,2
-120721,Girls' Last Tour,girls last tour,1,3,0,4,4,0
-122246,TharnType the Series เกลียดนักมาเป็นที่รักกันซะดีๆ,tharntype series เกลียดนักมาเป็นที่รักกันซะดีๆ,0,6,0,5,0,5
-122488,Hellsing,hellsing,0,3,0,1,0,1
-122490,Hellsing Ultimate,hellsing ultimate,1,2,0,3,4,0
-124550,UnREAL,unreal,0,9,0,5,2,6
-125739,Monthly Girls' Nozaki-kun,monthly girls nozaki kun,0,5,0,5,0,5
-126152,Black,black,7,0,0,3,0,0
-126981,My First First Love,my first first love,0,3,0,3,0,2
-127178,David the Gnome,david gnome,0,1,0,1,1,0
-127201,Big Love,big love,5,0,0,2,3,0
-127249,Haibane Renmei,haibane renmei,0,9,0,8,10,2
-127318,When the Levees Broke: A Requiem in Four Acts,when levees broke requiem iv acts,6,0,2,0,3,0
-127364,Unorthodox,unorthodox,0,7,0,8,0,7
-128636,Kaiba,kaiba,6,0,0,3,5,0
-128686,He Is Psychometric,he psychometric,0,1,0,1,0,1
-128736,Terror in Resonance,terror resonance,0,3,0,3,0,3
-128788,Belgravia,belgravia,0,2,0,1,0,1
-129007,The English Game,english game,18,0,0,2,2,2
-129324,Angels in America,angels america,0,2,0,2,0,2
-129505,Classroom of the Elite,classroom elite,1,2,0,3,0,2
-130292,Insecure,insecure,0,7,0,5,0,5
-130531,Black Monday,black monday,0,6,0,6,2,3
-130666,Home Before Dark,home before dark,0,4,0,1,5,0
-131274,Dream High,dream high,0,2,0,2,0,2
-131275,Barbie: Life in the Dreamhouse,barbie life dreamhouse,0,4,0,5,0,5
-131857,Wilfred,wilfred,4,2,0,4,6,1
-132924,Tabula Rasa,tabula rasa,1,2,5,0,5,0
-133563,Uncontrollably Fond,uncontrollably fond,0,2,0,2,0,2
-134150,Vicious,vicious,0,2,0,1,0,0
-134695,Tales from the Loop,tales from loop,0,2,0,3,6,0
-135436,Bluey,bluey,14,57,2,44,66,4
-135823,6teen,6teen,0,4,1,5,5,0
-136310,Ekaterina,ekaterina,0,1,0,1,2,0
-137321,Ja'mie: Private School Girl,jamie private school girl,0,3,0,3,0,3
-137685,Little Fires Everywhere,little fires everywhere,0,14,0,11,3,10
-138238,Race Across the World,race across world,0,1,0,2,0,1
-138749,Self Made: Inspired by the Life of Madam C.J. Walker,self made inspired by life madam cj walker,0,5,0,5,2,3
-138832,A Korean Odyssey,korean odyssey,0,3,0,2,0,3
-138876,Fire Force,fire force,2,2,0,4,2,2
-140324,Caliphate,caliphate,0,5,0,5,0,4
-143344,Shtisel,shtisel,0,2,0,2,0,1
-145088,Waking the Dead,waking dead,2,0,0,0,1,0
-145942,Summer Camp Island,summer camp island,0,0,0,1,0,1
-146161,Daniel Sloss: Live Shows,daniel sloss live shows,3,0,0,2,0,2
-146374,Healer,healer,0,1,0,2,0,2
-147961,Hyouka,hyouka,0,3,0,2,0,3
-147965,There She Goes,there she goes,0,5,0,7,1,5
-148977,Story of Yanxi Palace,story yanxi palace,0,2,0,2,2,0
-149244,Miss Kobayashi's Dragon Maid,miss kobayashis dragon maid,0,1,0,1,1,0
-150351,United States of Tara,united states tara,0,3,1,2,2,0
-150919,A Love So Beautiful,love so beautiful,0,2,0,2,0,2
-151474,Informer,informer,0,2,0,2,0,2
-151777,It's Okay to Not Be Okay,skits okay not be okay,0,6,0,6,10,0
-154152,The Princess Weiyoung,princess weiyoung,0,2,0,2,0,2
-154293,Defendant,defendant,0,1,0,1,0,1
-158181,Arthdal Chronicles,arthdal chronicles,0,2,0,4,2,1
-158330,Dollhouse,dollhouse,3,3,0,3,1,4
-160052,HAPPY!,happy,11,4,0,5,19,0
-164232,Mr. Show with Bob and David,mr show with bob david,0,0,0,0,1,0
-166501,Gangs of London,gangs london,9,6,0,2,17,1
-169335,River,river,0,0,0,2,1,2
-169350,Never Have I Ever,never have i ever,3,58,0,40,3,43
-169469,Dragons: Race to the Edge,dragons race edge,0,6,0,6,6,0
-169705,"Welcome to Demon-School, Iruma-kun",welcome demon school iruma kun,0,6,0,5,0,4
-170053,Heartbreak High,heartbreak high,1,2,0,1,0,1
-170743,Extras,extras,0,1,0,2,0,2
-171207,Hotel Del Luna,hotel del luna,14,0,0,7,9,0
-171496,Jem,jem,0,3,0,2,0,2
-171502,Loudermilk,loudermilk,0,4,0,2,0,3
-171788,Noragami,noragami,0,1,1,1,1,1
-173656,The 10th Kingdom,10th kingdom,0,6,0,4,5,0
-173735,Fight For My Way,fight my way,0,1,0,1,1,0
-174848,Ghost Stories,ghost stories,0,4,1,3,5,1
-174928,Walking with Monsters,walking with monsters,0,4,0,4,4,0
-175733,DAVE,dave,0,2,0,3,3,1
-175817,Until We Meet Again The Series,until we meet again series,0,8,0,8,0,8
-175917,Back to Life,back life,0,8,0,7,6,0
-177856,Real Detective,real detective,2,1,0,3,2,1
-178111,Star Trek: Lower Decks,star trek lower decks,0,9,0,4,2,0
-178975,100 Days My Prince,100 days my prince,0,3,0,4,4,0
-180976,Girlfriends,girlfriends,0,2,0,1,0,1
-182143,A Place Further Than the Universe,place further than universe,0,2,0,3,0,3
-182381,Theory of Love,theory love,0,3,0,3,0,2
-182501,Princess Jellyfish,princess jellyfish,0,8,0,6,0,6
-182761,Smiling Friends,smiling friends,5,27,0,23,20,7
-183210,The Muppet Show,muppet show,1,8,1,4,2,4
-183357,Peaky Blinders,peaky blinders,8,47,0,22,87,4
-183499,Dance Academy,dance academy,0,5,0,4,0,3
-185761,Forged in Fire,forged fire,0,4,0,4,3,0
-186270,Graceland,graceland,0,1,0,2,3,0
-186358,Charlotte,charlotte,0,2,0,2,0,2
-186380,"Kill Me, Heal Me",kill me heal me,0,1,0,2,0,2
-187439,Hi Score Girl,hi score girl,0,1,0,1,0,1
-188367,Dong Yi,dong yi,0,1,0,1,0,0
-190920,Löwenzahn,löwenzahn,0,3,0,3,1,0
-191290,Put Your Head on My Shoulder,put your head on my shoulder,0,1,0,2,0,1
-191329,Doctor John,doctor john,0,2,0,3,0,3
-192607,Messiah,messiah,12,1,0,1,4,1
-196454,Miss Scarlet and the Duke,miss scarlet duke,0,0,0,0,0,0
-198265,"Tiger King: Murder, Mayhem and Madness",tiger king murder mayhem madness,3,17,68,1,39,1
-201240,The End of the F***ing World,end f***ing world,270,8,169,8,146,4
-201558,The Virtues,virtues,0,2,0,2,0,2
-202640,Brassic,brassic,0,5,0,2,5,3
-202839,Boy Meets World,boy meets world,0,5,0,5,0,5
-202946,Memories of the Alhambra,memories alhambra,0,2,0,2,0,2
-204130,Outer Banks,outer banks,5,59,2,46,76,1
-204590,Brideshead Revisited,brideshead revisited,0,1,0,1,0,1
-206722,Transplant,transplant,0,1,0,0,0,0
-214684,My Life Is Murder,my life murder,0,1,0,1,0,1
-215714,The Midnight Gospel,midnight gospel,2,6,1,6,8,0
-223257,Save Me,save me,0,0,0,0,4,0
-223834,Waco,waco,10,0,0,1,0,1
-224319,Catastrophe,catastrophe,9,0,0,1,5,0
-225737,Year of the Rabbit,year rabbit,0,3,0,3,0,2
-226855,Breeders,breeders,0,1,0,1,3,0
-229016,Upload,upload,0,12,0,8,6,5
-233321,Extracurricular,extracurricular,0,4,0,4,7,0
-235513,The Twelve,twelve,6,0,1,1,6,0
-253493,Marco Polo,marco polo,0,1,0,1,3,0
-258515,Castlevania,castlevania,68,5,36,3,54,0
-260622,Lost in Space,lost space,0,15,1,13,16,7
-263315,Dead to Me,dead me,1,25,0,29,33,6
-263316,Sex Education,sex education,15,175,225,46,157,68
-264399,Our Planet,our planet,0,2,0,2,18,2
-535354,Homecoming,homecoming,0,3,0,3,6,1
-598985,Mister Rogers' Neighborhood,mister rogers neighborhood,0,0,0,0,1,0
-599000,Keeping Up Appearances,keeping up appearances,0,3,0,4,0,3
-599012,The Challenge,challenge,0,1,0,1,0,1
-599049,Sex and the City,sex city,9,6,0,4,5,1
-599052,The Andy Griffith Show,andy griffith show,0,1,0,1,4,0
-599064,Doctor Who,doctor who,7,9,5,4,7,1
-599095,3rd Rock from the Sun,3rd rock from sun,0,2,0,2,2,1
-599121,Carnivàle,carnivàle,0,2,6,1,6,0
-599122,Weeds,weeds,1,1,3,1,6,0
-599137,The Sarah Jane Adventures,sarah jane adventures,0,6,0,4,0,2
-599141,Garth Marenghi's Darkplace,garth marenghis darkplace,1,6,0,9,1,6
-599149,Kyle XY,kyle xy,0,1,0,2,0,1
-599176,Aqua Teen Hunger Force,aqua teen hunger force,1,4,13,0,13,0
-599177,Everybody Hates Chris,everybody hates chris,0,4,0,2,0,3
-599178,Star Trek,star trek,5,10,0,9,2,8
-599213,Moral Orel,moral orel,36,3,1,13,30,0
-599240,Red Dwarf,red dwarf,0,9,6,5,8,2
-599251,Brothers and Sisters,brothers sisters,0,1,0,2,0,2
-599278,Little Britain,little britain,0,1,0,1,0,1
-599307,Torchwood,torchwood,0,15,0,14,13,5
-599319,Still Game,still game,6,0,0,4,2,4
-599361,Family Ties,family ties,0,0,0,0,0,1
-599364,Lipstick on Your Collar,lipstick on your collar,0,1,0,1,0,1
-599368,Sesame Street,sesame street,4,41,5,43,20,16
-599401,Law & Order,law order,5,0,3,1,3,1
-599442,Higher Ground,higher ground,0,1,0,1,0,1
-599449,Teen Titans,teen titans,0,4,0,2,0,1
-599451,The Powerpuff Girls,powerpuff girls,0,6,0,4,0,3
-599511,Xiaolin Showdown,xiaolin showdown,0,3,0,1,0,1
-599522,Desperate Housewives,desperate housewives,0,6,1,6,6,0
-599538,Robot Chicken,robot chicken,6,0,5,0,5,0
-599550,Dinnerladies,dinnerladies,0,2,0,2,0,2
-599592,Agatha Christie's Poirot,agatha christies poirot,0,3,0,4,2,4
-599665,Columbo,columbo,0,7,0,4,4,2
-599677,Spider-Man,spider man,0,2,0,2,0,2
-599685,Skins,skins,4,45,0,32,43,1
-599687,Black Books,black books,0,3,0,3,5,0
-599705,"Scooby-Doo, Where Are You?",scooby doo where are you,0,5,0,4,0,5
-599710,He-Man and the Masters of the Universe,he man masters universe,0,1,0,1,0,1
-599749,Wacky Races,wacky races,0,3,0,2,0,2
-600009,Not Going Out,not going out,0,1,0,1,2,0
-600013,Elementary,elementary,1,9,0,6,1,2
-600015,The Big Bang Theory,big bang theory,2,16,1,4,8,1
-600016,The Middle,middle,0,6,7,1,4,2
-600018,MythBusters,mythbusters,0,2,0,2,1,0
-600119,Ned's Declassified School Survival Guide,neds declassified school survival guide,0,1,0,1,0,0
-600131,Justice League,justice league,0,1,0,1,0,1
-600153,Sliders,sliders,1,0,0,1,0,1
-600233,Kath & Kim,kath kim,0,4,0,4,0,3
-600275,Tiny Toon Adventures,tiny toon adventures,0,0,0,0,0,0
-600316,Rome,rome,0,5,0,2,6,0
-600319,Jonathan Creek,jonathan creek,3,1,0,1,2,1
-600334,The Larry Sanders Show,larry sanders show,0,5,0,5,0,5
-600357,So Weird,so weird,0,1,0,1,0,1
-600393,Sports Night,sports night,0,1,0,1,0,1
-600395,The New Adventures of Winnie the Pooh,new adventures winnie pooh,0,1,0,1,0,1
-600412,The Batman,batman,0,1,0,1,0,1
-600430,Monkey Dust,monkey dust,1,0,0,1,1,0
-600462,Class of 3000,class 3000,0,1,0,1,0,1
-600488,Daria,daria,0,7,0,5,0,5
-600489,Everybody Loves Raymond,everybody loves raymond,0,4,0,2,6,1
-600512,Cold Case,cold case,6,2,3,1,5,0
-600581,Teenage Mutant Ninja Turtles,teenage mutant ninja turtles,0,3,3,0,3,0
-600759,The Boondocks,boondocks,4,0,0,2,1,1
-600813,Sapphire & Steel,sapphire steel,0,2,0,1,2,0
-600839,Silent Witness,silent witness,5,2,1,1,4,1
-600849,The Vicar of Dibley,vicar dibley,0,1,0,1,1,0
-600967,Fraggle Rock,fraggle rock,0,4,0,3,0,3
-601023,He-Man and the Masters of the Universe,he man masters universe,0,1,0,1,0,1
-601123,Foyle's War,foyles war,0,0,0,0,4,0
-601383,Kindred: The Embraced,kindred embraced,0,1,0,1,0,1
-601503,Dinosaurs,dinosaurs,0,2,0,2,4,0
-601506,The Smoking Room,smoking room,1,0,0,1,1,0
-601579,Shaun the Sheep,shaun sheep,0,1,0,1,0,1
-601613,NewsRadio,newsradio,0,1,0,1,3,0
-601763,Kavanagh QC,kavanagh qc,0,1,0,1,0,1
-601819,Bottom,bottom,3,2,0,3,2,1
-601911,Becker,becker,0,1,0,1,0,1
-601916,The Young Ones,young ones,0,6,0,5,9,0
-601921,Robin of Sherwood,robin sherwood,0,24,0,24,1,23
-601977,NCIS,ncis,19,6,7,20,16,18
-602019,Destination Truth,destination truth,0,1,0,1,1,1
-602149,Bizarre Foods with Andrew Zimmern,bizarre foods with andrew zimmern,0,1,0,1,1,0
-604520,Lie to Me,lie me,0,2,0,1,0,1
-604745,Extraordinary,extraordinary,3,8,0,5,0,2
-605608,Wives and Daughters,wives daughters,0,1,0,1,0,1
-606798,Liberty's Kids,libertys kids,1,1,0,1,0,1
-606827,Intervention,intervention,0,1,0,1,0,1
-606838,Casanova,casanova,0,3,0,3,0,3
-608003,BLACK LAGOON,black lagoon,2,2,0,2,0,3
-608258,Teresa,teresa,0,0,0,1,0,1
-608770,Little Dorrit,little dorrit,4,0,0,2,1,2
-608885,Oswald,oswald,0,1,0,1,0,1
-608961,Fingersmith,fingersmith,0,0,0,1,0,0
-609977,To Catch a Predator,catch predator,0,3,0,2,0,2
-610354,Holocaust,holocaust,1,0,1,0,1,0
-610556,The Julekalender,julekalender,0,1,0,1,0,1
-611589,Ghosts,ghosts,1,33,0,32,45,1
-612315,Scooby-Doo! Mystery Incorporated,scooby doo mystery incorporated,3,1,0,2,3,0
-614258,Anzacs,anzacs,0,1,0,1,0,1
-615083,Parenthood,parenthood,7,7,2,3,5,0
-617644,Invincible,invincible,34,31,0,31,54,2
-622720,Misfits,misfits,4,0,6,0,8,0
-622924,La Reina del Sur,la reina del sur,0,1,0,2,1,0
-623831,Nikita,nikita,0,0,0,0,0,0
-623941,The Borgias,borgias,4,1,0,0,7,0
-624068,Young Justice,young justice,13,1,9,4,8,4
-624097,Love/Hate,love hate,4,0,2,0,2,0
-624566,This Is England '86,this england 86,0,2,0,2,0,2
-624833,Single Father,single father,0,2,0,2,0,2
-627353,The Shadow Line,shadow line,0,2,1,1,0,1
-628731,Red vs. Blue,red vs blue,1,2,0,1,2,0
-628826,Touch,touch,0,1,0,1,0,1
-630037,Mord mit Aussicht,mord mit aussicht,0,2,0,1,2,0
-630549,Top Chef,top chef,0,2,0,2,2,0
-631145,Dekalog,dekalog,4,0,0,1,1,0
-631530,The Lizzie Bennet Diaries,lizzie bennet diaries,0,4,0,4,1,3
-631992,The Bible,bible,3,1,0,1,3,0
-632885,The Following,following,18,1,6,0,14,0
-633719,Ink Master,ink master,0,2,0,2,0,2
-633868,Masters of the Air,masters air,0,12,12,2,10,3
-633943,Rectify,rectify,0,2,0,2,1,1
-634107,Sarah & Duck,sarah duck,0,1,0,3,0,3
-635595,The Goldbergs,goldbergs,0,1,0,2,1,1
-638635,Halo,halo,7,0,3,0,3,0
-642907,Derren Brown: Apocalypse,derren brown apocalypse,0,1,0,1,0,1
-644560,Okupas,okupas,5,0,0,4,6,0
-644637,Bref,bref,1,3,2,2,3,1
-645054,ANZAC Girls,anzac girls,0,1,0,1,3,0
-645113,The Brokenwood Mysteries,brokenwood mysteries,0,1,0,1,0,1
-645152,Schitt's Creek,schitts creek,0,43,61,0,53,4
-645169,Galavant,galavant,0,3,0,2,4,0
-645231,Detectorists,detectorists,3,2,0,1,0,2
-645274,X Company,x company,0,1,0,1,0,1
-645788,The Book of Negroes,book negroes,0,1,0,1,1,0
-645948,Yonderland,yonderland,0,5,0,3,0,3
-646055,Code Black,code black,0,1,0,1,0,1
-646561,Outsiders,outsiders,3,0,1,20,4,14
-647242,Saturday Night Live,saturday night live,1,0,0,0,6,0
-647545,Two Doors Down,two doors down,1,0,0,1,1,0
-647782,Rundfunk,rundfunk,0,1,0,1,1,0
-648095,El marginal,el marginal,0,4,4,1,2,2
-648263,People Just Do Nothing,people just do nothing,0,2,0,1,0,0
-648872,Sweet/Vicious,sweet vicious,0,2,0,2,0,2
-649209,Secret Garden [SP],secret garden [sp],0,1,0,1,0,1
-654718,James Acaster: Repertoire,james acaster repertoire,0,2,0,2,4,0
-655587,Joe Pera Talks with You,joe pera talks with you,0,2,0,1,1,1
-655947,Stath Lets Flats,stath lets flats,0,1,0,1,0,1
-656030,Wallace & Gromit's Cracking Contraptions,wallace gromits cracking contraptions,0,1,0,1,0,1
-656508,When They See Us,when they see us,0,3,0,5,0,5
-656762,The Gilded Age,gilded age,1,14,0,6,0,4
-658178,The Undoing,undoing,3,12,0,9,0,10
-658386,3Below: Tales of Arcadia,3below tales arcadia,0,1,0,1,3,1
-658786,Tuntematon sotilas,tuntematon sotilas,0,3,0,2,1,1
-658961,Loki,loki,1,51,2,38,3,37
-659285,The Other Two,other ii,0,2,0,1,0,1
-659413,Raised by Wolves,raised by wolves,11,1,0,4,21,1
-659414,Shadow and Bone,shadow bone,4,56,1,44,91,4
-659509,Perry Mason,perry mason,11,3,2,0,0,0
-659912,Your Honor,your honor,0,38,0,10,37,3
-660456,Special,special,0,3,0,3,0,3
-660585,Ramy,ramy,3,4,0,2,2,2
-661243,Astrid et Raphaëlle,astrid et raphaëlle,3,2,3,1,2,1
-661949,Primal,primal,7,1,5,2,8,0
-662262,Normal People,normal people,0,12,0,11,0,11
-662619,Tell Me Your Secrets,tell me your secrets,7,6,4,15,21,1
-662767,1899,1899,0,30,0,25,0,26
-662854,Industry,industry,0,3,0,3,0,2
-662961,Station Eleven,station eleven,0,10,4,6,14,1
-663148,Bridgerton,bridgerton,6,103,1,77,94,18
-663354,AEW Dynamite,aew dynamite,0,1,0,1,0,1
-663355,Ragnarok,ragnarok,24,0,0,9,26,0
-663473,This Way Up,this way up,0,3,0,2,0,2
-664035,Heels,heels,0,1,0,1,3,1
-664460,The Great North,great north,0,5,0,4,5,0
-664468,Centaurworld,centaurworld,0,23,0,18,26,2
-664612,The Serpent,serpent,0,12,0,6,16,0
-664868,The Great,great,95,3,5,22,86,1
-664985,Vienna Blood,vienna blood,0,0,0,0,1,0
-665002,Ripley,ripley,1,10,0,5,0,2
-665355,Arcane,arcane,17,222,282,3,245,6
-665861,Severance,severance,25,138,1,80,26,88
-667192,Midnight Mass,midnight mass,422,6,294,3,260,4
-668609,Halston,halston,0,3,0,3,0,3
-669163,The Innocence Files,innocence files,0,1,0,1,0,1
-669166,Almost Paradise,almost paradise,0,2,0,2,0,2
-669296,86―エイティシックス―,86―エイティシックス―,6,0,0,5,0,1
-670578,Love Life,love life,1,2,0,1,0,1
-670798,I May Destroy You,i may destroy you,0,6,0,6,0,7
-671150,Wolf,wolf,1,0,0,1,1,0
-671246,Brooklyn Nine-Nine,brooklyn ix ix,232,41,7,163,170,37
-673430,Extraordinary You,extraordinary you,0,2,0,2,0,2
-675500,The Tale of Nokdu,tale nokdu,0,1,0,1,2,0
-678166,Game of Thrones,game thrones,584,38,150,93,328,15
-681157,In the Dark,dark,7,32,0,33,59,1
-681781,Scissor Seven,scissor vii,0,2,0,2,0,1
-682519,The Boulet Brothers' Dragula,boulet brothers dragula,0,7,2,4,2,3
-682813,Class of Lies,class lies,0,0,0,0,0,0
-685341,Sound! Euphonium,sound euphonium,0,1,0,1,0,1
-685559,"Love, Victor",love victor,0,16,0,15,0,16
-686385,Maid,maid,1,26,0,21,0,21
-687636,Mystic Pop-Up Bar,mystic pop up bar,0,2,0,2,2,1
-690039,Kaguya-sama: Love is War,kaguya sama love war,0,12,0,9,0,10
-692073,Dark Blue Kiss,dark blue kiss,0,3,0,3,0,3
-696950,Angel's Last Mission: Love,angels last mission love,1,1,2,0,0,1
-699884,Teenage Bounty Hunters,teenage bounty hunters,0,3,0,3,7,0
-700663,Stranger Things,stranger things,261,682,974,127,838,27
-704135,The Haunting of Bly Manor,haunting bly manor,1,97,0,75,110,5
-708097,The Murders at White House Farm,murders at white house farm,8,0,0,4,6,0
-708137,"Good Morning, Verônica",good morning verônica,7,0,0,1,0,2
-716516,Tale of the Nine Tailed,tale ix tailed,6,0,0,5,4,1
-717429,The Seven Deadly Sins,vii deadly sins,0,3,0,2,2,0
-718715,JUJUTSU KAISEN,jujutsu kaisen,77,7,0,39,59,5
-719601,Staged,staged,0,4,0,4,1,3
-719869,Blood of Zeus,blood zeus,5,0,0,3,8,0
-720923,The Boys,boys,85,233,127,47,314,19
-721819,Nathan For You,nathan you,2,0,0,2,3,0
-724763,Paranormal,paranormal,1,1,8,0,8,0
-725411,Aunty Donna's Big Ol House of Fun,aunty donnas big ol house fun,0,3,0,4,0,0
-731136,Animaniacs,animaniacs,1,2,0,2,1,2
-732816,Animaniacs (2020),animaniacs (2020),0,4,0,4,0,4
-734333,The Wilds,wilds,0,44,19,26,76,0
-734587,Alice in Borderland,alice borderland,7,104,60,27,119,3
-736702,Hilda,hilda,0,5,0,4,0,4
-740244,Castle,castle,8,1,0,2,10,0
-741166,Dug Days,dug days,0,2,0,2,0,2
-742453,Lupin,lupin,1,51,0,21,2,23
-744105,Night Stalker: The Hunt for a Serial Killer,night stalker hunt serial killer,0,6,0,6,0,5
-747726,It's a Sin,skits sin,0,7,0,6,0,6
-749610,斗罗大陆 | Douluo Continent ,斗罗大陆 | douluo continent,0,1,0,1,1,0
-750231,True Beauty,true beauty,0,7,0,5,0,5
-751057,I Told Sunset About You,i told sunset about you,2,3,0,2,0,2
-753144,Kid Cosmic,kid cosmic,6,2,0,6,2,6
-754027,The Mandalorian,mandalorian,0,41,0,37,55,3
-754149,Mr Queen,mr queen,0,5,0,4,3,0
-757636,The Uncanny Counter,uncanny counter,3,10,0,9,0,7
-759367,山河令 | Word of Honor,山河令 | word honor,3,0,0,3,2,1
-761186,Raised by Wolves,raised by wolves,0,1,0,1,0,1
-764949,DOTA: Dragon's Blood,dota dragons blood,0,2,0,1,1,0
-765505,Smallville,smallville,12,5,1,26,18,20
-765930,Vincenzo,vincenzo,0,13,0,12,0,11
-769624,Them,them,60,0,1,16,31,3
-770866,Fumetsu no Anata e (To Your Eternity),fumetsu no anata e (to your eternity),19,0,0,7,16,0
-771405,The Office,office,7,33,47,2,36,2
-772099,The Office,office,0,1,0,1,0,1
-772494,Signal,signal,3,0,0,2,0,2
-772919,Mare of Easttown,mare easttown,0,13,0,10,0,14
-774747,Cruel Summer,cruel summer,0,5,0,6,5,3
-775278,Word of Honor,word honor,0,2,0,2,2,1
-778035,Star Wars: The Bad Batch,star wars bad batch,0,15,0,9,9,1
-780278,M’entends-Tu?/ Can You Hear Me?,m’entends tu can you hear me,0,1,0,1,0,1
-783496,Start-Up,start up,0,2,0,2,0,1
-786450,Move to Heaven,move heaven,0,11,0,11,0,9
-786798,The Walten Files,walten files,2,9,8,2,9,2
-787416,We Are Lady Parts,we are lady parts,0,5,0,5,0,5
-787818,Mad for Each Other,mad each other,0,4,0,4,0,2
-789932,Law School,law school,0,2,0,1,0,1
-792971,Hawaii Five-0,hawaii iv 0,0,5,0,0,1,0
-793237,The Mysterious Benedict Society,mysterious benedict society,0,7,0,6,0,6
-793495,Ted Lasso,ted lasso,128,6,41,13,62,13
-793908,Clarkson's Farm,clarksons farm,0,4,0,3,6,1
-793915,Flower of Evil,flower evil,3,1,0,2,0,3
-794684,Young Royals,young royals,2,46,0,39,1,41
-795278,Time,time,0,3,0,3,0,3
-796984,Secrets of Sulphur Springs,secrets sulphur springs,0,4,0,2,0,2
-797270,Leverage: Redemption,leverage redemption,0,2,0,1,0,0
-799355,Lovestruck in the City,lovestruck city,0,1,0,1,0,1
-803739,Beyond Evil,beyond evil,0,10,0,11,0,8
-804090,Taxi Driver,taxi driver,0,1,0,1,1,0
-807314,The Fall of the House of Usher,fall house usher,21,90,147,7,175,5
-808410,The White Lotus,white lotus,6,72,0,62,9,50
-808655,How I Met Your Mother,how i met your mother,60,5,56,5,31,13
-813736,Vigil - BBC Series,vigil bbc series,0,7,0,4,0,6
-815706,Hometown Cha-Cha-Cha,hometown cha cha cha,0,6,0,5,1,2
-816548,Scenes from a Marriage,scenes from marriage,0,4,0,3,0,3
-820450,Vigil,vigil,0,2,0,2,0,2
-821376,The Chestnut Man ,chestnut man,0,16,0,10,18,1
-821931,Squid Game,squid game,215,369,2,332,285,89
-823045,The Devil Judge,devil judge,0,1,0,2,6,1
-823895,House of Secrets: The Burari Deaths,house secrets burari deaths,0,3,0,1,0,2
-826067,Dopesick,dopesick,0,4,0,3,0,3
-827079,My Name,my name,0,5,0,6,0,5
-828426,Reservation Dogs,reservation dogs,0,10,0,7,27,1
-828863,The Innocent,innocent,0,2,0,3,0,3
-829191,Inside Job,inside job,0,2,0,1,2,0
-832359,Where Your Eyes Linger,where your eyes linger,0,2,0,2,0,2
-832955,Showtrial,showtrial,0,2,0,2,0,2
-835064,Dexter: New Blood,dexter new blood,0,4,0,4,11,0
-836434,Ordem Paranormal,ordem paranormal,0,9,0,4,1,4
-836437,Ordem Paranormal: Desconjuração,ordem paranormal desconjuração,1,0,7,0,6,0
-839577,Tear Along the Dotted Line,tear along dotted line,1,3,0,3,0,2
-840199,The Sex Lives of College Girls,sex lives college girls,0,8,0,9,0,9
-846826,Bad and Crazy,bad crazy,0,6,0,6,1,7
-848478,Snowdrop,snowdrop,0,2,0,3,0,2
-849592,Happiness,happiness,0,4,0,5,0,4
-849603,1883,1883,11,0,0,6,15,0
-849612,Eternal Love (Starring Yang Mi),eternal love (starring yang mi),0,1,0,0,0,0
-850771,Bulgasal: Immotal Souls,bulgasal immotal souls,0,4,0,4,0,3
-852458,The Outlaws,outlaws,0,3,0,3,0,3
-854927,Archive 81,archive 81,0,20,0,19,0,17
-854945,Our Beloved Summer,our beloved summer,0,3,0,2,0,1
-854973,Somebody Somewhere,somebody somewhere,0,14,0,7,0,8
-855086,The Responder,responder,0,8,0,4,0,3
-855144,The Legend of Vox Machina,legend vox machina,3,10,0,12,35,0
-855151,ALL of US ARE DEAD,all us are dead,1,47,42,1,57,1
-855213,Pam & Tommy,pam tommy,0,10,0,5,0,5
-855225,The Afterparty,afterparty,2,4,0,5,4,1
-855248,Reacher,reacher,25,23,0,14,12,4
-855310,This Is Going to Hurt,this going hurt,0,8,0,8,0,7
-855349,The Umbrella Academy,umbrella academy,183,243,32,229,410,21
-855362,Bad Buddy,bad buddy,0,8,0,6,0,7
-855437,The Cuphead Show!,cuphead show,0,6,0,3,0,4
-855457,Doom at Your Service,doom at your service,0,5,2,3,1,3
-855479,Mouse Kdrama,mouse kdrama,6,0,3,0,4,0
-855494,From,from,3,27,0,18,35,11
-861225,Mr. Robot,mr robot,3,12,1,4,2,4
-868115,Yellowjackets,yellowjackets,351,39,0,151,316,9
-869216,Twenty-Five Twenty-One,twenty iv twenty i,0,6,0,5,4,0
-870484,Kin,kin,0,1,0,1,0,1
-871273,Peacemaker,peacemaker,4,34,0,30,67,5
-871612,The Dropout,dropout,0,9,0,6,0,6
-871619,Our Flag Means Death,our flag means death,145,32,0,165,176,20
-871946,Semantic Error,semantic error,0,6,0,6,0,6
-872713,Juvenile Justice,juvenile justice,0,4,4,1,0,4
-875242,Beauty Inside,beauty inside,0,3,0,3,0,3
-876408,Kamen Rider Ryuki,kamen rider ryuki,0,4,0,4,0,3
-877553,Minx,minx,0,1,0,1,3,1
-878732,Pachinko,pachinko,0,3,0,3,4,0
-878733,Not Me the Series,not me series,0,3,0,3,0,3
-881922,As We See It,as we see it,0,5,0,4,0,6
-882755,Business Proposal,business proposal,0,8,0,8,4,1
-883108,Tomorrow,tomorrow,13,0,0,9,9,0
-883641,The Last of Us,last us,59,338,11,229,342,81
-885485,Ghosts,ghosts,0,11,0,8,12,1
-885831,Abbott Elementary,abbott elementary,0,14,0,13,0,14
-888903,Alone,alone,0,1,0,1,4,1
-889665,Heartstopper,heartstopper,248,39,14,192,150,61
-890152,What's Wrong With Secretary Kim?,whats wrong with secretary kim,0,1,0,1,0,1
-890156,Shining Girls,shining girls,0,3,0,2,16,3
-891106,The 7 Lives of Lea,viilives lea,0,4,0,5,1,3
-891470,Under the Banner of Heaven,under banner heaven,58,0,1,9,33,0
-891471,Magpie Murders,magpie murders,11,0,0,3,8,0
-892198,Wild Babies,wild babies,0,5,1,3,8,1
-892525,The Sound of Magic,sound magic,0,2,0,2,4,0
-893058,SPY x FAMILY,spy x family,0,0,0,0,0,0
-893473,Dirty Lines,dirty lines,0,2,0,2,0,2
-893474,kinnPorsche,kinnporsche,0,15,0,15,14,5
-894708,The Queen's Gambit,queens gambit,0,10,0,11,0,10
-894721,Blueming,blueming,0,3,0,3,0,3
-896237,Star Trek: Strange New Worlds,star trek strange new worlds,0,5,0,4,0,3
-896803,Night Sky -  Season 1 - Amazon,night sky season iamazon,0,1,0,2,2,0
-897097,Ghost Doctor,ghost doctor,0,1,0,2,0,1
-897703,"Love, Death & Robots: Sucker of Souls",love death robots sucker souls,0,1,0,3,0,2
-899808,The Bear,bear,5,32,0,20,0,21
-900081,Big Boys,big boys,0,5,0,3,4,0
-902980,Night Sky,night sky,0,2,0,1,8,1
-903556,Black Bird,black bird,0,8,0,7,3,5
-904156,Keep Sweet: Pray and Obey,keep sweet pray obey,0,7,0,7,0,6
-905134,Dark Winds,dark winds,34,1,1,2,25,1
-905139,Sherwood,sherwood,0,5,0,3,3,2
-905956,Hacks,hacks,4,19,0,4,0,7
-905979,The Old Man,old man,4,27,0,6,36,4
-907566,Star Trek: Prodigy,star trek prodigy,0,1,0,1,0,1
-908942,Love & Anarchy,love anarchy,0,2,0,2,0,1
-910064,The Terminal List,terminal list,21,6,0,2,15,1
-910067,My Love Mix-Up!,my love mix up,0,2,0,1,0,1
-910069,Youth of May,youth may,0,1,0,1,0,1
-915672,Who Rules the World,who rules world,0,2,0,1,1,0
-917129,The Rehearsal,rehearsal,0,3,0,4,0,4
-918843,Paper Girls,paper girls,0,6,0,4,0,4
-920889,The Sandman,sandman,122,47,139,22,158,5
-923556,Five Days at Memorial,five days at memorial,26,2,9,0,7,0
-923842,A League of Their Own,league their own,0,10,0,10,1,5
-924136,This Fool,this fool,0,1,0,1,0,1
-925927,Bad Sisters,bad sisters,51,2,38,0,38,0
-926283,Big Mouth,big mouth,0,1,0,1,0,1
-926790,Extraordinary Attorney Woo,extraordinary attorney woo,0,24,0,23,1,21
-927167,Lost Ollie,lost ollie,0,2,0,2,0,2
-928945,Kleo (Netflix),kleo (netflix),0,3,0,3,0,3
-928946,Dragon Ball Super,dragon ball super,0,2,1,1,2,0
-930591,Getting On,getting on,0,1,0,1,0,1
-930594,Little Women,little women,0,2,0,2,3,0
-932240,The Serpent Queen,serpent queen,15,0,0,2,6,0
-933351,Heartbreak High,heartbreak high,0,63,0,50,23,45
-934802,Pantheon,pantheon,0,6,0,6,0,4
-935651,Reboot,reboot,0,10,0,10,0,10
-935936,Am I Being Unreasonable?,am i being unreasonable,0,3,15,0,7,3
-936008,Wednesday,wednesday,15,274,3,182,264,3
-936947,Don't Hug Me I'm Scared,dont hug me im scared,0,16,22,1,19,0
-937391,Recipes for Love and Murder,recipes love murder,0,2,0,1,5,0
-937687,Thai Cave Rescue,thai cave rescue,0,3,0,2,0,3
-938242,The empress,empress,1,4,0,6,9,2
-938570,Search: WWW,search www,0,2,0,1,0,2
-938574,My Dress-Up Darling,my dress up darling,0,2,0,2,0,2
-938884,Karen Pirie,karen pirie,0,2,0,1,0,1
-940845,The Mole,mole,0,4,0,2,0,1
-942938,Tulsa King,tulsa king,29,7,1,0,3,2
-943348,Love like the Galaxy,love like galaxy,0,2,0,1,0,1
-943592,Love in the Air the Series,love air series,0,6,0,5,0,6
-944875,From Scratch,from scratch,0,2,0,2,0,1
-945260,100 Foot Wave,100 foot wave,0,1,0,1,0,1
-946305,The Devil's Hour,devils hour,18,0,0,5,14,2
-946309,The Bastard Son & the Devil Himself,bastard son devil himself,1,9,0,9,31,0
-947859,The Walking Dead: Daryl Dixon,walking dead daryl dixon,0,4,6,2,13,1
-951595,I Hear Your Voice,i hear your voice,0,1,0,1,0,1
-951930,ONI: Thunder God's Tale,oni thunder gods tale,0,1,0,1,1,0
-953271,Fleishman Is in Trouble,fleishman trouble,0,2,0,2,0,1
-953280,Las Chicas De La Ultima Fila/ the Girls at the Back,las chicas de la ultima fila girls at back,0,1,0,1,0,0
-953965,The Devil's Hour 2022,devils hour 2022,1,0,0,1,1,0
-954330,Sas Rogue Heroes,sas rogue heroes,0,4,0,3,3,1
-956530,Reborn Rich,reborn rich,0,12,0,12,0,12
-956690,Nirvanna the Band the Show,nirvanna band show,0,2,0,2,0,2
-958732,The Lazarus Project,lazarus project,8,0,3,0,4,0
-959789,1923,1923,1,0,0,0,9,0
-960166,Lookism,lookism,0,3,0,3,0,3
-960176,Love Between Fairy and Devil,love between fairy devil,0,3,0,3,3,0
-961366,Kindred,kindred,0,4,0,3,0,2
-963116,Die Discounter,die discounter,0,2,0,2,3,1
-963652,The Recruit,recruit,0,4,0,4,0,6
-963658,Maestro,maestro,3,0,2,0,2,0
-964582,Revenge of Others,revenge others,0,2,0,2,0,2
-966494,The Glory,glory,0,17,0,9,0,12
-966501,Empresses in the Palace,empresses palace,0,1,1,0,1,0
-971254,The Makanai: Cooking for the Maiko House,makanai cooking maiko house,0,2,0,2,0,2
-971594,9-1-1: Lone Star,9 i1 lone star,0,3,0,2,4,1
-972266,Slow Horses,slow horses,1,9,5,9,5,3
-973737,Mo,mo,0,4,0,2,0,2
-974033,Physical 100,physical 100,0,4,0,4,0,4
-974034,Women at War,women at war,0,3,0,2,0,2
-974682,Poker Face,poker face,27,57,0,27,32,21
-974987,Lockwood & Co.,lockwood co,0,12,0,9,0,10
-975008,Shrinking,shrinking,0,11,0,5,0,8
-979216,Will Trent,will trent,3,20,0,10,9,5
-980844,The Law According to Lidia Poët,law according lidia poët,0,2,0,2,0,2
-983586,Love to Hate You (Kdrama),love hate you (kdrama),0,3,0,3,0,3
-987113,Beyond Paradise 2023,beyond paradise 2023,0,1,0,1,0,1
-989891,Alchemy of Souls,alchemy souls,11,0,0,7,4,1
-991222,Weak Hero Class 1 (약한용운),weak hero class i(약한용운),0,11,0,15,0,15
-992209,Summer Strike,summer strike,0,2,0,2,0,2
-992797,Kiff,kiff,0,2,0,1,0,1
-992811,The Newsreader,newsreader,2,3,0,3,0,3
-994161,The Night Agent,night agent,1,10,0,9,0,9
-995049,Rabbit Hole,rabbit hole,0,2,0,2,0,2
-995052,Misaeng: Incomplete Life,misaeng incomplete life,0,1,0,1,0,1
-998024,Love & Death,love death,2,18,0,9,0,8
-998423,Beef,beef,42,15,1,14,26,10
-999058,Till the End of the Moon | 长月烬明,till end moon | 长月烬明,0,2,0,2,2,0
-1001060,American Manhunt: The Boston Marathon Bombing,american manhunt boston marathon bombing,0,1,0,1,0,1
-1002796,Mrs. Davis,mrs davis,0,4,0,3,12,4
-1002799,Chimp Empire,chimp empire,0,3,0,2,3,0
-1003087,Schmigadoon!,schmigadoon,0,4,0,3,0,2
-1004105,Maya and the Three,maya iii,0,1,1,0,1,0
-1006102,Sweet Tooth,sweet tooth,8,16,3,15,29,1
-1007497,Silo,silo,0,8,0,4,7,2
-1007876,Queen Charlotte: A Bridgerton Story,queen charlotte bridgerton story,2,29,1,14,2,15
-1010146,Jury Duty,jury duty,0,2,0,1,0,1
-1010874,Dali & Cocky Prince / Dalriwa Gamjatang,dali cocky prince dalriwa gamjatang,0,2,0,1,0,1
-1011618,A Small Light,small light,0,3,5,1,0,1
-1013608,Shiny Happy People,shiny happy people,0,3,0,3,0,3
-1017400,The Good Bad Mother,good bad mother,0,3,0,2,4,0
-1019394,Between Us the Series,between us series,0,1,0,1,0,1
-1019742,Deadloch,deadloch,5,11,0,10,6,5
-1020772,The Crowded Room,crowded room,0,20,0,16,0,15
-1021473,Bloodhounds,bloodhounds,0,2,0,1,0,1
-1021748,Love in the Moonlight / Moonlight Drawn by Clouds /  Gooreumi Geurin Dalbit,love moonlight moonlight drawn by clouds gooreumi geurin dalbit,0,1,0,0,0,0
-1022116,I'm Not a Robot,im not robot,1,0,0,1,0,1
-1023600,See You in My 19th Life,see you my 19th life,0,1,0,1,0,1
-1024515,The IT Crowd,it crowd,0,11,0,9,1,9
-1025204,Love Death and Robots: Sonnies Edge,love death robots sonnies edge,0,2,0,2,0,2
-1026034,From TV Series (2022),from tv series (2022),0,4,0,5,4,2
-1027015,Hijack,hijack,1,8,0,6,0,7
-1028487,The Longest Promise 玉骨遥,longest promise 玉骨遥,0,0,0,0,0,0
-1029571,My Adventures with Superman,my adventures with superman,0,2,0,3,0,2
-1031902,Survival of the Thickest,survival thickest,0,9,0,8,0,8
-1032215,My Happy Marriage,my happy marriage,0,5,0,6,0,6
-1032843,Celebrity,celebrity,0,2,0,1,0,1
-1033817,Zom 100: Bucket List of the Dead,zom 100 bucket list dead,10,0,0,1,4,0
-1035020,The Sixth Commandment,sixth commandment,11,0,0,1,0,0
-1036586,Twisted Metal,twisted metal,39,3,0,7,27,1
-1037842,Fisk,fisk,0,2,0,3,5,0
-1037860,Village Of Objects,village objects,0,1,0,1,0,1
-1038629,Hidden Love (偷偷藏不住),hidden love (偷偷藏不住),0,2,0,2,0,2
-1039441,The Lost Flowers of Alice Hart,lost flowers alice hart,18,2,0,0,3,2
-1039442,Messiah,messiah,0,1,0,1,0,1
-1041213,Painkiller,painkiller,0,6,0,4,1,2
-1043235,Anne,anne,0,1,0,1,0,1
-1044253,Mask Girl,mask girl,0,9,0,4,0,5
-1044266,Love Is Sweet,love sweet,1,0,0,1,0,1
-1045563,Ahsoka,ahsoka,0,15,0,9,0,9
-1048289,Gravity Falls,gravity falls,15,109,3,105,84,21
-1048528,One Piece,one piece,0,9,0,7,9,4
-1049967,Adventure Time: Fionna & Cake,adventure time fionna cake,12,4,0,9,13,0
-1050355,Moving,moving,0,1,0,1,0,1
-1051101,Dear Child,dear child,0,13,0,12,0,9
-1052133,Only Murders in the Building,only murders building,6,86,102,2,86,7
-1057890,A Time Called You,time called you,2,0,0,1,2,0
-1059025,Gen V,gen v,0,11,0,9,12,7
-1059032,Castlevania: Nocturne,castlevania nocturne,0,11,0,7,13,2
-1060130,Destined With You,destined with you,0,2,0,3,0,3
-1060492,Boiling Point,boiling point,0,9,0,7,0,7
-1061103,Behind your touch,behind your touch,0,2,0,3,3,1
-1061592,The Long Shadow,long shadow,0,2,0,2,0,1
-1062544,Lessons in Chemistry,lessons chemistry,5,33,0,7,9,4
-1062546,Falling Into Your Smile,falling into your smile,0,3,0,2,3,0
-1066393,Bodies,bodies,2,11,0,8,1,10
-1066411,Scavengers Reign,scavengers reign,0,8,0,11,14,0
-1067502,Dark Hearts,dark hearts,0,2,0,1,1,0
-1069096,Pluto,pluto,1,0,0,1,0,0
-1069166,All the Light We Cannot See,all light we cannot see,1,7,0,4,5,1
-1069209,BLUE EYE SAMURAI,blue eye samurai,2,18,0,19,27,1
-1069254,Daily Dose of Sunshine,daily dose sunshine,0,12,0,7,0,7
-1069256,Castaway Diva,castaway diva,0,3,0,3,0,2
-1069401,Scott Pilgrim Takes Off,scott pilgrim takes off,0,10,0,11,0,10
-1069414,The Railway Men: The Untold Story of Bhopal 1984,railway men untold story bhopal 1984,1,2,1,2,2,2
-1069454,Fellow Travelers,fellow travelers,0,8,0,6,0,5
-1069495,My Demon,my demon,0,3,1,2,4,0
-1069502,My Daemon,my daemon,0,2,0,1,5,0
-1069556,Such Brave Girls,such brave girls,0,2,0,2,0,2
-1069642,The Artful Dodger,artful dodger,3,5,0,3,0,2
-1069866,Death's Game,deaths game,0,2,0,3,2,1
-1070018,Gyeongseong Creature,gyeongseong creature,0,2,0,1,0,1
-1070090,Pokémon Concierge,pokémon concierge,0,1,0,1,0,1
-1070144,1670,1670,0,6,0,6,6,0
-1070180,Mr Bates vs The Post Office,mr bates vs post office,0,3,0,3,0,2
-1070384,Twinkling Watermelon,twinkling watermelon,0,3,0,2,0,2
-1070453,A Shop for Killers,shop killers,0,4,4,2,5,1
-1070570,The Traitors UK,traitors uk,0,3,0,4,0,4
-1070643,Masters of the Universe: Revolution,masters universe revolution,0,1,0,1,0,1
-1070646,True Detective,true detective,86,23,24,13,51,11
-1070672,Doctor Slump,doctor slump,0,2,0,2,0,2
-1070695,Backstreet Rookie,backstreet rookie,0,1,0,1,0,1
-1070835,One Day,one day,0,9,0,8,0,9
-1070999,When I Fly Towards You,when i fly towards you,0,1,0,2,0,2
-1071116,Shōgun,shōgun,0,3,0,1,15,1
-1071179,Little Bird,little bird,0,1,0,1,1,0
-1071227,"The Program: Cons, Cults and Kidnapping",program cons cults kidnapping,0,2,0,2,0,2
-1071234,The Gentlemen,gentlemen,2,12,6,1,13,1
-1071255,3 Body Problem,3 body problem,1,16,11,5,27,0
-1071390,X-Men '97,x men 97,0,3,0,3,0,2
-1071477,The Devil's Plan,devils plan,0,1,0,1,0,1
-1071488,Quiet on Set: The Dark Side of Kids TV,quiet on set dark side kids tv,0,1,0,1,0,1
-1071508,Renegade Nell,renegade nell,0,4,0,3,12,0
-1071520,A Gentleman in Moscow,gentleman moscow,0,2,0,1,0,2
-1071523,We Were the Lucky Ones,we were lucky ones,0,4,0,3,0,2
-1071710,Queen of Tears,queen tears,2,2,0,2,3,0
-1071760,Cigarette Girl,cigarette girl,0,1,0,1,0,1
-1071828,Dead Boy Detectives,dead boy detectives,0,24,0,19,26,2
-1071903,Baby Reindeer,baby reindeer,3,64,0,42,1,46
-1071915,The Dragon Prince: The Mystery of Arravos,dragon prince mystery arravos,0,8,0,4,9,0
-1072293,Jurassic World: Chaos Theory,jurassic world chaos theory,3,8,0,10,10,0
-1072555,Love for Love's Sake,love loves sake,0,2,0,2,0,2
-1072570,Old Fashion Cupcake,old fashion cupcake,0,3,0,3,0,2
-1072602,Amidst a Snowstorm of Love,amidst snowstorm love,0,1,0,1,0,1
-1072631,House of the Dragon,house dragon,9,131,7,82,132,19
-1072770,My Lady Jane,my lady jane,0,11,0,2,15,1
-1072973,Kids in Crime,kids crime,1,0,1,1,0,1
-1073113,The Act…,act…,0,1,0,1,0,1
-1073147,The Double,double,0,1,0,1,0,1
-1073450,The Resort,resort,0,1,0,1,1,0
-1073606,WondLa,wondla,0,1,0,1,1,0
-1194875,Family Guy,family guy,12,1,8,1,9,0
-1197589,Alma's Not Normal,almas not normal,0,1,1,1,0,1
-1203649,Lioness,lioness,0,4,0,3,0,2
-1208484,Grace,grace,4,1,1,2,1,1
-1236475,Troppo,troppo,8,1,0,1,4,0
-1244002,Disclaimer,disclaimer,0,5,0,4,5,0
-1249301,The Penguin,penguin,0,10,0,6,0,7
-1253730,Daredevil: Born Again,daredevil born again,1,9,0,6,4,4
-1254782,The Diplomat,diplomat,0,6,0,3,0,4
-1258745,Rivals,rivals,14,2,0,6,17,0
-1261924,Buddy Daddies,buddy daddies,7,1,0,4,3,4
-1264189,American Primeval,american primeval,16,2,0,2,34,0
-1264241,The Traitors,traitors,0,1,0,1,0,1
-1267068,Creature Commandos,creature commandos,1,8,1,6,9,2
-1267388,Dexter: Original Sin,dexter original sin,0,8,0,6,10,1
-1270254,Jentry Chau vs the Underworld,jentry chau vs underworld,0,1,0,1,1,0
-1270294,WIND BREAKER,wind breaker,0,1,0,2,0,2
-1272555,El Eternauta,el eternauta,24,4,0,3,12,2
-1279219,Huset,huset,0,1,0,1,0,1
-1281465,On Call,on call,13,0,0,1,4,1
-1287040,NCIS: Origins,ncis origins,4,8,0,1,2,2
-1288432,Running Point,running point,1,3,0,3,0,3
-1289002,Say Nothing,say nothing,2,3,0,1,2,0
-1289051,A Man on the Inside,man on inside,2,11,1,11,1,12
-1292377,North of North,north north,0,9,0,9,9,0
-1292397,Adolescence,adolescence,0,36,0,22,0,23
-1293569,The Pitt,pitt,3,103,0,58,93,5
-1303522,The Amazing Digital Circus,amazing digital circus,12,34,0,34,26,10
-1303656,Murder Drones,murder drones,1,14,0,13,1,12
-1303687,Mistletoe Murders,mistletoe murders,0,6,0,6,0,6
-1308057,Jane Eyre,jane eyre,0,2,0,2,0,2
-1309908,Twilight of the Gods,twilight gods,0,1,0,1,6,0
-1309954,The Dragon Prince Mystery of Aaravos,dragon prince mystery aaravos,0,2,0,0,3,0
-1312899,Monsters,monsters,0,0,0,0,0,0
-1314079,Nobody Wants This,nobody wants this,3,14,0,6,1,8
-1316182,Midsomer Murders,midsomer murders,23,6,0,5,17,3
-1323404,The Secret of the River,secret river,0,1,0,1,0,1
-1327329,Love in the Big City,love big city,0,1,0,1,0,1
-1328488,Tsunami: Race Against Time,tsunami race against time,1,0,1,0,1,0
-1338253,Mr Plankton,mr plankton,0,2,0,2,0,2
-1342671,Dune: Prophecy,dune prophecy,0,2,0,1,8,1
-1351288,Kamen Rider W,kamen rider w,1,1,0,0,0,0
-1356393,Light Shop,light shop,5,0,0,2,3,1
-1399235,The Trauma Code : Heroes on Call,trauma code heroes on call,0,1,0,2,0,2
-1424965,Friendly Rivalry,friendly rivalry,0,4,0,2,3,0
-1447792,Toxic Town,toxic town,0,4,0,3,0,3
-1453319,Resident Alien,resident alien,0,14,0,9,24,1
-1459563,The Summer I Turned Pretty,summer i turned pretty,1,50,7,33,1,38
-1467380,Jane the Virgin,jane virgin,0,42,16,23,27,5
-1473456,Daredevil,daredevil,0,6,0,4,0,2
-1475281,MobLand,mobland,4,20,1,2,0,4
-1477778,Karma,karma,0,1,0,1,0,1
-1495846,Ouran High School Host Club,ouran high school host club,0,51,0,44,3,44
-1500228,Andor,andor,1,19,0,21,3,17
-1503942,The Wonderfully Weird World of Gumball,wonderfully weird world gumball,0,4,0,2,0,4
-1505089,Dept. Q,dept q,5,6,0,8,13,2
-1508421,Adults,adults,0,6,0,3,0,2
-1514564,Mercy for None (Gwang-Jang),mercy none (gwang jang),0,1,0,1,0,1
-1524834,Ninjago: Dragons Rising ,ninjago dragons rising,0,1,0,1,0,0
-1534599,Dear Hongrang,dear hongrang,0,2,0,2,0,2
-1537146,Mix Tape,mix tape,0,1,0,1,0,1
-1568162,Paradise Kiss,paradise kiss,0,4,0,4,0,4
-1582576,Tron: Uprising,tron uprising,0,4,0,3,3,2
-1604723,The Prisoner of Beauty,prisoner beauty,0,1,0,1,1,0
-1634084,Gachiakuta,gachiakuta,0,0,0,1,4,0
-1636075,Our Movie,our movie,0,1,0,1,0,1
-1639850,The Glory (KDrama),glory (kdrama),0,1,0,1,0,1
-1640468,LOL: Last One Laughing UK,lol last i laughing uk,0,2,0,1,0,1
+id,name,cleanName,dog_yes_votes,dog_no_votes,cat_yes_votes,cat_no_votes,horse_yes_votes,horse_no_votes,animal_yes_votes,animal_no_votes
+8589,Adventure Time,adventure time,57,10,4,33,3,41,50,0
+9832,Gurren Lagann,gurren lagann,0,4,0,6,0,5,2,4
+10798,Over the Garden Wall,over garden wall,7,46,0,51,0,47,37,18
+10855,Person of Interest,person interest,0,26,0,16,0,18,0,15
+10909,Poldark,poldark,25,12,0,3,0,2,16,1
+11398,Steven Universe,steven universe,1,174,63,99,0,146,108,60
+12451,Twin Peaks,twin peaks,4,40,0,34,0,30,60,2
+12752,Yuri!!! on Ice,yuri on ice,69,16,1,65,1,59,20,35
+12768,Narcos,narcos,60,2,46,2,0,10,33,1
+12800,Downton Abbey,downton abbey,72,1,0,38,10,23,34,13
+12801,Pushing Daisies,pushing daisies,13,0,0,2,4,1,13,0
+12839,The Walking Dead,walking dead,378,42,187,19,287,11,285,11
+12847,Supernatural,supernatural,295,27,202,22,56,104,227,10
+12869,Goliath,goliath,0,11,0,3,0,2,13,1
+12918,Friends,friends,136,20,16,72,0,116,152,2
+12922,Preacher,preacher,27,1,9,1,9,2,17,1
+12941,Westworld,westworld,43,0,9,9,30,0,34,0
+12956,The Leftovers,leftovers,54,1,0,7,1,6,26,0
+12992,Broadchurch,broadchurch,3,49,0,18,3,15,26,4
+13002,The Get Down,get down,1,4,4,0,0,4,1,2
+13067,Prison Break,prison break,16,23,32,1,0,10,26,3
+13074,The Strain,strain,36,1,12,2,8,0,12,0
+13182,The Night Of,night,0,8,0,8,0,3,2,3
+13208,One-Punch Man,one punch man,2,12,1,11,0,11,18,1
+13406,Modern Family,modern family,52,26,2,49,1,43,62,3
+13410,Rick and Morty,rick morty,22,72,29,42,74,8,96,6
+13411,Orange Is the New Black,orange new black,10,115,16,95,0,110,145,8
+13412,The Crown,crown,11,31,0,31,1,32,64,9
+13419,Designated Survivor,designated survivor,0,7,0,6,0,6,5,3
+13453,My Hero Academia,my hero academia,177,44,2,124,0,131,141,29
+13483,The 100,100,6,98,6,83,92,2,107,2
+13541,Outlander,outlander,25,41,1,43,41,5,56,2
+13557,The Wire,wire,34,1,1,9,1,7,26,0
+13590,Dexter,dexter,63,69,3,45,3,40,103,8
+13595,Crazy Ex-Girlfriend,crazy ex girlfriend,4,25,0,32,0,28,27,4
+13600,SEAL Team,seal team,21,25,0,1,1,2,7,2
+13601,Breaking Bad,breaking bad,47,229,25,188,10,167,243,12
+13602,Fargo,fargo,69,8,34,11,0,10,36,1
+13617,Future Man,future man,14,1,17,1,0,4,13,0
+13620,Arrow,arrow,2,7,0,7,0,6,11,1
+13640,Lost,lost,9,110,0,53,0,45,92,0
+13669,The Originals,originals,9,5,0,9,3,8,10,0
+13676,The Simpsons,simpsons,64,4,71,2,36,4,69,4
+13677,The Inbetweeners,inbetweeners,23,2,0,13,0,15,16,1
+13704,Regular Show,regular show,0,12,0,11,14,4,14,2
+13710,The Flash,flash,3,22,1,24,1,25,20,2
+13716,F is for Family,f family,0,2,1,3,0,2,6,0
+13731,Mad Men,mad men,25,46,9,4,0,7,13,1
+13736,Ozark,ozark,86,13,7,15,2,13,55,2
+13747,The Pacific,pacific,30,3,0,5,0,6,14,1
+13748,Generation Kill,generation kill,0,3,0,4,0,3,6,0
+13754,Vikings,vikings,35,21,2,17,29,0,38,0
+13779,The Mentalist,mentalist,22,3,9,5,0,9,11,4
+13786,The Sopranos,sopranos,89,13,6,33,54,3,51,6
+13789,It's Always Sunny in Philadelphia,skits always sunny philadelphia,78,9,13,54,0,50,59,13
+13806,Buffy the Vampire Slayer,buffy vampire slayer,57,10,52,7,21,18,78,1
+13814,Bungo Stray Dogs,bungo stray dogs,0,25,0,26,0,28,27,0
+13823,BoJack Horseman,bojack horseman,52,153,31,131,241,4,196,7
+13824,Total Drama Island,total drama island,0,48,0,37,0,41,58,2
+13825,Phineas and Ferb,phineas ferb,13,14,0,19,0,15,6,14
+13836,Digimon Adventure,digimon adventure,7,0,7,2,0,5,8,1
+13846,Malcolm in the Middle,malcolm middle,21,2,9,4,1,8,16,1
+13871,Peep Show,peep show,28,4,1,9,1,7,15,1
+13912,Psycho-Pass,psycho pass,10,6,0,10,0,8,1,8
+13925,Penny Dreadful,penny dreadful,18,1,29,0,16,0,30,0
+13952,Bob's Burgers,bobs burgers,18,46,47,10,36,14,69,4
+13967,Reign,reign,2,9,12,2,15,0,15,0
+13970,Broad City,broad city,0,9,17,1,0,4,6,3
+13992,Shetland,shetland,1,4,0,2,0,1,7,0
+14013,Sense8,sense8,1,46,0,37,0,38,0,36
+14050,The League of Gentlemen,league gentlemen,11,2,8,0,1,3,13,0
+14075,Altered Carbon,altered carbon,1,9,8,4,0,10,6,1
+14076,Wild Kratts,wild kratts,0,4,0,2,0,2,6,0
+14083,Inside No. 9,inside no ix,26,3,6,7,1,8,11,3
+14098,Boardwalk Empire,boardwalk empire,14,3,0,3,1,1,3,2
+14099,Babylon Berlin,babylon berlin,13,1,0,0,0,5,8,0
+14106,Dead Like Me,dead like me,9,0,3,1,0,2,8,0
+14139,Scrubs,scrubs,14,4,0,9,1,11,8,2
+14153,Psych,psych,1,31,1,35,0,28,29,14
+14159,Rescue Me,rescue me,6,0,6,0,3,1,3,0
+14168,True Blood,true blood,37,4,39,2,10,0,32,0
+14176,Invader Zim,invader zim,0,26,2,17,1,23,18,3
+14203,TRIGUN,trigun-anime-dupe,0,17,0,15,0,16,0,14
+14204,Cowboy Bebop,cowboy bebop,0,35,0,21,0,21,2,20
+14219,Dragon Ball Z,dragon ball z,26,2,7,4,4,7,18,1
+14221,The Bold Type,bold type,0,9,0,8,0,8,0,7
+14222,Once Upon a Time,once upon time,17,30,0,37,49,4,42,3
+14245,Homeland,homeland,10,1,0,2,0,3,13,1
+14246,Oz,oz,0,10,4,0,0,3,10,0
+14275,Sherlock,sherlock,75,16,1,61,0,58,28,32
+14280,The Alienist,alienist,26,3,35,0,22,0,24,0
+14285,The Americans,americans,0,8,0,6,5,2,7,3
+14315,The Handmaid's Tale,handmaids tale,10,69,84,9,2,51,59,18
+14316,Trust,trust,1,6,0,3,0,2,7,0
+14334,The Terror,terror,71,7,31,10,1,30,47,3
+14336,Berserk,berserk,20,0,16,3,26,0,22,0
+14348,Wynonna Earp,wynonna earp,1,17,5,9,1,12,13,4
+14357,Marvel's Agents of S.H.I.E.L.D.,marvels agents shield,37,0,0,17,0,17,19,5
+14393,Criminal Minds,criminal minds,194,43,108,44,52,48,139,33
+14406,Archer,archer,21,4,2,10,1,7,13,2
+14409,Big Mouth,big mouth,2,72,1,63,5,54,31,35
+14413,Happy Valley,happy valley,19,5,0,10,0,11,17,3
+14421,ER,er,3,4,3,2,0,7,4,2
+14430,Marvel's The Punisher,marvels punisher,3,12,0,7,0,9,0,6
+14445,Please Like Me,please like me,8,0,0,10,0,10,14,1
+14457,Good Girls,good girls,1,20,2,14,0,14,14,5
+14468,Versailles,versailles,0,7,0,8,9,0,10,0
+14475,Will & Grace,will grace,2,3,0,2,0,2,0,2
+14504,Soul Eater,soul eater,1,18,11,12,0,20,5,12
+14509,The Exorcist,exorcist,0,5,2,5,0,6,15,0
+14512,Horrible Histories,horrible histories,7,0,6,0,7,0,7,0
+14514,Mystery Science Theater 3000,mystery science theater 3000,3,0,1,0,0,0,1,0
+14525,Travelers,travelers,4,7,0,6,0,6,15,1
+14527,Angel Beats!,angel beats,0,6,0,5,0,5,1,3
+14540,Parasyte -the maxim-,parasyte maxim ,23,0,0,11,0,10,17,0
+14543,Hannibal,hannibal,19,221,134,22,226,7,239,5
+14551,Critical Role,critical role,0,37,49,1,47,0,49,1
+14569,The West Wing,west wing,1,4,0,5,0,4,0,5
+14578,Better Call Saul,better call saul,5,63,1,43,1,36,1,32
+14579,On My Block,on my block,0,12,0,9,0,10,1,8
+14580,Lost Girl,lost girl,0,2,0,2,0,2,4,0
+14585,In the Flesh,flesh,0,10,0,6,0,9,3,8
+14628,Haven,haven,6,2,0,2,0,2,8,0
+14646,Battle For Dream Island,battle dream island,0,47,0,29,0,34,26,16
+14654,Master of None,master none,0,4,0,4,0,2,2,2
+14684,Another,another,0,11,0,10,0,12,15,0
+14702,South Park,south park,165,16,114,25,90,15,140,8
+14710,Camp Camp,camp camp,11,17,2,20,0,22,29,0
+14752,Drake & Josh,drake josh,0,3,0,3,0,3,3,2
+14775,The Musketeers,musketeers,0,4,0,5,0,2,5,0
+14784,Firefly,firefly,3,15,0,14,23,0,15,2
+14785,Neon Genesis Evangelion,neon genesis evangelion,2,76,75,14,0,74,37,42
+14790,Arrested Development,arrested development,1,35,22,12,0,28,44,0
+14796,Bones,bones,65,9,36,15,0,43,57,7
+14797,Queer Eye,queer eye,8,12,0,13,0,14,2,12
+14814,The Expanse,expanse,0,17,1,12,0,11,11,10
+14858,Puella Magi Madoka Magica,puella magi madoka magica,0,83,7,57,1,69,71,8
+14861,anohana: The Flower We Saw That Day,anohana flower we saw that day,0,8,0,7,0,7,0,7
+14880,Final Space,final space,0,6,14,0,0,5,9,1
+14951,A Series of Unfortunate Events,series unfortunate events,0,64,7,49,1,58,69,2
+15010,The Fosters,fosters,0,15,0,13,0,14,0,16
+15069,Colony,colony,41,4,4,1,0,1,0,0
+15079,Ever After High,ever after high,0,4,0,4,0,3,0,3
+15085,The Disastrous Life of Saiki K.,disastrous life saiki k,0,44,0,36,0,36,34,3
+15086,Little Witch Academia,little witch academia,0,5,0,4,0,4,0,4
+15097,Fringe,fringe,3,9,0,10,0,9,16,0
+15108,Ripper Street,ripper street,4,0,0,0,4,0,5,0
+15159,Pose,pose,0,24,0,23,0,24,0,25
+15192,The L Word,l word,13,0,13,1,1,5,11,2
+15198,White Collar,white collar,2,16,0,6,0,8,0,6
+15234,Humans,humans,0,3,0,3,0,3,0,3
+15265,Father Ted,father ted,0,7,0,5,0,5,6,4
+15276,Episodes,episodes,0,3,0,4,0,4,5,0
+15292,The Future Diary,future diary,19,0,0,9,0,9,11,3
+15321,Star Trek: Voyager,star trek voyager,0,9,0,9,0,8,2,5
+15333,Hey Arnold!,hey arnold,3,2,0,1,0,1,1,0
+15366,Harlots,harlots,0,12,0,2,0,3,8,1
+15379,Utopia,utopia,15,6,0,10,0,11,14,3
+15398,Yellowstone,yellowstone,118,10,26,11,79,1,104,2
+15473,Young Sheldon,young sheldon,3,64,1,30,0,35,62,6
+15505,Sharp Objects,sharp objects,0,35,2,27,30,11,32,1
+15534,The White Princess,white princess,0,2,0,2,0,2,0,2
+15555,Impractical Jokers,impractical jokers,8,4,0,6,0,4,0,4
+15562,One Foot in the Grave,one foot grave,0,2,3,0,0,1,3,0
+15604,Dark Tourist,dark tourist,6,3,0,2,0,3,14,0
+15607,The Sinner,sinner,0,18,0,16,0,14,25,10
+15610,Angel,angel,7,0,0,5,0,4,5,0
+15763,Queer As Folk,queer as folk,0,9,0,6,0,6,0,7
+15824,Legend of the Galactic Heroes,legend galactic heroes,0,3,0,2,0,1,0,1
+15903,Patrick Melrose,patrick melrose,2,8,0,7,0,8,2,7
+15908,Marvel's Agent Carter,marvels agent carter,0,7,0,8,0,10,10,4
+15916,The Prisoner,prisoner,0,2,0,1,0,1,0,2
+15962,Twin Peaks: The Return,twin peaks return,4,4,1,7,0,6,18,0
+15970,Banana Fish,banana fish,1,103,11,74,0,90,94,11
+15973,Deadwood,deadwood,32,6,0,4,6,0,3,1
+16038,Cells at Work!,cells at work,0,14,0,11,0,11,0,11
+16063,Darker than Black,darker than black,0,2,2,0,0,2,2,0
+16069,The Golden Girls,golden girls,0,10,0,10,0,9,12,1
+16159,Queen of the South,queen south,11,0,0,3,0,5,10,0
+16172,RuPaul's Drag Race,rupauls drag race,1,44,0,35,0,36,14,27
+16226,Transformers: Prime,transformers prime,0,14,0,11,0,11,0,12
+16286,Kidding,kidding,0,2,0,1,0,1,6,0
+16315,Maniac,maniac,0,15,0,8,0,6,22,3
+16327,The Dragon Prince,dragon prince,0,58,0,52,61,9,70,1
+16399,From the New World,from new world,1,2,4,0,0,2,3,0
+16400,Eureka Seven,eureka vii,0,2,0,2,0,2,0,2
+16442,The Librarians,librarians,5,5,0,3,0,3,5,1
+16471,Veep,veep,11,0,0,4,0,4,8,0
+16515,Death in Paradise,death paradise,0,6,11,1,0,5,4,1
+16576,Star Wars Rebels,star wars rebels,0,16,0,11,0,12,7,0
+16577,Star Wars: The Clone Wars,star wars clone wars,8,22,2,23,5,22,46,0
+16630,X-Men: Evolution,x men evolution,0,4,0,3,0,3,0,4
+16633,The Haunting of Hill House,haunting hill house,57,177,354,10,1,134,156,57
+16645,13 Reasons Why,13 reasons why,7,199,0,152,0,147,167,11
+16655,Fawlty Towers,fawlty towers,0,4,0,4,0,2,0,3
+16756,She-Ra and the Princesses of Power,she ra princesses power,0,122,5,107,0,98,35,61
+16853,Quantum Leap,quantum leap,3,2,0,3,0,1,0,2
+17046,Mickey Mouse,mickey mouse,2,3,2,2,2,2,2,2
+17113,Last Man Standing,last man standing,0,2,1,2,0,2,1,1
+17147,You,you,13,131,4,90,1,93,117,37
+17162,Star Trek: Enterprise,star trek enterprise,0,15,0,5,0,4,6,1
+17377,Conversations with a Killer: The Ted Bundy Tapes,conversations with killer ted bundy tapes,0,2,0,1,0,1,0,1
+17471,The Mindy Project,mindy project,0,3,1,3,2,2,1,2
+17594,Summer Heights High,summer heights high,1,3,0,2,0,2,1,3
+17602,Metalocalypse,metalocalypse,24,0,28,0,15,8,29,0
+17616,Barry,barry,0,20,8,12,2,13,19,8
+17623,JoJo's Bizarre Adventure,jojos bizarre adventure,238,5,128,1,118,0,137,0
+17625,Spartacus,spartacus,0,5,0,4,7,1,4,1
+17631,A Million Little Things,million little things,2,10,3,5,0,6,0,5
+17633,Mindhunter,mindhunter,55,1,5,17,0,16,49,0
+17642,Black Butler,black butler,56,3,0,28,0,29,39,1
+17648,Legion,legion,8,15,1,9,0,9,14,3
+17650,The Animals of Farthing Wood,animals farthing wood,0,0,1,1,0,2,1,0
+17652,Frasier,frasier,0,14,0,12,1,11,19,0
+17667,Sailor Moon,sailor moon,0,24,2,15,0,19,3,15
+17670,Girl from Nowhere,girl from nowhere,43,11,1,33,1,48,20,38
+17676,Burn Notice,burn notice,0,4,0,2,0,3,0,1
+17690,PEN15,pen15,2,16,0,13,0,14,22,4
+17704,The Rookie,rookie,10,33,1,21,1,23,21,13
+17744,Houdini,houdini,0,1,0,1,0,1,0,1
+17747,Dirty John,dirty john,0,26,0,6,0,6,4,9
+17749,Dororo (2019),dororo (2019),0,5,0,5,9,0,1,2
+17757,The Blue Exorcist,blue exorcist-anime-dupe,1,10,0,10,0,8,5,7
+17797,Doom Patrol,doom patrol,3,17,0,20,4,13,31,0
+17801,11.22.63,112263,0,10,1,5,0,5,23,0
+17811,Parks and Recreation,parks recreation,1,48,0,43,85,2,58,2
+17816,Only Fools and Horses,only fools horses,0,3,0,3,0,3,5,0
+17834,Courage the Cowardly Dog,courage cowardly dog,7,0,2,0,3,0,6,0
+17835,Salad Fingers,salad fingers,12,3,0,8,12,1,11,0
+17875,What We Do in the Shadows,what we do shadows,10,56,1,56,28,48,82,5
+17882,Futurama,futurama,57,0,20,3,2,15,31,0
+17904,Fleabag,fleabag,1,55,1,51,1,46,2,40
+17908,Wellington Paranormal,wellington paranormal,5,1,1,2,0,2,3,0
+17915,DuckTales,ducktales,3,10,0,11,1,12,14,1
+17929,The Last Kingdom,last kingdom,0,6,0,5,13,0,16,0
+17940,Girls,girls,0,7,0,6,0,8,10,0
+17941,Seinfeld,seinfeld,2,10,1,6,0,10,14,1
+17949,Norsemen,norsemen,0,3,0,2,0,1,6,1
+17985,Mom,mom,7,0,3,0,0,5,6,0
+18002,Shiki,shiki,1,5,0,4,0,5,1,5
+18019,Shrill,shrill,0,5,3,2,0,3,4,3
+18039,Tribe,tribe,3,0,0,1,0,1,5,0
+18076,The Act,act,10,51,1,30,1,27,40,29
+18098,30 Rock,30 rock,7,3,5,8,0,8,10,0
+18115,Monk,monk,14,3,15,3,0,12,19,2
+18131,Yona of the Dawn,yona dawn-anime-dupe,0,2,0,3,3,0,3,0
+18155,Moribito: Guardian of the Spirit,moribito guardian spirit,0,1,0,1,3,0,3,0
+18156,A Touch of Frost,touch frost,5,1,4,0,0,2,3,0
+18190,"Love, Death & Robots",love death robots,6,37,20,16,29,6,57,3
+18205,After Life,after life,15,47,0,18,0,16,8,17
+18211,Code Geass: Lelouch of the Rebellion,code geass lelouch rebellion,0,17,0,16,0,16,0,14
+18213,House of Cards,house cards,29,1,0,7,0,6,14,1
+18216,The Man in the High Castle,man high castle,0,9,0,5,0,4,13,3
+18246,Roswell,roswell,0,4,0,4,0,4,0,4
+18254,Foster's Home for Imaginary Friends,fosters home imaginary friends,0,2,0,2,0,2,0,2
+18295,Life in Pieces,life pieces,2,0,0,0,0,1,3,0
+18306,One Piece,one piece,2,30,0,22,2,25,29,4
+18307,Bloom Into You,bloom into you,0,4,0,6,0,5,0,4
+18413,Mr. Mercedes (Season 1),mr mercedes (season 1),2,19,0,4,0,5,1,4
+18443,Generator Rex,generator rex,0,2,0,2,0,2,2,0
+18445,Ben 10,ben x,0,4,0,3,0,3,0,3
+18484,The Halcyon,halcyon,0,2,0,2,0,2,0,2
+18515,The Good Fight,good fight,3,2,0,2,0,1,7,0
+18520,Rapunzel's Tangled Adventure,rapunzels tangled adventure,0,10,0,12,0,13,6,7
+18588,All American,all american,0,4,0,4,0,5,0,5
+18626,Meteor Garden,meteor garden,0,2,0,3,0,2,0,3
+18670,Carole & Tuesday,carole tuesday,0,15,0,15,0,15,0,15
+18678,The Secret Circle,secret circle,0,1,0,1,0,1,1,0
+18700,While You Were Sleeping (Kdrama),while you were sleeping (kdrama),0,3,10,0,0,4,2,2
+18708,Fosse/Verdon,fosse verdon,0,2,0,1,0,1,2,1
+18720,Plebs,plebs,0,3,6,0,0,3,6,1
+18724,Animal Kingdom,animal kingdom,1,6,0,5,0,6,8,2
+18731,Gentleman Jack,gentleman jack,0,20,0,15,24,1,20,1
+18771,Chilling Adventures of Sabrina,chilling adventures sabrina,14,54,29,32,0,44,110,0
+18901,Tuca & Bertie,tuca bertie,0,20,0,17,0,16,13,1
+18909,Druck,druck,0,8,0,8,0,8,0,8
+19016,Durarara!!,durarara-anime-dupe,0,7,1,7,0,6,0,5
+19051,The Saga of Tanya the Evil,saga tanya evil-anime-dupe,0,2,0,3,4,0,0,2
+19066,Fullmetal Alchemist,fullmetal alchemist,50,0,21,5,1,19,27,0
+19068,Wire in the Blood,wire blood,8,1,0,1,0,1,2,1
+19075,StartUp,startup,0,0,0,0,0,0,1,2
+19076,The Hot Zone,hot zone,0,2,0,2,0,2,4,0
+19095,Good Omens,good omens,4,193,43,91,1,137,158,10
+19097,Sky Castle,sky castle,0,3,0,3,0,2,0,3
+19127,Swamp Thing,swamp thing,1,7,0,3,0,3,9,1
+19128,Wentworth,wentworth,0,17,0,13,15,1,23,1
+19146,Speechless,speechless,0,3,0,2,0,3,0,2
+19159,Battlestar Galactica,battlestar galactica,1,8,11,0,0,5,7,1
+19162,Years and Years,years years,0,8,0,9,0,10,0,10
+19224,Harrow,harrow,5,0,3,0,0,2,7,0
+19225,Tales of the City,tales city,0,7,0,7,0,7,0,7
+19260,Chernobyl,chernobyl,276,2,118,5,71,14,165,0
+19294,Vida,vida,0,1,0,1,0,1,0,1
+19326,Goblin Slayer,goblin slayer,8,0,0,2,4,0,6,0
+19336,Letterkenny,letterkenny,0,8,0,5,0,5,0,6
+19341,Euphoria,euphoria,58,368,21,255,1,235,294,48
+19349,Charité at War,charité at war,0,1,0,2,3,1,5,0
+19360,SpongeBob SquarePants,spongebob squarepants,3,55,7,30,0,38,45,3
+19365,3%,3%,0,7,0,6,0,6,0,4
+19369,Video Game High School,video game high school,0,2,0,4,0,4,0,3
+19382,Gavin & Stacey,gavin stacey,0,7,0,6,0,8,0,7
+19415,The Chi,chi,0,0,0,0,0,0,2,0
+19424,The Young Offenders,young offenders,2,2,0,3,0,3,3,2
+19453,The Royle Family,royle family,1,3,0,3,0,4,0,3
+19474,The Forsyte Saga,forsyte saga,0,1,0,2,0,1,1,2
+19493,Spaced,spaced,1,4,0,4,0,4,0,4
+19498,Warehouse 13,warehouse 13,1,7,0,3,0,3,1,3
+19521,CSI: Crime Scene Investigation,csi crime scene investigation,16,2,10,3,6,1,7,2
+19531,Masters of Sex,masters sex,0,4,0,4,0,4,0,5
+19544,Hell on Wheels,hell on wheels,1,1,0,1,4,0,7,0
+19570,Entourage,entourage,0,2,0,2,0,1,0,2
+19580,Veronica Mars,veronica mars,13,4,0,12,0,12,12,1
+19584,Smash,smash,0,3,0,3,0,3,0,3
+19593,Flesh and Bone,flesh bone,0,3,0,2,0,2,4,0
+19605,Das Boot,das boot,0,1,0,0,0,0,0,0
+19659,Re:ZERO -Starting Life in Another World-,re zero starting life another world,16,3,9,1,1,12,12,0
+19663,The Devil Is a Part-Timer!,devil timer-anime-dupe,0,3,0,4,0,1,0,4
+19668,The Mick,mick,2,6,0,4,0,4,13,0
+19681,One Day at a Time,one day at time,0,41,0,36,0,35,0,33
+19685,In the Dark,dark,17,71,9,22,2,23,44,10
+19712,Weightlifting Fairy Kim Bok-Joo,weightlifting fairy kim bok joo,0,3,0,2,0,3,0,2
+19749,Heroes,heroes,0,7,0,3,0,3,6,0
+19775,Undone,undone,0,8,0,9,0,8,0,8
+19801,12 Monkeys,12 monkeys,0,5,0,1,0,2,2,2
+19814,Megalo Box,megalo box,4,1,0,3,0,2,0,3
+19841,The 4400,4400,0,0,0,1,0,1,3,0
+19847,Limitless,limitless,0,2,0,2,0,2,0,2
+19860,The Tudors,tudors,0,7,0,2,1,4,11,1
+19863,Pride and Prejudice,pride prejudice,0,10,0,7,0,7,0,8
+19874,Black Mirror,black mirror,84,170,3,146,35,121,115,75
+19876,Mr. Bean,mr bean,0,3,0,2,0,3,0,3
+19921,Constantine,constantine,0,8,0,7,0,7,1,6
+19944,Justified,justified,12,0,0,3,0,3,7,1
+20047,The Orville,orville,0,6,0,7,0,5,0,4
+20074,Banshee,banshee,0,2,0,1,0,1,7,1
+20085,Rugrats,rugrats,0,10,0,8,0,8,8,0
+20086,Baccano!,baccano-anime-dupe,0,7,0,5,0,6,9,0
+20098,New Amsterdam,new amsterdam,0,14,0,14,0,15,0,15
+20104,Pennyworth,pennyworth,0,0,1,0,0,1,6,0
+20152,Amphibia,amphibia,0,40,0,38,0,37,45,0
+20157,Cable Girls,cable girls,0,3,0,3,0,3,0,3
+20198,Arthur,arthur,0,10,1,6,0,7,8,0
+20210,Black Clover,black clover,0,3,0,3,0,3,5,1
+20263,24,24,8,0,0,3,1,1,2,1
+20296,All Creatures Great and Small,all creatures great small,5,0,1,0,3,0,3,0
+20300,Baby Daddy,baby daddy,0,2,0,1,0,1,1,1
+20307,The Fall,fall,0,10,3,3,0,6,0,6
+20378,The Righteous Gemstones,righteous gemstones,0,27,0,12,3,10,20,10
+20428,Better Than Us,better than us,0,3,0,3,0,3,0,3
+20445,Black Butler: Book of Circus,black butler book circus,1,6,0,8,0,8,6,1
+20451,Carnival Row,carnival row,4,16,10,5,10,0,25,1
+20487,Xavier: Renegade Angel,xavier renegade angel,5,0,1,4,0,0,6,0
+20491,The Young Pope,young pope,0,3,0,3,0,3,5,0
+20494,Angel Beats,angel beats-anime-dupe,0,5,0,4,0,5,0,5
+20533,Bee and PuppyCat,bee puppycat,0,8,0,8,0,7,8,0
+20599,American Gods,american gods,21,5,16,1,6,3,20,1
+20632,Marianne,marianne,0,25,0,14,2,11,34,0
+20642,Unbelievable,unbelievable,0,16,0,16,0,15,15,6
+20700,Snow White With the Red Hair,snow white with red hair,0,3,0,1,0,2,2,0
+20780,Prodigal Son,prodigal son,0,8,0,7,0,5,8,1
+20798,The Politician,politician,0,9,0,9,0,8,9,1
+20813,Evil,evil,0,12,10,6,0,6,21,9
+20839,House,house,125,43,87,26,0,70,96,19
+20840,Nip/Tuck,nip tuck,3,0,0,1,0,1,5,0
+20844,Due South,due south,1,2,0,0,2,0,1,0
+20889,The Capture,capture,15,0,0,4,0,4,5,0
+20915,The Untamed,untamed,2,39,28,5,0,29,23,2
+20924,American Crime Story: The People vs. O.J. Simpson,american crime story people vs oj simpson,0,4,0,4,0,4,0,4
+20944,Imposters,imposters,0,4,0,2,2,0,0,2
+20954,North & South,north south,0,3,0,3,0,3,0,2
+20960,Chicago P.D.,chicago pd,0,6,1,0,0,1,0,2
+21013,Taboo,taboo,0,5,0,2,5,1,17,2
+21047,The Vampire Diaries,vampire diaries,2,81,1,59,0,61,66,4
+21076,Chicago Fire,chicago fire,20,3,9,6,0,8,8,4
+21080,Looking for Alaska,looking alaska,0,4,0,3,0,3,0,5
+21084,Come Fly with Me,come fly with me,2,0,0,2,0,2,2,1
+21105,The New Batman Adventures,new batman adventures,0,0,0,1,0,0,0,1
+21111,Watchmen: It’s Summer and We’re Running Out of Ice,watchmen it’s summer we’re running out ice,0,2,0,2,0,2,5,0
+21117,Benidorm,benidorm,9,1,0,4,0,4,0,5
+21156,Hanna,hanna,8,3,9,0,0,3,19,0
+21205,Hunter x Hunter,hunter x hunter,6,65,42,19,57,1,83,0
+21210,Watchmen,watchmen,13,1,5,3,0,5,23,0
+21247,Road to Avonlea,road avonlea,0,2,0,2,3,0,1,1
+21302,The Resident,resident,8,8,3,21,3,15,9,19
+21306,See,see,0,18,0,7,11,1,17,0
+21323,The Addams Family,addams family,1,1,0,3,0,4,0,3
+21333,Dickinson,dickinson,0,10,1,10,0,9,17,0
+21339,black-ish,black ish,0,5,0,4,0,4,0,4
+21342,Tom Clancy's  Jack Ryan,tom clancys jack ryan,53,1,0,4,0,4,11,3
+21362,The Morning Show,morning show,2,18,1,12,0,9,2,13
+21396,The Thick of It,thick it,0,10,0,7,0,9,0,10
+21419,Wisting,wisting,4,1,0,1,0,1,1,1
+21428,The Fresh Prince of Bel-Air,fresh prince bel air,0,2,0,3,0,2,4,1
+21459,This Country,this country,0,5,4,0,0,4,5,0
+21479,The Gifted,gifted,0,3,0,3,0,4,0,4
+21482,A Place to Call Home,place call home,1,5,0,1,8,0,8,1
+21499,I'm Alan Partridge,im alan partridge,0,3,0,3,0,3,1,1
+21500,Green Eggs and Ham,green eggs ham,0,3,0,3,0,3,0,3
+21540,Mononoke,mononoke,0,3,5,0,0,1,6,0
+21605,"Bring It On, Ghost",bring it on ghost,0,0,3,0,0,0,0,0
+21658,The Muppets,muppets,0,4,0,4,0,3,0,3
+21670,Dolly Parton's Heartstrings,dolly partons heartstrings,6,0,0,1,0,2,1,1
+21680,Big City Greens,big city greens,0,3,0,2,0,2,0,2
+21693,Doc Martin,doc martin,8,1,1,2,0,1,8,0
+21707,Man Down,man down,0,2,2,2,0,1,4,0
+21740,Mr Inbetween,mr inbetween,16,0,0,4,0,3,5,0
+21741,The Last Man on Earth,last man on earth,1,2,0,2,0,2,6,0
+21742,Servant,servant,14,8,0,9,0,10,28,0
+21780,Beetlejuice,beetlejuice,0,2,0,1,0,1,0,0
+21798,Rising of the Shield Hero,rising shield hero-anime-dupe,3,0,1,2,1,2,3,0
+21827,Little House on the Prairie,little house on prairie,26,2,3,1,8,0,8,0
+21850,Crashing,crashing,0,3,0,4,0,4,0,4
+21892,Harley Quinn,harley quinn,10,3,5,1,0,3,11,0
+21894,Rizzoli & Isles,rizzoli isles,9,3,0,2,0,4,11,0
+21907,Evil Lives Here,evil lives here,8,2,4,1,0,3,7,0
+21913,Seven Seconds,seven seconds,3,8,0,3,0,3,4,2
+21969,Jack Whitehall: Travels with My Father,jack whitehall travels with my father,0,3,0,4,0,4,4,0
+21983,The Witcher,witcher,95,15,7,44,108,6,146,2
+21998,Tipping the Velvet,tipping velvet,0,3,0,3,0,4,5,0
+22019,For All Mankind,all mankind,3,7,1,5,0,4,5,0
+22023,Touch Your Heart,touch your heart,0,1,0,1,0,1,0,1
+22034,My Brilliant Friend,my brilliant friend,1,2,0,2,0,2,0,2
+22039,Gilmore Girls: A Year in the Life,gilmore girls year life,0,5,0,4,0,4,2,4
+22044,Teenage Mutant Ninja Turtles,teenage mutant ninja turtles,6,2,0,9,0,5,3,1
+22054,Star Trek: The Next Generation,star trek next generation,20,6,1,22,0,18,4,7
+22057,Star Trek: Deep Space Nine,star trek deep space ix,0,23,0,17,0,21,20,2
+22080,Nobody's Looking,nobodys looking,0,3,0,2,0,2,3,1
+22095,Carmilla,carmilla,0,3,0,2,0,3,0,2
+22096,H2O: Just Add Water,h2o just add water,0,9,0,9,1,8,14,0
+22124,Taskmaster,taskmaster,1,14,2,14,0,12,0,16
+22182,Spinning Out,spinning out,0,14,0,14,0,15,0,13
+22183,Raising Hope,raising hope,1,2,0,4,0,1,6,1
+22187,The L Word: Generation Q,l word generation q,0,4,0,3,0,2,0,4
+22198,Studio C,studio c,0,1,0,2,0,2,1,0
+22242,Home Movies,home movies,0,5,5,0,0,4,8,0
+22291,Six Feet Under,six feet under,11,2,0,4,9,2,13,1
+22295,The Bonfire of Destiny,bonfire destiny,1,2,0,0,0,1,1,1
+22297,Miranda,miranda,1,7,0,7,0,7,0,7
+22353,Eyewitness,eyewitness,2,0,0,3,0,2,1,2
+22377,Stumptown,stumptown,0,1,0,1,0,1,0,1
+22384,The Eric Andre Show,eric andre show,1,2,0,1,0,2,1,0
+22390,AJ and the Queen,aj queen,0,2,0,1,0,2,8,1
+22398,Kipo and the Age of Wonderbeasts,kipo age wonderbeasts,0,29,6,19,0,27,33,1
+22426,Dorohedoro (2020),dorohedoro (2020),0,3,0,3,0,3,2,0
+22427,Eizouken Ni Wa Te O Dasuna! | Keep Your Hands Off Eizouken!,eizouken ni wa te o dasuna | keep your hands off eizouken,0,4,0,5,0,5,0,5
+22447,The Outsider,outsider,1,10,0,7,0,7,24,0
+22459,Forensic Files,forensic files,5,0,1,0,1,0,1,0
+22473,Chowder,chowder,0,2,0,1,0,3,0,0
+22498,RuPaul's Drag Race UK,rupauls drag race uk,0,4,0,3,0,3,0,4
+22502,Good Trouble,good trouble,0,4,0,4,0,3,0,3
+22518,Star Trek: Picard,star trek picard,0,28,0,21,0,21,18,9
+22538,Jibaku Shounen Hanako-Kun | Toilet-Bound Hanako-Kun,jibaku shounen hanako kun | toilet bound hanako kun,1,12,0,8,0,8,11,0
+22582,Everything's Gonna Be Okay,everythings gonna be okay,0,4,0,3,0,3,0,3
+22590,Sword Art Online,sword art online-anime-dupe,2,8,0,5,0,5,11,0
+22625,Dollface,dollface,0,1,0,1,0,2,0,1
+22706,Locke & Key,locke key,0,27,0,27,0,27,22,10
+22749,Dan Vs.,dan vs,0,3,0,4,0,1,1,2
+22787,ERASED,erased,0,26,0,25,0,26,33,0
+22793,"I, Claudius",i claudius,0,3,1,2,0,1,0,0
+22809,Upright,upright,0,0,0,0,0,0,6,0
+22829,Mythic Quest: Raven's Banquet,mythic quest ravens banquet,0,4,0,3,4,0,6,1
+22849,Skam France,skam france,0,5,0,5,0,3,8,0
+22940,Call the Midwife,call midwife,3,9,10,8,0,10,13,3
+22947,When Calls the Heart,when calls heart,0,5,0,2,0,1,1,0
+23065,The Big C,big c,15,4,0,3,0,2,2,1
+23105,Ash vs Evil Dead,ash vs evil dead,16,2,0,6,0,7,14,0
+23114,Ashes to Ashes,ashes ashes,7,0,1,3,0,3,6,0
+23117,Ashes of Love,ashes love,0,1,0,1,0,1,2,0
+23182,American Housewife,american housewife,0,4,0,3,1,2,0,3
+23204,Grey's Anatomy,greys anatomy,354,18,9,176,1,180,248,13
+23227,Pretty Little Liars,pretty little liars,5,75,1,62,0,64,74,10
+23229,My Little Pony: Friendship Is Magic,my little pony friendship magic,28,35,7,45,60,4,52,2
+23230,Big Little Lies,big little lies,0,21,0,19,0,17,2,19
+23265,The A-Team,a team,0,3,0,3,0,3,0,3
+23294,Tales from the Crypt,tales from crypt,5,3,6,1,0,2,6,1
+23322,Last Week Tonight with John Oliver,last week tonight with john oliver,0,0,1,0,0,0,1,0
+23330,The X-Files,x files,76,30,18,30,0,32,62,10
+23340,Blue Bloods,blue bloods,0,1,1,1,0,2,0,1
+23346,Bloodline,bloodline,0,4,0,2,0,2,8,1
+23551,Money Heist,money heist,5,20,0,13,0,14,5,8
+23552,Suburra: Blood on Rome,suburra blood on rome,5,0,0,3,5,0,3,0
+23590,The Last Ship,last ship,0,5,0,1,0,1,6,0
+23761,Mr. Mercedes,mr mercedes,30,6,0,1,0,1,23,2
+23798,"Magnum, P.I.",magnum pi,1,7,0,8,0,9,1,6
+23836,Anne with an E,anne with an e,0,53,2,43,0,50,65,1
+23904,New Girl,new girl,0,26,34,6,0,30,25,3
+24000,St. Elsewhere,st elsewhere,1,0,2,1,0,1,1,0
+24019,Heartland,heartland,6,6,0,6,12,1,8,1
+24031,Get Smart,get smart,0,1,0,1,0,1,0,1
+24034,How to Get Away with Murder,how get away with murder,0,6,0,7,0,5,9,2
+24057,The Killing,killing,0,4,1,1,0,1,8,0
+24428,Fullmetal Alchemist: Brotherhood,fullmetal alchemist brotherhood,218,3,0,92,91,14,116,2
+24456,"Ed, Edd n Eddy",ed edd n eddy,0,10,0,8,0,8,1,8
+24544,SIX,six,0,4,0,1,0,1,1,0
+24632,Law & Order: Criminal Intent,law order criminal intent,3,0,1,0,1,0,2,0
+24780,Storm of the Century,storm century,0,2,0,2,0,2,0,2
+24902,Scandal,scandal,8,1,0,1,0,1,4,2
+24924,Witches of East End,witches east end,2,3,1,1,0,2,1,0
+24925,A Discovery of Witches,discovery witches,1,8,0,8,0,6,25,1
+24932,Perry Mason,perry mason,3,0,0,0,0,0,2,0
+25080,Being Human,being human,0,1,4,0,0,1,5,0
+25104,I Love Lucy,i love lucy,0,1,0,1,0,0,0,0
+25153,Into the Badlands,into badlands,0,0,0,0,1,1,4,0
+25269,The Thin Blue Line,thin blue line,0,1,0,1,0,1,0,1
+25275,Murdoch Mysteries,murdoch mysteries,11,4,8,0,5,0,11,0
+25455,Tru Calling,tru calling,0,4,0,1,0,4,0,4
+25627,Banana,banana,0,1,0,1,0,2,0,1
+25834,Knowing Me Knowing You with Alan Partridge,knowing me knowing you with alan partridge,0,2,0,2,0,2,0,2
+25852,Kings,kings,0,2,0,3,0,4,3,0
+25926,The Good Doctor,good doctor,5,15,0,37,1,35,38,26
+26010,Santa Clarita Diet,santa clarita diet,0,10,0,9,1,8,10,0
+26072,Law & Order: Special Victims Unit,law order special victims unit,23,8,13,4,0,13,16,4
+26092,Virgin River,virgin river,0,8,0,5,0,6,1,7
+26182,High Fidelity,high fidelity,0,3,0,2,0,2,0,3
+26240,Fallout,fallout,380,56,4,53,18,46,202,11
+26297,The Good Place,good place,250,19,9,93,32,77,107,23
+26350,The Closer,closer,5,0,4,0,0,0,4,0
+26510,Lupin the Third: The Woman Called Fujiko Mine,lupin third woman called fujiko mine,0,3,0,2,0,2,0,2
+26647,Kill la Kill,kill la kill,1,14,0,9,0,11,8,4
+26713,All in the Family,all family,0,1,0,2,0,0,0,0
+26806,The Ren & Stimpy Show,ren stimpy show,1,2,3,0,1,0,1,0
+26874,The Night Shift,night shift,0,4,0,3,0,3,4,0
+26876,The Night Manager,night manager,26,10,0,6,0,5,9,6
+26975,Line of Duty,line duty,32,1,0,9,1,7,17,2
+27063,Atlanta,atlanta,12,5,0,9,0,10,9,6
+27108,Farscape,farscape,0,8,0,7,0,7,7,0
+27278,Naruto Shippūden,naruto shippūden,24,3,0,9,0,10,6,5
+27279,Naruto,naruto,15,3,1,8,0,9,11,0
+27446,El Chavo del Ocho,el chavo del ocho,0,2,3,0,0,3,3,0
+27506,Sleepy Hollow,sleepy hollow,0,4,0,5,0,4,0,4
+27543,Kamisama Kiss,kamisama kiss,0,5,0,3,0,2,2,2
+27760,Top Gear,top gear,0,4,0,2,0,2,1,1
+27782,The Grand Tour,grand tour,0,2,0,3,0,1,0,3
+27892,Avatar: The Last Airbender,avatar last airbender,1,137,0,118,0,113,121,11
+28059,The Legend of Korra,legend korra,0,35,0,35,0,30,2,27
+28556,Samurai Jack,samurai jack,3,0,0,1,1,0,5,0
+29048,Young & Hungry,young hungry,2,0,0,1,0,2,1,0
+29091,The King of Queens,king queens,0,0,0,1,0,3,3,1
+29175,Marcella,marcella,32,0,0,7,0,8,13,0
+29213,Orphan Black,orphan black,4,13,0,15,0,12,15,4
+29216,The Blacklist,blacklist,14,3,3,0,7,0,14,2
+29261,Rookie Blue,rookie blue,0,1,0,1,0,1,0,1
+29354,Silicon Valley,silicon valley,0,5,0,4,0,3,2,2
+29508,Bosch,bosch,0,4,0,1,0,0,0,0
+29599,Dr. Stone,dr stone,5,1,0,9,0,8,8,0
+29642,Last Tango in Halifax,last tango halifax,0,2,0,2,0,2,0,2
+29683,Hwarang: The Poet Warrior Youth,hwarang poet warrior youth,0,2,0,3,0,3,3,2
+29689,Alexa & Katie,alexa katie,0,10,0,7,0,7,0,7
+29761,The Incredible Dr. Pol,incredible dr pol,5,0,4,0,5,0,5,0
+29900,Miraculous: Tales of Ladybug & Cat Noir,miraculous tales ladybug cat noir,0,15,0,13,0,14,4,15
+29904,The Amazing Race,amazing race,0,5,0,4,0,4,1,3
+29905,The Amazing World of Gumball,amazing world gumball,0,27,1,23,0,25,29,2
+29914,Lodge 49,lodge 49,0,1,0,1,1,1,3,1
+30021,Californication,californication,0,1,0,1,0,2,2,0
+30034,Dark Angel,dark angel,0,1,0,1,0,1,3,0
+30137,Reno 911!,reno 911,5,1,2,0,0,0,2,1
+30209,When They Cry,when they cry,0,3,0,2,0,3,1,1
+30233,Jewel in the Palace,jewel palace,0,0,0,0,0,0,1,0
+30290,Doctor Who,doctor who,43,66,45,29,5,62,80,20
+30402,The Bridge,bridge,3,0,0,0,3,0,4,0
+30489,Fresh Off the Boat,fresh off boat,0,2,2,1,0,1,1,1
+30548,Romance is a Bonus Book,romance bonus book,0,3,0,2,0,3,0,2
+30829,Hudson & Rex,hudson rex,0,7,0,2,0,2,3,1
+30979,Castle Rock,castle rock,25,0,0,4,0,1,16,0
+31032,Halt and Catch Fire,halt catch fire,0,1,0,1,4,0,9,0
+31190,King of the Hill,king hill,4,27,24,1,0,12,26,3
+31234,Teen Wolf,teen wolf,21,11,22,10,0,34,34,0
+31402,Power,power,14,0,0,3,0,2,7,0
+31403,Pokémon,pokémon,7,0,0,3,0,2,5,0
+31418,TURN: Washington's Spies,turn washingtons spies,0,6,0,7,15,0,13,0
+31684,ID: INVADED,id invaded,0,2,0,3,0,3,0,3
+32159,The Transformers,transformers,0,4,0,3,0,2,0,3
+32423,Narcos: Mexico,narcos mexico,0,1,0,0,7,0,4,1
+32489,That '70s Show,that 70s show,2,0,3,0,0,0,2,0
+32505,Godless,godless,0,2,0,3,15,0,15,2
+32696,The Unit,unit,0,0,0,0,2,0,4,0
+32996,Switched at Birth,switched at birth,0,4,0,4,0,4,0,4
+33009,Madam Secretary,madam secretary,4,0,0,0,1,0,4,0
+33183,Bodyguard,bodyguard,0,4,0,5,0,5,0,4
+33277,Mushi-Shi,mushi shi,0,2,0,3,0,1,3,0
+33327,Fortysomething,fortysomething,0,1,0,1,0,1,0,1
+33420,Animaniacs,animaniacs,0,7,0,6,0,6,0,6
+33449,Band of Brothers,band brothers,0,18,0,13,28,1,24,1
+33452,Red Band Society,red band society,0,4,0,1,0,1,0,1
+33563,Gilmore Girls,gilmore girls,29,9,30,1,5,17,29,2
+33593,Miss Fisher's Murder Mysteries,miss fishers murder mysteries,0,4,0,3,0,5,6,0
+33624,Secret Diary of a Call Girl,secret diary call girl,0,3,0,3,0,3,0,3
+33958,Wallander,wallander,6,0,0,1,3,0,6,0
+34240,Gotham,gotham,17,0,1,12,0,12,13,1
+34359,Sense and Sensibility,sense sensibility,0,3,0,3,0,3,0,2
+34369,Project Runway,project runway,0,2,0,1,0,1,1,1
+34531,Flight of the Conchords,flight conchords,3,0,0,2,0,3,3,0
+34549,Snowfall,snowfall,2,0,0,0,0,0,4,2
+34610,The Royals,royals,1,1,0,1,1,0,3,1
+34626,Suits,suits,0,8,17,2,0,7,15,3
+34683,Sugar Rush,sugar rush,5,0,0,3,0,3,3,1
+34732,Everything Sucks!,everything sucks,0,8,0,6,0,6,0,7
+34902,Atypical,atypical,0,59,1,56,0,51,12,42
+35065,Chewing Gum,chewing gum,0,1,0,2,0,1,0,1
+35095,Chuck,chuck,0,1,0,2,0,3,0,0
+35104,"No Game, No Life",no game no life,0,3,0,2,0,2,1,3
+35221,His Dark Materials,his dark materials,1,21,0,18,0,17,47,2
+35286,A Little Princess Sara,little princess sara,0,1,0,2,0,1,0,2
+35307,Good Morning Call,good morning call,0,2,0,3,0,3,0,4
+35395,Freaks and Geeks,freaks geeks,14,0,0,5,0,5,8,3
+35802,Yo soy Betty la fea,yo soy betty la fea,0,3,0,3,0,3,0,3
+35816,Greek,greek,0,2,0,2,0,2,2,0
+35846,Life's Too Short,lifes too short,0,2,0,2,0,2,0,2
+35862,The Missing,missing,2,2,0,1,0,2,3,0
+35883,Death Note,death note,0,52,0,44,0,40,0,34
+36000,Shooter,shooter,0,9,0,8,0,7,6,4
+36346,Cheer,cheer,0,4,0,4,0,4,0,5
+36361,Victoria,victoria,16,0,0,5,2,4,7,4
+36474,The Glades,glades,0,2,0,2,0,2,3,1
+36633,Clannad,clannad,0,4,8,0,0,2,2,0
+36660,Black Sails,black sails,0,31,0,33,17,3,28,1
+36715,MacGyver,macgyver,4,2,0,2,0,1,4,1
+36757,Motherland: Fort Salem,motherland fort salem,0,9,0,8,0,8,2,4
+36833,Condor,condor,4,0,1,2,0,1,2,0
+36978,The Smile Has Left Your Eyes,smile has left your eyes,0,1,0,2,0,1,0,1
+37149,Nurse Jackie,nurse jackie,1,5,0,2,0,0,3,1
+37355,Dororo,dororo,0,6,0,3,5,0,7,0
+37363,Crash Landing on You,crash landing on you,1,11,0,10,0,10,1,9
+37841,Grimm,grimm,7,3,3,3,0,7,11,1
+38123,Killing Eve,killing eve,65,51,63,57,2,71,42,57
+38196,Black Spot,black spot,0,1,0,1,0,1,13,0
+38396,Astra Lost in Space,astra lost space,0,1,0,1,0,1,2,0
+38686,Thriller,thriller,0,1,0,2,0,1,0,1
+38718,Dexter's Laboratory,dexters laboratory,0,1,0,1,0,1,1,0
+38731,Pinky and the Brain,pinky brain,0,1,0,1,0,1,1,1
+38757,Longmire,longmire,0,2,0,2,3,0,8,0
+38871,One Tree Hill,one tree hill,0,5,0,4,0,4,1,3
+39595,The Knick,knick,0,1,0,0,9,0,14,1
+39737,Overlord,overlord,0,1,0,1,0,1,1,0
+39894,Merlin,merlin,0,28,0,25,2,22,31,2
+40003,Recess,recess,0,1,0,2,0,1,2,2
+40032,Tokyo Ghoul,tokyo ghoul,1,1,0,3,0,1,3,0
+40068,Batman,batman,0,1,0,1,0,1,0,1
+40097,The Wrong Mans,wrong mans,0,1,1,1,0,1,0,1
+40225,Masters of Horror,masters horror,3,2,4,1,0,3,3,1
+40278,Friday Night Lights,friday night lights,0,2,0,3,0,3,0,2
+40397,Defending Jacob,defending jacob,1,7,0,5,0,4,6,0
+40426,Beavis and Butt-head,beavis butt head,0,2,4,1,0,3,4,1
+40500,Teenage Mutant Ninja Turtles,teenage mutant ninja turtles,0,2,0,2,0,2,0,2
+40891,My Mister,my mister,0,1,0,1,0,1,1,0
+40907,Revenge,revenge,11,3,1,3,0,4,7,2
+41021,Clerks: The Animated Series,clerks animated series,0,2,0,3,0,2,0,3
+41267,Seraph of the End,seraph end,0,8,0,7,0,6,0,7
+41285,And Then There Were None,then there were none,0,5,0,5,0,5,0,4
+41330,La que se avecina,la que se avecina,4,1,3,0,0,2,2,0
+41405,Hart of Dixie,hart dixie,0,0,0,1,0,2,0,0
+41457,Dirk Gently's Holistic Detective Agency,dirk gentlys holistic detective agency,27,4,17,9,0,19,23,6
+41465,World on Fire,world on fire,1,3,0,1,0,1,0,1
+41548,Dr. Horrible's Sing-Along Blog,dr horribles sing along blog,0,10,0,9,0,8,0,8
+41647,The Keepers,keepers,0,3,0,3,0,3,0,3
+41969,UNHhhh,unhhhh,1,1,0,1,0,1,0,1
+41998,Billions,billions,2,1,0,1,0,2,12,0
+42149,Childrens Hospital,childrens hospital,0,2,1,1,0,2,2,0
+42295,The Avengers: Earth's Mightiest Heroes,avengers earths mightiest heroes,0,0,0,1,0,1,0,0
+42723,Laid-Back Camp,laid back camp,1,2,0,3,0,2,0,2
+42861,Monster,monster,5,2,3,1,0,2,4,1
+42874,The Returned,returned,3,0,0,1,1,2,3,0
+42977,The Twilight Zone,twilight zone,4,6,1,5,1,5,2,5
+43166,Jessica Jones,jessica jones,0,7,0,5,0,5,0,4
+43244,Love O2O,love o2o,0,1,0,1,0,1,0,1
+43285,SOTUS The Series,sotus series,0,3,0,3,0,3,0,3
+43429,Cinderella and Four Knights,cinderella iv knights,0,2,0,2,0,2,0,1
+43439,Search Party,search party,2,5,5,3,0,5,12,0
+43668,Ajin,ajin,0,2,0,2,0,2,1,1
+44444,Glitch Techs,glitch techs,0,7,4,1,0,4,4,1
+44551,Steven Universe Future,steven universe future,1,27,0,25,0,25,27,2
+44555,Shameless,shameless,159,21,107,12,1,112,141,10
+45241,The Marvelous Mrs. Maisel,marvelous mrs maisel,0,2,2,0,0,1,0,1
+45248,The Marvelous Misadventures of Flapjack,marvelous misadventures flapjack,0,5,0,2,3,0,2,0
+45370,Grace and Frankie,grace frankie,0,19,0,15,0,16,7,10
+45591,Itaewon Class,skitaewon class,0,3,0,5,0,4,18,0
+45684,Mobile Suit Gundam: Iron-Blooded Orphans,mobile suit gundam iron blooded orphans,0,3,0,5,0,4,1,3
+45964,Don't F**k with Cats: Hunting an Internet Killer,dont f**k with cats hunting an internet killer,95,2,137,3,0,34,73,10
+46085,The Bridge,bridge,4,0,0,0,4,0,3,0
+46117,Hollywood,hollywood,0,10,0,8,0,10,0,9
+46380,That Time I Got Reincarnated as a Slime,that time i got reincarnated as slime,14,0,0,6,6,2,14,0
+46472,Nashville,nashville,0,0,0,0,0,0,0,1
+46644,Devilman: Crybaby,devilman crybaby,89,0,79,2,0,51,72,1
+46650,John Adams,john adams,1,1,0,1,3,0,5,1
+46714,BrainDead,braindead,0,4,4,1,0,4,4,0
+46743,Milo Murphy's Law,milo murphys law,0,10,0,6,0,6,0,6
+46889,Bleak House,bleak house,0,2,0,2,0,2,0,2
+46899,Trollhunters: Tales of Arcadia,trollhunters tales arcadia,1,7,14,0,0,8,10,0
+47266,Friday Night Dinner,friday night dinner,13,0,0,7,0,10,12,0
+47283,Derry Girls,derry girls,13,57,0,55,0,50,60,14
+47751,Sons of Anarchy,sons anarchy,13,1,0,3,0,5,9,0
+47789,The Magicians,magicians,95,3,101,5,0,37,87,4
+48093,Nirvana in Fire,nirvana fire,0,2,0,2,1,1,2,0
+48623,Inspector George Gently,inspector george gently,1,0,0,0,0,0,1,0
+48712,Make It or Break It,make it or break it,0,2,0,1,0,1,0,2
+48852,The Dead Zone,dead zone,2,27,0,8,0,10,1,4
+48977,Wild Wild Country,wild wild country,0,1,0,0,0,0,3,0
+49088,The New Pope,new pope,7,3,1,2,1,2,0,2
+49090,The Newsroom,newsroom,0,3,0,2,0,3,0,2
+49546,Call My Agent,call my agent,10,0,0,2,0,3,4,0
+49877,Grantchester,grantchester,0,3,0,1,2,0,4,0
+49898,Empire,empire,0,2,2,0,0,1,0,1
+50113,Counterpart,counterpart,0,1,0,1,0,1,4,0
+50136,Gargoyles,gargoyles,0,1,0,2,0,1,0,1
+50307,She Was Pretty,she was pretty,1,0,0,1,0,1,0,1
+50413,Fruits Basket,fruits basket,3,22,15,8,5,18,20,1
+50424,Timeless,timeless,0,1,0,2,0,1,0,0
+50664,iZombie,izombie,0,16,0,12,0,11,19,0
+51155,Russian Doll,russian doll,2,44,1,53,1,43,8,32
+51532,Outnumbered,outnumbered,0,6,0,5,0,6,7,0
+51563,The Spy,spy,0,1,0,1,0,1,1,0
+51706,Lost in Austen,lost austen,0,1,0,1,0,1,0,1
+52204,Just Add Magic,just add magic,0,2,0,2,0,2,0,2
+52317,The White Queen,white queen,9,0,0,3,5,0,6,0
+52406,Warrior,warrior,0,2,0,0,0,0,2,0
+52451,The King: Eternal Monarch,king eternal monarch,0,2,0,3,0,2,0,2
+52516,ReLIFE,relife,0,2,0,2,0,1,0,2
+52974,Haikyu!!,haikyu,0,6,0,5,0,5,0,5
+53127,Great Expectations,great expectations,0,1,0,1,0,1,0,1
+53186,Prison School,prison school,0,1,0,1,0,1,1,1
+53199,The Ranch,ranch,1,1,0,0,0,1,6,0
+53685,Mayans M.C.,mayans mc,13,0,1,2,0,3,7,0
+53916,Criminal: UK,criminal uk,0,1,0,1,0,1,0,1
+54490,Clone High,clone high,7,0,0,5,6,2,9,1
+54618,Yu-Gi-Oh! Duel Monsters,yu gi oh duel monsters,2,2,0,3,0,3,3,0
+54820,Quicksand,quicksand,0,7,0,6,0,6,13,0
+54842,Unforgotten,unforgotten,1,12,1,1,0,1,1,1
+55735,Green Wing,green wing,0,4,2,0,0,2,4,0
+56009,Kimi ni Todoke: From Me to You,kimi ni todoke from me you,0,4,0,3,0,3,0,3
+56242,Ray Donovan,ray donovan,4,7,0,1,0,1,2,0
+56352,Keep Your Hands Off Eizouken!,keep your hands off eizouken,0,4,0,3,0,3,0,3
+56789,Steins;Gate,steins;gate,0,1,0,1,0,1,0,1
+56969,Survivor,survivor,0,13,1,10,0,10,15,4
+57036,Hunter x Hunter,hunter x hunter,0,4,0,3,0,3,2,1
+57108,Chicago Med,chicago med,0,13,0,11,1,11,8,4
+57581,My Mad Fat Diary,my mad fat diary,1,2,0,3,0,2,2,1
+57752,Absolutely Fabulous,absolutely fabulous,0,2,0,1,0,3,0,2
+58313,Love By Chance,love by chance,0,3,0,3,0,3,0,3
+58484,Welcome to the N.H.K.,welcome nhk,0,4,3,0,0,2,1,2
+58571,The Pillars of the Earth,pillars earth,0,2,0,2,1,0,3,0
+58835,Moomin,moomin,0,1,0,1,0,2,2,0
+58916,Wayward Pines,wayward pines,0,2,0,3,0,2,5,1
+59014,Good Doctor,good doctor,0,3,0,3,0,3,4,0
+59024,Goosebumps,goosebumps,3,1,0,3,0,1,2,1
+59067,Fearless,fearless,0,1,0,1,0,1,0,1
+59084,Her Private Life,her private life,0,2,0,2,0,1,0,2
+59301,Life on Mars,life on mars,0,1,0,1,0,0,0,0
+59367,Leverage,leverage,0,11,0,9,8,3,5,4
+59410,Agatha Christie's Marple,agatha christies marple,1,2,0,2,0,3,0,3
+59463,Blue Spring Ride,blue spring ride,0,3,0,3,0,3,0,3
+59654,Bates Motel,bates motel,16,2,0,6,0,5,11,1
+59681,Mobile Suit Gundam 00,mobile suit gundam 00,0,2,0,2,0,2,0,1
+60049,Shameless,shameless,8,1,0,0,1,0,5,0
+60131,Wayne,wayne,15,1,0,12,0,9,11,1
+60152,Voltron: Legendary Defender,voltron legendary defender,1,49,26,25,0,39,7,31
+60441,The Goes Wrong Show,goes wrong show,6,3,6,3,1,6,0,6
+60457,Life,life,0,1,1,0,0,1,0,1
+60799,Disney's House of Mouse,disneys house mouse,0,1,0,1,0,1,1,0
+60927,Harper's Island,harpers island,4,0,1,2,0,1,4,0
+60993,Mobile Suit Gundam SEED,mobile suit gundam seed,0,0,0,0,2,2,0,1
+61237,Cobra Kai,cobra kai,1,25,0,24,1,22,34,2
+61397,The Durrells,durrells,0,6,0,1,0,1,6,0
+61414,Patriot,patriot,2,1,0,2,0,2,5,0
+61597,The Adventures of Tintin,adventures tintin,0,1,0,1,0,0,1,0
+62026,60 Days In,60 days,0,3,0,3,0,2,0,3
+62075,"Hi Bye, Mama!",hi bye mama,0,2,0,2,0,2,0,2
+62076,Titans,titans,2,12,0,7,0,8,20,0
+62290,Because This Is My First Life,because this my first life,0,6,0,8,0,8,0,7
+62719,GLOW,glow,0,5,0,8,0,8,10,1
+62908,Blue Exorcist,blue exorcist,0,0,0,1,0,0,2,0
+63231,Star Trek Continues,star trek continues,0,1,0,1,0,1,0,1
+63513,Toilet-Bound Hanako-kun,toilet bound hanako kun,0,30,1,26,0,25,15,12
+63545,Oh My Ghost,oh my ghost,1,1,0,2,0,2,0,2
+63637,Twelve Forever,twelve forever,0,2,0,2,0,2,0,2
+63904,Roots,roots,0,9,0,9,0,8,4,6
+63907,Roots,roots,0,7,0,7,6,3,4,3
+64109,The Crimson Petal and the White,crimson petal white,0,1,0,2,3,0,1,1
+64454,Sailor Moon Crystal,sailor moon crystal,0,2,0,3,0,1,0,2
+64715,Sekai Ichi Hatsukoi: The World's Greatest First Love,sekai ichi hatsukoi worlds greatest first love,0,2,0,2,0,2,0,2
+64761,Mob Psycho 100,mob psycho 100,1,45,39,11,0,43,23,19
+64879,Three Girls,three girls,0,2,0,2,0,2,0,2
+64939,Baptiste,baptiste,1,5,0,3,0,2,0,3
+65023,Fresh Meat,fresh meat,0,2,0,3,2,0,2,0
+65182,Serial Experiments Lain,serial experiments lain,0,25,0,21,0,20,0,21
+65309,Superstore,superstore,8,22,25,21,0,30,46,1
+65482,Durarara!!,durarara,0,1,0,0,0,1,0,0
+65794,Vinland Saga,vinland saga,12,0,0,5,11,0,11,0
+65856,Fruits Basket,fruits basket,0,8,0,8,0,7,0,6
+66170,Impulse,impulse,0,2,0,2,0,2,1,1
+66199,X-Men,x men,0,5,0,4,0,4,0,3
+66812,Rurouni Kenshin,rurouni kenshin,0,1,0,1,0,1,0,1
+67039,Workin' Moms,workin moms,4,23,2,10,1,7,11,3
+67466,Suspicious Partner,suspicious partner,0,3,0,3,0,3,0,3
+68093,Daily Lives of High School Boys,daily lives high school boys,0,2,0,2,0,2,0,1
+68312,Him & Her,him her,0,1,0,1,0,1,0,1
+69115,Maid Sama!,maid sama,0,2,0,1,0,1,0,1
+69294,Beastars,beastars,17,29,23,27,8,35,83,1
+69352,Luther,luther,25,1,1,1,0,0,6,1
+69461,InuYasha,inuyasha,10,1,1,5,11,1,12,0
+69481,Aggretsuko,aggretsuko,1,13,0,13,0,11,0,13
+69526,Jackass,jackass,0,3,1,2,0,3,0,3
+70040,Wolf Hall,wolf hall,8,0,0,0,0,2,4,0
+70105,Dark Matter,dark matter,0,3,0,3,0,3,4,1
+70266,Kitchen Nightmares,kitchen nightmares,0,5,0,4,0,4,7,0
+70319,How to Sell Drugs Online (Fast),how sell drugs online (fast),1,17,0,8,11,0,20,0
+70367,War and Peace,war peace,3,6,0,7,14,0,7,2
+70685,Takin' Over the Asylum,takin over asylum,0,5,10,0,0,6,4,4
+71115,Batman: The Brave and the Bold,batman brave bold,0,2,0,2,0,1,0,2
+71141,The Fades,fades,0,2,0,2,0,2,3,0
+71720,Epic Rap Battles of History,epic rap battles history,0,3,0,1,0,1,0,3
+72115,The Last Czars,last czars,1,2,2,1,3,1,0,1
+72497,Wotakoi: Love is Hard for Otaku,wotakoi love hard otaku,0,2,0,2,0,2,0,2
+72538,Daisy Jones & The Six,daisy jones vi,0,14,0,13,0,11,0,13
+72694,Sanditon,sanditon,0,4,0,4,0,3,1,2
+73475,Kingdom,kingdom,13,9,0,9,10,0,10,0
+74026,Stargate Atlantis,stargate atlantis,0,7,0,5,0,4,5,2
+74236,The Devil Next Door,devil next door,0,2,0,2,0,1,0,2
+74602,Succession,succession,43,9,2,30,0,27,36,2
+74895,Unbreakable Kimmy Schmidt,unbreakable kimmy schmidt,0,2,0,1,0,0,1,2
+74946,D.Gray-man,dgray man,1,4,6,1,0,1,4,1
+75298,Superjail!,superjail,5,0,1,1,1,1,9,0
+75339,Inuyashiki: Last Hero,inuyashiki last hero,1,4,2,0,0,2,6,0
+75342,Dorohedoro,dorohedoro,0,7,0,6,0,6,5,0
+75438,I Am Not Okay with This,i am not okay with this,1,74,0,76,0,72,107,2
+75766,Overlord,overlord-anime-dupe,0,2,1,0,2,0,2,0
+75835,Trailer Park Boys,trailer park boys,0,2,0,2,0,3,4,1
+76042,Mr. Sunshine,mr sunshine,0,4,0,4,1,1,1,2
+76079,Another Miss Oh,another miss oh,0,1,0,1,0,1,0,1
+76701,Pit Bulls and Parolees,pit bulls parolees,1,0,0,1,0,1,0,1
+76871,Phantom: Requiem for the Phantom,phantom requiem phantom,0,1,0,1,0,1,1,0
+77557,American Dad!,american dad,25,2,13,3,8,2,20,1
+77961,Sonic Mania Adventures,sonic mania adventures,0,2,0,3,0,2,0,2
+78298,Cardcaptor Sakura,cardcaptor sakura,0,6,0,5,0,5,0,5
+78698,Terrace House: Opening New Doors,terrace house opening new doors,0,2,0,2,0,2,2,0
+79293,The Owl House,owl house,3,170,1,130,0,141,153,1
+79422,Bleach,bleach,1,4,0,4,0,2,2,1
+79486,Broken Trail,broken trail,0,1,0,1,1,0,1,0
+79530,Father Brown,father brown,9,7,6,2,0,3,6,2
+79716,2gether: The Series,2gether series,0,5,0,5,0,5,0,5
+79792,The Looney Tunes Show,looney tunes show,0,5,0,5,0,6,4,0
+80556,SKAM,skam,0,16,0,11,0,14,0,11
+80636,The Lost Room,lost room,0,1,0,1,0,1,0,1
+80746,"That Winter, The Wind Blows",that winter wind blows,0,2,0,2,0,2,0,2
+81328,The Affair,affair,1,7,0,0,0,1,0,1
+81437,Devs,devs,0,4,0,4,0,4,2,3
+81625,Bad Girls,bad girls,0,1,0,1,0,1,2,0
+81749,FLCL,flcl,1,3,0,3,0,3,0,3
+81763,Happy Endings,happy endings,0,3,1,3,0,2,3,1
+81820,Mortal Kombat: Legacy,mortal kombat legacy,0,4,0,4,0,4,0,4
+82641,Trial & Error,trial error,0,1,0,1,0,1,1,0
+83549,Mary Kills People,mary kills people,0,1,0,2,0,1,2,1
+83988,Bondi Rescue,bondi rescue,0,1,0,1,0,1,0,1
+84641,Still 17,still 17,0,2,0,2,0,1,0,2
+85291,The Escape Artist,escape artist,0,5,0,2,0,2,0,2
+85438,The Pharmacist,pharmacist,0,1,0,1,0,1,0,1
+85724,Man Like Mobeen,man like mobeen,0,0,2,0,0,0,3,0
+85936,Catch-22,catch 22,10,0,0,3,0,1,0,1
+86761,Escape at Dannemora,escape at dannemora,0,9,0,5,0,4,0,3
+86917,Flowers,flowers,0,3,0,1,0,1,0,1
+87352,When the Camellia Blooms,when camellia blooms,0,2,2,1,0,3,1,2
+87506,The Plot Against America,plot against america,0,2,0,2,0,2,0,2
+87936,My Holo Love,my holo love,0,1,0,1,0,1,0,1
+88776,Gogglebox,gogglebox,0,3,1,0,0,1,2,0
+90014,Toradora!,toradora,0,12,0,10,0,10,0,11
+90791,Dead Set,dead set,0,1,0,1,0,1,0,1
+91291,Jul i Blodfjell,jul i blodfjell,0,1,0,1,0,1,0,1
+92001,Vagabond,vagabond,0,1,0,2,0,2,0,0
+92634,Slam Dunk,slam dunk,0,1,0,1,0,1,0,1
+92707,Your Lie in April,your lie april,0,14,18,0,0,12,5,11
+92779,Samurai Champloo,samurai champloo,0,2,0,2,0,1,0,2
+92864,Huff,huff,0,1,1,0,0,1,1,0
+93265,Sorry For Your Loss,sorry your loss,2,0,0,2,0,2,0,2
+93328,I Know This Much Is True,i know this much true,0,1,0,1,0,2,6,0
+93447,Planetes,planetes,0,1,0,1,0,1,0,1
+93501,The Shield,shield,4,0,6,1,0,2,4,0
+93560,A Very English Scandal,very english scandal,20,1,0,6,0,6,2,5
+94381,Mrs. America,mrs america,0,3,0,3,0,3,5,1
+94748,School Babysitters,school babysitters,0,2,0,2,0,2,0,2
+95724,Hospital Playlist,hospital playlist,0,0,0,0,0,0,0,0
+96726,Younger,younger,0,1,0,1,0,0,0,0
+97008,Stateless,stateless,0,3,0,3,0,3,0,3
+97144,Mother,mother,0,2,0,2,0,2,2,0
+97557,Green Lantern: The Animated Series,green lantern animated series,0,2,0,2,0,2,0,2
+97860,Exit,exit,0,2,0,2,0,1,2,0
+97967,"Love, Chunibyo & Other Delusions",love chunibyo other delusions,0,2,0,2,0,2,0,2
+98531,"Harvey Birdman, Attorney at Law",harvey birdman attorney at law,2,0,0,2,1,0,1,0
+98685,Hot Ones,hot ones,0,1,0,1,0,1,0,1
+99053,The Spectacular Spider-Man,spectacular spider man,0,2,0,3,0,3,0,3
+99091,Making a Murderer,making murderer,0,1,5,0,0,1,0,1
+99403,Offspring,offspring,7,0,1,1,0,1,1,1
+99619,Mike Tyson Mysteries,mike tyson mysteries,2,1,0,2,2,1,2,0
+99764,Paranoia Agent,paranoia agent,9,0,0,2,0,3,4,1
+99939,Pippi Longstocking,pippi longstocking,0,1,0,1,0,1,0,1
+99987,Mrs Wilson,mrs wilson,0,3,0,3,0,3,0,3
+100755,Rookie Historian Goo Hae-Ryung,rookie historian goo hae ryung,0,1,0,1,0,1,0,0
+101087,Psychopath Diary,psychopath diary,0,2,0,3,0,2,3,1
+102212,Boys Over Flowers,boys over flowers,0,3,0,2,0,2,0,2
+103601,The Little Drummer Girl,little drummer girl,0,1,0,1,0,1,0,1
+104500,Alias Grace,alias grace,0,6,0,5,0,5,8,0
+104855,Carmen Sandiego,carmen sandiego,0,8,0,6,0,10,0,8
+105786,This Is England '88,this england 88,0,1,0,1,0,1,0,1
+106197,Enlightened,enlightened,4,0,0,1,0,1,0,1
+106767,Zorro,zorro,0,1,0,1,0,1,0,1
+107158,Beast Wars: Transformers,beast wars transformers,0,4,2,0,0,3,5,0
+109596,Zach Stone Is Gonna Be Famous,zach stone gonna be famous,0,5,0,4,0,3,0,1
+109646,Kim's Convenience,kims convenience,0,3,0,3,0,3,5,0
+110377,Solar Opposites,solar opposites,6,4,5,4,2,4,18,0
+111064,Police Squad!,police squad,0,1,0,1,0,1,0,1
+111378,A Teacher,teacher,0,4,0,4,0,4,0,4
+111432,Rascal Does Not Dream of Bunny Girl Senpai,rascal does not dream bunny girl senpai,0,6,0,6,0,5,0,6
+111905,The Alfred Hitchcock Hour,alfred hitchcock hour,4,1,1,2,0,2,3,1
+111981,Political Animals,political animals,0,3,0,1,0,1,0,2
+115102,The Goodies,goodies,1,1,1,1,0,2,1,0
+115178,Below Deck Mediterranean,below deck mediterranean,0,2,0,2,0,2,0,1
+115878,RuPaul's Drag Race All Stars,rupauls drag race all stars,0,4,0,4,0,4,3,1
+117118,Brickleberry,brickleberry,6,0,4,0,1,0,4,0
+117261,Gåsmamman,gåsmamman,6,0,0,3,0,3,4,0
+117457,Bad Education,bad education,11,1,0,9,0,9,11,0
+117795,Better Things,better things,6,0,0,1,0,1,4,0
+118190,Mobile Suit Gundam,mobile suit gundam,0,5,0,4,0,4,0,4
+118287,Barakamon,barakamon,0,2,0,2,0,2,0,2
+118507,Ranma ½,ranma ½,0,3,0,2,0,2,0,2
+118509,Maison Ikkoku,maison ikkoku,0,1,0,1,0,1,0,1
+119692,The Legend of the Blue Sea,legend blue sea,0,3,0,3,0,3,0,3
+120355,Addicted Heroin,addicted heroin,0,2,0,2,0,2,0,2
+120721,Girls' Last Tour,girls last tour,1,3,0,4,0,4,4,0
+122246,TharnType the Series เกลียดนักมาเป็นที่รักกันซะดีๆ,tharntype series เกลียดนักมาเป็นที่รักกันซะดีๆ,0,6,0,5,0,5,0,5
+122488,Hellsing,hellsing,0,3,0,1,0,1,0,1
+122490,Hellsing Ultimate,hellsing ultimate,1,2,0,3,0,1,4,0
+124550,UnREAL,unreal,0,9,0,5,0,5,2,6
+125739,Monthly Girls' Nozaki-kun,monthly girls nozaki kun,0,5,0,5,0,5,0,5
+126152,Black,black,7,0,0,3,0,2,0,0
+126981,My First First Love,my first first love,0,3,0,3,0,3,0,2
+127178,David the Gnome,david gnome,0,1,0,1,0,1,1,0
+127201,Big Love,big love,5,0,0,2,0,2,3,0
+127249,Haibane Renmei,haibane renmei,0,10,0,9,0,9,11,2
+127318,When the Levees Broke: A Requiem in Four Acts,when levees broke requiem iv acts,6,0,2,0,0,1,3,0
+127364,Unorthodox,unorthodox,0,7,0,8,0,7,0,7
+128636,Kaiba,kaiba,6,0,0,3,0,3,5,0
+128686,He Is Psychometric,he psychometric,0,1,0,1,0,1,0,1
+128736,Terror in Resonance,terror resonance,0,3,0,3,0,3,0,3
+128788,Belgravia,belgravia,0,2,0,1,0,1,0,1
+129007,The English Game,english game,18,0,0,2,0,1,2,2
+129324,Angels in America,angels america,0,2,0,2,0,1,0,2
+129505,Classroom of the Elite,classroom elite,1,2,0,3,0,2,0,2
+130292,Insecure,insecure,0,7,0,5,0,4,0,5
+130531,Black Monday,black monday,0,6,0,6,0,6,2,3
+130666,Home Before Dark,home before dark,0,4,0,1,0,1,5,0
+131274,Dream High,dream high,0,2,0,2,0,2,0,2
+131275,Barbie: Life in the Dreamhouse,barbie life dreamhouse,0,5,0,6,0,6,0,6
+131857,Wilfred,wilfred,4,2,0,4,0,4,6,1
+132924,Tabula Rasa,tabula rasa,1,2,5,0,0,3,5,0
+133563,Uncontrollably Fond,uncontrollably fond,0,2,0,2,0,2,0,2
+134150,Vicious,vicious,0,2,0,1,0,1,0,0
+134695,Tales from the Loop,tales from loop,0,2,0,3,0,2,6,0
+135436,Bluey,bluey,14,57,2,44,1,47,67,4
+135823,6teen,6teen,0,4,1,5,0,4,5,0
+136310,Ekaterina,ekaterina,0,1,0,1,0,1,2,0
+137321,Ja'mie: Private School Girl,jamie private school girl,0,3,0,3,0,2,0,3
+137685,Little Fires Everywhere,little fires everywhere,0,14,0,11,0,12,3,10
+138238,Race Across the World,race across world,0,1,0,2,0,1,0,1
+138749,Self Made: Inspired by the Life of Madam C.J. Walker,self made inspired by life madam cj walker,0,5,0,5,0,6,2,3
+138832,A Korean Odyssey,korean odyssey,0,3,0,2,0,2,0,3
+138876,Fire Force,fire force,2,2,0,4,0,4,2,2
+140324,Caliphate,caliphate,0,5,0,5,0,5,0,4
+143344,Shtisel,shtisel,0,2,0,2,0,1,0,1
+145088,Waking the Dead,waking dead,2,0,0,0,0,0,1,0
+145942,Summer Camp Island,summer camp island,0,0,0,1,0,1,0,1
+146161,Daniel Sloss: Live Shows,daniel sloss live shows,3,0,0,2,0,2,0,2
+146374,Healer,healer,0,1,0,2,0,3,0,2
+147961,Hyouka,hyouka,0,3,0,2,0,3,0,3
+147965,There She Goes,there she goes,0,5,0,7,0,5,1,5
+148264,Vice Principals,vice principals,0,5,1,3,0,4,0,4
+148977,Story of Yanxi Palace,story yanxi palace,0,2,0,2,0,1,2,0
+149244,Miss Kobayashi's Dragon Maid,miss kobayashis dragon maid,0,1,0,1,0,1,1,0
+150351,United States of Tara,united states tara,0,3,1,2,0,3,2,0
+150919,A Love So Beautiful,love so beautiful,0,2,0,2,0,2,0,2
+151474,Informer,informer,0,2,0,2,0,2,0,2
+151777,It's Okay to Not Be Okay,skits okay not be okay,0,6,0,6,0,5,10,0
+154152,The Princess Weiyoung,princess weiyoung,0,2,0,2,0,2,0,2
+154293,Defendant,defendant,0,1,0,1,0,1,0,1
+158181,Arthdal Chronicles,arthdal chronicles,0,2,0,4,2,2,2,1
+158330,Dollhouse,dollhouse,3,3,0,3,0,5,1,4
+160052,HAPPY!,happy,11,4,0,5,0,6,19,0
+164232,Mr. Show with Bob and David,mr show with bob david,0,0,0,0,0,0,1,0
+166501,Gangs of London,gangs london,9,6,0,2,4,0,17,1
+169335,River,river,0,0,0,2,0,1,1,2
+169350,Never Have I Ever,never have i ever,3,58,0,40,0,43,3,43
+169469,Dragons: Race to the Edge,dragons race edge,0,6,0,6,0,7,6,0
+169705,"Welcome to Demon-School, Iruma-kun",welcome demon school iruma kun,0,6,0,5,0,5,0,4
+170053,Heartbreak High,heartbreak high,1,2,0,1,0,1,0,1
+170743,Extras,extras,0,1,0,2,0,2,0,2
+171207,Hotel Del Luna,hotel del luna,14,0,0,7,0,8,9,0
+171496,Jem,jem,0,3,0,2,0,1,0,2
+171502,Loudermilk,loudermilk,0,4,0,2,0,1,0,3
+171788,Noragami,noragami,0,1,1,1,0,1,1,1
+173656,The 10th Kingdom,10th kingdom,0,6,0,4,0,4,5,0
+173735,Fight For My Way,fight my way,0,1,0,1,0,1,1,0
+174848,Ghost Stories,ghost stories,0,4,1,3,0,3,5,1
+174928,Walking with Monsters,walking with monsters,0,4,0,4,0,4,4,0
+175733,DAVE,dave,0,2,0,3,0,2,3,1
+175817,Until We Meet Again The Series,until we meet again series,0,8,0,8,0,8,0,8
+175917,Back to Life,back life,0,8,0,7,0,8,6,0
+177856,Real Detective,real detective,2,1,0,3,0,3,2,1
+178111,Star Trek: Lower Decks,star trek lower decks,0,9,0,4,0,7,2,0
+178975,100 Days My Prince,100 days my prince,0,3,0,4,4,0,4,0
+180976,Girlfriends,girlfriends,0,2,0,1,0,2,0,1
+182143,A Place Further Than the Universe,place further than universe,0,2,0,3,0,3,0,3
+182381,Theory of Love,theory love,0,3,0,3,0,3,0,2
+182501,Princess Jellyfish,princess jellyfish,0,8,0,6,0,6,0,6
+182761,Smiling Friends,smiling friends,5,27,0,23,0,23,20,7
+183210,The Muppet Show,muppet show,1,8,1,4,1,4,2,4
+183357,Peaky Blinders,peaky blinders,8,48,0,22,84,1,88,4
+183499,Dance Academy,dance academy,0,5,0,4,0,4,0,3
+185761,Forged in Fire,forged fire,0,4,0,4,0,3,2,0
+186270,Graceland,graceland,0,1,0,2,0,1,3,0
+186358,Charlotte,charlotte,0,2,0,2,0,2,0,2
+186380,"Kill Me, Heal Me",kill me heal me,0,1,0,2,0,2,0,2
+187439,Hi Score Girl,hi score girl,0,1,0,1,0,1,0,1
+188367,Dong Yi,dong yi,0,1,0,1,0,0,0,0
+190920,Löwenzahn,löwenzahn,0,3,0,3,0,3,1,0
+191290,Put Your Head on My Shoulder,put your head on my shoulder,0,1,0,2,0,1,0,1
+191329,Doctor John,doctor john,0,2,0,3,0,3,0,3
+192607,Messiah,messiah,12,1,0,1,0,1,4,1
+196454,Miss Scarlet and the Duke,miss scarlet duke,0,0,0,0,0,0,0,0
+198265,"Tiger King: Murder, Mayhem and Madness",tiger king murder mayhem madness,3,16,68,1,13,4,39,1
+201240,The End of the F***ing World,end f***ing world,272,8,171,8,4,117,148,4
+201558,The Virtues,virtues,0,2,0,2,0,2,0,2
+202640,Brassic,brassic,0,5,0,2,0,4,5,3
+202839,Boy Meets World,boy meets world,0,5,0,5,0,5,0,5
+202946,Memories of the Alhambra,memories alhambra,0,2,0,2,0,2,0,2
+204130,Outer Banks,outer banks,5,59,2,46,0,49,76,2
+204590,Brideshead Revisited,brideshead revisited,0,1,0,1,0,1,0,1
+206722,Transplant,transplant,0,1,0,0,0,1,0,0
+214684,My Life Is Murder,my life murder,0,1,0,1,0,1,0,1
+215714,The Midnight Gospel,midnight gospel,2,6,1,6,10,0,8,0
+223257,Save Me,save me,0,0,0,0,0,0,4,0
+223834,Waco,waco,10,0,0,1,0,1,0,1
+224319,Catastrophe,catastrophe,9,0,0,1,0,1,5,0
+225737,Year of the Rabbit,year rabbit,0,3,0,3,0,3,0,2
+226855,Breeders,breeders,0,1,0,1,0,1,3,0
+229016,Upload,upload,0,12,0,8,0,5,6,5
+233321,Extracurricular,extracurricular,0,4,0,4,0,4,7,0
+235513,The Twelve,twelve,6,0,1,1,0,1,6,0
+253493,Marco Polo,marco polo,0,1,0,1,5,0,3,0
+258515,Castlevania,castlevania,68,5,36,3,38,3,54,0
+260622,Lost in Space,lost space,0,15,1,13,20,6,16,7
+263315,Dead to Me,dead me,1,25,0,29,1,29,33,6
+263316,Sex Education,sex education,15,175,226,46,0,123,158,68
+264399,Our Planet,our planet,0,2,0,2,0,2,18,2
+535354,Homecoming,homecoming,0,3,0,3,0,2,6,1
+598985,Mister Rogers' Neighborhood,mister rogers neighborhood,0,0,0,0,0,0,1,0
+599000,Keeping Up Appearances,keeping up appearances,0,3,0,4,0,3,0,3
+599012,The Challenge,challenge,0,1,0,1,0,0,0,1
+599049,Sex and the City,sex city,9,6,0,4,2,5,5,1
+599052,The Andy Griffith Show,andy griffith show,0,1,0,1,0,1,4,0
+599064,Doctor Who,doctor who,7,9,5,4,2,7,7,1
+599095,3rd Rock from the Sun,3rd rock from sun,0,2,0,2,0,2,2,1
+599121,Carnivàle,carnivàle,0,2,6,1,0,1,6,0
+599122,Weeds,weeds,1,1,3,1,0,0,6,0
+599137,The Sarah Jane Adventures,sarah jane adventures,0,6,0,4,0,4,0,2
+599141,Garth Marenghi's Darkplace,garth marenghis darkplace,1,6,0,9,0,7,1,6
+599149,Kyle XY,kyle xy,0,1,0,2,0,2,0,1
+599176,Aqua Teen Hunger Force,aqua teen hunger force,1,4,13,0,0,7,13,0
+599177,Everybody Hates Chris,everybody hates chris,0,4,0,2,0,1,0,3
+599178,Star Trek,star trek,5,10,0,9,0,9,2,8
+599213,Moral Orel,moral orel,35,1,1,13,0,16,31,0
+599240,Red Dwarf,red dwarf,0,9,6,5,0,9,8,2
+599251,Brothers and Sisters,brothers sisters,0,1,0,2,0,2,0,2
+599278,Little Britain,little britain,0,1,0,1,0,2,1,1
+599307,Torchwood,torchwood,0,12,0,11,0,14,13,5
+599319,Still Game,still game,6,0,0,4,1,4,2,4
+599361,Family Ties,family ties,0,0,0,0,0,0,0,1
+599364,Lipstick on Your Collar,lipstick on your collar,0,1,0,1,0,1,0,1
+599368,Sesame Street,sesame street,4,41,5,43,3,24,20,16
+599401,Law & Order,law order,6,0,3,1,3,2,3,1
+599442,Higher Ground,higher ground,0,1,0,1,0,1,0,1
+599449,Teen Titans,teen titans,0,4,0,2,0,3,0,1
+599451,The Powerpuff Girls,powerpuff girls,0,6,0,4,0,3,0,3
+599511,Xiaolin Showdown,xiaolin showdown,0,3,0,1,0,1,0,1
+599522,Desperate Housewives,desperate housewives,0,7,1,6,0,3,6,0
+599538,Robot Chicken,robot chicken,6,0,5,0,4,0,5,0
+599550,Dinnerladies,dinnerladies,0,2,0,2,0,2,0,2
+599592,Agatha Christie's Poirot,agatha christies poirot,0,3,0,4,0,3,2,4
+599665,Columbo,columbo,0,7,0,4,0,3,4,2
+599677,Spider-Man,spider man,0,2,0,2,0,2,0,2
+599685,Skins,skins,4,45,0,32,30,3,41,1
+599687,Black Books,black books,0,3,0,3,4,1,5,0
+599705,"Scooby-Doo, Where Are You?",scooby doo where are you,0,5,0,4,0,5,0,5
+599710,He-Man and the Masters of the Universe,he man masters universe,0,1,0,1,0,1,0,1
+599749,Wacky Races,wacky races,0,3,0,2,0,2,0,2
+599778,Revolutionary Girl Utena,revolutionary girl utena,0,2,2,0,0,2,3,0
+600009,Not Going Out,not going out,0,1,0,1,0,2,2,0
+600013,Elementary,elementary,1,9,0,6,0,2,1,2
+600015,The Big Bang Theory,big bang theory,2,17,1,4,0,8,8,1
+600016,The Middle,middle,0,6,7,1,0,5,4,2
+600018,MythBusters,mythbusters,0,2,0,2,0,3,2,0
+600119,Ned's Declassified School Survival Guide,neds declassified school survival guide,0,1,0,1,0,0,0,0
+600131,Justice League,justice league,0,1,0,1,0,1,0,1
+600153,Sliders,sliders,1,0,0,1,0,1,0,1
+600233,Kath & Kim,kath kim,0,4,0,4,0,4,0,3
+600275,Tiny Toon Adventures,tiny toon adventures,0,0,0,0,0,0,0,0
+600316,Rome,rome,0,5,0,2,2,0,6,0
+600319,Jonathan Creek,jonathan creek,3,1,0,1,0,1,2,1
+600334,The Larry Sanders Show,larry sanders show,0,5,0,5,0,5,0,5
+600357,So Weird,so weird,0,1,0,1,0,1,0,1
+600393,Sports Night,sports night,0,1,0,1,0,1,0,1
+600395,The New Adventures of Winnie the Pooh,new adventures winnie pooh,0,1,0,1,0,1,0,1
+600412,The Batman,batman,0,1,0,1,0,1,0,1
+600430,Monkey Dust,monkey dust,1,0,0,1,0,0,1,0
+600462,Class of 3000,class 3000,0,1,0,1,0,1,0,1
+600488,Daria,daria,0,7,0,5,0,5,0,5
+600489,Everybody Loves Raymond,everybody loves raymond,0,4,0,2,0,1,6,1
+600512,Cold Case,cold case,6,2,3,1,3,0,5,0
+600581,Teenage Mutant Ninja Turtles,teenage mutant ninja turtles,0,3,3,0,0,1,3,0
+600759,The Boondocks,boondocks,4,0,0,2,0,2,1,1
+600813,Sapphire & Steel,sapphire steel,0,2,0,1,0,1,2,0
+600839,Silent Witness,silent witness,5,2,1,1,3,1,4,1
+600849,The Vicar of Dibley,vicar dibley,0,2,0,2,0,1,1,0
+600967,Fraggle Rock,fraggle rock,0,4,0,3,0,3,0,3
+601023,He-Man and the Masters of the Universe,he man masters universe,0,1,0,1,0,1,0,1
+601123,Foyle's War,foyles war,0,0,0,0,0,0,4,0
+601383,Kindred: The Embraced,kindred embraced,0,1,0,1,0,1,0,1
+601503,Dinosaurs,dinosaurs,0,2,0,2,0,2,4,0
+601506,The Smoking Room,smoking room,1,0,0,1,0,1,1,0
+601579,Shaun the Sheep,shaun sheep,0,1,0,1,0,1,0,1
+601613,NewsRadio,newsradio,0,1,0,1,0,1,3,0
+601763,Kavanagh QC,kavanagh qc,0,1,0,1,0,1,0,1
+601819,Bottom,bottom,3,2,0,3,2,0,2,1
+601911,Becker,becker,0,2,0,2,0,2,0,1
+601916,The Young Ones,young ones,0,6,0,5,0,6,9,0
+601921,Robin of Sherwood,robin sherwood,0,24,0,24,1,24,1,23
+601977,NCIS,ncis,19,6,7,20,7,16,16,18
+602019,Destination Truth,destination truth,0,1,0,1,0,1,1,1
+602149,Bizarre Foods with Andrew Zimmern,bizarre foods with andrew zimmern,0,1,0,1,0,0,1,0
+604520,Lie to Me,lie me,0,2,0,1,0,1,0,1
+604745,Extraordinary,extraordinary,3,7,0,5,0,4,0,2
+605608,Wives and Daughters,wives daughters,0,1,0,1,0,1,0,1
+606798,Liberty's Kids,libertys kids,1,1,0,1,0,1,0,1
+606827,Intervention,intervention,0,1,0,1,0,1,0,1
+606838,Casanova,casanova,0,3,0,3,0,3,0,3
+608003,Black Lagoon,black lagoon,2,2,0,2,0,3,0,3
+608258,Teresa,teresa,0,0,0,1,0,1,0,1
+608770,Little Dorrit,little dorrit,4,0,0,2,0,3,1,2
+608885,Oswald,oswald,0,1,0,1,0,1,0,1
+608961,Fingersmith,fingersmith,0,0,0,1,0,1,0,0
+609227,Ruby Gloom,ruby gloom,0,1,0,1,0,1,0,1
+609977,To Catch a Predator,catch predator,0,3,0,2,0,1,0,2
+610354,Holocaust,holocaust,1,0,1,0,0,0,1,0
+610556,The Julekalender,julekalender,0,1,0,1,0,1,0,1
+611589,Ghosts,ghosts,1,33,0,32,0,33,45,1
+612315,Scooby-Doo! Mystery Incorporated,scooby doo mystery incorporated,3,1,0,2,3,1,3,0
+614258,Anzacs,anzacs,0,1,0,1,0,1,0,1
+615083,Parenthood,parenthood,7,7,2,3,2,3,5,0
+617644,Invincible,invincible,35,31,0,31,0,34,55,2
+622720,Misfits,misfits,4,0,6,0,0,4,8,0
+622924,La Reina del Sur,la reina del sur,0,1,0,2,0,1,1,0
+623831,Nikita,nikita,0,0,0,0,0,0,0,0
+623941,The Borgias,borgias,4,1,0,0,4,0,7,0
+624068,Young Justice,young justice,13,1,9,4,0,6,8,4
+624097,Love/Hate,love hate,4,0,2,0,0,0,2,0
+624566,This Is England '86,this england 86,0,2,0,2,0,2,0,2
+624833,Single Father,single father,0,2,0,2,0,2,0,2
+627353,The Shadow Line,shadow line,0,2,1,1,0,1,0,1
+628731,Red vs. Blue,red vs blue,1,2,0,2,0,1,2,0
+628826,Touch,touch,0,1,0,1,0,1,0,1
+630037,Mord mit Aussicht,mord mit aussicht,0,2,0,1,0,1,2,0
+630549,Top Chef,top chef,0,2,0,2,0,2,2,0
+631145,Dekalog,dekalog,4,0,0,1,0,1,1,0
+631530,The Lizzie Bennet Diaries,lizzie bennet diaries,0,4,0,4,1,3,1,3
+631992,The Bible,bible,3,1,0,1,1,0,3,0
+632885,The Following,following,18,1,6,0,0,1,14,0
+633719,Ink Master,ink master,0,2,0,2,0,2,0,2
+633868,Masters of the Air,masters air,0,12,12,2,2,0,10,3
+633943,Rectify,rectify,0,2,0,2,0,2,1,1
+634107,Sarah & Duck,sarah duck,0,1,0,3,0,2,0,3
+635595,The Goldbergs,goldbergs,0,1,0,2,0,1,1,1
+638635,Halo,halo,7,0,3,0,0,2,3,0
+642907,Derren Brown: Apocalypse,derren brown apocalypse,0,1,0,1,0,1,0,1
+644560,Okupas,okupas,5,0,0,4,0,4,6,0
+644637,Bref,bref,1,3,2,2,0,3,3,1
+645041,Fate/stay night [Unlimited Blade Works],fate stay night [unlimited blade works],1,0,0,1,0,2,2,0
+645054,ANZAC Girls,anzac girls,0,1,0,1,2,1,3,0
+645113,The Brokenwood Mysteries,brokenwood mysteries,0,1,0,1,0,1,0,1
+645152,Schitt's Creek,schitts creek,0,43,61,0,0,35,53,4
+645169,Galavant,galavant,0,3,0,2,2,0,4,0
+645231,Detectorists,detectorists,3,2,0,1,0,1,0,2
+645274,X Company,x company,0,1,0,1,0,1,0,1
+645788,The Book of Negroes,book negroes,0,1,0,1,0,1,1,0
+645948,Yonderland,yonderland,0,5,0,3,0,3,0,3
+646055,Code Black,code black,0,1,0,1,0,2,0,1
+646561,Outsiders,outsiders,3,1,1,20,0,0,4,14
+647242,Saturday Night Live,saturday night live,1,0,0,0,0,0,6,0
+647545,Two Doors Down,two doors down,1,0,0,1,0,1,1,0
+647782,Rundfunk,rundfunk,0,1,0,1,0,1,1,0
+648095,El marginal,el marginal,0,4,4,1,0,2,2,2
+648263,People Just Do Nothing,people just do nothing,0,2,0,1,0,0,0,0
+648872,Sweet/Vicious,sweet vicious,0,2,0,2,0,2,0,2
+649209,Secret Garden [SP],secret garden [sp],0,1,0,1,0,1,0,1
+654718,James Acaster: Repertoire,james acaster repertoire,0,3,0,3,0,3,5,0
+655587,Joe Pera Talks with You,joe pera talks with you,0,2,0,1,0,2,1,1
+655947,Stath Lets Flats,stath lets flats,0,1,0,1,0,1,0,1
+656030,Wallace & Gromit's Cracking Contraptions,wallace gromits cracking contraptions,0,1,0,1,0,1,0,1
+656508,When They See Us,when they see us,0,3,0,5,0,5,0,5
+656762,The Gilded Age,gilded age,1,14,0,6,0,6,0,4
+658178,The Undoing,undoing,3,12,0,9,0,9,0,10
+658386,3Below: Tales of Arcadia,3below tales arcadia,0,1,0,1,0,3,3,1
+658786,Tuntematon sotilas,tuntematon sotilas,0,3,0,2,4,0,1,1
+658961,Loki,loki,1,52,3,36,0,37,2,37
+659285,The Other Two,other ii,0,2,0,1,0,1,0,1
+659413,Raised by Wolves,raised by wolves,11,1,0,4,0,4,21,1
+659414,Shadow and Bone,shadow bone,4,56,1,44,0,36,91,4
+659509,Perry Mason,perry mason,11,3,2,0,0,0,0,0
+659912,Your Honor,your honor,0,38,0,10,0,8,37,3
+660456,Special,special,0,3,0,3,0,3,0,3
+660585,Ramy,ramy,3,4,0,2,0,3,2,2
+661243,Astrid et Raphaëlle,astrid et raphaëlle,3,2,3,1,3,2,2,1
+661949,Primal,primal,7,1,5,3,0,5,8,0
+662262,Normal People,normal people,0,12,0,11,0,11,0,11
+662619,Tell Me Your Secrets,tell me your secrets,7,6,4,15,0,3,21,1
+662767,1899,1899,0,30,0,25,1,27,0,26
+662854,Industry,industry,0,3,0,3,0,2,0,2
+662961,Station Eleven,station eleven,0,10,4,6,0,8,14,1
+663148,Bridgerton,bridgerton,6,103,1,77,9,71,94,18
+663354,AEW Dynamite,aew dynamite,0,1,0,1,0,1,0,1
+663355,Ragnarok,ragnarok,24,0,0,9,0,8,26,0
+663473,This Way Up,this way up,0,3,0,2,0,2,0,2
+664035,Heels,heels,0,1,0,1,0,1,3,1
+664460,The Great North,great north,0,5,0,4,1,5,5,0
+664468,Centaurworld,centaurworld,0,23,0,18,4,15,26,2
+664612,The Serpent,serpent,0,12,0,6,0,5,16,0
+664868,The Great,great,95,3,5,22,5,18,86,1
+664985,Vienna Blood,vienna blood,0,0,0,0,0,0,1,0
+665002,Ripley,ripley,1,10,0,5,0,1,0,2
+665355,Arcane,arcane,17,223,282,3,1,180,245,6
+665861,Severance,severance,26,138,1,80,0,80,26,88
+667192,Midnight Mass,midnight mass,424,6,295,4,0,114,260,4
+668609,Halston,halston,0,3,0,3,0,3,0,3
+669163,The Innocence Files,innocence files,0,1,0,1,0,1,0,1
+669166,Almost Paradise,almost paradise,0,2,0,2,0,2,0,2
+669296,86―エイティシックス―,86―エイティシックス―,6,0,0,5,0,3,0,1
+670578,Love Life,love life,1,2,0,1,0,2,0,1
+670798,I May Destroy You,i may destroy you,0,6,0,6,0,6,0,7
+671150,Wolf,wolf,1,0,0,1,1,0,1,0
+671246,Brooklyn Nine-Nine,brooklyn ix ix,233,41,7,163,3,180,170,37
+673430,Extraordinary You,extraordinary you,0,2,0,2,0,2,0,2
+675500,The Tale of Nokdu,tale nokdu,0,1,0,1,0,1,2,0
+677778,Community,community,0,1,1,0,0,1,3,0
+678166,Game of Thrones,game thrones,597,40,151,94,331,13,334,15
+680580,Given,given,0,13,0,11,0,11,0,14
+681157,In the Dark,dark,7,32,0,33,0,34,59,1
+681781,Scissor Seven,scissor vii,0,2,0,2,0,2,0,1
+682519,The Boulet Brothers' Dragula,boulet brothers dragula,0,7,2,4,0,6,2,3
+682813,Class of Lies,class lies,0,0,0,0,0,1,0,0
+685341,Sound! Euphonium,sound euphonium,0,1,0,1,0,1,0,1
+685559,"Love, Victor",love victor,0,16,0,15,0,14,0,16
+686385,Maid,maid,1,26,0,21,0,20,0,21
+687141,Golden Boy,golden boy,0,1,0,1,0,1,0,1
+687636,Mystic Pop-Up Bar,mystic pop up bar,0,2,0,2,0,2,2,1
+690039,Kaguya-sama: Love is War,kaguya sama love war,0,12,0,9,0,7,0,10
+692073,Dark Blue Kiss,dark blue kiss,0,3,0,3,0,3,0,3
+696950,Angel's Last Mission: Love,angels last mission love,1,1,2,0,0,1,0,1
+699884,Teenage Bounty Hunters,teenage bounty hunters,0,4,0,4,0,5,8,0
+700663,Stranger Things,stranger things,261,688,978,129,11,568,838,27
+703757,Great Pretender,great pretender,0,9,0,7,0,9,0,8
+704135,The Haunting of Bly Manor,haunting bly manor,1,97,0,75,0,74,110,5
+708097,The Murders at White House Farm,murders at white house farm,8,0,0,4,0,2,6,0
+708129,Aikatsu!,aikatsu,0,2,0,2,0,2,0,2
+708137,"Good Morning, Verônica",good morning verônica,7,0,0,1,0,1,0,2
+716516,Tale of the Nine Tailed,tale ix tailed,6,0,0,5,0,4,4,1
+717429,The Seven Deadly Sins,vii deadly sins,0,3,0,2,2,0,2,0
+718715,JUJUTSU KAISEN,jujutsu kaisen,80,7,0,41,0,41,62,5
+719601,Staged,staged,0,4,0,4,0,5,1,3
+719869,Blood of Zeus,blood zeus,5,0,0,3,9,0,8,0
+720923,The Boys,boys,102,236,128,49,35,80,319,20
+721819,Nathan For You,nathan you,2,0,0,2,0,2,3,0
+724763,Paranormal,paranormal,1,1,8,0,0,1,8,0
+725411,Aunty Donna's Big Ol House of Fun,aunty donnas big ol house fun,0,3,0,4,0,3,0,0
+731136,Animaniacs,animaniacs,1,2,0,2,0,3,1,2
+732816,Animaniacs (2020),animaniacs (2020),0,4,0,4,0,3,0,4
+734333,The Wilds,wilds,0,44,19,26,0,34,76,0
+734587,Alice in Borderland,alice borderland,7,103,58,27,7,72,119,3
+736702,Hilda,hilda,0,5,0,4,0,3,0,4
+740244,Castle,castle,8,1,0,2,0,3,10,0
+741166,Dug Days,dug days,0,2,0,2,0,1,0,2
+742453,Lupin,lupin,1,51,0,21,0,22,2,23
+742707,Mushoku Tensei: Jobless Reincarnation,mushoku tensei jobless reincarnation,2,3,0,2,3,3,5,1
+742712,Horimiya,horimiya,0,6,0,4,0,4,5,3
+744105,Night Stalker: The Hunt for a Serial Killer,night stalker hunt serial killer,0,6,0,6,0,5,0,5
+745245,Dr Stone,dr stone-anime-dupe,4,0,0,3,0,3,3,0
+747139,Kareshi Kanojo No Jijou (His and Her Circumstances),kareshi kanojo no jijou (his her circumstances),0,3,0,3,0,3,0,2
+747726,It's a Sin,skits sin,0,7,0,6,0,6,0,6
+749610,斗罗大陆 | Douluo Continent ,斗罗大陆 | douluo continent,0,1,0,1,0,1,1,0
+750231,True Beauty,true beauty,0,7,0,5,0,5,0,5
+750770,Violet Evergarden,violet evergarden,0,4,0,2,0,4,0,2
+751057,I Told Sunset About You,i told sunset about you,2,3,0,2,0,2,0,2
+751062,Orange,orange,0,3,0,3,0,3,0,3
+753144,Kid Cosmic,kid cosmic,6,2,0,6,0,6,2,6
+754027,The Mandalorian,mandalorian,0,41,0,37,3,30,55,3
+754149,Mr Queen,mr queen,0,5,0,4,0,3,3,0
+757636,The Uncanny Counter,uncanny counter,3,10,0,9,0,9,0,7
+759367,山河令 | Word of Honor,山河令 | word honor,3,0,0,3,0,2,2,1
+761186,Raised by Wolves,raised by wolves,0,1,0,1,0,1,0,1
+763666,March Comes in Like a Lion,march comes like lion,0,1,0,1,0,1,0,1
+764949,DOTA: Dragon's Blood,dota dragons blood,0,2,0,1,0,1,1,0
+765505,Smallville,smallville,11,6,1,26,0,6,18,20
+765930,Vincenzo,vincenzo,0,13,0,12,0,11,0,11
+769624,Them,them,62,0,1,16,4,7,33,3
+770866,Fumetsu no Anata e (To Your Eternity),fumetsu no anata e (to your eternity),19,0,0,7,0,5,16,0
+771405,The Office,office,7,34,49,2,8,21,37,2
+772099,The Office,office,0,1,0,1,0,1,0,1
+772494,Signal,signal,3,0,0,2,0,2,0,2
+772919,Mare of Easttown,mare easttown,0,13,0,10,0,9,0,14
+773257,Odd Taxi,odd taxi,0,5,4,1,0,6,5,0
+774747,Cruel Summer,cruel summer,0,5,0,6,0,6,5,3
+774997,Record of Lodoss War,record lodoss war,0,2,0,1,1,0,0,1
+775278,Word of Honor,word honor,0,2,0,2,0,1,2,1
+778035,Star Wars: The Bad Batch,star wars bad batch,0,15,0,9,0,10,9,1
+778388,Demon Slayer: Kimetsu No Yaiba,demon slayer kimetsu no yaiba,0,1,0,1,0,1,0,0
+780278,M’entends-Tu?/ Can You Hear Me?,m’entends tu can you hear me,0,1,0,1,0,1,0,1
+783496,Start-Up,start up,0,2,0,2,0,2,0,1
+785255,Lupin the Third: Part II,lupin third ii,0,0,4,0,0,0,2,0
+786450,Move to Heaven,move heaven,0,11,0,11,0,12,0,9
+786798,The Walten Files,walten files,2,9,8,2,0,11,9,2
+787416,We Are Lady Parts,we are lady parts,0,5,0,5,0,5,0,5
+787818,Mad for Each Other,mad each other,0,4,0,4,0,2,0,2
+789932,Law School,law school,0,2,0,1,0,1,0,1
+792971,Hawaii Five-0,hawaii iv 0,0,5,0,0,0,1,1,0
+793237,The Mysterious Benedict Society,mysterious benedict society,0,7,0,6,0,6,0,6
+793495,Ted Lasso,ted lasso,133,6,46,13,1,38,65,14
+793908,Clarkson's Farm,clarksons farm,0,4,0,3,0,5,7,1
+793915,Flower of Evil,flower evil,3,1,0,2,0,3,0,3
+794684,Young Royals,young royals,2,46,0,39,0,40,1,41
+795278,Time,time,0,3,0,3,0,2,0,3
+795280,86-Eighty-Six,86 eighty vi,3,1,0,3,0,2,0,3
+796984,Secrets of Sulphur Springs,secrets sulphur springs,0,4,0,2,0,2,0,2
+797270,Leverage: Redemption,leverage redemption,0,2,0,1,0,2,0,0
+799086,Link Click,link click,0,12,0,9,0,9,0,10
+799355,Lovestruck in the City,lovestruck city,0,1,0,1,0,1,0,1
+803739,Beyond Evil,beyond evil,0,10,0,11,0,9,0,8
+804090,Taxi Driver,taxi driver,0,1,0,1,0,1,1,0
+807314,The Fall of the House of Usher,fall house usher,21,91,148,7,0,56,175,5
+808410,The White Lotus,white lotus,6,72,0,62,0,54,9,50
+808655,How I Met Your Mother,how i met your mother,60,5,55,5,0,44,31,13
+813736,Vigil - BBC Series,vigil bbc series,0,7,0,4,0,6,0,6
+815706,Hometown Cha-Cha-Cha,hometown cha cha cha,0,6,0,5,0,5,1,2
+816548,Scenes from a Marriage,scenes from marriage,0,4,0,3,0,3,0,3
+820176,Case Study of Vanitas,case study vanitas,1,4,0,5,1,3,1,3
+820450,Vigil,vigil,0,2,0,2,0,2,0,2
+821376,The Chestnut Man ,chestnut man,0,16,0,10,0,10,18,1
+821931,Squid Game,squid game,214,370,2,331,3,288,282,89
+823045,The Devil Judge,devil judge,0,1,0,2,0,2,6,1
+823895,House of Secrets: The Burari Deaths,house secrets burari deaths,0,3,0,1,0,2,0,2
+824633,Blue Period,blue period,0,4,0,3,0,3,0,3
+826067,Dopesick,dopesick,0,4,0,3,0,3,0,3
+827079,My Name,my name,0,5,0,6,0,5,0,5
+828426,Reservation Dogs,reservation dogs,0,10,0,7,0,6,27,1
+828863,The Innocent,innocent,0,2,0,3,0,3,0,3
+829191,Inside Job,inside job,0,2,0,1,0,1,2,0
+829585,Ousama Ranking (Ranking of Kings),ousama ranking (ranking kings),1,4,0,3,0,3,4,1
+832359,Where Your Eyes Linger,where your eyes linger,0,2,0,2,0,2,0,2
+832955,Showtrial,showtrial,0,2,0,2,0,2,0,2
+835064,Dexter: New Blood,dexter new blood,0,4,0,4,0,4,11,0
+836434,Ordem Paranormal,ordem paranormal,0,9,0,4,0,5,1,4
+836437,Ordem Paranormal: Desconjuração,ordem paranormal desconjuração,1,0,7,0,0,5,6,0
+839577,Tear Along the Dotted Line,tear along dotted line,1,3,0,3,0,3,0,2
+840199,The Sex Lives of College Girls,sex lives college girls,0,8,0,9,0,9,0,9
+846826,Bad and Crazy,bad crazy,0,6,0,6,0,6,1,7
+848478,Snowdrop,snowdrop,0,2,0,3,0,2,0,2
+849592,Happiness,happiness,0,4,0,5,0,5,0,4
+849603,1883,1883,11,0,0,6,19,0,15,0
+849612,Eternal Love (Starring Yang Mi),eternal love (starring yang mi),0,1,0,0,1,0,0,0
+850771,Bulgasal: Immotal Souls,bulgasal immotal souls,0,4,0,4,3,2,0,3
+852458,The Outlaws,outlaws,0,3,0,3,0,3,0,3
+854927,Archive 81,archive 81,0,20,0,19,0,16,0,17
+854945,Our Beloved Summer,our beloved summer,0,3,0,2,0,2,0,1
+854973,Somebody Somewhere,somebody somewhere,0,13,0,7,0,8,0,8
+855086,The Responder,responder,0,8,0,4,0,1,0,3
+855144,The Legend of Vox Machina,legend vox machina,4,10,0,12,37,3,37,1
+855151,ALL of US ARE DEAD,all us are dead,1,47,42,1,0,40,57,1
+855213,Pam & Tommy,pam tommy,0,10,0,5,0,5,0,5
+855225,The Afterparty,afterparty,2,4,0,5,0,5,4,1
+855248,Reacher,reacher,27,21,0,18,0,12,12,5
+855310,This Is Going to Hurt,this going hurt,0,8,0,8,0,8,0,7
+855349,The Umbrella Academy,umbrella academy,184,243,32,229,5,240,411,21
+855362,Bad Buddy,bad buddy,0,8,0,6,0,8,0,7
+855437,The Cuphead Show!,cuphead show,0,6,0,3,0,4,0,4
+855453,Tokyo Revengers,tokyo revengers-anime-dupe,0,8,0,9,0,7,0,7
+855457,Doom at Your Service,doom at your service,0,5,2,3,0,5,1,3
+855479,Mouse Kdrama,mouse kdrama,7,0,4,0,0,1,5,0
+855494,From,from,4,30,0,18,0,19,41,11
+861225,Mr. Robot,mr robot,3,12,1,4,0,4,2,4
+868115,Yellowjackets,yellowjackets,357,40,0,153,4,136,319,9
+869216,Twenty-Five Twenty-One,twenty iv twenty i,0,6,0,5,0,6,4,0
+870484,Kin,kin,0,1,0,1,0,1,0,1
+871273,Peacemaker,peacemaker,4,34,0,30,0,24,68,5
+871612,The Dropout,dropout,0,9,0,6,0,6,0,6
+871619,Our Flag Means Death,our flag means death,142,3,0,165,0,138,176,20
+871946,Semantic Error,semantic error,0,6,0,6,0,5,0,6
+872713,Juvenile Justice,juvenile justice,0,4,4,1,0,3,0,4
+873687,Kotaro Lives Alone,kotaro lives alone,0,9,0,9,0,7,2,6
+875242,Beauty Inside,beauty inside,0,3,0,3,0,3,0,3
+876408,Kamen Rider Ryuki,kamen rider ryuki,0,4,0,4,0,4,0,3
+877553,Minx,minx,0,1,0,1,0,1,3,1
+878732,Pachinko,pachinko,0,3,0,3,4,0,4,0
+878733,Not Me the Series,not me series,0,3,0,3,0,2,0,3
+880050,Hikaru No Go,hikaru no go,0,1,0,1,0,1,0,1
+881922,As We See It,as we see it,0,5,0,4,0,5,0,6
+882755,Business Proposal,business proposal,0,8,0,8,0,7,4,1
+883108,Tomorrow,tomorrow,13,0,0,9,0,8,9,0
+883641,The Last of Us,last us,59,340,11,231,267,114,344,81
+885485,Ghosts,ghosts,0,11,0,8,0,7,13,1
+885831,Abbott Elementary,abbott elementary,0,15,0,13,0,14,0,15
+888903,Alone,alone,0,1,0,1,0,1,4,1
+889665,Heartstopper,heartstopper,240,48,13,192,1,183,145,67
+890152,What's Wrong With Secretary Kim?,whats wrong with secretary kim,0,1,0,1,0,1,0,1
+890156,Shining Girls,shining girls,0,4,0,3,0,4,18,3
+891106,The 7 Lives of Lea,viilives lea,0,4,0,5,0,5,1,3
+891470,Under the Banner of Heaven,under banner heaven,58,0,1,9,0,5,33,0
+891471,Magpie Murders,magpie murders,11,0,0,3,0,2,9,0
+892198,Wild Babies,wild babies,0,5,1,3,1,2,8,1
+892525,The Sound of Magic,sound magic,0,2,0,2,0,2,4,0
+893058,SPY x FAMILY,spy x family,0,0,0,1,0,2,1,0
+893473,Dirty Lines,dirty lines,0,2,0,2,0,2,0,2
+893474,kinnPorsche,kinnporsche,0,15,0,15,0,16,14,5
+894708,The Queen's Gambit,queens gambit,0,10,0,11,0,11,0,10
+894721,Blueming,blueming,0,3,0,3,0,3,0,3
+896237,Star Trek: Strange New Worlds,star trek strange new worlds,0,5,0,4,1,1,0,3
+897097,Ghost Doctor,ghost doctor,0,1,0,2,0,1,0,1
+897696,To Your Eternity,your eternity,3,0,0,1,0,1,2,0
+897703,"Love, Death & Robots: Sucker of Souls",love death robots sucker souls,0,1,0,3,0,2,0,2
+899808,The Bear,bear,5,33,0,21,0,22,0,22
+900081,Big Boys,big boys,0,5,0,3,0,3,4,0
+900365,Lupin the Third: Part 1,lupin third i,0,1,0,1,0,1,0,1
+902771,The Melancholy of Haruhi Suzumiya,melancholy haruhi suzumiya-anime-dupe,0,1,0,1,0,1,0,1
+902980,Night Sky,night sky,0,2,0,1,0,2,8,1
+903556,Black Bird,black bird,0,8,0,7,0,4,3,5
+904156,Keep Sweet: Pray and Obey,keep sweet pray obey,0,7,0,7,0,7,0,6
+905134,Dark Winds,dark winds,37,1,1,2,2,3,26,1
+905139,Sherwood,sherwood,0,5,0,3,0,2,3,2
+905956,Hacks,hacks,4,19,0,4,0,5,0,7
+905979,The Old Man,old man,4,27,0,6,8,4,37,4
+907566,Star Trek: Prodigy,star trek prodigy,0,1,0,1,0,1,0,1
+908942,Love & Anarchy,love anarchy,0,2,0,2,0,1,0,1
+910064,The Terminal List,terminal list,21,6,0,2,0,1,15,1
+910067,My Love Mix-Up!,my love mix up,0,2,0,1,0,1,0,1
+910069,Youth of May,youth may,0,1,0,1,0,1,0,1
+912216,Lycoris Recoil,lycoris recoil,0,5,0,4,0,4,0,4
+915672,Who Rules the World,who rules world,0,2,0,1,1,0,1,0
+917129,The Rehearsal,rehearsal,0,3,0,4,0,3,0,4
+918843,Paper Girls,paper girls,0,7,0,5,2,5,0,4
+920889,The Sandman,sandman,123,47,139,22,49,7,159,5
+923556,Five Days at Memorial,five days at memorial,26,2,9,0,0,4,7,0
+923842,A League of Their Own,league their own,0,10,0,10,0,9,1,5
+924136,This Fool,this fool,0,1,0,1,0,1,0,1
+925927,Bad Sisters,bad sisters,52,2,38,0,0,7,38,0
+926283,Big Mouth,big mouth,0,1,0,1,0,1,0,1
+926790,Extraordinary Attorney Woo,extraordinary attorney woo,0,24,0,23,0,18,1,21
+927167,Lost Ollie,lost ollie,0,2,0,2,0,2,0,2
+928945,Kleo (Netflix),kleo (netflix),0,3,0,3,0,3,0,3
+928946,Dragon Ball Super,dragon ball super,0,2,1,1,0,1,2,0
+930591,Getting On,getting on,0,1,0,1,0,1,0,1
+930594,Little Women,little women,0,2,0,2,0,2,3,0
+932240,The Serpent Queen,serpent queen,15,0,0,2,0,3,6,0
+932734,Cyberpunk: Edgerunners ,cyberpunk edgerunners,0,6,0,6,0,5,0,5
+933351,Heartbreak High,heartbreak high,0,64,0,50,0,50,24,45
+934802,Pantheon,pantheon,0,6,0,6,0,5,0,4
+935651,Reboot,reboot,0,10,0,10,0,10,0,10
+935936,Am I Being Unreasonable?,am i being unreasonable,0,3,15,0,0,3,7,3
+936008,Wednesday,wednesday,16,274,2,173,10,207,266,3
+936947,Don't Hug Me I'm Scared,dont hug me im scared,0,16,22,1,1,15,19,0
+937391,Recipes for Love and Murder,recipes love murder,0,2,0,1,0,1,5,0
+937687,Thai Cave Rescue,thai cave rescue,0,3,0,2,0,3,0,3
+938242,The empress,empress,1,4,0,6,13,1,9,2
+938570,Search: WWW,search www,0,2,0,1,0,2,0,2
+938574,My Dress-Up Darling,my dress up darling,0,2,0,2,0,2,0,2
+938884,Karen Pirie,karen pirie,0,2,0,1,0,1,0,1
+940272,Spy X Family Part 2,spy x family ii,1,2,0,3,0,2,0,2
+940845,The Mole,mole,0,4,0,2,0,1,0,1
+942314,Chainsaw Man,chainsaw man,32,4,0,18,0,11,18,0
+942938,Tulsa King,tulsa king,30,7,1,0,0,0,3,2
+943348,Love like the Galaxy,love like galaxy,0,2,0,1,2,0,0,1
+943592,Love in the Air the Series,love air series,0,6,0,5,0,5,0,6
+944875,From Scratch,from scratch,0,2,0,2,0,2,0,1
+945260,100 Foot Wave,100 foot wave,0,1,0,1,0,1,0,1
+945893,Star Wars: Tales of the Jedi,star wars tales jedi-anime-dupe,0,1,0,1,0,1,1,0
+946303,Romantic Killer,romantic killer,0,12,0,11,0,11,7,1
+946305,The Devil's Hour,devils hour,18,0,0,5,0,5,14,2
+946309,The Bastard Son & the Devil Himself,bastard son devil himself,1,9,0,9,0,9,31,0
+947859,The Walking Dead: Daryl Dixon,walking dead daryl dixon,0,6,6,2,5,1,13,1
+951595,I Hear Your Voice,i hear your voice,0,1,0,1,0,1,0,1
+951930,ONI: Thunder God's Tale,oni thunder gods tale,0,1,0,1,0,1,1,0
+953271,Fleishman Is in Trouble,fleishman trouble,0,2,0,2,0,1,0,1
+953280,Las Chicas De La Ultima Fila/ the Girls at the Back,las chicas de la ultima fila girls at back,0,1,0,1,0,1,0,0
+953965,The Devil's Hour 2022,devils hour 2022,1,0,0,1,0,1,1,0
+954330,Sas Rogue Heroes,sas rogue heroes,0,4,0,3,0,2,3,1
+956530,Reborn Rich,reborn rich,0,12,0,12,0,12,0,12
+956690,Nirvanna the Band the Show,nirvanna band show,0,2,0,2,0,2,0,2
+958726,NOW and THEN HERE and THERE,now then here there,0,2,4,0,0,2,1,1
+958732,The Lazarus Project,lazarus project,8,0,3,0,0,2,4,0
+959789,1923,1923,1,0,0,0,5,0,9,0
+960165,Lookism,lookism-anime-dupe,0,1,0,1,0,1,0,1
+960166,Lookism,lookism,0,3,0,3,0,3,0,3
+960176,Love Between Fairy and Devil,love between fairy devil,0,3,0,3,0,3,3,0
+961366,Kindred,kindred,0,4,0,3,1,1,0,2
+963116,Die Discounter,die discounter,0,2,0,2,0,3,3,1
+963652,The Recruit,recruit,0,4,0,4,0,5,0,6
+963658,Maestro,maestro,3,0,2,0,0,3,2,0
+964582,Revenge of Others,revenge others,0,2,0,2,0,2,0,2
+966494,The Glory,glory,0,17,0,9,0,13,0,12
+966501,Empresses in the Palace,empresses palace,0,2,2,0,0,1,2,0
+969758,Bocchi the Rock!,bocchi rock,0,3,0,3,0,5,0,3
+971254,The Makanai: Cooking for the Maiko House,makanai cooking maiko house,0,2,0,2,0,2,0,2
+971594,9-1-1: Lone Star,9 i1 lone star,0,3,0,2,0,1,4,1
+971907,Campfire Cooking in Another World With My Absurd Skills,campfire cooking another world with my absurd skills,0,1,0,1,0,1,2,0
+972266,Slow Horses,slow horses,1,9,5,10,0,3,6,3
+972908,Buddy Daddies,buddy daddies-anime-dupe,16,0,0,6,0,4,7,2
+973737,Mo,mo,0,4,0,2,0,1,0,2
+974033,Physical 100,physical 100,0,4,0,4,0,3,0,4
+974034,Women at War,women at war,0,3,0,2,0,2,0,2
+974682,Poker Face,poker face,20,47,0,27,0,21,30,8
+974987,Lockwood & Co.,lockwood co,0,12,0,9,0,11,0,10
+975008,Shrinking,shrinking,0,11,0,5,0,7,0,8
+979216,Will Trent,will trent,3,20,0,10,0,7,9,5
+980844,The Law According to Lidia Poët,law according lidia poët,0,2,0,2,0,3,0,2
+983586,Love to Hate You (Kdrama),love hate you (kdrama),0,3,0,3,0,3,0,3
+987113,Beyond Paradise 2023,beyond paradise 2023,0,1,0,1,0,1,0,1
+989891,Alchemy of Souls,alchemy souls,11,0,0,7,0,6,4,1
+991222,Weak Hero Class 1 (약한용운),weak hero class i(약한용운),0,11,0,15,0,9,0,15
+992209,Summer Strike,summer strike,0,2,0,2,0,2,0,2
+992797,Kiff,kiff,0,2,0,1,0,1,0,1
+992811,The Newsreader,newsreader,1,4,0,3,0,3,0,3
+994161,The Night Agent,night agent,1,10,0,9,0,10,0,9
+995049,Rabbit Hole,rabbit hole,0,2,0,2,0,1,0,2
+995052,Misaeng: Incomplete Life,misaeng incomplete life,0,1,0,1,0,1,0,1
+998024,Love & Death,love death,2,18,0,9,0,9,0,8
+998423,Beef,beef,47,15,1,14,0,11,27,10
+999058,Till the End of the Moon | 长月烬明,till end moon | 长月烬明,0,2,0,2,0,1,2,0
+1000762,Oshi No Ko,oshi no ko,0,8,0,9,0,9,0,9
+1000764,Skip and Loafer,skip loafer,0,2,0,2,0,1,0,2
+1001060,American Manhunt: The Boston Marathon Bombing,american manhunt boston marathon bombing,0,1,0,1,0,1,0,1
+1002796,Mrs. Davis,mrs davis,0,4,0,3,13,1,11,3
+1002799,Chimp Empire,chimp empire,0,3,0,2,0,3,4,0
+1003087,Schmigadoon!,schmigadoon,0,4,0,3,0,5,0,2
+1004105,Maya and the Three,maya iii,0,1,1,0,0,1,1,0
+1004736,Heavenly Delusion,heavenly delusion,1,4,0,8,0,9,13,0
+1006102,Sweet Tooth,sweet tooth,8,16,3,15,2,17,29,1
+1007497,Silo,silo,0,18,0,8,0,6,11,2
+1007876,Queen Charlotte: A Bridgerton Story,queen charlotte bridgerton story,2,29,1,14,0,14,2,15
+1010146,Jury Duty,jury duty,0,2,0,1,0,1,0,1
+1010874,Dali & Cocky Prince / Dalriwa Gamjatang,dali cocky prince dalriwa gamjatang,0,2,0,1,0,2,0,1
+1011618,A Small Light,small light,0,3,5,1,0,2,0,1
+1013608,Shiny Happy People,shiny happy people,0,3,0,3,0,3,0,3
+1017400,The Good Bad Mother,good bad mother,0,3,0,2,0,2,4,0
+1019034,Island of the Sea Wolves,island sea wolves,1,0,0,1,0,2,3,0
+1019394,Between Us the Series,between us series,0,1,0,1,0,1,0,1
+1019742,Deadloch,deadloch,5,12,0,10,0,10,6,5
+1020772,The Crowded Room,crowded room,0,20,0,16,0,18,0,15
+1021473,Bloodhounds,bloodhounds,0,2,0,1,0,1,0,1
+1021748,Love in the Moonlight / Moonlight Drawn by Clouds /  Gooreumi Geurin Dalbit,love moonlight moonlight drawn by clouds gooreumi geurin dalbit,0,1,0,0,0,0,0,0
+1022116,I'm Not a Robot,im not robot,1,0,0,1,0,1,0,1
+1023600,See You in My 19th Life,see you my 19th life,0,1,0,1,0,1,0,1
+1024515,The IT Crowd,it crowd,0,11,0,9,0,10,1,9
+1025204,Love Death and Robots: Sonnies Edge,love death robots sonnies edge,0,2,0,2,0,2,0,2
+1026034,From TV Series (2022),from tv series (2022),0,4,0,5,0,6,4,2
+1027015,Hijack,hijack,1,8,0,6,0,7,0,7
+1027601,The Eminence in Shadow,eminence shadow,0,1,0,2,0,1,0,2
+1028487,The Longest Promise 玉骨遥,longest promise 玉骨遥,0,0,0,0,0,0,0,0
+1029571,My Adventures with Superman,my adventures with superman,0,2,0,3,0,2,1,2
+1030519,My Roommate Is a Cat,my roommate cat-anime-dupe,0,1,1,0,0,1,1,0
+1031902,Survival of the Thickest,survival thickest,0,9,0,8,0,7,0,8
+1032215,My Happy Marriage,my happy marriage,0,5,0,6,0,6,0,6
+1032843,Celebrity,celebrity,0,2,0,1,0,1,0,1
+1033817,Zom 100: Bucket List of the Dead,zom 100 bucket list dead,11,0,0,1,0,2,4,0
+1035020,The Sixth Commandment,sixth commandment,11,0,0,1,0,1,0,0
+1036586,Twisted Metal,twisted metal,39,3,0,7,0,7,27,1
+1037842,Fisk,fisk,0,2,0,3,0,2,5,0
+1037860,Village Of Objects,village objects,0,1,0,1,0,1,0,1
+1038629,Hidden Love (偷偷藏不住),hidden love (偷偷藏不住),0,2,0,2,0,2,0,2
+1039441,The Lost Flowers of Alice Hart,lost flowers alice hart,18,2,0,0,0,2,3,2
+1039442,Messiah,messiah,0,1,0,1,0,1,0,1
+1041213,Painkiller,painkiller,0,6,0,4,0,4,1,2
+1043235,Anne,anne,0,1,0,1,0,1,0,1
+1044253,Mask Girl,mask girl,0,10,0,4,0,4,0,5
+1044266,Love Is Sweet,love sweet,1,0,0,1,0,1,0,1
+1045563,Ahsoka,ahsoka,0,15,0,9,0,8,0,9
+1048289,Gravity Falls,gravity falls,15,109,3,105,13,88,84,21
+1048528,One Piece,one piece,0,9,0,7,0,6,9,4
+1049967,Adventure Time: Fionna & Cake,adventure time fionna cake,12,4,0,9,1,7,13,0
+1050355,Moving,moving,0,1,0,1,0,1,0,1
+1051101,Dear Child,dear child,0,13,0,12,0,9,0,9
+1052133,Only Murders in the Building,only murders building,6,89,104,2,0,53,88,7
+1057890,A Time Called You,time called you,2,0,0,1,0,2,2,0
+1059025,Gen V,gen v,0,11,0,9,0,7,13,7
+1059032,Castlevania: Nocturne,castlevania nocturne,0,11,0,7,0,5,13,2
+1060130,Destined With You,destined with you,0,2,0,3,0,3,0,3
+1060492,Boiling Point,boiling point,0,9,0,7,1,4,0,7
+1061103,Behind your touch,behind your touch,0,2,0,3,0,2,3,1
+1061592,The Long Shadow,long shadow,0,2,0,2,0,2,0,1
+1062544,Lessons in Chemistry,lessons chemistry,5,32,0,7,0,6,9,4
+1062546,Falling Into Your Smile,falling into your smile,0,3,0,2,0,2,3,0
+1066393,Bodies,bodies,2,11,0,8,0,6,1,10
+1066411,Scavengers Reign,scavengers reign,0,9,0,12,0,8,15,0
+1067502,Dark Hearts,dark hearts,0,2,0,1,0,1,1,0
+1069023,Undead Unluck ,undead unluck,0,1,0,0,0,0,0,0
+1069063,The Apothecary Diaries,apothecary diaries,0,11,0,9,0,7,13,4
+1069066,Pluto,pluto-anime-dupe,2,0,0,3,0,2,1,1
+1069096,Pluto,pluto,2,0,0,1,0,1,0,0
+1069166,All the Light We Cannot See,all light we cannot see,1,7,0,4,0,3,5,1
+1069209,BLUE EYE SAMURAI,blue eye samurai,2,18,0,19,0,17,26,1
+1069254,Daily Dose of Sunshine,daily dose sunshine,0,12,0,7,0,9,0,7
+1069256,Castaway Diva,castaway diva,0,3,0,3,0,3,0,2
+1069401,Scott Pilgrim Takes Off,scott pilgrim takes off,0,11,0,10,0,11,0,10
+1069414,The Railway Men: The Untold Story of Bhopal 1984,railway men untold story bhopal 1984,1,2,1,2,3,1,2,2
+1069454,Fellow Travelers,fellow travelers,0,8,0,6,0,6,0,5
+1069495,My Demon,my demon,0,3,1,2,0,3,4,0
+1069502,My Daemon,my daemon,0,2,0,1,0,0,5,0
+1069556,Such Brave Girls,such brave girls,0,2,0,2,0,2,0,2
+1069642,The Artful Dodger,artful dodger,3,5,0,3,0,2,0,2
+1069866,Death's Game,deaths game,0,2,0,3,0,0,2,1
+1070018,Gyeongseong Creature,gyeongseong creature,0,2,0,1,0,1,0,1
+1070090,Pokémon Concierge,pokémon concierge,0,1,0,1,0,1,0,1
+1070144,1670,1670,0,6,0,6,0,5,6,0
+1070180,Mr Bates vs The Post Office,mr bates vs post office,0,3,0,3,0,4,0,2
+1070384,Twinkling Watermelon,twinkling watermelon,0,3,0,2,0,2,0,2
+1070453,A Shop for Killers,shop killers,0,4,4,0,0,3,5,0
+1070570,The Traitors UK,traitors uk,0,3,0,4,0,2,0,4
+1070643,Masters of the Universe: Revolution,masters universe revolution,0,1,0,1,0,1,0,1
+1070672,Doctor Slump,doctor slump,0,2,0,2,0,2,0,2
+1070695,Backstreet Rookie,backstreet rookie,0,1,0,1,0,1,0,1
+1070835,One Day,one day,0,9,0,8,0,9,0,9
+1070999,When I Fly Towards You,when i fly towards you,0,1,0,2,0,2,0,2
+1071116,Shōgun,shōgun,0,3,0,1,4,1,15,1
+1071179,Little Bird,little bird,0,1,0,1,0,1,1,0
+1071199,Delicious in Dungeon,delicious dungeon,10,3,0,13,26,0,28,0
+1071227,"The Program: Cons, Cults and Kidnapping",program cons cults kidnapping,0,2,0,2,0,2,0,2
+1071234,The Gentlemen,gentlemen,2,12,6,1,0,4,13,1
+1071253,Tsukimichi - Moonlit Fantasy,tsukimichi moonlit fantasy,0,2,0,1,0,1,1,0
+1071255,3 Body Problem,3 body problem,1,16,11,5,10,1,27,0
+1071390,X-Men '97,x men 97,0,5,0,3,0,1,1,2
+1071477,The Devil's Plan,devils plan,0,1,0,1,0,1,0,1
+1071488,Quiet on Set: The Dark Side of Kids TV,quiet on set dark side kids tv,0,1,0,1,0,1,0,1
+1071508,Renegade Nell,renegade nell,0,4,0,3,11,0,12,0
+1071520,A Gentleman in Moscow,gentleman moscow,0,2,0,1,0,1,0,2
+1071523,We Were the Lucky Ones,we were lucky ones,0,4,0,3,0,2,0,2
+1071710,Queen of Tears,queen tears,2,2,0,2,0,2,3,0
+1071760,Cigarette Girl,cigarette girl,0,1,0,1,0,1,0,1
+1071828,Dead Boy Detectives,dead boy detectives,0,24,0,19,0,19,26,2
+1071903,Baby Reindeer,baby reindeer,3,66,0,44,0,43,1,48
+1071915,The Dragon Prince: The Mystery of Arravos,dragon prince mystery arravos,0,8,0,4,6,0,9,0
+1072263,A Sign of Affection,sign affection,0,2,0,4,0,4,0,4
+1072293,Jurassic World: Chaos Theory,jurassic world chaos theory,3,9,0,10,0,8,11,0
+1072555,Love for Love's Sake,love loves sake,0,2,0,2,0,2,0,2
+1072570,Old Fashion Cupcake,old fashion cupcake,0,3,0,3,0,3,0,2
+1072602,Amidst a Snowstorm of Love,amidst snowstorm love,0,1,0,1,0,1,0,1
+1072631,House of the Dragon,house dragon,14,139,8,87,72,23,146,21
+1072770,My Lady Jane,my lady jane,0,11,0,2,9,0,15,1
+1072973,Kids in Crime,kids crime,1,0,1,1,0,1,0,1
+1073113,The Act…,act…,0,1,0,1,0,1,0,1
+1073147,The Double,double,0,1,0,1,0,1,0,1
+1073450,The Resort,resort,0,1,0,1,0,1,1,0
+1073606,WondLa,wondla,0,1,0,1,0,1,1,0
+1194875,Family Guy,family guy,15,1,10,1,6,1,11,1
+1197589,Alma's Not Normal,almas not normal,0,1,1,1,0,1,0,1
+1203649,Lioness,lioness,10,6,0,4,0,3,1,3
+1208484,Grace,grace,4,1,1,2,0,0,1,1
+1236475,Troppo,troppo,8,1,0,1,0,0,4,0
+1244002,Disclaimer,disclaimer,0,5,0,4,0,2,5,0
+1249301,The Penguin,penguin,0,10,0,7,0,7,0,7
+1253730,Daredevil: Born Again,daredevil born again,1,9,0,6,0,7,5,4
+1254782,The Diplomat,diplomat,0,6,0,3,0,4,0,4
+1258745,Rivals,rivals,14,3,0,6,0,6,18,0
+1261924,Buddy Daddies,buddy daddies,7,1,0,4,0,6,3,4
+1264189,American Primeval,american primeval,16,2,0,2,20,0,34,0
+1264241,The Traitors,traitors,0,1,0,1,0,2,0,1
+1267068,Creature Commandos,creature commandos,1,8,1,5,0,1,9,2
+1267388,Dexter: Original Sin,dexter original sin,0,8,0,6,0,5,10,1
+1270254,Jentry Chau vs the Underworld,jentry chau vs underworld,0,1,0,1,0,0,1,0
+1270294,WIND BREAKER,wind breaker,0,1,0,2,0,2,0,2
+1272555,El Eternauta,el eternauta,24,4,0,3,0,6,12,2
+1279219,Huset,huset,0,1,0,1,0,1,0,1
+1281465,On Call,on call,13,0,0,1,0,0,4,1
+1287040,NCIS: Origins,ncis origins,4,9,0,1,0,0,2,3
+1288432,Running Point,running point,1,3,0,3,0,2,0,3
+1289002,Say Nothing,say nothing,2,3,0,1,0,1,2,0
+1289051,A Man on the Inside,man on inside,2,11,1,11,0,11,1,12
+1292377,North of North,north north,0,9,0,9,0,8,9,0
+1292397,Adolescence,adolescence,0,36,0,22,0,23,0,23
+1293569,The Pitt,pitt,3,109,0,60,1,56,97,5
+1303522,The Amazing Digital Circus,amazing digital circus,19,43,0,49,0,41,34,12
+1303656,Murder Drones,murder drones,1,16,0,14,1,14,2,12
+1303687,Mistletoe Murders,mistletoe murders,0,6,0,6,0,6,0,6
+1308057,Jane Eyre,jane eyre,0,2,0,2,0,1,0,2
+1309908,Twilight of the Gods,twilight gods,0,1,0,1,5,0,6,0
+1309954,The Dragon Prince Mystery of Aaravos,dragon prince mystery aaravos,0,2,0,0,1,0,3,0
+1312899,Monsters,monsters,0,0,0,0,0,1,0,0
+1314079,Nobody Wants This,nobody wants this,3,14,0,6,0,7,1,8
+1316182,Midsomer Murders,midsomer murders,24,6,0,5,6,3,18,3
+1317234,Dandadan,dandadan,0,7,0,5,0,5,1,5
+1323404,The Secret of the River,secret river,0,1,0,1,0,1,0,1
+1327329,Love in the Big City,love big city,0,1,0,1,0,1,0,1
+1328488,Tsunami: Race Against Time,tsunami race against time,1,0,1,0,1,0,1,0
+1337793,My Love Story With Yamada-Kun at Lv999,my love story with yamada kun at lv999,0,1,0,1,0,1,0,1
+1338253,Mr Plankton,mr plankton,0,2,0,2,0,1,0,2
+1342671,Dune: Prophecy,dune prophecy,0,2,0,1,9,0,8,1
+1351288,Kamen Rider W,kamen rider w,1,1,0,0,0,0,0,0
+1356393,Light Shop,light shop,5,0,0,2,0,2,3,1
+1390482,The Red Sleeve,red sleeve,0,1,0,1,0,1,0,1
+1399235,The Trauma Code : Heroes on Call,trauma code heroes on call,0,1,0,2,0,2,0,2
+1424965,Friendly Rivalry,friendly rivalry,0,4,0,2,0,3,3,0
+1447792,Toxic Town,toxic town,0,4,0,3,0,2,0,3
+1453319,Resident Alien,resident alien,0,14,0,9,0,8,24,1
+1459563,The Summer I Turned Pretty,summer i turned pretty,1,50,7,33,5,36,1,38
+1467380,Jane the Virgin,jane virgin,0,42,16,23,0,37,27,5
+1475281,MobLand,mobland,4,20,1,2,0,3,0,4
+1477778,Karma,karma,0,1,0,1,0,1,0,1
+1495846,Ouran High School Host Club,ouran high school host club,0,51,0,44,1,46,3,44
+1500228,Andor,andor,1,20,0,22,1,18,3,17
+1503942,The Wonderfully Weird World of Gumball,wonderfully weird world gumball,0,4,0,2,0,2,0,4
+1505089,Dept. Q,dept q,5,6,0,8,0,9,13,2
+1508421,Adults,adults,0,6,0,3,0,2,0,2
+1514564,Mercy for None (Gwang-Jang),mercy none (gwang jang),0,1,0,1,0,1,0,1
+1524834,Ninjago: Dragons Rising ,ninjago dragons rising,0,1,0,1,0,1,0,0
+1525824,Takopi's Original Sin,takopis original sin,16,1,0,6,0,5,10,0
+1534599,Dear Hongrang,dear hongrang,0,2,0,2,0,2,0,2
+1537146,Mix Tape,mix tape,0,1,0,1,0,1,0,1
+1568162,Paradise Kiss,paradise kiss,0,4,0,4,0,2,0,4
+1582576,Tron: Uprising,tron uprising,0,4,0,3,0,3,3,2
+1604723,The Prisoner of Beauty,prisoner beauty,0,1,0,1,0,1,1,0
+1609157,Blue Lock (Season 1 + 2),blue lock (season i+ 2),0,1,0,1,0,1,0,1
+1613110,Gachiakuta,gachiakuta-anime-dupe,0,3,0,3,0,3,0,3
+1634084,Gachiakuta,gachiakuta,0,0,0,2,2,1,4,0
+1636075,Our Movie,our movie,0,1,0,1,0,1,0,1
+1639850,The Glory (KDrama),glory (kdrama),0,2,0,2,0,2,0,2
+1640468,LOL: Last One Laughing UK,lol last i laughing uk,0,2,0,1,0,1,0,1
+1755526,Not Me,not me,0,1,0,1,0,1,0,1
+1762790,The Apothecary Diaries (Kusuriya no Hitorigoto),apothecary diaries (kusuriya no hitorigoto),0,3,0,3,0,1,0,3
+1767597,True Detective,true detective,2,0,0,1,0,1,0,0
+1783357,American Horror Story,american horror story,3,2,1,0,0,1,1,0
+1794952,Daredevil,daredevil,0,1,0,0,0,0,0,0

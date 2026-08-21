@@ -113,6 +113,7 @@ total_unique <- comment_words |> distinct(word) |> nrow()
 matched_unique <- comment_words |>
   distinct(word) |>
   inner_join(nrc, by = "word") |>
+  distinct(word) |>
   nrow()
 
 cat("Unique words:", total_unique, "\n")
@@ -137,6 +138,7 @@ total_unique_tv <- tv_comment_words |> distinct(word) |> nrow()
 matched_unique_tv <- tv_comment_words |>
   distinct(word) |>
   inner_join(nrc, by = "word") |>
+  distinct(word) |>
   nrow()
 
 cat("Unique words (TV):", total_unique_tv, "\n")
