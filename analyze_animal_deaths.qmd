@@ -694,6 +694,43 @@ pairs_list <- list(
 map_df(pairs_list, ~ assoc_stats(results_tvseries_details, .x[1], .x[2]))
 ```
 
+#### Test for series length as a moderator
+
+```{r}
+
+library(lme4)
+
+# Extract the number of years each series has been on air
+duration_data <- results_tvseries_details |>
+  left_join(
+    results_all_tvseries |> select(id, startYear, endYear),
+    by = "id"
+  ) |>
+  select(id, startYear, endYear, dog_death, animal_death) |>
+  pivot_longer(
+    cols = c(dog_death, animal_death),
+    names_to = "category",
+    values_to = "died"
+  ) |>
+  mutate(
+    category = factor(category, levels = c("dog_death", "animal_death")),
+    # Ongoing series: set the end year to the last year in the data set
+    end = if_else(is.na(endYear), 2025, endYear),
+    duration = end - startYear + 1,
+    # We use log(duration) because of the highly skewed distribution
+    log_duration = log(duration)
+  )
+
+# The relevant test here is whether the gap between dogs and other animals varies
+# with series length (the interaction term category:log_duration)
+m <- glmer(
+  died ~ category * log_duration + (1 | id),
+  data = duration_data,
+  family = binomial
+)
+summary(m)
+```
+
 #### Analyze time trends
 
 ```{r}
