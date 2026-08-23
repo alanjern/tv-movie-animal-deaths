@@ -27,6 +27,8 @@ You can open (or create) this file directly from R with `usethis::edit_r_environ
 
 The main analysis script is `analyze_animal_deaths.qmd`. This also generates the figures for the paper.
 
+Additional analysis (tallying the prevalence of different animal species in movies) is performed by `tally_stanton_data.R`.
+
 The analysis of comments is performed by two scripts:
 1. `analyze_comments_llm.R`: An LLM-based analysis that requires an Anthropic API key. I abandoned this approach for being too unreliable.
 2. `analyze_comments_nrc.R`: A sentiment analysis that relies on the NRC word-emotion assocation lexicon (EmoLex). This is the main one I used in my analysis.

@@ -729,6 +729,9 @@ m <- glmer(
   family = binomial
 )
 summary(m)
+
+# 95% CIs for the fixed effects
+confint(m, method = "Wald")
 ```
 
 #### Analyze time trends
