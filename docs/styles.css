@@ -336,3 +336,10 @@ input[type="number"], select {
   color: var(--text-muted);
   font-size: .8rem;
 }
+
+.attribution-link {
+  color: var(--accent-dark);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: underline;
+}

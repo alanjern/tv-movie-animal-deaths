@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>What Animals Die on Screen?</title>
-<meta name="description" content="Explore how often dogs, cats, and other animals die on screen across the IMDB top-rated movies and TV series, using Does the Dog Die? vote data." />
+<meta name="description" content="Explore how often dogs, cats, and other animals die on screen across the IMDb top-rated movies and TV series, using Does the Dog Die? vote data." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>" />
 <link rel="stylesheet" href="styles.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
@@ -13,7 +13,7 @@
 <header class="site-header">
   <h1>🐾 What Animals Die on Screen?</h1>
   <p class="subtitle">
-    Animal death rates across the IMDB top-rated movies and TV series.
+    Animal death rates across the IMDb top-rated movies and TV series.
     Based on
     <a href="https://www.doesthedogdie.com/" target="_blank" rel="noopener">Does the Dog Die?</a>
     community votes.
@@ -44,7 +44,7 @@
     </div>
 
     <div class="filter-row">
-      <span class="filter-label">Min. IMDB votes</span>
+      <span class="filter-label">Min. IMDb votes</span>
       <div class="year-inputs">
         <input type="number" id="min-votes" step="1000" min="0" value="0" />
         <span class="hint">excludes obscure/low-confidence titles</span>
@@ -110,7 +110,7 @@
         <input type="number" id="genre-min-n" value="15" min="1" style="width:5em" />
       </label>
     </div>
-    <p class="panel-desc">Genres come from IMDB and a title can carry several, so counts add up to more than the total number of titles. The genre filter above is disabled on this view since the whole point here is comparing across genres.</p>
+    <p class="panel-desc">Genres come from IMDb and a title can carry several, so counts add up to more than the total number of titles. The genre filter above is disabled on this view since the whole point here is comparing across genres.</p>
     <div class="chart-wrap tall"><canvas id="genre-chart"></canvas></div>
   </section>
 
@@ -130,9 +130,12 @@
 <footer class="site-footer">
   <p>
     "Death" here means DTDD community votes for a title/topic were majority "yes" (ties count as no).
-    This is a fan-built exploration tool, not affiliated with Does the Dog Die? or IMDB.
+    This is a fan-built exploration tool, not affiliated with Does the Dog Die? or IMDb.
   </p>
   <p>This tool was built by Claude using data and analysis by Alan Jern.</p>
+  <p>
+    <a href="https://www.doesthedogdie.com" target="_blank" rel="noopener" class="attribution-link">Powered by DoesTheDogDie.com</a>
+  </p>
 </footer>
 
 <script src="app.js"></script>
